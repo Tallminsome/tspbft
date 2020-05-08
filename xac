@@ -1,0 +1,1000 @@
+[36m2020-05-08 07:01:04.791 UTC [cauthdsl] func2 -> DEBU 676[0m 0xc00040e9c0 skipping identity 0 because it has already been used
+[36m2020-05-08 07:01:04.791 UTC [cauthdsl] func2 -> DEBU 677[0m 0xc00040e9c0 principal evaluation fails
+[36m2020-05-08 07:01:04.791 UTC [cauthdsl] func1 -> DEBU 678[0m 0xc00040e9c0 gate 1588921264775555479 evaluation succeeds
+[36m2020-05-08 07:01:04.791 UTC [policies] Evaluate -> DEBU 679[0m Signature set satisfies policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:04.791 UTC [policies] Evaluate -> DEBU 67a[0m == Done Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:04.791 UTC [policies] Evaluate -> DEBU 67b[0m Signature set satisfies policy /Channel/Application/Writers
+[36m2020-05-08 07:01:04.791 UTC [policies] Evaluate -> DEBU 67c[0m == Done Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers
+[36m2020-05-08 07:01:04.791 UTC [lockbasedtxmgr] NewTxSimulator -> DEBU 67d[0m constructing new tx simulator
+[36m2020-05-08 07:01:04.791 UTC [lockbasedtxmgr] newLockBasedTxSimulator -> DEBU 67e[0m constructing new tx simulator txid = [05293496d3fe879d82d4a110b1a31437bf441d8978f2516060e81a081eccc4d2]
+[36m2020-05-08 07:01:04.791 UTC [endorser] SimulateProposal -> DEBU 67f[0m [mychannel][05293496] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:04.791 UTC [stateleveldb] GetState -> DEBU 680[0m GetState(). ns=lscc, key=money_demo
+[36m2020-05-08 07:01:04.791 UTC [ccprovider] GetChaincodeData -> DEBU 681[0m Getting chaincode data for <money_demo, 1.0> from cache
+[34m2020-05-08 07:01:04.791 UTC [endorser] callChaincode -> INFO 682[0m [mychannel][05293496] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:04.791 UTC [chaincode] Execute -> DEBU 683[0m Entry
+[36m2020-05-08 07:01:04.792 UTC [chaincode] handleMessage -> DEBU 684[0m [05293496] Fabric side handling ChaincodeMessage of type: GET_STATE in state ready
+[36m2020-05-08 07:01:04.792 UTC [chaincode] HandleTransaction -> DEBU 685[0m [05293496] handling GET_STATE from chaincode
+[36m2020-05-08 07:01:04.792 UTC [chaincode] HandleGetState -> DEBU 686[0m [05293496] getting state for chaincode money_demo, key count_a, channel mychannel
+[36m2020-05-08 07:01:04.792 UTC [stateleveldb] GetState -> DEBU 687[0m GetState(). ns=money_demo, key=count_a
+[36m2020-05-08 07:01:04.792 UTC [chaincode] HandleGetState -> DEBU 688[0m [05293496] No state associated with key: count_a. Sending RESPONSE with an empty payload
+[36m2020-05-08 07:01:04.792 UTC [chaincode] HandleTransaction -> DEBU 689[0m [05293496] Completed GET_STATE. Sending RESPONSE
+[36m2020-05-08 07:01:04.793 UTC [chaincode] handleMessage -> DEBU 68a[0m [05293496] Fabric side handling ChaincodeMessage of type: COMPLETED in state ready
+[36m2020-05-08 07:01:04.793 UTC [chaincode] Notify -> DEBU 68b[0m [05293496] notifying Txid:05293496d3fe879d82d4a110b1a31437bf441d8978f2516060e81a081eccc4d2, channelID:mychannel
+[36m2020-05-08 07:01:04.793 UTC [chaincode] Execute -> DEBU 68c[0m Exit
+[34m2020-05-08 07:01:04.793 UTC [endorser] callChaincode -> INFO 68d[0m [mychannel][05293496] Exit chaincode: name:"money_demo"  (2ms)
+[36m2020-05-08 07:01:04.793 UTC [lockbasedtxmgr] GetTxSimulationResults -> DEBU 68e[0m Simulation completed, getting simulation results
+[36m2020-05-08 07:01:04.793 UTC [lockbasedtxmgr] Done -> DEBU 68f[0m Done with transaction simulation / query execution [05293496d3fe879d82d4a110b1a31437bf441d8978f2516060e81a081eccc4d2]
+[36m2020-05-08 07:01:04.793 UTC [endorser] SimulateProposal -> DEBU 690[0m [mychannel][05293496] Exit
+[31m2020-05-08 07:01:04.793 UTC [endorser] ProcessProposal -> ERRO 691[0m [mychannel][05293496] simulateProposal() resulted in chaincode name:"money_demo"  response status 500 for txid: 05293496d3fe879d82d4a110b1a31437bf441d8978f2516060e81a081eccc4d2
+[36m2020-05-08 07:01:04.793 UTC [lockbasedtxmgr] Done -> DEBU 692[0m Done with transaction simulation / query execution [05293496d3fe879d82d4a110b1a31437bf441d8978f2516060e81a081eccc4d2]
+[36m2020-05-08 07:01:04.793 UTC [endorser] func1 -> DEBU 693[0m Exit: request from 192.168.0.200:50320
+[34m2020-05-08 07:01:04.793 UTC [comm.grpc.server] 1 -> INFO 694[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=192.168.0.200:50320 grpc.code=OK grpc.call_duration=19.113069ms
+[36m2020-05-08 07:01:04.796 UTC [grpc] warningf -> DEBU 695[0m transport: http2Server.HandleStreams failed to read frame: read tcp 192.168.0.113:7051->192.168.0.200:50320: read: connection reset by peer
+[36m2020-05-08 07:01:04.796 UTC [grpc] infof -> DEBU 696[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:04.796 UTC [grpc] infof -> DEBU 697[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:04.869 UTC [endorser] ProcessProposal -> DEBU 698[0m Entering: request from 192.168.0.200:50324
+[36m2020-05-08 07:01:04.869 UTC [protoutils] ValidateProposalMessage -> DEBU 699[0m ValidateProposalMessage starts for signed proposal 0xc002631360
+[36m2020-05-08 07:01:04.869 UTC [protoutils] validateChannelHeader -> DEBU 69a[0m validateChannelHeader info: header type 3
+[36m2020-05-08 07:01:04.869 UTC [protoutils] checkSignatureFromCreator -> DEBU 69b[0m begin
+[36m2020-05-08 07:01:04.869 UTC [msp] GetManagerForChain -> DEBU 69c[0m Returning existing manager for channel 'mychannel'
+[36m2020-05-08 07:01:04.869 UTC [protoutils] checkSignatureFromCreator -> DEBU 69d[0m creator is &{OrgAMSP 10f12425a080c076ff5716fcffcb09efea373400a179ebcf01b8989fee536ad2}
+[36m2020-05-08 07:01:04.869 UTC [protoutils] checkSignatureFromCreator -> DEBU 69e[0m creator is valid
+[36m2020-05-08 07:01:04.869 UTC [msp.identity] Verify -> DEBU 69f[0m Verify: digest = 00000000  02 c6 14 45 9b 45 eb dd  bc c1 85 2c 01 ff 25 19  |...E.E.....,..%.|
+00000010  87 36 59 34 8f 94 1a e4  3a 5e 4a 9c d7 69 4d e2  |.6Y4....:^J..iM.|
+[36m2020-05-08 07:01:04.869 UTC [msp.identity] Verify -> DEBU 6a0[0m Verify: sig = 00000000  30 44 02 20 23 f4 0b e2  b4 a9 7e e9 a9 84 a6 ac  |0D. #.....~.....|
+00000010  1b f4 c3 bf 2e ed a7 5a  00 dc dd 84 e3 bd f0 78  |.......Z.......x|
+00000020  76 5a c5 bd 02 20 51 93  c3 77 f0 61 a3 10 fa 50  |vZ... Q..w.a...P|
+00000030  80 90 80 3f 95 fa 96 1a  a3 ce e0 f0 d8 17 db 88  |...?............|
+00000040  dc 8f 3a e0 1d 01                                 |..:...|
+[36m2020-05-08 07:01:04.869 UTC [protoutils] checkSignatureFromCreator -> DEBU 6a1[0m exits successfully
+[36m2020-05-08 07:01:04.869 UTC [protoutils] validateChaincodeProposalMessage -> DEBU 6a2[0m validateChaincodeProposalMessage starts for proposal 0xc0004cea80, header 0xc002631770
+[36m2020-05-08 07:01:04.869 UTC [protoutils] validateChaincodeProposalMessage -> DEBU 6a3[0m validateChaincodeProposalMessage info: header extension references chaincode name:"money_demo" 
+[36m2020-05-08 07:01:04.869 UTC [endorser] preProcess -> DEBU 6a4[0m [mychannel][ef4d44d4] processing txid: ef4d44d4f12255dd1fb8f43c7371124e79afb0429ae0a38f0af3b222f1dc0d65
+[36m2020-05-08 07:01:04.870 UTC [fsblkstorage] retrieveTransactionByID -> DEBU 6a5[0m retrieveTransactionByID() - txId = [ef4d44d4f12255dd1fb8f43c7371124e79afb0429ae0a38f0af3b222f1dc0d65]
+[36m2020-05-08 07:01:04.870 UTC [aclmgmt] CheckACL -> DEBU 6a6[0m acl policy not found in config for resource peer/Propose
+[36m2020-05-08 07:01:04.870 UTC [policies] Evaluate -> DEBU 6a7[0m == Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers ==
+[36m2020-05-08 07:01:04.870 UTC [policies] Evaluate -> DEBU 6a8[0m This is an implicit meta policy, it will trigger other policy evaluations, whose failures may be benign
+[36m2020-05-08 07:01:04.870 UTC [policies] Evaluate -> DEBU 6a9[0m == Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers ==
+[36m2020-05-08 07:01:04.870 UTC [cauthdsl] func1 -> DEBU 6aa[0m 0xc0003b6ac0 gate 1588921264870136149 evaluation starts
+[36m2020-05-08 07:01:04.870 UTC [cauthdsl] func2 -> DEBU 6ab[0m 0xc0003b6ac0 signed by 0 principal evaluation starts (used [false])
+[36m2020-05-08 07:01:04.870 UTC [cauthdsl] func2 -> DEBU 6ac[0m 0xc0003b6ac0 processing identity 0 with bytes of 1151890
+[36m2020-05-08 07:01:04.870 UTC [cauthdsl] func2 -> DEBU 6ad[0m 0xc0003b6ac0 principal matched by identity 0
+[36m2020-05-08 07:01:04.870 UTC [msp.identity] Verify -> DEBU 6ae[0m Verify: digest = 00000000  02 c6 14 45 9b 45 eb dd  bc c1 85 2c 01 ff 25 19  |...E.E.....,..%.|
+00000010  87 36 59 34 8f 94 1a e4  3a 5e 4a 9c d7 69 4d e2  |.6Y4....:^J..iM.|
+[36m2020-05-08 07:01:04.870 UTC [msp.identity] Verify -> DEBU 6af[0m Verify: sig = 00000000  30 44 02 20 23 f4 0b e2  b4 a9 7e e9 a9 84 a6 ac  |0D. #.....~.....|
+00000010  1b f4 c3 bf 2e ed a7 5a  00 dc dd 84 e3 bd f0 78  |.......Z.......x|
+00000020  76 5a c5 bd 02 20 51 93  c3 77 f0 61 a3 10 fa 50  |vZ... Q..w.a...P|
+00000030  80 90 80 3f 95 fa 96 1a  a3 ce e0 f0 d8 17 db 88  |...?............|
+00000040  dc 8f 3a e0 1d 01                                 |..:...|
+[36m2020-05-08 07:01:04.870 UTC [cauthdsl] func2 -> DEBU 6b0[0m 0xc0003b6ac0 principal evaluation succeeds for identity 0
+[36m2020-05-08 07:01:04.870 UTC [cauthdsl] func2 -> DEBU 6b1[0m 0xc0003b6ac0 signed by 1 principal evaluation starts (used [true])
+[36m2020-05-08 07:01:04.870 UTC [cauthdsl] func2 -> DEBU 6b2[0m 0xc0003b6ac0 skipping identity 0 because it has already been used
+[36m2020-05-08 07:01:04.870 UTC [cauthdsl] func2 -> DEBU 6b3[0m 0xc0003b6ac0 principal evaluation fails
+[36m2020-05-08 07:01:04.870 UTC [cauthdsl] func1 -> DEBU 6b4[0m 0xc0003b6ac0 gate 1588921264870136149 evaluation succeeds
+[36m2020-05-08 07:01:04.870 UTC [policies] Evaluate -> DEBU 6b5[0m Signature set satisfies policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:04.870 UTC [policies] Evaluate -> DEBU 6b6[0m == Done Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:04.870 UTC [policies] Evaluate -> DEBU 6b7[0m Signature set satisfies policy /Channel/Application/Writers
+[36m2020-05-08 07:01:04.870 UTC [policies] Evaluate -> DEBU 6b8[0m == Done Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers
+[36m2020-05-08 07:01:04.870 UTC [lockbasedtxmgr] NewTxSimulator -> DEBU 6b9[0m constructing new tx simulator
+[36m2020-05-08 07:01:04.870 UTC [lockbasedtxmgr] newLockBasedTxSimulator -> DEBU 6ba[0m constructing new tx simulator txid = [ef4d44d4f12255dd1fb8f43c7371124e79afb0429ae0a38f0af3b222f1dc0d65]
+[36m2020-05-08 07:01:04.870 UTC [endorser] SimulateProposal -> DEBU 6bb[0m [mychannel][ef4d44d4] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:04.870 UTC [stateleveldb] GetState -> DEBU 6bc[0m GetState(). ns=lscc, key=money_demo
+[36m2020-05-08 07:01:04.870 UTC [ccprovider] GetChaincodeData -> DEBU 6bd[0m Getting chaincode data for <money_demo, 1.0> from cache
+[34m2020-05-08 07:01:04.870 UTC [endorser] callChaincode -> INFO 6be[0m [mychannel][ef4d44d4] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:04.870 UTC [chaincode] Execute -> DEBU 6bf[0m Entry
+[36m2020-05-08 07:01:04.871 UTC [chaincode] handleMessage -> DEBU 6c0[0m [ef4d44d4] Fabric side handling ChaincodeMessage of type: GET_STATE in state ready
+[36m2020-05-08 07:01:04.871 UTC [chaincode] HandleTransaction -> DEBU 6c1[0m [ef4d44d4] handling GET_STATE from chaincode
+[36m2020-05-08 07:01:04.871 UTC [chaincode] HandleGetState -> DEBU 6c2[0m [ef4d44d4] getting state for chaincode money_demo, key count_b, channel mychannel
+[36m2020-05-08 07:01:04.871 UTC [stateleveldb] GetState -> DEBU 6c3[0m GetState(). ns=money_demo, key=count_b
+[36m2020-05-08 07:01:04.871 UTC [chaincode] HandleGetState -> DEBU 6c4[0m [ef4d44d4] No state associated with key: count_b. Sending RESPONSE with an empty payload
+[36m2020-05-08 07:01:04.871 UTC [chaincode] HandleTransaction -> DEBU 6c5[0m [ef4d44d4] Completed GET_STATE. Sending RESPONSE
+[36m2020-05-08 07:01:04.872 UTC [chaincode] handleMessage -> DEBU 6c6[0m [ef4d44d4] Fabric side handling ChaincodeMessage of type: COMPLETED in state ready
+[36m2020-05-08 07:01:04.872 UTC [chaincode] Notify -> DEBU 6c7[0m [ef4d44d4] notifying Txid:ef4d44d4f12255dd1fb8f43c7371124e79afb0429ae0a38f0af3b222f1dc0d65, channelID:mychannel
+[36m2020-05-08 07:01:04.872 UTC [chaincode] Execute -> DEBU 6c8[0m Exit
+[34m2020-05-08 07:01:04.872 UTC [endorser] callChaincode -> INFO 6c9[0m [mychannel][ef4d44d4] Exit chaincode: name:"money_demo"  (2ms)
+[36m2020-05-08 07:01:04.872 UTC [lockbasedtxmgr] GetTxSimulationResults -> DEBU 6ca[0m Simulation completed, getting simulation results
+[36m2020-05-08 07:01:04.872 UTC [lockbasedtxmgr] Done -> DEBU 6cb[0m Done with transaction simulation / query execution [ef4d44d4f12255dd1fb8f43c7371124e79afb0429ae0a38f0af3b222f1dc0d65]
+[36m2020-05-08 07:01:04.872 UTC [endorser] SimulateProposal -> DEBU 6cc[0m [mychannel][ef4d44d4] Exit
+[31m2020-05-08 07:01:04.872 UTC [endorser] ProcessProposal -> ERRO 6cd[0m [mychannel][ef4d44d4] simulateProposal() resulted in chaincode name:"money_demo"  response status 500 for txid: ef4d44d4f12255dd1fb8f43c7371124e79afb0429ae0a38f0af3b222f1dc0d65
+[36m2020-05-08 07:01:04.872 UTC [lockbasedtxmgr] Done -> DEBU 6ce[0m Done with transaction simulation / query execution [ef4d44d4f12255dd1fb8f43c7371124e79afb0429ae0a38f0af3b222f1dc0d65]
+[36m2020-05-08 07:01:04.872 UTC [endorser] func1 -> DEBU 6cf[0m Exit: request from 192.168.0.200:50324
+[34m2020-05-08 07:01:04.872 UTC [comm.grpc.server] 1 -> INFO 6d0[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=192.168.0.200:50324 grpc.code=OK grpc.call_duration=3.652661ms
+[36m2020-05-08 07:01:04.878 UTC [grpc] infof -> DEBU 6d1[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:04.878 UTC [grpc] infof -> DEBU 6d2[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:04.953 UTC [endorser] ProcessProposal -> DEBU 6d3[0m Entering: request from 192.168.0.200:50328
+[36m2020-05-08 07:01:04.953 UTC [protoutils] ValidateProposalMessage -> DEBU 6d4[0m ValidateProposalMessage starts for signed proposal 0xc0026cdc70
+[36m2020-05-08 07:01:04.953 UTC [protoutils] validateChannelHeader -> DEBU 6d5[0m validateChannelHeader info: header type 3
+[36m2020-05-08 07:01:04.953 UTC [protoutils] checkSignatureFromCreator -> DEBU 6d6[0m begin
+[36m2020-05-08 07:01:04.953 UTC [msp] GetManagerForChain -> DEBU 6d7[0m Returning existing manager for channel 'mychannel'
+[36m2020-05-08 07:01:04.953 UTC [protoutils] checkSignatureFromCreator -> DEBU 6d8[0m creator is &{OrgAMSP 10f12425a080c076ff5716fcffcb09efea373400a179ebcf01b8989fee536ad2}
+[36m2020-05-08 07:01:04.953 UTC [protoutils] checkSignatureFromCreator -> DEBU 6d9[0m creator is valid
+[36m2020-05-08 07:01:04.953 UTC [msp.identity] Verify -> DEBU 6da[0m Verify: digest = 00000000  ae 37 c3 d4 91 31 a3 fe  ff e9 bd 09 c5 b7 4f 0f  |.7...1........O.|
+00000010  6f 99 70 94 ed 2a 7a 4a  ce 2c 18 33 06 fe 9e 03  |o.p..*zJ.,.3....|
+[36m2020-05-08 07:01:04.953 UTC [msp.identity] Verify -> DEBU 6db[0m Verify: sig = 00000000  30 45 02 21 00 ad 93 76  64 14 b8 f0 bb 36 2a 63  |0E.!...vd....6*c|
+00000010  e6 3b c3 ec 63 7d 6e 11  3c 4a 37 2b a3 d2 52 ae  |.;..c}n.<J7+..R.|
+00000020  9c a4 8e ac 34 02 20 6d  a3 eb fe f5 6f 08 72 94  |....4. m....o.r.|
+00000030  08 f0 b2 50 db 7a 33 0f  35 59 ad bb dd cc bd b7  |...P.z3.5Y......|
+00000040  0b 74 1d bc bf a5 d5                              |.t.....|
+[36m2020-05-08 07:01:04.953 UTC [protoutils] checkSignatureFromCreator -> DEBU 6dc[0m exits successfully
+[36m2020-05-08 07:01:04.953 UTC [protoutils] validateChaincodeProposalMessage -> DEBU 6dd[0m validateChaincodeProposalMessage starts for proposal 0xc0027ea4d0, header 0xc0003860f0
+[36m2020-05-08 07:01:04.953 UTC [protoutils] validateChaincodeProposalMessage -> DEBU 6de[0m validateChaincodeProposalMessage info: header extension references chaincode name:"money_demo" 
+[36m2020-05-08 07:01:04.953 UTC [endorser] preProcess -> DEBU 6df[0m [mychannel][78839cb3] processing txid: 78839cb35f22bfcc7079a1ad765e835b2e9f810db13cac86bf5b776a32ee3209
+[36m2020-05-08 07:01:04.953 UTC [fsblkstorage] retrieveTransactionByID -> DEBU 6e0[0m retrieveTransactionByID() - txId = [78839cb35f22bfcc7079a1ad765e835b2e9f810db13cac86bf5b776a32ee3209]
+[36m2020-05-08 07:01:04.953 UTC [aclmgmt] CheckACL -> DEBU 6e1[0m acl policy not found in config for resource peer/Propose
+[36m2020-05-08 07:01:04.953 UTC [policies] Evaluate -> DEBU 6e2[0m == Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers ==
+[36m2020-05-08 07:01:04.953 UTC [policies] Evaluate -> DEBU 6e3[0m This is an implicit meta policy, it will trigger other policy evaluations, whose failures may be benign
+[36m2020-05-08 07:01:04.953 UTC [policies] Evaluate -> DEBU 6e4[0m == Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers ==
+[36m2020-05-08 07:01:04.953 UTC [cauthdsl] func1 -> DEBU 6e5[0m 0xc0003a7540 gate 1588921264953835531 evaluation starts
+[36m2020-05-08 07:01:04.953 UTC [cauthdsl] func2 -> DEBU 6e6[0m 0xc0003a7540 signed by 0 principal evaluation starts (used [false])
+[36m2020-05-08 07:01:04.953 UTC [cauthdsl] func2 -> DEBU 6e7[0m 0xc0003a7540 processing identity 0 with bytes of 1151890
+[36m2020-05-08 07:01:04.953 UTC [cauthdsl] func2 -> DEBU 6e8[0m 0xc0003a7540 principal matched by identity 0
+[36m2020-05-08 07:01:04.953 UTC [msp.identity] Verify -> DEBU 6e9[0m Verify: digest = 00000000  ae 37 c3 d4 91 31 a3 fe  ff e9 bd 09 c5 b7 4f 0f  |.7...1........O.|
+00000010  6f 99 70 94 ed 2a 7a 4a  ce 2c 18 33 06 fe 9e 03  |o.p..*zJ.,.3....|
+[36m2020-05-08 07:01:04.954 UTC [msp.identity] Verify -> DEBU 6ea[0m Verify: sig = 00000000  30 45 02 21 00 ad 93 76  64 14 b8 f0 bb 36 2a 63  |0E.!...vd....6*c|
+00000010  e6 3b c3 ec 63 7d 6e 11  3c 4a 37 2b a3 d2 52 ae  |.;..c}n.<J7+..R.|
+00000020  9c a4 8e ac 34 02 20 6d  a3 eb fe f5 6f 08 72 94  |....4. m....o.r.|
+00000030  08 f0 b2 50 db 7a 33 0f  35 59 ad bb dd cc bd b7  |...P.z3.5Y......|
+00000040  0b 74 1d bc bf a5 d5                              |.t.....|
+[36m2020-05-08 07:01:04.954 UTC [cauthdsl] func2 -> DEBU 6eb[0m 0xc0003a7540 principal evaluation succeeds for identity 0
+[36m2020-05-08 07:01:04.954 UTC [cauthdsl] func2 -> DEBU 6ec[0m 0xc0003a7540 signed by 1 principal evaluation starts (used [true])
+[36m2020-05-08 07:01:04.954 UTC [cauthdsl] func2 -> DEBU 6ed[0m 0xc0003a7540 skipping identity 0 because it has already been used
+[36m2020-05-08 07:01:04.954 UTC [cauthdsl] func2 -> DEBU 6ee[0m 0xc0003a7540 principal evaluation fails
+[36m2020-05-08 07:01:04.954 UTC [cauthdsl] func1 -> DEBU 6ef[0m 0xc0003a7540 gate 1588921264953835531 evaluation succeeds
+[36m2020-05-08 07:01:04.954 UTC [policies] Evaluate -> DEBU 6f0[0m Signature set satisfies policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:04.954 UTC [policies] Evaluate -> DEBU 6f1[0m == Done Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:04.954 UTC [policies] Evaluate -> DEBU 6f2[0m Signature set satisfies policy /Channel/Application/Writers
+[36m2020-05-08 07:01:04.954 UTC [policies] Evaluate -> DEBU 6f3[0m == Done Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers
+[36m2020-05-08 07:01:04.954 UTC [lockbasedtxmgr] NewTxSimulator -> DEBU 6f4[0m constructing new tx simulator
+[36m2020-05-08 07:01:04.954 UTC [lockbasedtxmgr] newLockBasedTxSimulator -> DEBU 6f5[0m constructing new tx simulator txid = [78839cb35f22bfcc7079a1ad765e835b2e9f810db13cac86bf5b776a32ee3209]
+[36m2020-05-08 07:01:04.954 UTC [endorser] SimulateProposal -> DEBU 6f6[0m [mychannel][78839cb3] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:04.954 UTC [stateleveldb] GetState -> DEBU 6f7[0m GetState(). ns=lscc, key=money_demo
+[36m2020-05-08 07:01:04.954 UTC [ccprovider] GetChaincodeData -> DEBU 6f8[0m Getting chaincode data for <money_demo, 1.0> from cache
+[34m2020-05-08 07:01:04.954 UTC [endorser] callChaincode -> INFO 6f9[0m [mychannel][78839cb3] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:04.954 UTC [chaincode] Execute -> DEBU 6fa[0m Entry
+[36m2020-05-08 07:01:04.955 UTC [chaincode] handleMessage -> DEBU 6fb[0m [78839cb3] Fabric side handling ChaincodeMessage of type: GET_STATE in state ready
+[36m2020-05-08 07:01:04.955 UTC [chaincode] HandleTransaction -> DEBU 6fc[0m [78839cb3] handling GET_STATE from chaincode
+[36m2020-05-08 07:01:04.955 UTC [chaincode] HandleGetState -> DEBU 6fd[0m [78839cb3] getting state for chaincode money_demo, key count_a, channel mychannel
+[36m2020-05-08 07:01:04.955 UTC [stateleveldb] GetState -> DEBU 6fe[0m GetState(). ns=money_demo, key=count_a
+[36m2020-05-08 07:01:04.955 UTC [chaincode] HandleGetState -> DEBU 6ff[0m [78839cb3] No state associated with key: count_a. Sending RESPONSE with an empty payload
+[36m2020-05-08 07:01:04.955 UTC [chaincode] HandleTransaction -> DEBU 700[0m [78839cb3] Completed GET_STATE. Sending RESPONSE
+[36m2020-05-08 07:01:04.955 UTC [chaincode] handleMessage -> DEBU 701[0m [78839cb3] Fabric side handling ChaincodeMessage of type: COMPLETED in state ready
+[36m2020-05-08 07:01:04.955 UTC [chaincode] Notify -> DEBU 702[0m [78839cb3] notifying Txid:78839cb35f22bfcc7079a1ad765e835b2e9f810db13cac86bf5b776a32ee3209, channelID:mychannel
+[36m2020-05-08 07:01:04.955 UTC [chaincode] Execute -> DEBU 703[0m Exit
+[34m2020-05-08 07:01:04.955 UTC [endorser] callChaincode -> INFO 704[0m [mychannel][78839cb3] Exit chaincode: name:"money_demo"  (2ms)
+[36m2020-05-08 07:01:04.956 UTC [lockbasedtxmgr] GetTxSimulationResults -> DEBU 705[0m Simulation completed, getting simulation results
+[36m2020-05-08 07:01:04.956 UTC [lockbasedtxmgr] Done -> DEBU 706[0m Done with transaction simulation / query execution [78839cb35f22bfcc7079a1ad765e835b2e9f810db13cac86bf5b776a32ee3209]
+[36m2020-05-08 07:01:04.956 UTC [endorser] SimulateProposal -> DEBU 707[0m [mychannel][78839cb3] Exit
+[31m2020-05-08 07:01:04.956 UTC [endorser] ProcessProposal -> ERRO 708[0m [mychannel][78839cb3] simulateProposal() resulted in chaincode name:"money_demo"  response status 500 for txid: 78839cb35f22bfcc7079a1ad765e835b2e9f810db13cac86bf5b776a32ee3209
+[36m2020-05-08 07:01:04.956 UTC [lockbasedtxmgr] Done -> DEBU 709[0m Done with transaction simulation / query execution [78839cb35f22bfcc7079a1ad765e835b2e9f810db13cac86bf5b776a32ee3209]
+[36m2020-05-08 07:01:04.956 UTC [endorser] func1 -> DEBU 70a[0m Exit: request from 192.168.0.200:50328
+[34m2020-05-08 07:01:04.956 UTC [comm.grpc.server] 1 -> INFO 70b[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=192.168.0.200:50328 grpc.code=OK grpc.call_duration=3.28714ms
+[36m2020-05-08 07:01:04.959 UTC [grpc] warningf -> DEBU 70c[0m transport: http2Server.HandleStreams failed to read frame: read tcp 192.168.0.113:7051->192.168.0.200:50328: read: connection reset by peer
+[36m2020-05-08 07:01:04.959 UTC [grpc] infof -> DEBU 70d[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:04.959 UTC [grpc] infof -> DEBU 70e[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:05.035 UTC [endorser] ProcessProposal -> DEBU 70f[0m Entering: request from 192.168.0.200:50334
+[36m2020-05-08 07:01:05.035 UTC [protoutils] ValidateProposalMessage -> DEBU 710[0m ValidateProposalMessage starts for signed proposal 0xc000405630
+[36m2020-05-08 07:01:05.035 UTC [protoutils] validateChannelHeader -> DEBU 711[0m validateChannelHeader info: header type 3
+[36m2020-05-08 07:01:05.035 UTC [protoutils] checkSignatureFromCreator -> DEBU 712[0m begin
+[36m2020-05-08 07:01:05.035 UTC [msp] GetManagerForChain -> DEBU 713[0m Returning existing manager for channel 'mychannel'
+[36m2020-05-08 07:01:05.035 UTC [protoutils] checkSignatureFromCreator -> DEBU 714[0m creator is &{OrgAMSP 10f12425a080c076ff5716fcffcb09efea373400a179ebcf01b8989fee536ad2}
+[36m2020-05-08 07:01:05.035 UTC [protoutils] checkSignatureFromCreator -> DEBU 715[0m creator is valid
+[36m2020-05-08 07:01:05.035 UTC [msp.identity] Verify -> DEBU 716[0m Verify: digest = 00000000  60 91 fa bd 61 08 c4 24  88 2c 1a d6 24 ea 21 af  |`...a..$.,..$.!.|
+00000010  43 d3 f2 c2 c8 f0 4c 12  11 42 c8 c2 c4 99 d4 e1  |C.....L..B......|
+[36m2020-05-08 07:01:05.035 UTC [msp.identity] Verify -> DEBU 717[0m Verify: sig = 00000000  30 44 02 20 5d 59 e3 91  0a 47 03 8c c4 f4 69 82  |0D. ]Y...G....i.|
+00000010  eb f9 46 fd fb 76 fd 70  e6 37 19 29 ce c1 30 34  |..F..v.p.7.)..04|
+00000020  97 c9 b5 d6 02 20 5b fb  61 0d 11 59 df c0 eb ac  |..... [.a..Y....|
+00000030  7f 57 ff 79 ff 08 ed b6  3b 2d 6d 5d 32 59 02 37  |.W.y....;-m]2Y.7|
+00000040  3a 1e 7a 34 e3 b6                                 |:.z4..|
+[36m2020-05-08 07:01:05.035 UTC [protoutils] checkSignatureFromCreator -> DEBU 718[0m exits successfully
+[36m2020-05-08 07:01:05.035 UTC [protoutils] validateChaincodeProposalMessage -> DEBU 719[0m validateChaincodeProposalMessage starts for proposal 0xc0001501c0, header 0xc000405a40
+[36m2020-05-08 07:01:05.035 UTC [protoutils] validateChaincodeProposalMessage -> DEBU 71a[0m validateChaincodeProposalMessage info: header extension references chaincode name:"money_demo" 
+[36m2020-05-08 07:01:05.035 UTC [endorser] preProcess -> DEBU 71b[0m [mychannel][66baf018] processing txid: 66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39
+[36m2020-05-08 07:01:05.035 UTC [fsblkstorage] retrieveTransactionByID -> DEBU 71c[0m retrieveTransactionByID() - txId = [66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39]
+[36m2020-05-08 07:01:05.036 UTC [aclmgmt] CheckACL -> DEBU 71d[0m acl policy not found in config for resource peer/Propose
+[36m2020-05-08 07:01:05.036 UTC [policies] Evaluate -> DEBU 71e[0m == Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers ==
+[36m2020-05-08 07:01:05.036 UTC [policies] Evaluate -> DEBU 71f[0m This is an implicit meta policy, it will trigger other policy evaluations, whose failures may be benign
+[36m2020-05-08 07:01:05.036 UTC [policies] Evaluate -> DEBU 720[0m == Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers ==
+[36m2020-05-08 07:01:05.036 UTC [cauthdsl] func1 -> DEBU 721[0m 0xc00034dcb0 gate 1588921265036139488 evaluation starts
+[36m2020-05-08 07:01:05.036 UTC [cauthdsl] func2 -> DEBU 722[0m 0xc00034dcb0 signed by 0 principal evaluation starts (used [false])
+[36m2020-05-08 07:01:05.036 UTC [cauthdsl] func2 -> DEBU 723[0m 0xc00034dcb0 processing identity 0 with bytes of 1151890
+[36m2020-05-08 07:01:05.036 UTC [cauthdsl] func2 -> DEBU 724[0m 0xc00034dcb0 principal matched by identity 0
+[36m2020-05-08 07:01:05.036 UTC [msp.identity] Verify -> DEBU 725[0m Verify: digest = 00000000  60 91 fa bd 61 08 c4 24  88 2c 1a d6 24 ea 21 af  |`...a..$.,..$.!.|
+00000010  43 d3 f2 c2 c8 f0 4c 12  11 42 c8 c2 c4 99 d4 e1  |C.....L..B......|
+[36m2020-05-08 07:01:05.036 UTC [msp.identity] Verify -> DEBU 726[0m Verify: sig = 00000000  30 44 02 20 5d 59 e3 91  0a 47 03 8c c4 f4 69 82  |0D. ]Y...G....i.|
+00000010  eb f9 46 fd fb 76 fd 70  e6 37 19 29 ce c1 30 34  |..F..v.p.7.)..04|
+00000020  97 c9 b5 d6 02 20 5b fb  61 0d 11 59 df c0 eb ac  |..... [.a..Y....|
+00000030  7f 57 ff 79 ff 08 ed b6  3b 2d 6d 5d 32 59 02 37  |.W.y....;-m]2Y.7|
+00000040  3a 1e 7a 34 e3 b6                                 |:.z4..|
+[36m2020-05-08 07:01:05.036 UTC [cauthdsl] func2 -> DEBU 727[0m 0xc00034dcb0 principal evaluation succeeds for identity 0
+[36m2020-05-08 07:01:05.036 UTC [cauthdsl] func2 -> DEBU 728[0m 0xc00034dcb0 signed by 1 principal evaluation starts (used [true])
+[36m2020-05-08 07:01:05.036 UTC [cauthdsl] func2 -> DEBU 729[0m 0xc00034dcb0 skipping identity 0 because it has already been used
+[36m2020-05-08 07:01:05.036 UTC [cauthdsl] func2 -> DEBU 72a[0m 0xc00034dcb0 principal evaluation fails
+[36m2020-05-08 07:01:05.036 UTC [cauthdsl] func1 -> DEBU 72b[0m 0xc00034dcb0 gate 1588921265036139488 evaluation succeeds
+[36m2020-05-08 07:01:05.036 UTC [policies] Evaluate -> DEBU 72c[0m Signature set satisfies policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:05.036 UTC [policies] Evaluate -> DEBU 72d[0m == Done Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:05.036 UTC [policies] Evaluate -> DEBU 72e[0m Signature set satisfies policy /Channel/Application/Writers
+[36m2020-05-08 07:01:05.036 UTC [policies] Evaluate -> DEBU 72f[0m == Done Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers
+[36m2020-05-08 07:01:05.036 UTC [lockbasedtxmgr] NewTxSimulator -> DEBU 730[0m constructing new tx simulator
+[36m2020-05-08 07:01:05.036 UTC [lockbasedtxmgr] newLockBasedTxSimulator -> DEBU 731[0m constructing new tx simulator txid = [66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39]
+[36m2020-05-08 07:01:05.036 UTC [endorser] SimulateProposal -> DEBU 732[0m [mychannel][66baf018] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:05.036 UTC [stateleveldb] GetState -> DEBU 733[0m GetState(). ns=lscc, key=money_demo
+[36m2020-05-08 07:01:05.036 UTC [ccprovider] GetChaincodeData -> DEBU 734[0m Getting chaincode data for <money_demo, 1.0> from cache
+[34m2020-05-08 07:01:05.036 UTC [endorser] callChaincode -> INFO 735[0m [mychannel][66baf018] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:05.036 UTC [chaincode] Execute -> DEBU 736[0m Entry
+[36m2020-05-08 07:01:05.037 UTC [chaincode] handleMessage -> DEBU 737[0m [66baf018] Fabric side handling ChaincodeMessage of type: GET_STATE in state ready
+[36m2020-05-08 07:01:05.037 UTC [chaincode] HandleTransaction -> DEBU 738[0m [66baf018] handling GET_STATE from chaincode
+[36m2020-05-08 07:01:05.037 UTC [chaincode] HandleGetState -> DEBU 739[0m [66baf018] getting state for chaincode money_demo, key count_c, channel mychannel
+[36m2020-05-08 07:01:05.037 UTC [stateleveldb] GetState -> DEBU 73a[0m GetState(). ns=money_demo, key=count_c
+[36m2020-05-08 07:01:05.037 UTC [chaincode] HandleGetState -> DEBU 73b[0m [66baf018] No state associated with key: count_c. Sending RESPONSE with an empty payload
+[36m2020-05-08 07:01:05.037 UTC [chaincode] HandleTransaction -> DEBU 73c[0m [66baf018] Completed GET_STATE. Sending RESPONSE
+[36m2020-05-08 07:01:05.038 UTC [chaincode] handleMessage -> DEBU 73d[0m [66baf018] Fabric side handling ChaincodeMessage of type: PUT_STATE in state ready
+[36m2020-05-08 07:01:05.038 UTC [chaincode] HandleTransaction -> DEBU 73e[0m [66baf018] handling PUT_STATE from chaincode
+[36m2020-05-08 07:01:05.038 UTC [chaincode] HandleTransaction -> DEBU 73f[0m [66baf018] Completed PUT_STATE. Sending RESPONSE
+[36m2020-05-08 07:01:05.038 UTC [chaincode] handleMessage -> DEBU 740[0m [66baf018] Fabric side handling ChaincodeMessage of type: COMPLETED in state ready
+[36m2020-05-08 07:01:05.038 UTC [chaincode] Notify -> DEBU 741[0m [66baf018] notifying Txid:66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39, channelID:mychannel
+[36m2020-05-08 07:01:05.038 UTC [chaincode] Execute -> DEBU 742[0m Exit
+[34m2020-05-08 07:01:05.039 UTC [endorser] callChaincode -> INFO 743[0m [mychannel][66baf018] Exit chaincode: name:"money_demo"  (2ms)
+[36m2020-05-08 07:01:05.039 UTC [lockbasedtxmgr] GetTxSimulationResults -> DEBU 744[0m Simulation completed, getting simulation results
+[36m2020-05-08 07:01:05.039 UTC [lockbasedtxmgr] Done -> DEBU 745[0m Done with transaction simulation / query execution [66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39]
+[36m2020-05-08 07:01:05.039 UTC [endorser] SimulateProposal -> DEBU 746[0m [mychannel][66baf018] Exit
+[36m2020-05-08 07:01:05.039 UTC [endorser] endorseProposal -> DEBU 747[0m [mychannel][66baf018] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:05.039 UTC [endorser] endorseProposal -> DEBU 748[0m [mychannel][66baf018] escc for chaincode name:"money_demo"  is escc
+[36m2020-05-08 07:01:05.039 UTC [endorser] EndorseWithPlugin -> DEBU 749[0m Entering endorsement for {plugin: escc, channel: mychannel, tx: 66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39, chaincode: money_demo}
+[36m2020-05-08 07:01:05.039 UTC [msp.identity] Sign -> DEBU 74a[0m Sign: plaintext: 0A2016F3A776FA514D1F7E88CDD97C7A...455254494649434154452D2D2D2D2D0A 
+[36m2020-05-08 07:01:05.039 UTC [msp.identity] Sign -> DEBU 74b[0m Sign: digest: C05C31D7D117380A02803BF15A096AFD4D0D215B7921990CA18ED17735FCF7BC 
+[36m2020-05-08 07:01:05.039 UTC [endorser] EndorseWithPlugin -> DEBU 74c[0m Exiting {plugin: escc, channel: mychannel, tx: 66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39, chaincode: money_demo}
+[36m2020-05-08 07:01:05.039 UTC [endorser] endorseProposal -> DEBU 74d[0m [mychannel][66baf018] Exit
+[36m2020-05-08 07:01:05.039 UTC [lockbasedtxmgr] Done -> DEBU 74e[0m Done with transaction simulation / query execution [66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39]
+[36m2020-05-08 07:01:05.039 UTC [endorser] func1 -> DEBU 74f[0m Exit: request from 192.168.0.200:50334
+[34m2020-05-08 07:01:05.039 UTC [comm.grpc.server] 1 -> INFO 750[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=192.168.0.200:50334 grpc.code=OK grpc.call_duration=4.329584ms
+[36m2020-05-08 07:01:05.043 UTC [grpc] infof -> DEBU 751[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:05.043 UTC [grpc] infof -> DEBU 752[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:05.121 UTC [endorser] ProcessProposal -> DEBU 753[0m Entering: request from 192.168.0.200:50340
+[36m2020-05-08 07:01:05.121 UTC [protoutils] ValidateProposalMessage -> DEBU 754[0m ValidateProposalMessage starts for signed proposal 0xc00017d1d0
+[36m2020-05-08 07:01:05.121 UTC [protoutils] validateChannelHeader -> DEBU 755[0m validateChannelHeader info: header type 3
+[36m2020-05-08 07:01:05.121 UTC [protoutils] checkSignatureFromCreator -> DEBU 756[0m begin
+[36m2020-05-08 07:01:05.121 UTC [msp] GetManagerForChain -> DEBU 757[0m Returning existing manager for channel 'mychannel'
+[36m2020-05-08 07:01:05.121 UTC [protoutils] checkSignatureFromCreator -> DEBU 758[0m creator is &{OrgAMSP 10f12425a080c076ff5716fcffcb09efea373400a179ebcf01b8989fee536ad2}
+[36m2020-05-08 07:01:05.121 UTC [protoutils] checkSignatureFromCreator -> DEBU 759[0m creator is valid
+[36m2020-05-08 07:01:05.121 UTC [msp.identity] Verify -> DEBU 75a[0m Verify: digest = 00000000  ab 4a c1 a3 65 56 af a9  79 90 00 95 29 0d a5 14  |.J..eV..y...)...|
+00000010  cf a6 0b d9 54 4e 47 4f  99 16 87 cb c7 41 db 29  |....TNGO.....A.)|
+[36m2020-05-08 07:01:05.121 UTC [msp.identity] Verify -> DEBU 75b[0m Verify: sig = 00000000  30 45 02 21 00 b3 99 b0  25 db 9d cf fb 67 a1 3e  |0E.!....%....g.>|
+00000010  98 71 24 64 7d 75 8e fa  8b 7d 83 71 1c c4 59 2b  |.q$d}u...}.q..Y+|
+00000020  07 a9 f3 ab d6 02 20 14  99 f1 98 2a de 78 53 0c  |...... ....*.xS.|
+00000030  e1 32 1b a3 b1 9a f9 0b  33 76 07 a3 50 69 e5 30  |.2......3v..Pi.0|
+00000040  ba d6 22 d7 c5 77 e4                              |.."..w.|
+[36m2020-05-08 07:01:05.121 UTC [protoutils] checkSignatureFromCreator -> DEBU 75c[0m exits successfully
+[36m2020-05-08 07:01:05.121 UTC [protoutils] validateChaincodeProposalMessage -> DEBU 75d[0m validateChaincodeProposalMessage starts for proposal 0xc0004cf420, header 0xc00017ddb0
+[36m2020-05-08 07:01:05.121 UTC [protoutils] validateChaincodeProposalMessage -> DEBU 75e[0m validateChaincodeProposalMessage info: header extension references chaincode name:"money_demo" 
+[36m2020-05-08 07:01:05.121 UTC [endorser] preProcess -> DEBU 75f[0m [mychannel][08289da8] processing txid: 08289da89730d6e89c87a2dea06d32a2db7faace364e78938b35e00622fefd28
+[36m2020-05-08 07:01:05.121 UTC [fsblkstorage] retrieveTransactionByID -> DEBU 760[0m retrieveTransactionByID() - txId = [08289da89730d6e89c87a2dea06d32a2db7faace364e78938b35e00622fefd28]
+[36m2020-05-08 07:01:05.121 UTC [aclmgmt] CheckACL -> DEBU 761[0m acl policy not found in config for resource peer/Propose
+[36m2020-05-08 07:01:05.121 UTC [policies] Evaluate -> DEBU 762[0m == Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers ==
+[36m2020-05-08 07:01:05.121 UTC [policies] Evaluate -> DEBU 763[0m This is an implicit meta policy, it will trigger other policy evaluations, whose failures may be benign
+[36m2020-05-08 07:01:05.121 UTC [policies] Evaluate -> DEBU 764[0m == Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers ==
+[36m2020-05-08 07:01:05.121 UTC [cauthdsl] func1 -> DEBU 765[0m 0xc000242f20 gate 1588921265121691722 evaluation starts
+[36m2020-05-08 07:01:05.121 UTC [cauthdsl] func2 -> DEBU 766[0m 0xc000242f20 signed by 0 principal evaluation starts (used [false])
+[36m2020-05-08 07:01:05.121 UTC [cauthdsl] func2 -> DEBU 767[0m 0xc000242f20 processing identity 0 with bytes of 1151890
+[36m2020-05-08 07:01:05.121 UTC [cauthdsl] func2 -> DEBU 768[0m 0xc000242f20 principal matched by identity 0
+[36m2020-05-08 07:01:05.121 UTC [msp.identity] Verify -> DEBU 769[0m Verify: digest = 00000000  ab 4a c1 a3 65 56 af a9  79 90 00 95 29 0d a5 14  |.J..eV..y...)...|
+00000010  cf a6 0b d9 54 4e 47 4f  99 16 87 cb c7 41 db 29  |....TNGO.....A.)|
+[36m2020-05-08 07:01:05.121 UTC [msp.identity] Verify -> DEBU 76a[0m Verify: sig = 00000000  30 45 02 21 00 b3 99 b0  25 db 9d cf fb 67 a1 3e  |0E.!....%....g.>|
+00000010  98 71 24 64 7d 75 8e fa  8b 7d 83 71 1c c4 59 2b  |.q$d}u...}.q..Y+|
+00000020  07 a9 f3 ab d6 02 20 14  99 f1 98 2a de 78 53 0c  |...... ....*.xS.|
+00000030  e1 32 1b a3 b1 9a f9 0b  33 76 07 a3 50 69 e5 30  |.2......3v..Pi.0|
+00000040  ba d6 22 d7 c5 77 e4                              |.."..w.|
+[36m2020-05-08 07:01:05.121 UTC [cauthdsl] func2 -> DEBU 76b[0m 0xc000242f20 principal evaluation succeeds for identity 0
+[36m2020-05-08 07:01:05.121 UTC [cauthdsl] func2 -> DEBU 76c[0m 0xc000242f20 signed by 1 principal evaluation starts (used [true])
+[36m2020-05-08 07:01:05.121 UTC [cauthdsl] func2 -> DEBU 76d[0m 0xc000242f20 skipping identity 0 because it has already been used
+[36m2020-05-08 07:01:05.121 UTC [cauthdsl] func2 -> DEBU 76e[0m 0xc000242f20 principal evaluation fails
+[36m2020-05-08 07:01:05.122 UTC [cauthdsl] func1 -> DEBU 76f[0m 0xc000242f20 gate 1588921265121691722 evaluation succeeds
+[36m2020-05-08 07:01:05.122 UTC [policies] Evaluate -> DEBU 770[0m Signature set satisfies policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:05.122 UTC [policies] Evaluate -> DEBU 771[0m == Done Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:05.122 UTC [policies] Evaluate -> DEBU 772[0m Signature set satisfies policy /Channel/Application/Writers
+[36m2020-05-08 07:01:05.122 UTC [policies] Evaluate -> DEBU 773[0m == Done Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers
+[36m2020-05-08 07:01:05.122 UTC [lockbasedtxmgr] NewTxSimulator -> DEBU 774[0m constructing new tx simulator
+[36m2020-05-08 07:01:05.122 UTC [lockbasedtxmgr] newLockBasedTxSimulator -> DEBU 775[0m constructing new tx simulator txid = [08289da89730d6e89c87a2dea06d32a2db7faace364e78938b35e00622fefd28]
+[36m2020-05-08 07:01:05.122 UTC [endorser] SimulateProposal -> DEBU 776[0m [mychannel][08289da8] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:05.122 UTC [stateleveldb] GetState -> DEBU 777[0m GetState(). ns=lscc, key=money_demo
+[36m2020-05-08 07:01:05.122 UTC [ccprovider] GetChaincodeData -> DEBU 778[0m Getting chaincode data for <money_demo, 1.0> from cache
+[34m2020-05-08 07:01:05.122 UTC [endorser] callChaincode -> INFO 779[0m [mychannel][08289da8] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:05.122 UTC [chaincode] Execute -> DEBU 77a[0m Entry
+[36m2020-05-08 07:01:05.122 UTC [chaincode] handleMessage -> DEBU 77b[0m [08289da8] Fabric side handling ChaincodeMessage of type: GET_STATE in state ready
+[36m2020-05-08 07:01:05.122 UTC [chaincode] HandleTransaction -> DEBU 77c[0m [08289da8] handling GET_STATE from chaincode
+[36m2020-05-08 07:01:05.123 UTC [chaincode] HandleGetState -> DEBU 77d[0m [08289da8] getting state for chaincode money_demo, key count_a, channel mychannel
+[36m2020-05-08 07:01:05.123 UTC [stateleveldb] GetState -> DEBU 77e[0m GetState(). ns=money_demo, key=count_a
+[36m2020-05-08 07:01:05.123 UTC [chaincode] HandleGetState -> DEBU 77f[0m [08289da8] No state associated with key: count_a. Sending RESPONSE with an empty payload
+[36m2020-05-08 07:01:05.123 UTC [chaincode] HandleTransaction -> DEBU 780[0m [08289da8] Completed GET_STATE. Sending RESPONSE
+[36m2020-05-08 07:01:05.123 UTC [chaincode] handleMessage -> DEBU 781[0m [08289da8] Fabric side handling ChaincodeMessage of type: COMPLETED in state ready
+[36m2020-05-08 07:01:05.123 UTC [chaincode] Notify -> DEBU 782[0m [08289da8] notifying Txid:08289da89730d6e89c87a2dea06d32a2db7faace364e78938b35e00622fefd28, channelID:mychannel
+[36m2020-05-08 07:01:05.123 UTC [chaincode] Execute -> DEBU 783[0m Exit
+[34m2020-05-08 07:01:05.123 UTC [endorser] callChaincode -> INFO 784[0m [mychannel][08289da8] Exit chaincode: name:"money_demo"  (2ms)
+[36m2020-05-08 07:01:05.123 UTC [lockbasedtxmgr] GetTxSimulationResults -> DEBU 785[0m Simulation completed, getting simulation results
+[36m2020-05-08 07:01:05.123 UTC [lockbasedtxmgr] Done -> DEBU 786[0m Done with transaction simulation / query execution [08289da89730d6e89c87a2dea06d32a2db7faace364e78938b35e00622fefd28]
+[36m2020-05-08 07:01:05.123 UTC [endorser] SimulateProposal -> DEBU 787[0m [mychannel][08289da8] Exit
+[31m2020-05-08 07:01:05.124 UTC [endorser] ProcessProposal -> ERRO 788[0m [mychannel][08289da8] simulateProposal() resulted in chaincode name:"money_demo"  response status 500 for txid: 08289da89730d6e89c87a2dea06d32a2db7faace364e78938b35e00622fefd28
+[36m2020-05-08 07:01:05.124 UTC [lockbasedtxmgr] Done -> DEBU 789[0m Done with transaction simulation / query execution [08289da89730d6e89c87a2dea06d32a2db7faace364e78938b35e00622fefd28]
+[36m2020-05-08 07:01:05.124 UTC [endorser] func1 -> DEBU 78a[0m Exit: request from 192.168.0.200:50340
+[34m2020-05-08 07:01:05.124 UTC [comm.grpc.server] 1 -> INFO 78b[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=192.168.0.200:50340 grpc.code=OK grpc.call_duration=3.374813ms
+[36m2020-05-08 07:01:05.127 UTC [grpc] warningf -> DEBU 78c[0m transport: http2Server.HandleStreams failed to read frame: read tcp 192.168.0.113:7051->192.168.0.200:50340: read: connection reset by peer
+[36m2020-05-08 07:01:05.127 UTC [grpc] infof -> DEBU 78d[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:05.127 UTC [grpc] infof -> DEBU 78e[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:05.214 UTC [endorser] ProcessProposal -> DEBU 78f[0m Entering: request from 192.168.0.200:50346
+[36m2020-05-08 07:01:05.214 UTC [protoutils] ValidateProposalMessage -> DEBU 790[0m ValidateProposalMessage starts for signed proposal 0xc0000d0c30
+[36m2020-05-08 07:01:05.214 UTC [protoutils] validateChannelHeader -> DEBU 791[0m validateChannelHeader info: header type 3
+[36m2020-05-08 07:01:05.214 UTC [protoutils] checkSignatureFromCreator -> DEBU 792[0m begin
+[36m2020-05-08 07:01:05.214 UTC [msp] GetManagerForChain -> DEBU 793[0m Returning existing manager for channel 'mychannel'
+[36m2020-05-08 07:01:05.214 UTC [protoutils] checkSignatureFromCreator -> DEBU 794[0m creator is &{OrgAMSP 10f12425a080c076ff5716fcffcb09efea373400a179ebcf01b8989fee536ad2}
+[36m2020-05-08 07:01:05.214 UTC [protoutils] checkSignatureFromCreator -> DEBU 795[0m creator is valid
+[36m2020-05-08 07:01:05.214 UTC [msp.identity] Verify -> DEBU 796[0m Verify: digest = 00000000  68 c5 3c 70 bc 09 6e 70  4c 14 6b 1a c7 dc ee f4  |h.<p..npL.k.....|
+00000010  61 c9 b3 56 bf bf c0 e3  0b ca e3 37 6a 4a 33 ef  |a..V.......7jJ3.|
+[36m2020-05-08 07:01:05.214 UTC [msp.identity] Verify -> DEBU 797[0m Verify: sig = 00000000  30 44 02 20 48 ba 6c 48  82 87 4d 74 9f 31 ef 73  |0D. H.lH..Mt.1.s|
+00000010  71 65 14 28 b9 02 8d aa  b5 1a 90 00 37 bf c5 6b  |qe.(........7..k|
+00000020  a2 56 d0 2e 02 20 65 3b  68 81 be b6 55 b1 3c bc  |.V... e;h...U.<.|
+00000030  5f 3d 48 76 fe c3 65 1e  47 68 7d fb b8 87 7d 66  |_=Hv..e.Gh}...}f|
+00000040  24 4a 12 60 9b d8                                 |$J.`..|
+[36m2020-05-08 07:01:05.214 UTC [protoutils] checkSignatureFromCreator -> DEBU 798[0m exits successfully
+[36m2020-05-08 07:01:05.214 UTC [protoutils] validateChaincodeProposalMessage -> DEBU 799[0m validateChaincodeProposalMessage starts for proposal 0xc000150540, header 0xc002cd6280
+[36m2020-05-08 07:01:05.214 UTC [protoutils] validateChaincodeProposalMessage -> DEBU 79a[0m validateChaincodeProposalMessage info: header extension references chaincode name:"money_demo" 
+[36m2020-05-08 07:01:05.214 UTC [endorser] preProcess -> DEBU 79b[0m [mychannel][0c04c175] processing txid: 0c04c1755b0c219b8040fe031b2a0f10c72ffd9234b2359b4c2e04503965cee2
+[36m2020-05-08 07:01:05.214 UTC [fsblkstorage] retrieveTransactionByID -> DEBU 79c[0m retrieveTransactionByID() - txId = [0c04c1755b0c219b8040fe031b2a0f10c72ffd9234b2359b4c2e04503965cee2]
+[36m2020-05-08 07:01:05.215 UTC [aclmgmt] CheckACL -> DEBU 79d[0m acl policy not found in config for resource peer/Propose
+[36m2020-05-08 07:01:05.215 UTC [policies] Evaluate -> DEBU 79e[0m == Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers ==
+[36m2020-05-08 07:01:05.215 UTC [policies] Evaluate -> DEBU 79f[0m This is an implicit meta policy, it will trigger other policy evaluations, whose failures may be benign
+[36m2020-05-08 07:01:05.215 UTC [policies] Evaluate -> DEBU 7a0[0m == Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers ==
+[36m2020-05-08 07:01:05.215 UTC [cauthdsl] func1 -> DEBU 7a1[0m 0xc000333e60 gate 1588921265215134313 evaluation starts
+[36m2020-05-08 07:01:05.215 UTC [cauthdsl] func2 -> DEBU 7a2[0m 0xc000333e60 signed by 0 principal evaluation starts (used [false])
+[36m2020-05-08 07:01:05.215 UTC [cauthdsl] func2 -> DEBU 7a3[0m 0xc000333e60 processing identity 0 with bytes of 1151890
+[36m2020-05-08 07:01:05.215 UTC [cauthdsl] func2 -> DEBU 7a4[0m 0xc000333e60 principal matched by identity 0
+[36m2020-05-08 07:01:05.215 UTC [msp.identity] Verify -> DEBU 7a5[0m Verify: digest = 00000000  68 c5 3c 70 bc 09 6e 70  4c 14 6b 1a c7 dc ee f4  |h.<p..npL.k.....|
+00000010  61 c9 b3 56 bf bf c0 e3  0b ca e3 37 6a 4a 33 ef  |a..V.......7jJ3.|
+[36m2020-05-08 07:01:05.215 UTC [msp.identity] Verify -> DEBU 7a6[0m Verify: sig = 00000000  30 44 02 20 48 ba 6c 48  82 87 4d 74 9f 31 ef 73  |0D. H.lH..Mt.1.s|
+00000010  71 65 14 28 b9 02 8d aa  b5 1a 90 00 37 bf c5 6b  |qe.(........7..k|
+00000020  a2 56 d0 2e 02 20 65 3b  68 81 be b6 55 b1 3c bc  |.V... e;h...U.<.|
+00000030  5f 3d 48 76 fe c3 65 1e  47 68 7d fb b8 87 7d 66  |_=Hv..e.Gh}...}f|
+00000040  24 4a 12 60 9b d8                                 |$J.`..|
+[36m2020-05-08 07:01:05.215 UTC [cauthdsl] func2 -> DEBU 7a7[0m 0xc000333e60 principal evaluation succeeds for identity 0
+[36m2020-05-08 07:01:05.215 UTC [cauthdsl] func2 -> DEBU 7a8[0m 0xc000333e60 signed by 1 principal evaluation starts (used [true])
+[36m2020-05-08 07:01:05.215 UTC [cauthdsl] func2 -> DEBU 7a9[0m 0xc000333e60 skipping identity 0 because it has already been used
+[36m2020-05-08 07:01:05.215 UTC [cauthdsl] func2 -> DEBU 7aa[0m 0xc000333e60 principal evaluation fails
+[36m2020-05-08 07:01:05.215 UTC [cauthdsl] func1 -> DEBU 7ab[0m 0xc000333e60 gate 1588921265215134313 evaluation succeeds
+[36m2020-05-08 07:01:05.215 UTC [policies] Evaluate -> DEBU 7ac[0m Signature set satisfies policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:05.215 UTC [policies] Evaluate -> DEBU 7ad[0m == Done Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:05.215 UTC [policies] Evaluate -> DEBU 7ae[0m Signature set satisfies policy /Channel/Application/Writers
+[36m2020-05-08 07:01:05.215 UTC [policies] Evaluate -> DEBU 7af[0m == Done Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers
+[36m2020-05-08 07:01:05.215 UTC [lockbasedtxmgr] NewTxSimulator -> DEBU 7b0[0m constructing new tx simulator
+[36m2020-05-08 07:01:05.215 UTC [lockbasedtxmgr] newLockBasedTxSimulator -> DEBU 7b1[0m constructing new tx simulator txid = [0c04c1755b0c219b8040fe031b2a0f10c72ffd9234b2359b4c2e04503965cee2]
+[36m2020-05-08 07:01:05.215 UTC [endorser] SimulateProposal -> DEBU 7b2[0m [mychannel][0c04c175] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:05.215 UTC [stateleveldb] GetState -> DEBU 7b3[0m GetState(). ns=lscc, key=money_demo
+[36m2020-05-08 07:01:05.215 UTC [ccprovider] GetChaincodeData -> DEBU 7b4[0m Getting chaincode data for <money_demo, 1.0> from cache
+[34m2020-05-08 07:01:05.215 UTC [endorser] callChaincode -> INFO 7b5[0m [mychannel][0c04c175] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:05.215 UTC [chaincode] Execute -> DEBU 7b6[0m Entry
+[36m2020-05-08 07:01:05.216 UTC [chaincode] handleMessage -> DEBU 7b7[0m [0c04c175] Fabric side handling ChaincodeMessage of type: GET_STATE in state ready
+[36m2020-05-08 07:01:05.216 UTC [chaincode] HandleTransaction -> DEBU 7b8[0m [0c04c175] handling GET_STATE from chaincode
+[36m2020-05-08 07:01:05.216 UTC [chaincode] HandleGetState -> DEBU 7b9[0m [0c04c175] getting state for chaincode money_demo, key count_a, channel mychannel
+[36m2020-05-08 07:01:05.216 UTC [stateleveldb] GetState -> DEBU 7ba[0m GetState(). ns=money_demo, key=count_a
+[36m2020-05-08 07:01:05.216 UTC [chaincode] HandleGetState -> DEBU 7bb[0m [0c04c175] No state associated with key: count_a. Sending RESPONSE with an empty payload
+[36m2020-05-08 07:01:05.216 UTC [chaincode] HandleTransaction -> DEBU 7bc[0m [0c04c175] Completed GET_STATE. Sending RESPONSE
+[36m2020-05-08 07:01:05.217 UTC [chaincode] handleMessage -> DEBU 7bd[0m [0c04c175] Fabric side handling ChaincodeMessage of type: COMPLETED in state ready
+[36m2020-05-08 07:01:05.217 UTC [chaincode] Notify -> DEBU 7be[0m [0c04c175] notifying Txid:0c04c1755b0c219b8040fe031b2a0f10c72ffd9234b2359b4c2e04503965cee2, channelID:mychannel
+[36m2020-05-08 07:01:05.217 UTC [chaincode] Execute -> DEBU 7bf[0m Exit
+[34m2020-05-08 07:01:05.217 UTC [endorser] callChaincode -> INFO 7c0[0m [mychannel][0c04c175] Exit chaincode: name:"money_demo"  (2ms)
+[36m2020-05-08 07:01:05.217 UTC [lockbasedtxmgr] GetTxSimulationResults -> DEBU 7c1[0m Simulation completed, getting simulation results
+[36m2020-05-08 07:01:05.217 UTC [lockbasedtxmgr] Done -> DEBU 7c2[0m Done with transaction simulation / query execution [0c04c1755b0c219b8040fe031b2a0f10c72ffd9234b2359b4c2e04503965cee2]
+[36m2020-05-08 07:01:05.217 UTC [endorser] SimulateProposal -> DEBU 7c3[0m [mychannel][0c04c175] Exit
+[31m2020-05-08 07:01:05.217 UTC [endorser] ProcessProposal -> ERRO 7c4[0m [mychannel][0c04c175] simulateProposal() resulted in chaincode name:"money_demo"  response status 500 for txid: 0c04c1755b0c219b8040fe031b2a0f10c72ffd9234b2359b4c2e04503965cee2
+[36m2020-05-08 07:01:05.217 UTC [lockbasedtxmgr] Done -> DEBU 7c5[0m Done with transaction simulation / query execution [0c04c1755b0c219b8040fe031b2a0f10c72ffd9234b2359b4c2e04503965cee2]
+[36m2020-05-08 07:01:05.217 UTC [endorser] func1 -> DEBU 7c6[0m Exit: request from 192.168.0.200:50346
+[34m2020-05-08 07:01:05.217 UTC [comm.grpc.server] 1 -> INFO 7c7[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=192.168.0.200:50346 grpc.code=OK grpc.call_duration=3.421146ms
+[36m2020-05-08 07:01:05.220 UTC [grpc] warningf -> DEBU 7c8[0m transport: http2Server.HandleStreams failed to read frame: read tcp 192.168.0.113:7051->192.168.0.200:50346: read: connection reset by peer
+[36m2020-05-08 07:01:05.220 UTC [grpc] infof -> DEBU 7c9[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:05.220 UTC [grpc] infof -> DEBU 7ca[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:05.293 UTC [endorser] ProcessProposal -> DEBU 7cb[0m Entering: request from 192.168.0.200:50350
+[36m2020-05-08 07:01:05.293 UTC [protoutils] ValidateProposalMessage -> DEBU 7cc[0m ValidateProposalMessage starts for signed proposal 0xc0003870e0
+[36m2020-05-08 07:01:05.293 UTC [protoutils] validateChannelHeader -> DEBU 7cd[0m validateChannelHeader info: header type 3
+[36m2020-05-08 07:01:05.293 UTC [protoutils] checkSignatureFromCreator -> DEBU 7ce[0m begin
+[36m2020-05-08 07:01:05.293 UTC [msp] GetManagerForChain -> DEBU 7cf[0m Returning existing manager for channel 'mychannel'
+[36m2020-05-08 07:01:05.293 UTC [protoutils] checkSignatureFromCreator -> DEBU 7d0[0m creator is &{OrgAMSP 10f12425a080c076ff5716fcffcb09efea373400a179ebcf01b8989fee536ad2}
+[36m2020-05-08 07:01:05.293 UTC [protoutils] checkSignatureFromCreator -> DEBU 7d1[0m creator is valid
+[36m2020-05-08 07:01:05.293 UTC [msp.identity] Verify -> DEBU 7d2[0m Verify: digest = 00000000  46 22 3c 42 50 31 19 85  73 1e 3d 9e 11 16 30 3b  |F"<BP1..s.=...0;|
+00000010  ae b2 69 6b 8b ec c7 86  a5 2b c8 ff ce 5c 7d 0c  |..ik.....+...\}.|
+[36m2020-05-08 07:01:05.293 UTC [msp.identity] Verify -> DEBU 7d3[0m Verify: sig = 00000000  30 45 02 21 00 f4 e6 1c  5b c5 47 4b 3f d8 26 37  |0E.!....[.GK?.&7|
+00000010  c3 5d 16 7f 13 42 54 98  b7 5c 92 44 95 ad 36 d8  |.]...BT..\.D..6.|
+00000020  a0 de b9 47 00 02 20 51  f3 af f3 99 1d 8b cc 85  |...G.. Q........|
+00000030  73 d8 d7 4b 1c bb 88 35  ed 63 05 48 cb 32 5f 63  |s..K...5.c.H.2_c|
+00000040  fb 5f d6 ce 4a 06 ca                              |._..J..|
+[36m2020-05-08 07:01:05.293 UTC [protoutils] checkSignatureFromCreator -> DEBU 7d4[0m exits successfully
+[36m2020-05-08 07:01:05.293 UTC [protoutils] validateChaincodeProposalMessage -> DEBU 7d5[0m validateChaincodeProposalMessage starts for proposal 0xc0027eaa10, header 0xc000387590
+[36m2020-05-08 07:01:05.293 UTC [protoutils] validateChaincodeProposalMessage -> DEBU 7d6[0m validateChaincodeProposalMessage info: header extension references chaincode name:"money_demo" 
+[36m2020-05-08 07:01:05.293 UTC [endorser] preProcess -> DEBU 7d7[0m [mychannel][c3b56965] processing txid: c3b569659d786dc2c1442149cf4d37523199c03def303fe2b0af020edbd02bfe
+[36m2020-05-08 07:01:05.293 UTC [fsblkstorage] retrieveTransactionByID -> DEBU 7d8[0m retrieveTransactionByID() - txId = [c3b569659d786dc2c1442149cf4d37523199c03def303fe2b0af020edbd02bfe]
+[36m2020-05-08 07:01:05.293 UTC [aclmgmt] CheckACL -> DEBU 7d9[0m acl policy not found in config for resource peer/Propose
+[36m2020-05-08 07:01:05.293 UTC [policies] Evaluate -> DEBU 7da[0m == Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers ==
+[36m2020-05-08 07:01:05.293 UTC [policies] Evaluate -> DEBU 7db[0m This is an implicit meta policy, it will trigger other policy evaluations, whose failures may be benign
+[36m2020-05-08 07:01:05.293 UTC [policies] Evaluate -> DEBU 7dc[0m == Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers ==
+[36m2020-05-08 07:01:05.293 UTC [cauthdsl] func1 -> DEBU 7dd[0m 0xc000319480 gate 1588921265293821709 evaluation starts
+[36m2020-05-08 07:01:05.293 UTC [cauthdsl] func2 -> DEBU 7de[0m 0xc000319480 signed by 0 principal evaluation starts (used [false])
+[36m2020-05-08 07:01:05.293 UTC [cauthdsl] func2 -> DEBU 7df[0m 0xc000319480 processing identity 0 with bytes of 1151890
+[36m2020-05-08 07:01:05.293 UTC [cauthdsl] func2 -> DEBU 7e0[0m 0xc000319480 principal matched by identity 0
+[36m2020-05-08 07:01:05.293 UTC [msp.identity] Verify -> DEBU 7e1[0m Verify: digest = 00000000  46 22 3c 42 50 31 19 85  73 1e 3d 9e 11 16 30 3b  |F"<BP1..s.=...0;|
+00000010  ae b2 69 6b 8b ec c7 86  a5 2b c8 ff ce 5c 7d 0c  |..ik.....+...\}.|
+[36m2020-05-08 07:01:05.293 UTC [msp.identity] Verify -> DEBU 7e2[0m Verify: sig = 00000000  30 45 02 21 00 f4 e6 1c  5b c5 47 4b 3f d8 26 37  |0E.!....[.GK?.&7|
+00000010  c3 5d 16 7f 13 42 54 98  b7 5c 92 44 95 ad 36 d8  |.]...BT..\.D..6.|
+00000020  a0 de b9 47 00 02 20 51  f3 af f3 99 1d 8b cc 85  |...G.. Q........|
+00000030  73 d8 d7 4b 1c bb 88 35  ed 63 05 48 cb 32 5f 63  |s..K...5.c.H.2_c|
+00000040  fb 5f d6 ce 4a 06 ca                              |._..J..|
+[36m2020-05-08 07:01:05.294 UTC [cauthdsl] func2 -> DEBU 7e3[0m 0xc000319480 principal evaluation succeeds for identity 0
+[36m2020-05-08 07:01:05.294 UTC [cauthdsl] func2 -> DEBU 7e4[0m 0xc000319480 signed by 1 principal evaluation starts (used [true])
+[36m2020-05-08 07:01:05.294 UTC [cauthdsl] func2 -> DEBU 7e5[0m 0xc000319480 skipping identity 0 because it has already been used
+[36m2020-05-08 07:01:05.294 UTC [cauthdsl] func2 -> DEBU 7e6[0m 0xc000319480 principal evaluation fails
+[36m2020-05-08 07:01:05.294 UTC [cauthdsl] func1 -> DEBU 7e7[0m 0xc000319480 gate 1588921265293821709 evaluation succeeds
+[36m2020-05-08 07:01:05.294 UTC [policies] Evaluate -> DEBU 7e8[0m Signature set satisfies policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:05.294 UTC [policies] Evaluate -> DEBU 7e9[0m == Done Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:05.294 UTC [policies] Evaluate -> DEBU 7ea[0m Signature set satisfies policy /Channel/Application/Writers
+[36m2020-05-08 07:01:05.294 UTC [policies] Evaluate -> DEBU 7eb[0m == Done Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers
+[36m2020-05-08 07:01:05.294 UTC [lockbasedtxmgr] NewTxSimulator -> DEBU 7ec[0m constructing new tx simulator
+[36m2020-05-08 07:01:05.294 UTC [lockbasedtxmgr] newLockBasedTxSimulator -> DEBU 7ed[0m constructing new tx simulator txid = [c3b569659d786dc2c1442149cf4d37523199c03def303fe2b0af020edbd02bfe]
+[36m2020-05-08 07:01:05.294 UTC [endorser] SimulateProposal -> DEBU 7ee[0m [mychannel][c3b56965] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:05.294 UTC [stateleveldb] GetState -> DEBU 7ef[0m GetState(). ns=lscc, key=money_demo
+[36m2020-05-08 07:01:05.294 UTC [ccprovider] GetChaincodeData -> DEBU 7f0[0m Getting chaincode data for <money_demo, 1.0> from cache
+[34m2020-05-08 07:01:05.294 UTC [endorser] callChaincode -> INFO 7f1[0m [mychannel][c3b56965] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:05.294 UTC [chaincode] Execute -> DEBU 7f2[0m Entry
+[36m2020-05-08 07:01:05.295 UTC [chaincode] handleMessage -> DEBU 7f3[0m [c3b56965] Fabric side handling ChaincodeMessage of type: GET_STATE in state ready
+[36m2020-05-08 07:01:05.295 UTC [chaincode] HandleTransaction -> DEBU 7f4[0m [c3b56965] handling GET_STATE from chaincode
+[36m2020-05-08 07:01:05.295 UTC [chaincode] HandleGetState -> DEBU 7f5[0m [c3b56965] getting state for chaincode money_demo, key count_b, channel mychannel
+[36m2020-05-08 07:01:05.295 UTC [stateleveldb] GetState -> DEBU 7f6[0m GetState(). ns=money_demo, key=count_b
+[36m2020-05-08 07:01:05.295 UTC [chaincode] HandleGetState -> DEBU 7f7[0m [c3b56965] No state associated with key: count_b. Sending RESPONSE with an empty payload
+[36m2020-05-08 07:01:05.295 UTC [chaincode] HandleTransaction -> DEBU 7f8[0m [c3b56965] Completed GET_STATE. Sending RESPONSE
+[36m2020-05-08 07:01:05.296 UTC [chaincode] handleMessage -> DEBU 7f9[0m [c3b56965] Fabric side handling ChaincodeMessage of type: COMPLETED in state ready
+[36m2020-05-08 07:01:05.296 UTC [chaincode] Notify -> DEBU 7fa[0m [c3b56965] notifying Txid:c3b569659d786dc2c1442149cf4d37523199c03def303fe2b0af020edbd02bfe, channelID:mychannel
+[36m2020-05-08 07:01:05.296 UTC [chaincode] Execute -> DEBU 7fb[0m Exit
+[34m2020-05-08 07:01:05.296 UTC [endorser] callChaincode -> INFO 7fc[0m [mychannel][c3b56965] Exit chaincode: name:"money_demo"  (2ms)
+[36m2020-05-08 07:01:05.296 UTC [lockbasedtxmgr] GetTxSimulationResults -> DEBU 7fd[0m Simulation completed, getting simulation results
+[36m2020-05-08 07:01:05.296 UTC [lockbasedtxmgr] Done -> DEBU 7fe[0m Done with transaction simulation / query execution [c3b569659d786dc2c1442149cf4d37523199c03def303fe2b0af020edbd02bfe]
+[36m2020-05-08 07:01:05.296 UTC [endorser] SimulateProposal -> DEBU 7ff[0m [mychannel][c3b56965] Exit
+[31m2020-05-08 07:01:05.296 UTC [endorser] ProcessProposal -> ERRO 800[0m [mychannel][c3b56965] simulateProposal() resulted in chaincode name:"money_demo"  response status 500 for txid: c3b569659d786dc2c1442149cf4d37523199c03def303fe2b0af020edbd02bfe
+[36m2020-05-08 07:01:05.296 UTC [lockbasedtxmgr] Done -> DEBU 801[0m Done with transaction simulation / query execution [c3b569659d786dc2c1442149cf4d37523199c03def303fe2b0af020edbd02bfe]
+[36m2020-05-08 07:01:05.296 UTC [endorser] func1 -> DEBU 802[0m Exit: request from 192.168.0.200:50350
+[34m2020-05-08 07:01:05.296 UTC [comm.grpc.server] 1 -> INFO 803[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=192.168.0.200:50350 grpc.code=OK grpc.call_duration=3.443388ms
+[36m2020-05-08 07:01:05.299 UTC [grpc] infof -> DEBU 804[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:05.299 UTC [grpc] warningf -> DEBU 805[0m transport: http2Server.HandleStreams failed to read frame: read tcp 192.168.0.113:7051->192.168.0.200:50350: read: connection reset by peer
+[36m2020-05-08 07:01:05.299 UTC [grpc] infof -> DEBU 806[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:05.371 UTC [endorser] ProcessProposal -> DEBU 807[0m Entering: request from 192.168.0.200:50354
+[36m2020-05-08 07:01:05.371 UTC [protoutils] ValidateProposalMessage -> DEBU 808[0m ValidateProposalMessage starts for signed proposal 0xc00024f770
+[36m2020-05-08 07:01:05.371 UTC [protoutils] validateChannelHeader -> DEBU 809[0m validateChannelHeader info: header type 3
+[36m2020-05-08 07:01:05.371 UTC [protoutils] checkSignatureFromCreator -> DEBU 80a[0m begin
+[36m2020-05-08 07:01:05.371 UTC [msp] GetManagerForChain -> DEBU 80b[0m Returning existing manager for channel 'mychannel'
+[36m2020-05-08 07:01:05.371 UTC [protoutils] checkSignatureFromCreator -> DEBU 80c[0m creator is &{OrgAMSP 10f12425a080c076ff5716fcffcb09efea373400a179ebcf01b8989fee536ad2}
+[36m2020-05-08 07:01:05.371 UTC [protoutils] checkSignatureFromCreator -> DEBU 80d[0m creator is valid
+[36m2020-05-08 07:01:05.371 UTC [msp.identity] Verify -> DEBU 80e[0m Verify: digest = 00000000  2f d7 f0 e5 d1 17 9e 52  72 e3 21 34 2a f5 1a 65  |/......Rr.!4*..e|
+00000010  0e 02 64 f0 22 cf 8e be  7c 5f aa 9d 72 08 4f 30  |..d."...|_..r.O0|
+[36m2020-05-08 07:01:05.371 UTC [msp.identity] Verify -> DEBU 80f[0m Verify: sig = 00000000  30 45 02 21 00 bc c9 7a  f5 c3 da 37 34 5e 3d 11  |0E.!...z...74^=.|
+00000010  db ae 5f 20 58 48 a9 8e  70 32 7d 05 f3 8e 69 07  |.._ XH..p2}...i.|
+00000020  78 e5 e3 a1 6e 02 20 38  f5 a0 00 5c 3c 32 f3 12  |x...n. 8...\<2..|
+00000030  66 a3 7b b9 2c 24 3c 5e  c4 68 3a 20 ce 30 43 74  |f.{.,$<^.h: .0Ct|
+00000040  2c 4d c8 b1 1b 18 10                              |,M.....|
+[36m2020-05-08 07:01:05.372 UTC [protoutils] checkSignatureFromCreator -> DEBU 810[0m exits successfully
+[36m2020-05-08 07:01:05.372 UTC [protoutils] validateChaincodeProposalMessage -> DEBU 811[0m validateChaincodeProposalMessage starts for proposal 0xc00013aa10, header 0xc00024fb80
+[36m2020-05-08 07:01:05.372 UTC [protoutils] validateChaincodeProposalMessage -> DEBU 812[0m validateChaincodeProposalMessage info: header extension references chaincode name:"money_demo" 
+[36m2020-05-08 07:01:05.372 UTC [endorser] preProcess -> DEBU 813[0m [mychannel][f0588ff5] processing txid: f0588ff52092117104f7e3b9dcc3174d93ac7e7924ce184aefcb81357ca74343
+[36m2020-05-08 07:01:05.372 UTC [fsblkstorage] retrieveTransactionByID -> DEBU 814[0m retrieveTransactionByID() - txId = [f0588ff52092117104f7e3b9dcc3174d93ac7e7924ce184aefcb81357ca74343]
+[36m2020-05-08 07:01:05.372 UTC [aclmgmt] CheckACL -> DEBU 815[0m acl policy not found in config for resource peer/Propose
+[36m2020-05-08 07:01:05.372 UTC [policies] Evaluate -> DEBU 816[0m == Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers ==
+[36m2020-05-08 07:01:05.372 UTC [policies] Evaluate -> DEBU 817[0m This is an implicit meta policy, it will trigger other policy evaluations, whose failures may be benign
+[36m2020-05-08 07:01:05.372 UTC [policies] Evaluate -> DEBU 818[0m == Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers ==
+[36m2020-05-08 07:01:05.372 UTC [cauthdsl] func1 -> DEBU 819[0m 0xc0001100e0 gate 1588921265372320876 evaluation starts
+[36m2020-05-08 07:01:05.372 UTC [cauthdsl] func2 -> DEBU 81a[0m 0xc0001100e0 signed by 0 principal evaluation starts (used [false])
+[36m2020-05-08 07:01:05.372 UTC [cauthdsl] func2 -> DEBU 81b[0m 0xc0001100e0 processing identity 0 with bytes of 1151890
+[36m2020-05-08 07:01:05.372 UTC [cauthdsl] func2 -> DEBU 81c[0m 0xc0001100e0 principal matched by identity 0
+[36m2020-05-08 07:01:05.372 UTC [msp.identity] Verify -> DEBU 81d[0m Verify: digest = 00000000  2f d7 f0 e5 d1 17 9e 52  72 e3 21 34 2a f5 1a 65  |/......Rr.!4*..e|
+00000010  0e 02 64 f0 22 cf 8e be  7c 5f aa 9d 72 08 4f 30  |..d."...|_..r.O0|
+[36m2020-05-08 07:01:05.372 UTC [msp.identity] Verify -> DEBU 81e[0m Verify: sig = 00000000  30 45 02 21 00 bc c9 7a  f5 c3 da 37 34 5e 3d 11  |0E.!...z...74^=.|
+00000010  db ae 5f 20 58 48 a9 8e  70 32 7d 05 f3 8e 69 07  |.._ XH..p2}...i.|
+00000020  78 e5 e3 a1 6e 02 20 38  f5 a0 00 5c 3c 32 f3 12  |x...n. 8...\<2..|
+00000030  66 a3 7b b9 2c 24 3c 5e  c4 68 3a 20 ce 30 43 74  |f.{.,$<^.h: .0Ct|
+00000040  2c 4d c8 b1 1b 18 10                              |,M.....|
+[36m2020-05-08 07:01:05.372 UTC [cauthdsl] func2 -> DEBU 81f[0m 0xc0001100e0 principal evaluation succeeds for identity 0
+[36m2020-05-08 07:01:05.372 UTC [cauthdsl] func2 -> DEBU 820[0m 0xc0001100e0 signed by 1 principal evaluation starts (used [true])
+[36m2020-05-08 07:01:05.372 UTC [cauthdsl] func2 -> DEBU 821[0m 0xc0001100e0 skipping identity 0 because it has already been used
+[36m2020-05-08 07:01:05.372 UTC [cauthdsl] func2 -> DEBU 822[0m 0xc0001100e0 principal evaluation fails
+[36m2020-05-08 07:01:05.372 UTC [cauthdsl] func1 -> DEBU 823[0m 0xc0001100e0 gate 1588921265372320876 evaluation succeeds
+[36m2020-05-08 07:01:05.372 UTC [policies] Evaluate -> DEBU 824[0m Signature set satisfies policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:05.372 UTC [policies] Evaluate -> DEBU 825[0m == Done Evaluating *cauthdsl.policy Policy /Channel/Application/OrgAMSP/Writers
+[36m2020-05-08 07:01:05.372 UTC [policies] Evaluate -> DEBU 826[0m Signature set satisfies policy /Channel/Application/Writers
+[36m2020-05-08 07:01:05.372 UTC [policies] Evaluate -> DEBU 827[0m == Done Evaluating *policies.implicitMetaPolicy Policy /Channel/Application/Writers
+[36m2020-05-08 07:01:05.372 UTC [lockbasedtxmgr] NewTxSimulator -> DEBU 828[0m constructing new tx simulator
+[36m2020-05-08 07:01:05.372 UTC [lockbasedtxmgr] newLockBasedTxSimulator -> DEBU 829[0m constructing new tx simulator txid = [f0588ff52092117104f7e3b9dcc3174d93ac7e7924ce184aefcb81357ca74343]
+[36m2020-05-08 07:01:05.372 UTC [endorser] SimulateProposal -> DEBU 82a[0m [mychannel][f0588ff5] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:05.372 UTC [stateleveldb] GetState -> DEBU 82b[0m GetState(). ns=lscc, key=money_demo
+[36m2020-05-08 07:01:05.372 UTC [ccprovider] GetChaincodeData -> DEBU 82c[0m Getting chaincode data for <money_demo, 1.0> from cache
+[34m2020-05-08 07:01:05.372 UTC [endorser] callChaincode -> INFO 82d[0m [mychannel][f0588ff5] Entry chaincode: name:"money_demo" 
+[36m2020-05-08 07:01:05.372 UTC [chaincode] Execute -> DEBU 82e[0m Entry
+[36m2020-05-08 07:01:05.373 UTC [chaincode] handleMessage -> DEBU 82f[0m [f0588ff5] Fabric side handling ChaincodeMessage of type: GET_STATE in state ready
+[36m2020-05-08 07:01:05.373 UTC [chaincode] HandleTransaction -> DEBU 830[0m [f0588ff5] handling GET_STATE from chaincode
+[36m2020-05-08 07:01:05.373 UTC [chaincode] HandleGetState -> DEBU 831[0m [f0588ff5] getting state for chaincode money_demo, key count_c, channel mychannel
+[36m2020-05-08 07:01:05.373 UTC [stateleveldb] GetState -> DEBU 832[0m GetState(). ns=money_demo, key=count_c
+[36m2020-05-08 07:01:05.373 UTC [chaincode] HandleGetState -> DEBU 833[0m [f0588ff5] No state associated with key: count_c. Sending RESPONSE with an empty payload
+[36m2020-05-08 07:01:05.373 UTC [chaincode] HandleTransaction -> DEBU 834[0m [f0588ff5] Completed GET_STATE. Sending RESPONSE
+[36m2020-05-08 07:01:05.374 UTC [chaincode] handleMessage -> DEBU 835[0m [f0588ff5] Fabric side handling ChaincodeMessage of type: COMPLETED in state ready
+[36m2020-05-08 07:01:05.374 UTC [chaincode] Notify -> DEBU 836[0m [f0588ff5] notifying Txid:f0588ff52092117104f7e3b9dcc3174d93ac7e7924ce184aefcb81357ca74343, channelID:mychannel
+[36m2020-05-08 07:01:05.374 UTC [chaincode] Execute -> DEBU 837[0m Exit
+[34m2020-05-08 07:01:05.374 UTC [endorser] callChaincode -> INFO 838[0m [mychannel][f0588ff5] Exit chaincode: name:"money_demo"  (1ms)
+[36m2020-05-08 07:01:05.374 UTC [lockbasedtxmgr] GetTxSimulationResults -> DEBU 839[0m Simulation completed, getting simulation results
+[36m2020-05-08 07:01:05.374 UTC [lockbasedtxmgr] Done -> DEBU 83a[0m Done with transaction simulation / query execution [f0588ff52092117104f7e3b9dcc3174d93ac7e7924ce184aefcb81357ca74343]
+[36m2020-05-08 07:01:05.374 UTC [endorser] SimulateProposal -> DEBU 83b[0m [mychannel][f0588ff5] Exit
+[31m2020-05-08 07:01:05.374 UTC [endorser] ProcessProposal -> ERRO 83c[0m [mychannel][f0588ff5] simulateProposal() resulted in chaincode name:"money_demo"  response status 500 for txid: f0588ff52092117104f7e3b9dcc3174d93ac7e7924ce184aefcb81357ca74343
+[36m2020-05-08 07:01:05.374 UTC [lockbasedtxmgr] Done -> DEBU 83d[0m Done with transaction simulation / query execution [f0588ff52092117104f7e3b9dcc3174d93ac7e7924ce184aefcb81357ca74343]
+[36m2020-05-08 07:01:05.374 UTC [endorser] func1 -> DEBU 83e[0m Exit: request from 192.168.0.200:50354
+[34m2020-05-08 07:01:05.374 UTC [comm.grpc.server] 1 -> INFO 83f[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=192.168.0.200:50354 grpc.code=OK grpc.call_duration=3.214261ms
+[36m2020-05-08 07:01:05.377 UTC [grpc] infof -> DEBU 840[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:05.377 UTC [grpc] infof -> DEBU 841[0m transport: loopyWriter.run returning. connection error: desc = "transport is closing"
+[36m2020-05-08 07:01:06.117 UTC [peer.gossip.mcs] VerifyBlock -> DEBU 842[0m Got policy manager for channel [mychannel] with flag [true]
+[36m2020-05-08 07:01:06.117 UTC [peer.gossip.mcs] VerifyBlock -> DEBU 843[0m Got block validation policy for channel [mychannel] with flag [true]
+[36m2020-05-08 07:01:06.117 UTC [policies] Evaluate -> DEBU 844[0m == Evaluating *policies.implicitMetaPolicy Policy /Channel/Orderer/BlockValidation ==
+[36m2020-05-08 07:01:06.117 UTC [policies] Evaluate -> DEBU 845[0m This is an implicit meta policy, it will trigger other policy evaluations, whose failures may be benign
+[36m2020-05-08 07:01:06.117 UTC [policies] Evaluate -> DEBU 846[0m == Evaluating *cauthdsl.policy Policy /Channel/Orderer/OrdererOrg/Writers ==
+[36m2020-05-08 07:01:06.117 UTC [cauthdsl] func1 -> DEBU 847[0m 0xc0001ac890 gate 1588921266117363669 evaluation starts
+[36m2020-05-08 07:01:06.117 UTC [cauthdsl] func2 -> DEBU 848[0m 0xc0001ac890 signed by 0 principal evaluation starts (used [false])
+[36m2020-05-08 07:01:06.117 UTC [cauthdsl] func2 -> DEBU 849[0m 0xc0001ac890 processing identity 0 with bytes of 1151890
+[36m2020-05-08 07:01:06.117 UTC [cauthdsl] func2 -> DEBU 84a[0m 0xc0001ac890 principal matched by identity 0
+[36m2020-05-08 07:01:06.117 UTC [msp.identity] Verify -> DEBU 84b[0m Verify: digest = 00000000  7f 07 58 12 fb 0c a1 1f  6e 99 fb 97 d0 a1 e9 22  |..X.....n......"|
+00000010  90 63 f0 b0 36 3b 69 df  3b 1a 0c e4 81 09 77 2a  |.c..6;i.;.....w*|
+[36m2020-05-08 07:01:06.117 UTC [msp.identity] Verify -> DEBU 84c[0m Verify: sig = 00000000  30 44 02 20 67 59 5a d3  dc de 1c 7e 52 bf 5b 57  |0D. gYZ....~R.[W|
+00000010  70 e4 c4 f8 32 4f c2 2f  fb 53 21 fd e7 d5 72 02  |p...2O./.S!...r.|
+00000020  b2 0f 04 0e 02 20 1f 6f  e0 cd 0f 2e fc 4e 04 ef  |..... .o.....N..|
+00000030  12 5d 91 b2 25 4a 6e 4c  8b 4c 29 ad 4d 70 0c 12  |.]..%JnL.L).Mp..|
+00000040  33 30 ca 3e 8e 5a                                 |30.>.Z|
+[36m2020-05-08 07:01:06.117 UTC [cauthdsl] func2 -> DEBU 84d[0m 0xc0001ac890 principal evaluation succeeds for identity 0
+[36m2020-05-08 07:01:06.117 UTC [cauthdsl] func1 -> DEBU 84e[0m 0xc0001ac890 gate 1588921266117363669 evaluation succeeds
+[36m2020-05-08 07:01:06.117 UTC [policies] Evaluate -> DEBU 84f[0m Signature set satisfies policy /Channel/Orderer/OrdererOrg/Writers
+[36m2020-05-08 07:01:06.117 UTC [policies] Evaluate -> DEBU 850[0m == Done Evaluating *cauthdsl.policy Policy /Channel/Orderer/OrdererOrg/Writers
+[36m2020-05-08 07:01:06.117 UTC [policies] Evaluate -> DEBU 851[0m Signature set satisfies policy /Channel/Orderer/BlockValidation
+[36m2020-05-08 07:01:06.117 UTC [policies] Evaluate -> DEBU 852[0m == Done Evaluating *policies.implicitMetaPolicy Policy /Channel/Orderer/BlockValidation
+[36m2020-05-08 07:01:06.117 UTC [blocksProvider] DeliverBlocks -> DEBU 853[0m [mychannel] Adding payload to local buffer, blockNum = [3]
+[36m2020-05-08 07:01:06.117 UTC [gossip.state] addPayload -> DEBU 854[0m [mychannel] Adding payload to local buffer, blockNum = [3]
+[36m2020-05-08 07:01:06.117 UTC [gossip.state] addPayload -> DEBU 855[0m Blocks payloads buffer size for channel [mychannel] is 1 blocks
+[36m2020-05-08 07:01:06.117 UTC [blocksProvider] DeliverBlocks -> DEBU 856[0m [mychannel] Gossiping block [3], peers number [0]
+[36m2020-05-08 07:01:06.118 UTC [gossip.channel] AddToMsgStore -> DEBU 857[0m Adding GossipMessage: Channel: mychannel, nonce: 0, tag: CHAN_AND_ORG Block message: {Data: 9690 bytes, seq: 3}, Envelope: 9714 bytes, Signature: 0 bytes to the block puller
+[36m2020-05-08 07:01:06.118 UTC [gossip.pull] Add -> DEBU 858[0m Added 3, total items: 3
+[36m2020-05-08 07:01:06.118 UTC [gossip.state] deliverPayloads -> DEBU 859[0m [mychannel] Ready to transfer payloads (blocks) to the ledger, next block number is = [3]
+[36m2020-05-08 07:01:06.118 UTC [gossip.state] deliverPayloads -> DEBU 85a[0m [mychannel] Transferring block [3] with 3 transaction(s) to the ledger
+[34m2020-05-08 07:01:06.118 UTC [gossip.privdata] StoreBlock -> INFO 85b[0m [mychannel] Received block [3] from buffer
+[36m2020-05-08 07:01:06.118 UTC [gossip.privdata] StoreBlock -> DEBU 85c[0m [mychannel] Validating block [3]
+[36m2020-05-08 07:01:06.118 UTC [committer.txvalidator] Validate -> DEBU 85d[0m [mychannel] START Block Validation for block [3]
+[36m2020-05-08 07:01:06.118 UTC [committer.txvalidator] Validate -> DEBU 85e[0m expecting 3 block validation responses
+[36m2020-05-08 07:01:06.118 UTC [committer.txvalidator] validateTx -> DEBU 85f[0m [mychannel] validateTx starts for block 0xc002c97e80 env 0xc002e34820 txn 2
+[36m2020-05-08 07:01:06.118 UTC [protoutils] ValidateTransaction -> DEBU 860[0m ValidateTransactionEnvelope starts for envelope 0xc002e34820
+[36m2020-05-08 07:01:06.118 UTC [protoutils] ValidateTransaction -> DEBU 861[0m Header is channel_header:"\010\003\032\013\010\261\207\324\365\005\020\347\200\304\020\"\tmychannel*@66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39:\016\022\014\022\nmoney_demo" signature_header:"\n\226\006\n\007OrgAMSP\022\212\006-----BEGIN CERTIFICATE-----\nMIICEjCCAbigAwIBAgIRANQOgv4QaBKreiFpdCi0MgowCgYIKoZIzj0EAwIwYzEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xETAPBgNVBAoTCG9yZ2EuY29tMRQwEgYDVQQDEwtjYS5vcmdhLmNv\nbTAeFw0yMDA1MDgwNjU0MDBaFw0zMDA1MDYwNjU0MDBaMGMxCzAJBgNVBAYTAlVT\nMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMQ4w\nDAYDVQQLEwVhZG1pbjEXMBUGA1UEAwwOQWRtaW5Ab3JnYS5jb20wWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAQE/A8VeVve/T/XBptIn76qwlkDUdbC+q2YEMqPBEES\nQ3r+sD9HRNZ+Mw/0t9un7Yuyl0D3bsP2UWYgir1QTqeeo00wSzAOBgNVHQ8BAf8E\nBAMCB4AwDAYDVR0TAQH/BAIwADArBgNVHSMEJDAigCA7CPvDp6Qmf+RxNkCnp3zy\n64GVMVE191Zxn5lSsgk3oTAKBggqhkjOPQQDAgNIADBFAiEAh9gNo0WCPXS+L5Ss\n+ru1GG0M9TOHp5RHeEyQiTnBE7cCIFxyOQOvjX9Q49h3s7q7ohBdFDzS3w9YlFsE\nsbJhBfow\n-----END CERTIFICATE-----\n\022\030Ix\254\020\333X\351\352a!\006\347\2534\237\230*N\326\210\222\nn{" 
+[36m2020-05-08 07:01:06.118 UTC [protoutils] validateChannelHeader -> DEBU 862[0m validateChannelHeader info: header type 3
+[36m2020-05-08 07:01:06.118 UTC [protoutils] checkSignatureFromCreator -> DEBU 863[0m begin
+[36m2020-05-08 07:01:06.118 UTC [msp] GetManagerForChain -> DEBU 864[0m Returning existing manager for channel 'mychannel'
+[36m2020-05-08 07:01:06.118 UTC [protoutils] checkSignatureFromCreator -> DEBU 865[0m creator is &{OrgAMSP 10f12425a080c076ff5716fcffcb09efea373400a179ebcf01b8989fee536ad2}
+[36m2020-05-08 07:01:06.118 UTC [protoutils] checkSignatureFromCreator -> DEBU 866[0m creator is valid
+[36m2020-05-08 07:01:06.118 UTC [msp.identity] Verify -> DEBU 867[0m Verify: digest = 00000000  bf 9c 11 8c 13 36 cd 45  72 a0 1e 30 fb f0 02 a3  |.....6.Er..0....|
+00000010  99 05 dd 29 20 f6 95 43  55 d6 48 46 9f b3 19 10  |...) ..CU.HF....|
+[36m2020-05-08 07:01:06.118 UTC [msp.identity] Verify -> DEBU 868[0m Verify: sig = 00000000  30 44 02 20 60 4b 9c 30  35 76 b1 e0 d2 83 e8 be  |0D. `K.05v......|
+00000010  f4 23 fe be b1 f4 4a 10  61 e5 f6 f9 64 8c 0c e9  |.#....J.a...d...|
+00000020  10 2d 8e 99 02 20 2d 39  bd 3f b7 fa ab 8b 98 fc  |.-... -9.?......|
+00000030  ab 7c ae 5e 42 69 07 95  15 2e 50 b7 83 04 8d a4  |.|.^Bi....P.....|
+00000040  94 73 fe 4a 84 df                                 |.s.J..|
+[36m2020-05-08 07:01:06.118 UTC [protoutils] checkSignatureFromCreator -> DEBU 869[0m exits successfully
+[36m2020-05-08 07:01:06.118 UTC [protoutils] validateEndorserTransaction -> DEBU 86a[0m validateEndorserTransaction starts for data 0xc002c6d800, header channel_header:"\010\003\032\013\010\261\207\324\365\005\020\347\200\304\020\"\tmychannel*@66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39:\016\022\014\022\nmoney_demo" signature_header:"\n\226\006\n\007OrgAMSP\022\212\006-----BEGIN CERTIFICATE-----\nMIICEjCCAbigAwIBAgIRANQOgv4QaBKreiFpdCi0MgowCgYIKoZIzj0EAwIwYzEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xETAPBgNVBAoTCG9yZ2EuY29tMRQwEgYDVQQDEwtjYS5vcmdhLmNv\nbTAeFw0yMDA1MDgwNjU0MDBaFw0zMDA1MDYwNjU0MDBaMGMxCzAJBgNVBAYTAlVT\nMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMQ4w\nDAYDVQQLEwVhZG1pbjEXMBUGA1UEAwwOQWRtaW5Ab3JnYS5jb20wWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAQE/A8VeVve/T/XBptIn76qwlkDUdbC+q2YEMqPBEES\nQ3r+sD9HRNZ+Mw/0t9un7Yuyl0D3bsP2UWYgir1QTqeeo00wSzAOBgNVHQ8BAf8E\nBAMCB4AwDAYDVR0TAQH/BAIwADArBgNVHSMEJDAigCA7CPvDp6Qmf+RxNkCnp3zy\n64GVMVE191Zxn5lSsgk3oTAKBggqhkjOPQQDAgNIADBFAiEAh9gNo0WCPXS+L5Ss\n+ru1GG0M9TOHp5RHeEyQiTnBE7cCIFxyOQOvjX9Q49h3s7q7ohBdFDzS3w9YlFsE\nsbJhBfow\n-----END CERTIFICATE-----\n\022\030Ix\254\020\333X\351\352a!\006\347\2534\237\230*N\326\210\222\nn{" 
+[36m2020-05-08 07:01:06.118 UTC [protoutils] validateEndorserTransaction -> DEBU 86b[0m validateEndorserTransaction info: there are 1 actions
+[36m2020-05-08 07:01:06.118 UTC [protoutils] validateEndorserTransaction -> DEBU 86c[0m validateEndorserTransaction info: signature header is valid
+[36m2020-05-08 07:01:06.118 UTC [protoutils] ValidateTransaction -> DEBU 86d[0m ValidateTransactionEnvelope returns err %!s(<nil>)
+[36m2020-05-08 07:01:06.119 UTC [committer.txvalidator] validateTx -> DEBU 86e[0m Transaction is for channel mychannel
+[36m2020-05-08 07:01:06.119 UTC [fsblkstorage] retrieveTransactionByID -> DEBU 86f[0m retrieveTransactionByID() - txId = [66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39]
+[36m2020-05-08 07:01:06.119 UTC [committer.txvalidator] validateTx -> DEBU 870[0m Validating transaction vscc tx validate
+[36m2020-05-08 07:01:06.119 UTC [committer.txvalidator] VSCCValidateTx -> DEBU 871[0m [mychannel] VSCCValidateTx starts for bytes 0xc002ed6400
+[36m2020-05-08 07:01:06.119 UTC [lockbasedtxmgr] newQueryExecutor -> DEBU 872[0m constructing new query executor txid = [2be7b805-e3d1-4cd5-83b9-c65c6313dde8]
+[36m2020-05-08 07:01:06.119 UTC [stateleveldb] GetState -> DEBU 873[0m GetState(). ns=lscc, key=money_demo
+[36m2020-05-08 07:01:06.119 UTC [lockbasedtxmgr] Done -> DEBU 874[0m Done with transaction simulation / query execution [2be7b805-e3d1-4cd5-83b9-c65c6313dde8]
+[36m2020-05-08 07:01:06.119 UTC [committer.txvalidator] VSCCValidateTxForCC -> DEBU 875[0m Validating Tx 66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39, seq 2 out of 3 in block 3 for channel mychannel with validation plugin vscc with plugin
+[36m2020-05-08 07:01:06.119 UTC [lockbasedtxmgr] newQueryExecutor -> DEBU 876[0m constructing new query executor txid = [b0f3cdf9-a4cc-4bb0-abb7-9ef8e540b742]
+[36m2020-05-08 07:01:06.119 UTC [lockbasedtxmgr] Done -> DEBU 877[0m Done with transaction simulation / query execution [b0f3cdf9-a4cc-4bb0-abb7-9ef8e540b742]
+[36m2020-05-08 07:01:06.119 UTC [cauthdsl] func1 -> DEBU 878[0m 0xc000348c30 gate 1588921266119414253 evaluation starts
+[36m2020-05-08 07:01:06.119 UTC [cauthdsl] func2 -> DEBU 879[0m 0xc000348c30 signed by 0 principal evaluation starts (used [false])
+[36m2020-05-08 07:01:06.119 UTC [cauthdsl] func2 -> DEBU 87a[0m 0xc000348c30 processing identity 0 with bytes of 1151890
+[36m2020-05-08 07:01:06.119 UTC [msp] satisfiesPrincipalInternalPreV13 -> DEBU 87b[0m Checking if identity satisfies role [PEER] for OrgAMSP
+[36m2020-05-08 07:01:06.119 UTC [msp] Validate -> DEBU 87c[0m MSP OrgAMSP validating identity
+[36m2020-05-08 07:01:06.119 UTC [msp] getCertificationChain -> DEBU 87d[0m MSP OrgAMSP getting certification chain
+[36m2020-05-08 07:01:06.120 UTC [msp] hasOURole -> DEBU 87e[0m MSP OrgAMSP checking if the identity is a client
+[36m2020-05-08 07:01:06.120 UTC [msp] getCertificationChain -> DEBU 87f[0m MSP OrgAMSP getting certification chain
+[36m2020-05-08 07:01:06.120 UTC [cauthdsl] func2 -> DEBU 880[0m 0xc000348c30 principal matched by identity 0
+[36m2020-05-08 07:01:06.120 UTC [msp.identity] Verify -> DEBU 881[0m Verify: digest = 00000000  c0 5c 31 d7 d1 17 38 0a  02 80 3b f1 5a 09 6a fd  |.\1...8...;.Z.j.|
+00000010  4d 0d 21 5b 79 21 99 0c  a1 8e d1 77 35 fc f7 bc  |M.![y!.....w5...|
+[36m2020-05-08 07:01:06.120 UTC [msp.identity] Verify -> DEBU 882[0m Verify: sig = 00000000  30 44 02 20 77 a8 aa ba  56 4f 2d 92 9e fe 14 e1  |0D. w...VO-.....|
+00000010  f1 ff ce 71 ff f8 61 e3  09 d8 30 29 c6 fa e3 93  |...q..a...0)....|
+00000020  68 f5 eb 5e 02 20 7b 91  21 57 02 2f 04 7d 79 cf  |h..^. {.!W./.}y.|
+00000030  dd 51 e9 c4 ee b0 c0 c5  22 f4 ab a0 9d d0 a6 bf  |.Q......".......|
+00000040  a7 9d a4 4c 9c cb                                 |...L..|
+[36m2020-05-08 07:01:06.120 UTC [cauthdsl] func2 -> DEBU 883[0m 0xc000348c30 principal evaluation succeeds for identity 0
+[36m2020-05-08 07:01:06.120 UTC [cauthdsl] func1 -> DEBU 884[0m 0xc000348c30 gate 1588921266119414253 evaluation succeeds
+[36m2020-05-08 07:01:06.120 UTC [vscc] Validate -> DEBU 885[0m block 3, namespace: money_demo, tx 2 validation results is: <nil>
+[36m2020-05-08 07:01:06.120 UTC [committer.txvalidator] ValidateWithPlugin -> DEBU 886[0m Transaction 66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39 appears to be valid
+[36m2020-05-08 07:01:06.120 UTC [committer.txvalidator] VSCCValidateTx -> DEBU 887[0m [mychannel] VSCCValidateTx completes env bytes 0xc002ed6400
+[36m2020-05-08 07:01:06.120 UTC [committer.txvalidator] validateTx -> DEBU 888[0m [mychannel] validateTx completes for block 0xc002c97e80 env 0xc002e34820 txn 2
+[36m2020-05-08 07:01:06.120 UTC [committer.txvalidator] Validate -> DEBU 889[0m got result for idx 2, code 0
+[36m2020-05-08 07:01:06.120 UTC [committer.txvalidator] validateTx -> DEBU 88a[0m [mychannel] validateTx starts for block 0xc002c97e80 env 0xc002e80140 txn 0
+[36m2020-05-08 07:01:06.120 UTC [protoutils] ValidateTransaction -> DEBU 88b[0m ValidateTransactionEnvelope starts for envelope 0xc002e80140
+[36m2020-05-08 07:01:06.120 UTC [protoutils] ValidateTransaction -> DEBU 88c[0m Header is channel_header:"\010\003\032\014\010\260\207\324\365\005\020\377\344\342\205\002\"\tmychannel*@ca64fe1ec22099f54ef03cb7ab9644c6bb2dfc2a2b92ac3bef71f308e5803a7a:\016\022\014\022\nmoney_demo" signature_header:"\n\226\006\n\007OrgAMSP\022\212\006-----BEGIN CERTIFICATE-----\nMIICEjCCAbigAwIBAgIRANQOgv4QaBKreiFpdCi0MgowCgYIKoZIzj0EAwIwYzEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xETAPBgNVBAoTCG9yZ2EuY29tMRQwEgYDVQQDEwtjYS5vcmdhLmNv\nbTAeFw0yMDA1MDgwNjU0MDBaFw0zMDA1MDYwNjU0MDBaMGMxCzAJBgNVBAYTAlVT\nMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMQ4w\nDAYDVQQLEwVhZG1pbjEXMBUGA1UEAwwOQWRtaW5Ab3JnYS5jb20wWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAQE/A8VeVve/T/XBptIn76qwlkDUdbC+q2YEMqPBEES\nQ3r+sD9HRNZ+Mw/0t9un7Yuyl0D3bsP2UWYgir1QTqeeo00wSzAOBgNVHQ8BAf8E\nBAMCB4AwDAYDVR0TAQH/BAIwADArBgNVHSMEJDAigCA7CPvDp6Qmf+RxNkCnp3zy\n64GVMVE191Zxn5lSsgk3oTAKBggqhkjOPQQDAgNIADBFAiEAh9gNo0WCPXS+L5Ss\n+ru1GG0M9TOHp5RHeEyQiTnBE7cCIFxyOQOvjX9Q49h3s7q7ohBdFDzS3w9YlFsE\nsbJhBfow\n-----END CERTIFICATE-----\n\022\030\237\356\013\3606e\303m'\272\036R\355:\330o&l\275\347%\340\364\036" 
+[36m2020-05-08 07:01:06.121 UTC [protoutils] validateChannelHeader -> DEBU 88d[0m validateChannelHeader info: header type 3
+[36m2020-05-08 07:01:06.121 UTC [protoutils] checkSignatureFromCreator -> DEBU 88e[0m begin
+[36m2020-05-08 07:01:06.121 UTC [msp] GetManagerForChain -> DEBU 88f[0m Returning existing manager for channel 'mychannel'
+[36m2020-05-08 07:01:06.121 UTC [protoutils] checkSignatureFromCreator -> DEBU 890[0m creator is &{OrgAMSP 10f12425a080c076ff5716fcffcb09efea373400a179ebcf01b8989fee536ad2}
+[36m2020-05-08 07:01:06.121 UTC [protoutils] checkSignatureFromCreator -> DEBU 891[0m creator is valid
+[36m2020-05-08 07:01:06.121 UTC [msp.identity] Verify -> DEBU 892[0m Verify: digest = 00000000  33 1f 3a e4 7e 1a 8a 9c  48 c8 94 ef 7a 0a 3d d5  |3.:.~...H...z.=.|
+00000010  30 8f aa 9c da 6c 97 61  5e 34 41 58 66 0a 7f cc  |0....l.a^4AXf...|
+[36m2020-05-08 07:01:06.121 UTC [msp.identity] Verify -> DEBU 893[0m Verify: sig = 00000000  30 44 02 20 4b 43 9d da  09 09 70 62 6d de 90 51  |0D. KC....pbm..Q|
+00000010  82 b3 90 e7 7c 08 ea e9  31 ae cc 72 0f d7 9a c2  |....|...1..r....|
+00000020  40 82 d2 58 02 20 05 4f  cd 2a 30 90 7e 18 21 3b  |@..X. .O.*0.~.!;|
+00000030  af 6b f5 d0 e9 52 49 da  d7 e8 24 58 ea 3a 3b 14  |.k...RI...$X.:;.|
+00000040  b6 6b 7a fb f0 91                                 |.kz...|
+[36m2020-05-08 07:01:06.121 UTC [protoutils] checkSignatureFromCreator -> DEBU 894[0m exits successfully
+[36m2020-05-08 07:01:06.121 UTC [protoutils] validateEndorserTransaction -> DEBU 895[0m validateEndorserTransaction starts for data 0xc002e67000, header channel_header:"\010\003\032\014\010\260\207\324\365\005\020\377\344\342\205\002\"\tmychannel*@ca64fe1ec22099f54ef03cb7ab9644c6bb2dfc2a2b92ac3bef71f308e5803a7a:\016\022\014\022\nmoney_demo" signature_header:"\n\226\006\n\007OrgAMSP\022\212\006-----BEGIN CERTIFICATE-----\nMIICEjCCAbigAwIBAgIRANQOgv4QaBKreiFpdCi0MgowCgYIKoZIzj0EAwIwYzEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xETAPBgNVBAoTCG9yZ2EuY29tMRQwEgYDVQQDEwtjYS5vcmdhLmNv\nbTAeFw0yMDA1MDgwNjU0MDBaFw0zMDA1MDYwNjU0MDBaMGMxCzAJBgNVBAYTAlVT\nMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMQ4w\nDAYDVQQLEwVhZG1pbjEXMBUGA1UEAwwOQWRtaW5Ab3JnYS5jb20wWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAQE/A8VeVve/T/XBptIn76qwlkDUdbC+q2YEMqPBEES\nQ3r+sD9HRNZ+Mw/0t9un7Yuyl0D3bsP2UWYgir1QTqeeo00wSzAOBgNVHQ8BAf8E\nBAMCB4AwDAYDVR0TAQH/BAIwADArBgNVHSMEJDAigCA7CPvDp6Qmf+RxNkCnp3zy\n64GVMVE191Zxn5lSsgk3oTAKBggqhkjOPQQDAgNIADBFAiEAh9gNo0WCPXS+L5Ss\n+ru1GG0M9TOHp5RHeEyQiTnBE7cCIFxyOQOvjX9Q49h3s7q7ohBdFDzS3w9YlFsE\nsbJhBfow\n-----END CERTIFICATE-----\n\022\030\237\356\013\3606e\303m'\272\036R\355:\330o&l\275\347%\340\364\036" 
+[36m2020-05-08 07:01:06.121 UTC [protoutils] validateEndorserTransaction -> DEBU 896[0m validateEndorserTransaction info: there are 1 actions
+[36m2020-05-08 07:01:06.121 UTC [protoutils] validateEndorserTransaction -> DEBU 897[0m validateEndorserTransaction info: signature header is valid
+[36m2020-05-08 07:01:06.121 UTC [protoutils] ValidateTransaction -> DEBU 898[0m ValidateTransactionEnvelope returns err %!s(<nil>)
+[36m2020-05-08 07:01:06.121 UTC [committer.txvalidator] validateTx -> DEBU 899[0m Transaction is for channel mychannel
+[36m2020-05-08 07:01:06.121 UTC [fsblkstorage] retrieveTransactionByID -> DEBU 89a[0m retrieveTransactionByID() - txId = [ca64fe1ec22099f54ef03cb7ab9644c6bb2dfc2a2b92ac3bef71f308e5803a7a]
+[36m2020-05-08 07:01:06.121 UTC [committer.txvalidator] validateTx -> DEBU 89b[0m Validating transaction vscc tx validate
+[36m2020-05-08 07:01:06.121 UTC [committer.txvalidator] VSCCValidateTx -> DEBU 89c[0m [mychannel] VSCCValidateTx starts for bytes 0xc002ed4c00
+[36m2020-05-08 07:01:06.121 UTC [lockbasedtxmgr] newQueryExecutor -> DEBU 89d[0m constructing new query executor txid = [93f0aa3c-f7fc-47cb-938d-3e92f6f38fd7]
+[36m2020-05-08 07:01:06.121 UTC [stateleveldb] GetState -> DEBU 89e[0m GetState(). ns=lscc, key=money_demo
+[36m2020-05-08 07:01:06.121 UTC [lockbasedtxmgr] Done -> DEBU 89f[0m Done with transaction simulation / query execution [93f0aa3c-f7fc-47cb-938d-3e92f6f38fd7]
+[36m2020-05-08 07:01:06.121 UTC [committer.txvalidator] VSCCValidateTxForCC -> DEBU 8a0[0m Validating Tx ca64fe1ec22099f54ef03cb7ab9644c6bb2dfc2a2b92ac3bef71f308e5803a7a, seq 0 out of 3 in block 3 for channel mychannel with validation plugin vscc with plugin
+[36m2020-05-08 07:01:06.121 UTC [lockbasedtxmgr] newQueryExecutor -> DEBU 8a1[0m constructing new query executor txid = [4f3f7979-9fd7-4fdf-89b6-3e7eb87150da]
+[36m2020-05-08 07:01:06.121 UTC [lockbasedtxmgr] Done -> DEBU 8a2[0m Done with transaction simulation / query execution [4f3f7979-9fd7-4fdf-89b6-3e7eb87150da]
+[36m2020-05-08 07:01:06.121 UTC [cauthdsl] func1 -> DEBU 8a3[0m 0xc0026c6ba0 gate 1588921266121791218 evaluation starts
+[36m2020-05-08 07:01:06.121 UTC [cauthdsl] func2 -> DEBU 8a4[0m 0xc0026c6ba0 signed by 0 principal evaluation starts (used [false])
+[36m2020-05-08 07:01:06.121 UTC [cauthdsl] func2 -> DEBU 8a5[0m 0xc0026c6ba0 processing identity 0 with bytes of 1151890
+[36m2020-05-08 07:01:06.121 UTC [cauthdsl] func2 -> DEBU 8a6[0m 0xc0026c6ba0 principal matched by identity 0
+[36m2020-05-08 07:01:06.121 UTC [msp.identity] Verify -> DEBU 8a7[0m Verify: digest = 00000000  17 b1 4c 65 1c 24 e7 fc  ac 1b f9 34 31 49 04 30  |..Le.$.....41I.0|
+00000010  37 09 bb ce df 2a a5 ce  68 6d f4 67 37 b2 d5 53  |7....*..hm.g7..S|
+[36m2020-05-08 07:01:06.121 UTC [msp.identity] Verify -> DEBU 8a8[0m Verify: sig = 00000000  30 44 02 20 6a ca c4 65  82 55 59 b7 73 9d 12 97  |0D. j..e.UY.s...|
+00000010  91 70 22 ce b0 dc 4a dd  1b 2e 16 a9 36 af 37 ce  |.p"...J.....6.7.|
+00000020  e6 d4 9e a5 02 20 63 c3  48 ea 23 c0 bf d8 7c 26  |..... c.H.#...|&|
+00000030  4d 4a 9b f2 dd 58 79 2c  b8 17 63 4d e9 d0 e2 4d  |MJ...Xy,..cM...M|
+00000040  16 16 52 54 ef 78                                 |..RT.x|
+[36m2020-05-08 07:01:06.122 UTC [cauthdsl] func2 -> DEBU 8a9[0m 0xc0026c6ba0 principal evaluation succeeds for identity 0
+[36m2020-05-08 07:01:06.122 UTC [cauthdsl] func1 -> DEBU 8aa[0m 0xc0026c6ba0 gate 1588921266121791218 evaluation succeeds
+[36m2020-05-08 07:01:06.122 UTC [vscc] Validate -> DEBU 8ab[0m block 3, namespace: money_demo, tx 0 validation results is: <nil>
+[36m2020-05-08 07:01:06.122 UTC [committer.txvalidator] ValidateWithPlugin -> DEBU 8ac[0m Transaction ca64fe1ec22099f54ef03cb7ab9644c6bb2dfc2a2b92ac3bef71f308e5803a7a appears to be valid
+[36m2020-05-08 07:01:06.122 UTC [committer.txvalidator] VSCCValidateTx -> DEBU 8ad[0m [mychannel] VSCCValidateTx completes env bytes 0xc002ed4c00
+[36m2020-05-08 07:01:06.122 UTC [committer.txvalidator] validateTx -> DEBU 8ae[0m [mychannel] validateTx completes for block 0xc002c97e80 env 0xc002e80140 txn 0
+[36m2020-05-08 07:01:06.122 UTC [committer.txvalidator] Validate -> DEBU 8af[0m got result for idx 0, code 0
+[36m2020-05-08 07:01:06.122 UTC [committer.txvalidator] validateTx -> DEBU 8b0[0m [mychannel] validateTx starts for block 0xc002c97e80 env 0xc002e80f50 txn 1
+[36m2020-05-08 07:01:06.122 UTC [protoutils] ValidateTransaction -> DEBU 8b1[0m ValidateTransactionEnvelope starts for envelope 0xc002e80f50
+[36m2020-05-08 07:01:06.122 UTC [protoutils] ValidateTransaction -> DEBU 8b2[0m Header is channel_header:"\010\003\032\014\010\260\207\324\365\005\020\321\244\333\310\002\"\tmychannel*@6d924f8a863fc475cb6aa65f39b56e6cbcb52406dc7486d1f51805f717c1b1f8:\016\022\014\022\nmoney_demo" signature_header:"\n\226\006\n\007OrgAMSP\022\212\006-----BEGIN CERTIFICATE-----\nMIICEjCCAbigAwIBAgIRANQOgv4QaBKreiFpdCi0MgowCgYIKoZIzj0EAwIwYzEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xETAPBgNVBAoTCG9yZ2EuY29tMRQwEgYDVQQDEwtjYS5vcmdhLmNv\nbTAeFw0yMDA1MDgwNjU0MDBaFw0zMDA1MDYwNjU0MDBaMGMxCzAJBgNVBAYTAlVT\nMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMQ4w\nDAYDVQQLEwVhZG1pbjEXMBUGA1UEAwwOQWRtaW5Ab3JnYS5jb20wWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAQE/A8VeVve/T/XBptIn76qwlkDUdbC+q2YEMqPBEES\nQ3r+sD9HRNZ+Mw/0t9un7Yuyl0D3bsP2UWYgir1QTqeeo00wSzAOBgNVHQ8BAf8E\nBAMCB4AwDAYDVR0TAQH/BAIwADArBgNVHSMEJDAigCA7CPvDp6Qmf+RxNkCnp3zy\n64GVMVE191Zxn5lSsgk3oTAKBggqhkjOPQQDAgNIADBFAiEAh9gNo0WCPXS+L5Ss\n+ru1GG0M9TOHp5RHeEyQiTnBE7cCIFxyOQOvjX9Q49h3s7q7ohBdFDzS3w9YlFsE\nsbJhBfow\n-----END CERTIFICATE-----\n\022\030\204\022a\n\210\237\010\023D\377\330\375\303\2514\232\034W\312g}8/\037" 
+[36m2020-05-08 07:01:06.122 UTC [protoutils] validateChannelHeader -> DEBU 8b3[0m validateChannelHeader info: header type 3
+[36m2020-05-08 07:01:06.122 UTC [protoutils] checkSignatureFromCreator -> DEBU 8b4[0m begin
+[36m2020-05-08 07:01:06.122 UTC [msp] GetManagerForChain -> DEBU 8b5[0m Returning existing manager for channel 'mychannel'
+[36m2020-05-08 07:01:06.122 UTC [protoutils] checkSignatureFromCreator -> DEBU 8b6[0m creator is &{OrgAMSP 10f12425a080c076ff5716fcffcb09efea373400a179ebcf01b8989fee536ad2}
+[36m2020-05-08 07:01:06.122 UTC [protoutils] checkSignatureFromCreator -> DEBU 8b7[0m creator is valid
+[36m2020-05-08 07:01:06.122 UTC [msp.identity] Verify -> DEBU 8b8[0m Verify: digest = 00000000  81 8a 14 bf 29 d8 95 12  26 28 c8 39 89 69 11 54  |....)...&(.9.i.T|
+00000010  f0 55 0a 35 0a 19 8d 42  c4 e2 18 04 5f b0 9c e0  |.U.5...B...._...|
+[36m2020-05-08 07:01:06.122 UTC [msp.identity] Verify -> DEBU 8b9[0m Verify: sig = 00000000  30 44 02 20 55 b2 06 89  a3 06 11 20 0e 34 df 2e  |0D. U...... .4..|
+00000010  3d 95 9a 35 97 4e 0e 75  ca a2 d9 68 aa 76 ca 4c  |=..5.N.u...h.v.L|
+00000020  26 74 f0 e6 02 20 1d 5a  c1 75 3d 48 73 c8 34 77  |&t... .Z.u=Hs.4w|
+00000030  09 5b c3 b2 d4 7c 99 5b  79 c0 b8 b6 ea 76 eb ee  |.[...|.[y....v..|
+00000040  af 55 d2 da 0c 41                                 |.U...A|
+[36m2020-05-08 07:01:06.122 UTC [protoutils] checkSignatureFromCreator -> DEBU 8ba[0m exits successfully
+[36m2020-05-08 07:01:06.122 UTC [protoutils] validateEndorserTransaction -> DEBU 8bb[0m validateEndorserTransaction starts for data 0xc002e90800, header channel_header:"\010\003\032\014\010\260\207\324\365\005\020\321\244\333\310\002\"\tmychannel*@6d924f8a863fc475cb6aa65f39b56e6cbcb52406dc7486d1f51805f717c1b1f8:\016\022\014\022\nmoney_demo" signature_header:"\n\226\006\n\007OrgAMSP\022\212\006-----BEGIN CERTIFICATE-----\nMIICEjCCAbigAwIBAgIRANQOgv4QaBKreiFpdCi0MgowCgYIKoZIzj0EAwIwYzEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xETAPBgNVBAoTCG9yZ2EuY29tMRQwEgYDVQQDEwtjYS5vcmdhLmNv\nbTAeFw0yMDA1MDgwNjU0MDBaFw0zMDA1MDYwNjU0MDBaMGMxCzAJBgNVBAYTAlVT\nMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMQ4w\nDAYDVQQLEwVhZG1pbjEXMBUGA1UEAwwOQWRtaW5Ab3JnYS5jb20wWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAQE/A8VeVve/T/XBptIn76qwlkDUdbC+q2YEMqPBEES\nQ3r+sD9HRNZ+Mw/0t9un7Yuyl0D3bsP2UWYgir1QTqeeo00wSzAOBgNVHQ8BAf8E\nBAMCB4AwDAYDVR0TAQH/BAIwADArBgNVHSMEJDAigCA7CPvDp6Qmf+RxNkCnp3zy\n64GVMVE191Zxn5lSsgk3oTAKBggqhkjOPQQDAgNIADBFAiEAh9gNo0WCPXS+L5Ss\n+ru1GG0M9TOHp5RHeEyQiTnBE7cCIFxyOQOvjX9Q49h3s7q7ohBdFDzS3w9YlFsE\nsbJhBfow\n-----END CERTIFICATE-----\n\022\030\204\022a\n\210\237\010\023D\377\330\375\303\2514\232\034W\312g}8/\037" 
+[36m2020-05-08 07:01:06.122 UTC [protoutils] validateEndorserTransaction -> DEBU 8bc[0m validateEndorserTransaction info: there are 1 actions
+[36m2020-05-08 07:01:06.122 UTC [protoutils] validateEndorserTransaction -> DEBU 8bd[0m validateEndorserTransaction info: signature header is valid
+[36m2020-05-08 07:01:06.122 UTC [protoutils] ValidateTransaction -> DEBU 8be[0m ValidateTransactionEnvelope returns err %!s(<nil>)
+[36m2020-05-08 07:01:06.122 UTC [committer.txvalidator] validateTx -> DEBU 8bf[0m Transaction is for channel mychannel
+[36m2020-05-08 07:01:06.122 UTC [fsblkstorage] retrieveTransactionByID -> DEBU 8c0[0m retrieveTransactionByID() - txId = [6d924f8a863fc475cb6aa65f39b56e6cbcb52406dc7486d1f51805f717c1b1f8]
+[36m2020-05-08 07:01:06.122 UTC [committer.txvalidator] validateTx -> DEBU 8c1[0m Validating transaction vscc tx validate
+[36m2020-05-08 07:01:06.122 UTC [committer.txvalidator] VSCCValidateTx -> DEBU 8c2[0m [mychannel] VSCCValidateTx starts for bytes 0xc002ed5800
+[36m2020-05-08 07:01:06.123 UTC [lockbasedtxmgr] newQueryExecutor -> DEBU 8c3[0m constructing new query executor txid = [45a0411a-5eb3-4261-af3d-b30cd1cc1ad8]
+[36m2020-05-08 07:01:06.123 UTC [stateleveldb] GetState -> DEBU 8c4[0m GetState(). ns=lscc, key=money_demo
+[36m2020-05-08 07:01:06.123 UTC [lockbasedtxmgr] Done -> DEBU 8c5[0m Done with transaction simulation / query execution [45a0411a-5eb3-4261-af3d-b30cd1cc1ad8]
+[36m2020-05-08 07:01:06.123 UTC [committer.txvalidator] VSCCValidateTxForCC -> DEBU 8c6[0m Validating Tx 6d924f8a863fc475cb6aa65f39b56e6cbcb52406dc7486d1f51805f717c1b1f8, seq 1 out of 3 in block 3 for channel mychannel with validation plugin vscc with plugin
+[36m2020-05-08 07:01:06.123 UTC [lockbasedtxmgr] newQueryExecutor -> DEBU 8c7[0m constructing new query executor txid = [cdd9fef0-12f4-40e0-8a3c-b7edd3bb77bb]
+[36m2020-05-08 07:01:06.123 UTC [lockbasedtxmgr] Done -> DEBU 8c8[0m Done with transaction simulation / query execution [cdd9fef0-12f4-40e0-8a3c-b7edd3bb77bb]
+[36m2020-05-08 07:01:06.123 UTC [cauthdsl] func1 -> DEBU 8c9[0m 0xc002724980 gate 1588921266123278549 evaluation starts
+[36m2020-05-08 07:01:06.123 UTC [cauthdsl] func2 -> DEBU 8ca[0m 0xc002724980 signed by 0 principal evaluation starts (used [false])
+[36m2020-05-08 07:01:06.123 UTC [cauthdsl] func2 -> DEBU 8cb[0m 0xc002724980 processing identity 0 with bytes of 1151890
+[36m2020-05-08 07:01:06.123 UTC [cauthdsl] func2 -> DEBU 8cc[0m 0xc002724980 principal matched by identity 0
+[36m2020-05-08 07:01:06.123 UTC [msp.identity] Verify -> DEBU 8cd[0m Verify: digest = 00000000  1e 55 a0 81 91 18 f7 27  39 b4 0f 93 82 87 04 4d  |.U.....'9......M|
+00000010  a5 0a 59 fa bb e7 05 c6  46 99 55 d5 49 67 76 09  |..Y.....F.U.Igv.|
+[36m2020-05-08 07:01:06.123 UTC [msp.identity] Verify -> DEBU 8ce[0m Verify: sig = 00000000  30 44 02 20 42 95 88 ae  8b db 44 0c 74 97 bc 8b  |0D. B.....D.t...|
+00000010  05 8a 00 38 e5 74 1a df  82 b8 7b 99 75 26 0c 0e  |...8.t....{.u&..|
+00000020  6f 0e 5a 7a 02 20 49 0c  dd 23 3f bd a3 ba da b0  |o.Zz. I..#?.....|
+00000030  c6 49 a2 62 4c 4e 23 02  ca e9 1e 26 24 04 da d9  |.I.bLN#....&$...|
+00000040  91 a6 52 7a f6 6a                                 |..Rz.j|
+[36m2020-05-08 07:01:06.123 UTC [cauthdsl] func2 -> DEBU 8cf[0m 0xc002724980 principal evaluation succeeds for identity 0
+[36m2020-05-08 07:01:06.123 UTC [cauthdsl] func1 -> DEBU 8d0[0m 0xc002724980 gate 1588921266123278549 evaluation succeeds
+[36m2020-05-08 07:01:06.123 UTC [vscc] Validate -> DEBU 8d1[0m block 3, namespace: money_demo, tx 1 validation results is: <nil>
+[36m2020-05-08 07:01:06.123 UTC [committer.txvalidator] ValidateWithPlugin -> DEBU 8d2[0m Transaction 6d924f8a863fc475cb6aa65f39b56e6cbcb52406dc7486d1f51805f717c1b1f8 appears to be valid
+[36m2020-05-08 07:01:06.123 UTC [committer.txvalidator] VSCCValidateTx -> DEBU 8d3[0m [mychannel] VSCCValidateTx completes env bytes 0xc002ed5800
+[36m2020-05-08 07:01:06.123 UTC [committer.txvalidator] validateTx -> DEBU 8d4[0m [mychannel] validateTx completes for block 0xc002c97e80 env 0xc002e80f50 txn 1
+[36m2020-05-08 07:01:06.123 UTC [committer.txvalidator] Validate -> DEBU 8d5[0m got result for idx 1, code 0
+[34m2020-05-08 07:01:06.123 UTC [committer.txvalidator] Validate -> INFO 8d6[0m [mychannel] Validated block [3] in 5ms
+[36m2020-05-08 07:01:06.123 UTC [gossip.privdata] listMissingPrivateData -> DEBU 8d7[0m Retrieving private write sets for 0 transactions from transient store
+[36m2020-05-08 07:01:06.123 UTC [gossip.privdata] StoreBlock -> DEBU 8d8[0m [mychannel] No missing collection private write sets to fetch from remote peers
+[36m2020-05-08 07:01:06.123 UTC [kvledger] CommitWithPvtData -> DEBU 8d9[0m [mychannel] Validating state for block [3]
+[36m2020-05-08 07:01:06.123 UTC [lockbasedtxmgr] ValidateAndPrepare -> DEBU 8da[0m Waiting for purge mgr to finish the background job of computing expirying keys for the block
+[36m2020-05-08 07:01:06.123 UTC [lockbasedtxmgr] ValidateAndPrepare -> DEBU 8db[0m lock acquired on oldBlockCommit for validating read set version against the committed version
+[36m2020-05-08 07:01:06.123 UTC [lockbasedtxmgr] ValidateAndPrepare -> DEBU 8dc[0m Validating new block with num trans = [3]
+[36m2020-05-08 07:01:06.123 UTC [valimpl] ValidateAndPrepareBatch -> DEBU 8dd[0m ValidateAndPrepareBatch() for block number = [3]
+[36m2020-05-08 07:01:06.123 UTC [valimpl] ValidateAndPrepareBatch -> DEBU 8de[0m preprocessing ProtoBlock...
+[36m2020-05-08 07:01:06.123 UTC [valimpl] preprocessProtoBlock -> DEBU 8df[0m txType=ENDORSER_TRANSACTION
+[36m2020-05-08 07:01:06.124 UTC [valimpl] preprocessProtoBlock -> DEBU 8e0[0m txType=ENDORSER_TRANSACTION
+[36m2020-05-08 07:01:06.124 UTC [valimpl] preprocessProtoBlock -> DEBU 8e1[0m txType=ENDORSER_TRANSACTION
+[36m2020-05-08 07:01:06.124 UTC [stateleveldb] GetState -> DEBU 8e2[0m GetState(). ns=lscc, key=money_demo
+[36m2020-05-08 07:01:06.124 UTC [statebasedval] validateKVRead -> DEBU 8e3[0m Comparing versions for key [money_demo]: committed version=&version.Height{BlockNum:0x2, TxNum:0x0} and read version=&version.Height{BlockNum:0x2, TxNum:0x0}
+[36m2020-05-08 07:01:06.124 UTC [stateleveldb] GetState -> DEBU 8e4[0m GetState(). ns=money_demo, key=count_a
+[36m2020-05-08 07:01:06.124 UTC [statebasedval] validateKVRead -> DEBU 8e5[0m Comparing versions for key [count_a]: committed version=(*version.Height)(nil) and read version=(*version.Height)(nil)
+[36m2020-05-08 07:01:06.124 UTC [statebasedval] ValidateAndPrepareBatch -> DEBU 8e6[0m Block [3] Transaction index [0] TxId [ca64fe1ec22099f54ef03cb7ab9644c6bb2dfc2a2b92ac3bef71f308e5803a7a] marked as valid by state validator
+[36m2020-05-08 07:01:06.124 UTC [valinternal] ApplyWriteSet -> DEBU 8e7[0m txops=internal.txOps{internal.compositeKey{ns:"money_demo", coll:"", key:"count_a"}:(*internal.keyOps)(0xc0038c0b00)}
+[36m2020-05-08 07:01:06.124 UTC [stateleveldb] GetState -> DEBU 8e8[0m GetState(). ns=lscc, key=money_demo
+[36m2020-05-08 07:01:06.124 UTC [statebasedval] validateKVRead -> DEBU 8e9[0m Comparing versions for key [money_demo]: committed version=&version.Height{BlockNum:0x2, TxNum:0x0} and read version=&version.Height{BlockNum:0x2, TxNum:0x0}
+[36m2020-05-08 07:01:06.124 UTC [stateleveldb] GetState -> DEBU 8ea[0m GetState(). ns=money_demo, key=count_b
+[36m2020-05-08 07:01:06.124 UTC [statebasedval] validateKVRead -> DEBU 8eb[0m Comparing versions for key [count_b]: committed version=(*version.Height)(nil) and read version=(*version.Height)(nil)
+[36m2020-05-08 07:01:06.124 UTC [statebasedval] ValidateAndPrepareBatch -> DEBU 8ec[0m Block [3] Transaction index [1] TxId [6d924f8a863fc475cb6aa65f39b56e6cbcb52406dc7486d1f51805f717c1b1f8] marked as valid by state validator
+[36m2020-05-08 07:01:06.124 UTC [valinternal] ApplyWriteSet -> DEBU 8ed[0m txops=internal.txOps{internal.compositeKey{ns:"money_demo", coll:"", key:"count_b"}:(*internal.keyOps)(0xc0038c0bc0)}
+[36m2020-05-08 07:01:06.124 UTC [stateleveldb] GetState -> DEBU 8ee[0m GetState(). ns=lscc, key=money_demo
+[36m2020-05-08 07:01:06.124 UTC [statebasedval] validateKVRead -> DEBU 8ef[0m Comparing versions for key [money_demo]: committed version=&version.Height{BlockNum:0x2, TxNum:0x0} and read version=&version.Height{BlockNum:0x2, TxNum:0x0}
+[36m2020-05-08 07:01:06.124 UTC [stateleveldb] GetState -> DEBU 8f0[0m GetState(). ns=money_demo, key=count_c
+[36m2020-05-08 07:01:06.124 UTC [statebasedval] validateKVRead -> DEBU 8f1[0m Comparing versions for key [count_c]: committed version=(*version.Height)(nil) and read version=(*version.Height)(nil)
+[36m2020-05-08 07:01:06.124 UTC [statebasedval] ValidateAndPrepareBatch -> DEBU 8f2[0m Block [3] Transaction index [2] TxId [66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39] marked as valid by state validator
+[36m2020-05-08 07:01:06.124 UTC [valinternal] ApplyWriteSet -> DEBU 8f3[0m txops=internal.txOps{internal.compositeKey{ns:"money_demo", coll:"", key:"count_c"}:(*internal.keyOps)(0xc0038c0c80)}
+[36m2020-05-08 07:01:06.124 UTC [valimpl] ValidateAndPrepareBatch -> DEBU 8f4[0m validating rwset...
+[36m2020-05-08 07:01:06.124 UTC [valimpl] ValidateAndPrepareBatch -> DEBU 8f5[0m postprocessing ProtoBlock...
+[36m2020-05-08 07:01:06.124 UTC [valimpl] ValidateAndPrepareBatch -> DEBU 8f6[0m ValidateAndPrepareBatch() complete
+[36m2020-05-08 07:01:06.124 UTC [kvledger] CommitWithPvtData -> DEBU 8f7[0m [mychannel] Adding CommitHash to the block [3]
+[36m2020-05-08 07:01:06.124 UTC [kvledger] CommitWithPvtData -> DEBU 8f8[0m [mychannel] Committing block [3] to storage
+[36m2020-05-08 07:01:06.124 UTC [ledgerstorage] CommitWithPvtData -> DEBU 8f9[0m Writing block [3] to pvt block store
+[36m2020-05-08 07:01:06.128 UTC [pvtdatastorage] Prepare -> DEBU 8fa[0m Saved 0 private data write sets for block [3]
+[36m2020-05-08 07:01:06.137 UTC [fsblkstorage] indexBlock -> DEBU 8fb[0m Indexing block [blockNum=3, blockHash=[]byte{0x28, 0xcf, 0xe5, 0x35, 0x1c, 0xe8, 0xd9, 0x3a, 0xf5, 0x7a, 0x5d, 0xab, 0xd2, 0x10, 0xc1, 0x10, 0x30, 0x38, 0xa5, 0xed, 0xe1, 0x82, 0x33, 0x34, 0xb3, 0xe8, 0x80, 0xe, 0xaf, 0x71, 0x68, 0xd6} txOffsets=
+txId=ca64fe1ec22099f54ef03cb7ab9644c6bb2dfc2a2b92ac3bef71f308e5803a7a locPointer=offset=70, bytesLength=2895
+txId=6d924f8a863fc475cb6aa65f39b56e6cbcb52406dc7486d1f51805f717c1b1f8 locPointer=offset=2965, bytesLength=2895
+txId=66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39 locPointer=offset=5860, bytesLength=2894
+]
+[36m2020-05-08 07:01:06.137 UTC [fsblkstorage] indexBlock -> DEBU 8fc[0m Adding txLoc [fileSuffixNum=0, offset=34869, bytesLength=2895] for tx ID: [ca64fe1ec22099f54ef03cb7ab9644c6bb2dfc2a2b92ac3bef71f308e5803a7a] to txid-index
+[36m2020-05-08 07:01:06.138 UTC [fsblkstorage] indexBlock -> DEBU 8fd[0m Adding txLoc [fileSuffixNum=0, offset=37764, bytesLength=2895] for tx ID: [6d924f8a863fc475cb6aa65f39b56e6cbcb52406dc7486d1f51805f717c1b1f8] to txid-index
+[36m2020-05-08 07:01:06.138 UTC [fsblkstorage] indexBlock -> DEBU 8fe[0m Adding txLoc [fileSuffixNum=0, offset=40659, bytesLength=2894] for tx ID: [66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39] to txid-index
+[36m2020-05-08 07:01:06.138 UTC [fsblkstorage] indexBlock -> DEBU 8ff[0m Adding txLoc [fileSuffixNum=0, offset=34869, bytesLength=2895] for tx number:[0] ID: [ca64fe1ec22099f54ef03cb7ab9644c6bb2dfc2a2b92ac3bef71f308e5803a7a] to blockNumTranNum index
+[36m2020-05-08 07:01:06.138 UTC [fsblkstorage] indexBlock -> DEBU 900[0m Adding txLoc [fileSuffixNum=0, offset=37764, bytesLength=2895] for tx number:[1] ID: [6d924f8a863fc475cb6aa65f39b56e6cbcb52406dc7486d1f51805f717c1b1f8] to blockNumTranNum index
+[36m2020-05-08 07:01:06.138 UTC [fsblkstorage] indexBlock -> DEBU 901[0m Adding txLoc [fileSuffixNum=0, offset=40659, bytesLength=2894] for tx number:[2] ID: [66baf01836eaeeb43efa456924da8b691f05fd50554bfa0eb7c15f137ecd2e39] to blockNumTranNum index
+[36m2020-05-08 07:01:06.147 UTC [fsblkstorage] updateCheckpoint -> DEBU 902[0m Broadcasting about update checkpointInfo: latestFileChunkSuffixNum=[0], latestFileChunksize=[44511], isChainEmpty=[false], lastBlockNumber=[3]
+[36m2020-05-08 07:01:06.147 UTC [pvtdatastorage] Commit -> DEBU 903[0m Committing private data for block [3]
+[36m2020-05-08 07:01:06.158 UTC [pvtdatastorage] Commit -> DEBU 904[0m Committed private data for block [3]
+[36m2020-05-08 07:01:06.158 UTC [kvledger] CommitWithPvtData -> DEBU 905[0m [mychannel] Committing block [3] transactions to state database
+[36m2020-05-08 07:01:06.158 UTC [lockbasedtxmgr] Commit -> DEBU 906[0m lock acquired on oldBlockCommit for committing regular updates to state database
+[36m2020-05-08 07:01:06.158 UTC [lockbasedtxmgr] Commit -> DEBU 907[0m Committing updates to state database
+[36m2020-05-08 07:01:06.158 UTC [pvtstatepurgemgmt] buildExpirySchedule -> DEBU 908[0m Building the expiry schedules based on the update batch
+[36m2020-05-08 07:01:06.158 UTC [lockbasedtxmgr] Commit -> DEBU 909[0m Write lock acquired for committing updates to state database
+[36m2020-05-08 07:01:06.158 UTC [stateleveldb] ApplyUpdates -> DEBU 90a[0m Channel [mychannel]: Applying key(string)=[money_demo count_a] key(bytes)=[[]byte{0x6d, 0x6f, 0x6e, 0x65, 0x79, 0x5f, 0x64, 0x65, 0x6d, 0x6f, 0x0, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x5f, 0x61}]
+[36m2020-05-08 07:01:06.159 UTC [stateleveldb] ApplyUpdates -> DEBU 90b[0m Channel [mychannel]: Applying key(string)=[money_demo count_b] key(bytes)=[[]byte{0x6d, 0x6f, 0x6e, 0x65, 0x79, 0x5f, 0x64, 0x65, 0x6d, 0x6f, 0x0, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x5f, 0x62}]
+[36m2020-05-08 07:01:06.159 UTC [stateleveldb] ApplyUpdates -> DEBU 90c[0m Channel [mychannel]: Applying key(string)=[money_demo count_c] key(bytes)=[[]byte{0x6d, 0x6f, 0x6e, 0x65, 0x79, 0x5f, 0x64, 0x65, 0x6d, 0x6f, 0x0, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x5f, 0x63}]
+[36m2020-05-08 07:01:06.167 UTC [lockbasedtxmgr] Commit -> DEBU 90d[0m Updates committed to state database and the write lock is released
+[36m2020-05-08 07:01:06.168 UTC [pvtstatepurgemgmt] prepareWorkingsetFor -> DEBU 90e[0m Preparing potential purge list working-set for expiringAtBlk [4]
+[36m2020-05-08 07:01:06.168 UTC [leveldbhelper] GetIterator -> DEBU 90f[0m Getting iterator for range [[]byte{0x6d, 0x79, 0x63, 0x68, 0x61, 0x6e, 0x6e, 0x65, 0x6c, 0x2f, 0x30, 0x0, 0x31, 0x1, 0x4, 0x0}] - [[]byte{0x6d, 0x79, 0x63, 0x68, 0x61, 0x6e, 0x6e, 0x65, 0x6c, 0x2f, 0x30, 0x0, 0x31, 0x1, 0x5, 0x0}]
+[36m2020-05-08 07:01:06.168 UTC [pvtstatepurgemgmt] prepareWorkingsetFor -> DEBU 910[0m No expiry entry found for expiringAtBlk [4]
+[36m2020-05-08 07:01:06.168 UTC [lockbasedtxmgr] func1 -> DEBU 911[0m launched the background routine for preparing keys to purge with the next block
+[36m2020-05-08 07:01:06.168 UTC [kvledger] CommitWithPvtData -> DEBU 912[0m [mychannel] Committing block [3] transactions to history database
+[36m2020-05-08 07:01:06.168 UTC [historyleveldb] Commit -> DEBU 913[0m Channel [mychannel]: Updating history database for blockNo [3] with [3] transactions
+[36m2020-05-08 07:01:06.177 UTC [historyleveldb] Commit -> DEBU 914[0m Channel [mychannel]: Updates committed to history database for blockNo [3]
+[34m2020-05-08 07:01:06.177 UTC [kvledger] CommitWithPvtData -> INFO 915[0m [mychannel] Committed block [3] with 3 transaction(s) in 53ms (state_validation=0ms block_and_pvtdata_commit=34ms state_commit=9ms) commitHash=[2a5646cb00468fdfccdcde3a6ee6f16461eb0a627ffc9c40ff437229649a1b8d]
+[36m2020-05-08 07:01:06.177 UTC [msp] GetDefaultSigningIdentity -> DEBU 916[0m Obtaining default signing identity
+[36m2020-05-08 07:01:06.177 UTC [msp.identity] Sign -> DEBU 917[0m Sign: plaintext: 18057A71121408ECF7DEE08FEDBE8616...0A6D6F6E65795F64656D6F1203312E30 
+[36m2020-05-08 07:01:06.177 UTC [msp.identity] Sign -> DEBU 918[0m Sign: digest: 57D6C76CAE93BB48F8FFD4E3D70798CF68BF14BF8DDBA9CC4ADA90D312779224 
+[36m2020-05-08 07:01:06.178 UTC [gossip.state] commitBlock -> DEBU 919[0m [mychannel] Committed block [3] with 3 transaction(s)
+[36m2020-05-08 07:01:07.011 UTC [msp] GetDefaultSigningIdentity -> DEBU 91a[0m Obtaining default signing identity
+[36m2020-05-08 07:01:07.011 UTC [msp.identity] Sign -> DEBU 91b[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616102D 
+[36m2020-05-08 07:01:07.011 UTC [msp.identity] Sign -> DEBU 91c[0m Sign: digest: 3190461F8B3BA52208A070C6B4F9A2719B08436EEE07CA456936DE0DD6345951 
+[36m2020-05-08 07:01:07.011 UTC [msp] GetDefaultSigningIdentity -> DEBU 91d[0m Obtaining default signing identity
+[36m2020-05-08 07:01:07.012 UTC [msp.identity] Sign -> DEBU 91e[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:07.012 UTC [msp.identity] Sign -> DEBU 91f[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:07.012 UTC [gossip.discovery] periodicalSendAlive -> DEBU 920[0m Sleeping 5s
+[36m2020-05-08 07:01:08.204 UTC [gossip.election] waitForInterrupt -> DEBU 921[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:01:08.204 UTC [gossip.election] IsLeader -> DEBU 922[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:01:08.204 UTC [msp] GetDefaultSigningIdentity -> DEBU 923[0m Obtaining default signing identity
+[36m2020-05-08 07:01:08.204 UTC [msp.identity] Sign -> DEBU 924[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616100F1801 
+[36m2020-05-08 07:01:08.204 UTC [msp.identity] Sign -> DEBU 925[0m Sign: digest: C037884CC4B0A6282C40CC848B8833C3C1162C26BC5C7EE03CFCE78838AA5FDC 
+[36m2020-05-08 07:01:08.204 UTC [gossip.election] waitForInterrupt -> DEBU 926[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:01:08.287 UTC [msp] GetDefaultSigningIdentity -> DEBU 927[0m Obtaining default signing identity
+[36m2020-05-08 07:01:08.287 UTC [msp.identity] Sign -> DEBU 928[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616102E 
+[36m2020-05-08 07:01:08.287 UTC [msp.identity] Sign -> DEBU 929[0m Sign: digest: 9FE19738CEDBF58F7307307D0B5E4A5411390BC150EC33BB041B534858A0A632 
+[36m2020-05-08 07:01:08.287 UTC [msp] GetDefaultSigningIdentity -> DEBU 92a[0m Obtaining default signing identity
+[36m2020-05-08 07:01:08.287 UTC [msp.identity] Sign -> DEBU 92b[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:08.287 UTC [msp.identity] Sign -> DEBU 92c[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:11.952 UTC [gossip.discovery] periodicalReconnectToDead -> DEBU 92d[0m Sleeping 25s
+[36m2020-05-08 07:01:12.012 UTC [msp] GetDefaultSigningIdentity -> DEBU 92e[0m Obtaining default signing identity
+[36m2020-05-08 07:01:12.013 UTC [msp.identity] Sign -> DEBU 92f[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616102F 
+[36m2020-05-08 07:01:12.013 UTC [msp.identity] Sign -> DEBU 930[0m Sign: digest: FAEC424144CC608119B058C94753648FF42281BF716EF3C60158B8E313FED914 
+[36m2020-05-08 07:01:12.013 UTC [msp] GetDefaultSigningIdentity -> DEBU 931[0m Obtaining default signing identity
+[36m2020-05-08 07:01:12.013 UTC [msp.identity] Sign -> DEBU 932[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:12.013 UTC [msp.identity] Sign -> DEBU 933[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:12.013 UTC [gossip.discovery] periodicalSendAlive -> DEBU 934[0m Sleeping 5s
+[36m2020-05-08 07:01:12.288 UTC [msp] GetDefaultSigningIdentity -> DEBU 935[0m Obtaining default signing identity
+[36m2020-05-08 07:01:12.288 UTC [msp.identity] Sign -> DEBU 936[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161030 
+[36m2020-05-08 07:01:12.288 UTC [msp.identity] Sign -> DEBU 937[0m Sign: digest: 8544A00EE01F3BD0F392EE58DA646C471D1A5354116EB12F3E4AEF0A774749C0 
+[36m2020-05-08 07:01:12.288 UTC [msp] GetDefaultSigningIdentity -> DEBU 938[0m Obtaining default signing identity
+[36m2020-05-08 07:01:12.288 UTC [msp.identity] Sign -> DEBU 939[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:12.288 UTC [msp.identity] Sign -> DEBU 93a[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:13.206 UTC [gossip.election] waitForInterrupt -> DEBU 93b[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:01:13.206 UTC [gossip.election] IsLeader -> DEBU 93c[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:01:13.206 UTC [msp] GetDefaultSigningIdentity -> DEBU 93d[0m Obtaining default signing identity
+[36m2020-05-08 07:01:13.206 UTC [msp.identity] Sign -> DEBU 93e[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610101801 
+[36m2020-05-08 07:01:13.206 UTC [msp.identity] Sign -> DEBU 93f[0m Sign: digest: FB10D246183C8978A95467B5DAF93B8628C2316C3B06ED80271C3113AA30340E 
+[36m2020-05-08 07:01:13.206 UTC [gossip.election] waitForInterrupt -> DEBU 940[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:01:16.289 UTC [msp] GetDefaultSigningIdentity -> DEBU 941[0m Obtaining default signing identity
+[36m2020-05-08 07:01:16.290 UTC [msp.identity] Sign -> DEBU 942[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161031 
+[36m2020-05-08 07:01:16.290 UTC [msp.identity] Sign -> DEBU 943[0m Sign: digest: 60213543886B08469B6FF5EFD64DE2BAE7FD5BFEAC81E5B718A9A8703524A01C 
+[36m2020-05-08 07:01:16.290 UTC [msp] GetDefaultSigningIdentity -> DEBU 944[0m Obtaining default signing identity
+[36m2020-05-08 07:01:16.290 UTC [msp.identity] Sign -> DEBU 945[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:16.290 UTC [msp.identity] Sign -> DEBU 946[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:17.013 UTC [msp] GetDefaultSigningIdentity -> DEBU 947[0m Obtaining default signing identity
+[36m2020-05-08 07:01:17.014 UTC [msp.identity] Sign -> DEBU 948[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161032 
+[36m2020-05-08 07:01:17.014 UTC [msp.identity] Sign -> DEBU 949[0m Sign: digest: 5505753AD999C01F8389CAE93FAE2EFD619C98BFBEEBD4A0F971125593914D0C 
+[36m2020-05-08 07:01:17.014 UTC [msp] GetDefaultSigningIdentity -> DEBU 94a[0m Obtaining default signing identity
+[36m2020-05-08 07:01:17.014 UTC [msp.identity] Sign -> DEBU 94b[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:17.014 UTC [msp.identity] Sign -> DEBU 94c[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:17.014 UTC [gossip.discovery] periodicalSendAlive -> DEBU 94d[0m Sleeping 5s
+[36m2020-05-08 07:01:18.208 UTC [gossip.election] waitForInterrupt -> DEBU 94e[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:01:18.208 UTC [gossip.election] IsLeader -> DEBU 94f[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:01:18.208 UTC [msp] GetDefaultSigningIdentity -> DEBU 950[0m Obtaining default signing identity
+[36m2020-05-08 07:01:18.208 UTC [msp.identity] Sign -> DEBU 951[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610111801 
+[36m2020-05-08 07:01:18.208 UTC [msp.identity] Sign -> DEBU 952[0m Sign: digest: EEBC414E85B4BF9A870601F46A83E5FBD78508E71AACA8BD633C66DCE680DE4E 
+[36m2020-05-08 07:01:18.208 UTC [gossip.election] waitForInterrupt -> DEBU 953[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:01:20.291 UTC [msp] GetDefaultSigningIdentity -> DEBU 954[0m Obtaining default signing identity
+[36m2020-05-08 07:01:20.291 UTC [msp.identity] Sign -> DEBU 955[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161033 
+[36m2020-05-08 07:01:20.291 UTC [msp.identity] Sign -> DEBU 956[0m Sign: digest: 39044963297F3C3CB0BEADD86A57D8413F087D1D7DAEA70E6D498715FF36B466 
+[36m2020-05-08 07:01:20.291 UTC [msp] GetDefaultSigningIdentity -> DEBU 957[0m Obtaining default signing identity
+[36m2020-05-08 07:01:20.291 UTC [msp.identity] Sign -> DEBU 958[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:20.291 UTC [msp.identity] Sign -> DEBU 959[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:22.015 UTC [msp] GetDefaultSigningIdentity -> DEBU 95a[0m Obtaining default signing identity
+[36m2020-05-08 07:01:22.015 UTC [msp.identity] Sign -> DEBU 95b[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161034 
+[36m2020-05-08 07:01:22.015 UTC [msp.identity] Sign -> DEBU 95c[0m Sign: digest: 108F0D7F9B146F91C218716BB8ECC359A4AB0FEA098A31685DE7180AC0B89B20 
+[36m2020-05-08 07:01:22.015 UTC [msp] GetDefaultSigningIdentity -> DEBU 95d[0m Obtaining default signing identity
+[36m2020-05-08 07:01:22.016 UTC [msp.identity] Sign -> DEBU 95e[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:22.016 UTC [msp.identity] Sign -> DEBU 95f[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:22.016 UTC [gossip.discovery] periodicalSendAlive -> DEBU 960[0m Sleeping 5s
+[36m2020-05-08 07:01:23.209 UTC [gossip.election] waitForInterrupt -> DEBU 961[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:01:23.210 UTC [gossip.election] IsLeader -> DEBU 962[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:01:23.210 UTC [msp] GetDefaultSigningIdentity -> DEBU 963[0m Obtaining default signing identity
+[36m2020-05-08 07:01:23.210 UTC [msp.identity] Sign -> DEBU 964[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610121801 
+[36m2020-05-08 07:01:23.210 UTC [msp.identity] Sign -> DEBU 965[0m Sign: digest: 0232037EE7582C57A57CFF08574D61DDDD480C2291711B00CC92AAC81E46AD90 
+[36m2020-05-08 07:01:23.210 UTC [gossip.election] waitForInterrupt -> DEBU 966[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:01:24.292 UTC [msp] GetDefaultSigningIdentity -> DEBU 967[0m Obtaining default signing identity
+[36m2020-05-08 07:01:24.293 UTC [msp.identity] Sign -> DEBU 968[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161035 
+[36m2020-05-08 07:01:24.293 UTC [msp.identity] Sign -> DEBU 969[0m Sign: digest: 95B8C435DA5452509738F0E55033F95EB105626903DCE1C4A27604268BFB5835 
+[36m2020-05-08 07:01:24.293 UTC [msp] GetDefaultSigningIdentity -> DEBU 96a[0m Obtaining default signing identity
+[36m2020-05-08 07:01:24.293 UTC [msp.identity] Sign -> DEBU 96b[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:24.293 UTC [msp.identity] Sign -> DEBU 96c[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:27.016 UTC [msp] GetDefaultSigningIdentity -> DEBU 96d[0m Obtaining default signing identity
+[36m2020-05-08 07:01:27.017 UTC [msp.identity] Sign -> DEBU 96e[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161036 
+[36m2020-05-08 07:01:27.017 UTC [msp.identity] Sign -> DEBU 96f[0m Sign: digest: B859659FCA84FD78E2402FAB7D802E376B656F01D42C3A6902F1495AB1E1143B 
+[36m2020-05-08 07:01:27.017 UTC [msp] GetDefaultSigningIdentity -> DEBU 970[0m Obtaining default signing identity
+[36m2020-05-08 07:01:27.017 UTC [msp.identity] Sign -> DEBU 971[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:27.017 UTC [msp.identity] Sign -> DEBU 972[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:27.017 UTC [gossip.discovery] periodicalSendAlive -> DEBU 973[0m Sleeping 5s
+[36m2020-05-08 07:01:28.211 UTC [gossip.election] waitForInterrupt -> DEBU 974[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:01:28.212 UTC [gossip.election] IsLeader -> DEBU 975[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:01:28.212 UTC [msp] GetDefaultSigningIdentity -> DEBU 976[0m Obtaining default signing identity
+[36m2020-05-08 07:01:28.212 UTC [msp.identity] Sign -> DEBU 977[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610131801 
+[36m2020-05-08 07:01:28.212 UTC [msp.identity] Sign -> DEBU 978[0m Sign: digest: 8BE5862C7D9B84920AD821A18F919A54A6D96EE6718CF4AB4B5BF0D6EFD8852F 
+[36m2020-05-08 07:01:28.212 UTC [gossip.election] waitForInterrupt -> DEBU 979[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:01:28.294 UTC [msp] GetDefaultSigningIdentity -> DEBU 97a[0m Obtaining default signing identity
+[36m2020-05-08 07:01:28.294 UTC [msp.identity] Sign -> DEBU 97b[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161037 
+[36m2020-05-08 07:01:28.294 UTC [msp.identity] Sign -> DEBU 97c[0m Sign: digest: 86122F321C77059ECC72395B50D83AC1E6D216725D4CB67FE7021EEAF3F827E2 
+[36m2020-05-08 07:01:28.294 UTC [msp] GetDefaultSigningIdentity -> DEBU 97d[0m Obtaining default signing identity
+[36m2020-05-08 07:01:28.295 UTC [msp.identity] Sign -> DEBU 97e[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:28.295 UTC [msp.identity] Sign -> DEBU 97f[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:32.018 UTC [msp] GetDefaultSigningIdentity -> DEBU 980[0m Obtaining default signing identity
+[36m2020-05-08 07:01:32.018 UTC [msp.identity] Sign -> DEBU 981[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161038 
+[36m2020-05-08 07:01:32.018 UTC [msp.identity] Sign -> DEBU 982[0m Sign: digest: 52906C82FAD6977ABB2EA9F05049E32F137075A82490DAE69F1D39C24FE3C323 
+[36m2020-05-08 07:01:32.018 UTC [msp] GetDefaultSigningIdentity -> DEBU 983[0m Obtaining default signing identity
+[36m2020-05-08 07:01:32.018 UTC [msp.identity] Sign -> DEBU 984[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:32.018 UTC [msp.identity] Sign -> DEBU 985[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:32.018 UTC [gossip.discovery] periodicalSendAlive -> DEBU 986[0m Sleeping 5s
+[36m2020-05-08 07:01:32.295 UTC [msp] GetDefaultSigningIdentity -> DEBU 987[0m Obtaining default signing identity
+[36m2020-05-08 07:01:32.296 UTC [msp.identity] Sign -> DEBU 988[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161039 
+[36m2020-05-08 07:01:32.296 UTC [msp.identity] Sign -> DEBU 989[0m Sign: digest: E8A83C6785E9D30B6A0E64F4CC2FA1ABD39F098E1A966DFA8667E47B4B1CAC2E 
+[36m2020-05-08 07:01:32.296 UTC [msp] GetDefaultSigningIdentity -> DEBU 98a[0m Obtaining default signing identity
+[36m2020-05-08 07:01:32.296 UTC [msp.identity] Sign -> DEBU 98b[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:32.296 UTC [msp.identity] Sign -> DEBU 98c[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:33.213 UTC [gossip.election] waitForInterrupt -> DEBU 98d[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:01:33.213 UTC [gossip.election] IsLeader -> DEBU 98e[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:01:33.213 UTC [msp] GetDefaultSigningIdentity -> DEBU 98f[0m Obtaining default signing identity
+[36m2020-05-08 07:01:33.213 UTC [msp.identity] Sign -> DEBU 990[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610141801 
+[36m2020-05-08 07:01:33.213 UTC [msp.identity] Sign -> DEBU 991[0m Sign: digest: 489E32FA69DDCC562CE61408FF37414970201AA41A5D5B0DBF492BAD9F4A0293 
+[36m2020-05-08 07:01:33.213 UTC [gossip.election] waitForInterrupt -> DEBU 992[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:01:36.298 UTC [msp] GetDefaultSigningIdentity -> DEBU 993[0m Obtaining default signing identity
+[36m2020-05-08 07:01:36.298 UTC [msp.identity] Sign -> DEBU 994[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616103A 
+[36m2020-05-08 07:01:36.298 UTC [msp.identity] Sign -> DEBU 995[0m Sign: digest: 4045D3336F7D01EF6D4A96F345320BF0EB63B0C44A9B86B136A2FEED0212AA7B 
+[36m2020-05-08 07:01:36.298 UTC [msp] GetDefaultSigningIdentity -> DEBU 996[0m Obtaining default signing identity
+[36m2020-05-08 07:01:36.298 UTC [msp.identity] Sign -> DEBU 997[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:36.298 UTC [msp.identity] Sign -> DEBU 998[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:36.953 UTC [gossip.discovery] periodicalReconnectToDead -> DEBU 999[0m Sleeping 25s
+[36m2020-05-08 07:01:37.020 UTC [msp] GetDefaultSigningIdentity -> DEBU 99a[0m Obtaining default signing identity
+[36m2020-05-08 07:01:37.020 UTC [msp.identity] Sign -> DEBU 99b[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616103B 
+[36m2020-05-08 07:01:37.020 UTC [msp.identity] Sign -> DEBU 99c[0m Sign: digest: BE2CF4E89E8910165E1D2E8202D17043E4EE9037D08644B8B79A2CF8FFF6D426 
+[36m2020-05-08 07:01:37.021 UTC [msp] GetDefaultSigningIdentity -> DEBU 99d[0m Obtaining default signing identity
+[36m2020-05-08 07:01:37.021 UTC [msp.identity] Sign -> DEBU 99e[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:37.021 UTC [msp.identity] Sign -> DEBU 99f[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:37.021 UTC [gossip.discovery] periodicalSendAlive -> DEBU 9a0[0m Sleeping 5s
+[36m2020-05-08 07:01:38.214 UTC [gossip.election] waitForInterrupt -> DEBU 9a1[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:01:38.214 UTC [gossip.election] IsLeader -> DEBU 9a2[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:01:38.214 UTC [msp] GetDefaultSigningIdentity -> DEBU 9a3[0m Obtaining default signing identity
+[36m2020-05-08 07:01:38.214 UTC [msp.identity] Sign -> DEBU 9a4[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610151801 
+[36m2020-05-08 07:01:38.214 UTC [msp.identity] Sign -> DEBU 9a5[0m Sign: digest: 7FE30ACC7A3FC4F771332A5AF379489F675469AB44ABB13831D7896B581D1128 
+[36m2020-05-08 07:01:38.214 UTC [gossip.election] waitForInterrupt -> DEBU 9a6[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:01:40.300 UTC [msp] GetDefaultSigningIdentity -> DEBU 9a7[0m Obtaining default signing identity
+[36m2020-05-08 07:01:40.300 UTC [msp.identity] Sign -> DEBU 9a8[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616103C 
+[36m2020-05-08 07:01:40.300 UTC [msp.identity] Sign -> DEBU 9a9[0m Sign: digest: F4E0C55299502D2B7C090325CC36B7EA03C7B5503515C11467DDC04EB7999C77 
+[36m2020-05-08 07:01:40.300 UTC [msp] GetDefaultSigningIdentity -> DEBU 9aa[0m Obtaining default signing identity
+[36m2020-05-08 07:01:40.300 UTC [msp.identity] Sign -> DEBU 9ab[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:40.300 UTC [msp.identity] Sign -> DEBU 9ac[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:42.021 UTC [msp] GetDefaultSigningIdentity -> DEBU 9ad[0m Obtaining default signing identity
+[36m2020-05-08 07:01:42.021 UTC [msp.identity] Sign -> DEBU 9ae[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616103D 
+[36m2020-05-08 07:01:42.021 UTC [msp.identity] Sign -> DEBU 9af[0m Sign: digest: CB69A7BE44BFCD0645F7A0E9BB8478AE3B597C933DE474DD7D0F53504E5F5CA8 
+[36m2020-05-08 07:01:42.021 UTC [msp] GetDefaultSigningIdentity -> DEBU 9b0[0m Obtaining default signing identity
+[36m2020-05-08 07:01:42.021 UTC [msp.identity] Sign -> DEBU 9b1[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:42.022 UTC [msp.identity] Sign -> DEBU 9b2[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:42.022 UTC [gossip.discovery] periodicalSendAlive -> DEBU 9b3[0m Sleeping 5s
+[36m2020-05-08 07:01:43.216 UTC [gossip.election] waitForInterrupt -> DEBU 9b4[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:01:43.216 UTC [gossip.election] IsLeader -> DEBU 9b5[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:01:43.216 UTC [msp] GetDefaultSigningIdentity -> DEBU 9b6[0m Obtaining default signing identity
+[36m2020-05-08 07:01:43.216 UTC [msp.identity] Sign -> DEBU 9b7[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610161801 
+[36m2020-05-08 07:01:43.216 UTC [msp.identity] Sign -> DEBU 9b8[0m Sign: digest: 0D8088C087325252100E003C32D16857194BB505A5F2DE739153CE16DA1B4A99 
+[36m2020-05-08 07:01:43.216 UTC [gossip.election] waitForInterrupt -> DEBU 9b9[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:01:44.301 UTC [msp] GetDefaultSigningIdentity -> DEBU 9ba[0m Obtaining default signing identity
+[36m2020-05-08 07:01:44.301 UTC [msp.identity] Sign -> DEBU 9bb[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616103E 
+[36m2020-05-08 07:01:44.301 UTC [msp.identity] Sign -> DEBU 9bc[0m Sign: digest: 93075722D87CEBA793FBDCDDA8041CF233715033267D1444E5AAD5DB3691C5D3 
+[36m2020-05-08 07:01:44.301 UTC [msp] GetDefaultSigningIdentity -> DEBU 9bd[0m Obtaining default signing identity
+[36m2020-05-08 07:01:44.301 UTC [msp.identity] Sign -> DEBU 9be[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:44.301 UTC [msp.identity] Sign -> DEBU 9bf[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:47.023 UTC [msp] GetDefaultSigningIdentity -> DEBU 9c0[0m Obtaining default signing identity
+[36m2020-05-08 07:01:47.023 UTC [msp.identity] Sign -> DEBU 9c1[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616103F 
+[36m2020-05-08 07:01:47.023 UTC [msp.identity] Sign -> DEBU 9c2[0m Sign: digest: D51AE5E0AD85A60CD7AA8D4F22BBF4CE2A8E6BC23AE230184CD1D4D24B161EA0 
+[36m2020-05-08 07:01:47.023 UTC [msp] GetDefaultSigningIdentity -> DEBU 9c3[0m Obtaining default signing identity
+[36m2020-05-08 07:01:47.024 UTC [msp.identity] Sign -> DEBU 9c4[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:47.024 UTC [msp.identity] Sign -> DEBU 9c5[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:47.024 UTC [gossip.discovery] periodicalSendAlive -> DEBU 9c6[0m Sleeping 5s
+[36m2020-05-08 07:01:48.218 UTC [gossip.election] waitForInterrupt -> DEBU 9c7[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:01:48.218 UTC [gossip.election] IsLeader -> DEBU 9c8[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:01:48.218 UTC [msp] GetDefaultSigningIdentity -> DEBU 9c9[0m Obtaining default signing identity
+[36m2020-05-08 07:01:48.218 UTC [msp.identity] Sign -> DEBU 9ca[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610171801 
+[36m2020-05-08 07:01:48.218 UTC [msp.identity] Sign -> DEBU 9cb[0m Sign: digest: 02DF783E5EDCF6773BDEB02E74A5783169D69CFE1B9F25519D8497F8A7F1F346 
+[36m2020-05-08 07:01:48.218 UTC [gossip.election] waitForInterrupt -> DEBU 9cc[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:01:48.302 UTC [msp] GetDefaultSigningIdentity -> DEBU 9cd[0m Obtaining default signing identity
+[36m2020-05-08 07:01:48.302 UTC [msp.identity] Sign -> DEBU 9ce[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161040 
+[36m2020-05-08 07:01:48.302 UTC [msp.identity] Sign -> DEBU 9cf[0m Sign: digest: 638830B6BB4AE08FF475B10E3FD48F5B6DAE4656660EE62035CD2CE64B31D489 
+[36m2020-05-08 07:01:48.302 UTC [msp] GetDefaultSigningIdentity -> DEBU 9d0[0m Obtaining default signing identity
+[36m2020-05-08 07:01:48.302 UTC [msp.identity] Sign -> DEBU 9d1[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:48.302 UTC [msp.identity] Sign -> DEBU 9d2[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:52.024 UTC [msp] GetDefaultSigningIdentity -> DEBU 9d3[0m Obtaining default signing identity
+[36m2020-05-08 07:01:52.025 UTC [msp.identity] Sign -> DEBU 9d4[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161041 
+[36m2020-05-08 07:01:52.025 UTC [msp.identity] Sign -> DEBU 9d5[0m Sign: digest: EDD61AA61C02733FFBCA957613EA33A2067271826355529C1EDD26FF47D2A361 
+[36m2020-05-08 07:01:52.025 UTC [msp] GetDefaultSigningIdentity -> DEBU 9d6[0m Obtaining default signing identity
+[36m2020-05-08 07:01:52.025 UTC [msp.identity] Sign -> DEBU 9d7[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:52.025 UTC [msp.identity] Sign -> DEBU 9d8[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:52.025 UTC [gossip.discovery] periodicalSendAlive -> DEBU 9d9[0m Sleeping 5s
+[36m2020-05-08 07:01:52.303 UTC [msp] GetDefaultSigningIdentity -> DEBU 9da[0m Obtaining default signing identity
+[36m2020-05-08 07:01:52.303 UTC [msp.identity] Sign -> DEBU 9db[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161042 
+[36m2020-05-08 07:01:52.303 UTC [msp.identity] Sign -> DEBU 9dc[0m Sign: digest: 063D423935B52E117F03A01606A875F4B0306B3B5D79353C464A1AA6647628BD 
+[36m2020-05-08 07:01:52.303 UTC [msp] GetDefaultSigningIdentity -> DEBU 9dd[0m Obtaining default signing identity
+[36m2020-05-08 07:01:52.303 UTC [msp.identity] Sign -> DEBU 9de[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:52.303 UTC [msp.identity] Sign -> DEBU 9df[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:53.218 UTC [gossip.election] waitForInterrupt -> DEBU 9e0[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:01:53.218 UTC [gossip.election] IsLeader -> DEBU 9e1[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:01:53.219 UTC [msp] GetDefaultSigningIdentity -> DEBU 9e2[0m Obtaining default signing identity
+[36m2020-05-08 07:01:53.219 UTC [msp.identity] Sign -> DEBU 9e3[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610181801 
+[36m2020-05-08 07:01:53.219 UTC [msp.identity] Sign -> DEBU 9e4[0m Sign: digest: 16849C5673E86A4A28343D1EC6D821B300246F262BC25C8D7010CDC1F454DE02 
+[36m2020-05-08 07:01:53.219 UTC [gossip.election] waitForInterrupt -> DEBU 9e5[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:01:56.304 UTC [msp] GetDefaultSigningIdentity -> DEBU 9e6[0m Obtaining default signing identity
+[36m2020-05-08 07:01:56.304 UTC [msp.identity] Sign -> DEBU 9e7[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161043 
+[36m2020-05-08 07:01:56.304 UTC [msp.identity] Sign -> DEBU 9e8[0m Sign: digest: C59D874BF4A558C11ED47A1CFF17BCD2820E9BA49E7FB55B9E132147B0C3336A 
+[36m2020-05-08 07:01:56.304 UTC [msp] GetDefaultSigningIdentity -> DEBU 9e9[0m Obtaining default signing identity
+[36m2020-05-08 07:01:56.304 UTC [msp.identity] Sign -> DEBU 9ea[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:56.304 UTC [msp.identity] Sign -> DEBU 9eb[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:56.949 UTC [gossip.privdata] run -> DEBU 9ec[0m Start reconcile missing private info
+[36m2020-05-08 07:01:56.949 UTC [leveldbhelper] GetIterator -> DEBU 9ed[0m Getting iterator for range [[]byte{0x6d, 0x79, 0x63, 0x68, 0x61, 0x6e, 0x6e, 0x65, 0x6c, 0x0, 0x4, 0x7, 0xfc}] - [[]byte{0x6d, 0x79, 0x63, 0x68, 0x61, 0x6e, 0x6e, 0x65, 0x6c, 0x0, 0x4, 0x8}]
+[36m2020-05-08 07:01:56.949 UTC [gossip.privdata] reconcile -> DEBU 9ee[0m Reconciliation cycle finished successfully. no items to reconcile
+[36m2020-05-08 07:01:57.026 UTC [msp] GetDefaultSigningIdentity -> DEBU 9ef[0m Obtaining default signing identity
+[36m2020-05-08 07:01:57.027 UTC [msp.identity] Sign -> DEBU 9f0[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161044 

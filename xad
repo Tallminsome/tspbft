@@ -1,0 +1,1000 @@
+[36m2020-05-08 07:01:57.027 UTC [msp.identity] Sign -> DEBU 9f1[0m Sign: digest: 6D237FFB8CC6A7E92A2BDBC1522763F28CBBD2A910117071F7B9D63569D8350B 
+[36m2020-05-08 07:01:57.027 UTC [msp] GetDefaultSigningIdentity -> DEBU 9f2[0m Obtaining default signing identity
+[36m2020-05-08 07:01:57.027 UTC [msp.identity] Sign -> DEBU 9f3[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:01:57.027 UTC [msp.identity] Sign -> DEBU 9f4[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:01:57.027 UTC [gossip.discovery] periodicalSendAlive -> DEBU 9f5[0m Sleeping 5s
+[36m2020-05-08 07:01:58.219 UTC [gossip.election] waitForInterrupt -> DEBU 9f6[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:01:58.220 UTC [gossip.election] IsLeader -> DEBU 9f7[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:01:58.220 UTC [msp] GetDefaultSigningIdentity -> DEBU 9f8[0m Obtaining default signing identity
+[36m2020-05-08 07:01:58.220 UTC [msp.identity] Sign -> DEBU 9f9[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610191801 
+[36m2020-05-08 07:01:58.220 UTC [msp.identity] Sign -> DEBU 9fa[0m Sign: digest: 0C03E7D2FE7FCE9ECD94536D001524985FE0E4406EEF43FA59DA07DE557EE6FA 
+[36m2020-05-08 07:01:58.220 UTC [gossip.election] waitForInterrupt -> DEBU 9fb[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:02:00.305 UTC [msp] GetDefaultSigningIdentity -> DEBU 9fc[0m Obtaining default signing identity
+[36m2020-05-08 07:02:00.306 UTC [msp.identity] Sign -> DEBU 9fd[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161045 
+[36m2020-05-08 07:02:00.306 UTC [msp.identity] Sign -> DEBU 9fe[0m Sign: digest: 767C0C111230249A4E6C9D904003A1A834213024931E7A6C29125A5E9B06484A 
+[36m2020-05-08 07:02:00.306 UTC [msp] GetDefaultSigningIdentity -> DEBU 9ff[0m Obtaining default signing identity
+[36m2020-05-08 07:02:00.306 UTC [msp.identity] Sign -> DEBU a00[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:00.306 UTC [msp.identity] Sign -> DEBU a01[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:01.954 UTC [gossip.discovery] periodicalReconnectToDead -> DEBU a02[0m Sleeping 25s
+[36m2020-05-08 07:02:02.028 UTC [msp] GetDefaultSigningIdentity -> DEBU a03[0m Obtaining default signing identity
+[36m2020-05-08 07:02:02.028 UTC [msp.identity] Sign -> DEBU a04[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161046 
+[36m2020-05-08 07:02:02.028 UTC [msp.identity] Sign -> DEBU a05[0m Sign: digest: 6C3E4B90C3624BA2DAF071EAE015A33E16B53F5DFD77B4D8A3ED623A6609716E 
+[36m2020-05-08 07:02:02.028 UTC [msp] GetDefaultSigningIdentity -> DEBU a06[0m Obtaining default signing identity
+[36m2020-05-08 07:02:02.028 UTC [msp.identity] Sign -> DEBU a07[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:02.028 UTC [msp.identity] Sign -> DEBU a08[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:02.028 UTC [gossip.discovery] periodicalSendAlive -> DEBU a09[0m Sleeping 5s
+[36m2020-05-08 07:02:03.221 UTC [gossip.election] waitForInterrupt -> DEBU a0a[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:02:03.221 UTC [gossip.election] IsLeader -> DEBU a0b[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:02:03.221 UTC [msp] GetDefaultSigningIdentity -> DEBU a0c[0m Obtaining default signing identity
+[36m2020-05-08 07:02:03.221 UTC [msp.identity] Sign -> DEBU a0d[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616101A1801 
+[36m2020-05-08 07:02:03.221 UTC [msp.identity] Sign -> DEBU a0e[0m Sign: digest: 6D706029BE9770C09F9FEE0F2D6EE422338B54E7A826214FD6225CD0F653B4F8 
+[36m2020-05-08 07:02:03.221 UTC [gossip.election] waitForInterrupt -> DEBU a0f[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:02:04.307 UTC [msp] GetDefaultSigningIdentity -> DEBU a10[0m Obtaining default signing identity
+[36m2020-05-08 07:02:04.307 UTC [msp.identity] Sign -> DEBU a11[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161047 
+[36m2020-05-08 07:02:04.307 UTC [msp.identity] Sign -> DEBU a12[0m Sign: digest: ACF7EAA423944EC63BA89ED2038EB2C413DE3EDC7148748B6D92D61E1D2BE3A4 
+[36m2020-05-08 07:02:04.308 UTC [msp] GetDefaultSigningIdentity -> DEBU a13[0m Obtaining default signing identity
+[36m2020-05-08 07:02:04.308 UTC [msp.identity] Sign -> DEBU a14[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:04.308 UTC [msp.identity] Sign -> DEBU a15[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:07.029 UTC [msp] GetDefaultSigningIdentity -> DEBU a16[0m Obtaining default signing identity
+[36m2020-05-08 07:02:07.029 UTC [msp.identity] Sign -> DEBU a17[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161048 
+[36m2020-05-08 07:02:07.029 UTC [msp.identity] Sign -> DEBU a18[0m Sign: digest: 34297E810FBEA42F0F5EE24940A7C7EAB10EFE9FB9C4C0CA3E39AC8217C71B5D 
+[36m2020-05-08 07:02:07.029 UTC [msp] GetDefaultSigningIdentity -> DEBU a19[0m Obtaining default signing identity
+[36m2020-05-08 07:02:07.029 UTC [msp.identity] Sign -> DEBU a1a[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:07.030 UTC [msp.identity] Sign -> DEBU a1b[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:07.030 UTC [gossip.discovery] periodicalSendAlive -> DEBU a1c[0m Sleeping 5s
+[36m2020-05-08 07:02:08.222 UTC [gossip.election] waitForInterrupt -> DEBU a1d[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:02:08.222 UTC [gossip.election] IsLeader -> DEBU a1e[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:02:08.222 UTC [msp] GetDefaultSigningIdentity -> DEBU a1f[0m Obtaining default signing identity
+[36m2020-05-08 07:02:08.222 UTC [msp.identity] Sign -> DEBU a20[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616101B1801 
+[36m2020-05-08 07:02:08.222 UTC [msp.identity] Sign -> DEBU a21[0m Sign: digest: FA231AF9E385EBD7DFFFAAA95B504B7987842C7213A52A656D4EDEF03BB5CE69 
+[36m2020-05-08 07:02:08.222 UTC [gossip.election] waitForInterrupt -> DEBU a22[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:02:08.309 UTC [msp] GetDefaultSigningIdentity -> DEBU a23[0m Obtaining default signing identity
+[36m2020-05-08 07:02:08.310 UTC [msp.identity] Sign -> DEBU a24[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161049 
+[36m2020-05-08 07:02:08.310 UTC [msp.identity] Sign -> DEBU a25[0m Sign: digest: D1BD26DB8F5D5B52533700E79B7939055EFA1B36B5EA189FAD7B3387370E9343 
+[36m2020-05-08 07:02:08.310 UTC [msp] GetDefaultSigningIdentity -> DEBU a26[0m Obtaining default signing identity
+[36m2020-05-08 07:02:08.310 UTC [msp.identity] Sign -> DEBU a27[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:08.310 UTC [msp.identity] Sign -> DEBU a28[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:12.031 UTC [msp] GetDefaultSigningIdentity -> DEBU a29[0m Obtaining default signing identity
+[36m2020-05-08 07:02:12.031 UTC [msp.identity] Sign -> DEBU a2a[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616104A 
+[36m2020-05-08 07:02:12.031 UTC [msp.identity] Sign -> DEBU a2b[0m Sign: digest: D1297E069F470FD7AF94D5E441787693EAE4A07D4C4DE38607E5CDA9209350E4 
+[36m2020-05-08 07:02:12.031 UTC [msp] GetDefaultSigningIdentity -> DEBU a2c[0m Obtaining default signing identity
+[36m2020-05-08 07:02:12.031 UTC [msp.identity] Sign -> DEBU a2d[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:12.031 UTC [msp.identity] Sign -> DEBU a2e[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:12.032 UTC [gossip.discovery] periodicalSendAlive -> DEBU a2f[0m Sleeping 5s
+[36m2020-05-08 07:02:12.311 UTC [msp] GetDefaultSigningIdentity -> DEBU a30[0m Obtaining default signing identity
+[36m2020-05-08 07:02:12.311 UTC [msp.identity] Sign -> DEBU a31[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616104B 
+[36m2020-05-08 07:02:12.311 UTC [msp.identity] Sign -> DEBU a32[0m Sign: digest: 8A517DCCC06D79733CBB7B7315B740B96CEA569AE71D590F3D857724DB854049 
+[36m2020-05-08 07:02:12.311 UTC [msp] GetDefaultSigningIdentity -> DEBU a33[0m Obtaining default signing identity
+[36m2020-05-08 07:02:12.311 UTC [msp.identity] Sign -> DEBU a34[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:12.311 UTC [msp.identity] Sign -> DEBU a35[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:13.223 UTC [gossip.election] waitForInterrupt -> DEBU a36[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:02:13.223 UTC [gossip.election] IsLeader -> DEBU a37[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:02:13.223 UTC [msp] GetDefaultSigningIdentity -> DEBU a38[0m Obtaining default signing identity
+[36m2020-05-08 07:02:13.223 UTC [msp.identity] Sign -> DEBU a39[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616101C1801 
+[36m2020-05-08 07:02:13.223 UTC [msp.identity] Sign -> DEBU a3a[0m Sign: digest: EF23B3F3AAE60CBAEE3EF1FD30200688E7D9D84FD75A82641EF114C84784B020 
+[36m2020-05-08 07:02:13.223 UTC [gossip.election] waitForInterrupt -> DEBU a3b[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:02:16.313 UTC [msp] GetDefaultSigningIdentity -> DEBU a3c[0m Obtaining default signing identity
+[36m2020-05-08 07:02:16.313 UTC [msp.identity] Sign -> DEBU a3d[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616104C 
+[36m2020-05-08 07:02:16.313 UTC [msp.identity] Sign -> DEBU a3e[0m Sign: digest: DD05CDE397220728562AE154FBBB5450EC5E42455E56BD7BCBC4C78D8AD3978E 
+[36m2020-05-08 07:02:16.313 UTC [msp] GetDefaultSigningIdentity -> DEBU a3f[0m Obtaining default signing identity
+[36m2020-05-08 07:02:16.313 UTC [msp.identity] Sign -> DEBU a40[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:16.313 UTC [msp.identity] Sign -> DEBU a41[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:17.033 UTC [msp] GetDefaultSigningIdentity -> DEBU a42[0m Obtaining default signing identity
+[36m2020-05-08 07:02:17.033 UTC [msp.identity] Sign -> DEBU a43[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616104D 
+[36m2020-05-08 07:02:17.033 UTC [msp.identity] Sign -> DEBU a44[0m Sign: digest: F95018B1499455257A2678178DA09FED9579EF79A3FEEE0393AF50C007D8B877 
+[36m2020-05-08 07:02:17.033 UTC [msp] GetDefaultSigningIdentity -> DEBU a45[0m Obtaining default signing identity
+[36m2020-05-08 07:02:17.033 UTC [msp.identity] Sign -> DEBU a46[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:17.033 UTC [msp.identity] Sign -> DEBU a47[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:17.033 UTC [gossip.discovery] periodicalSendAlive -> DEBU a48[0m Sleeping 5s
+[36m2020-05-08 07:02:18.224 UTC [gossip.election] waitForInterrupt -> DEBU a49[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:02:18.224 UTC [gossip.election] IsLeader -> DEBU a4a[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:02:18.224 UTC [msp] GetDefaultSigningIdentity -> DEBU a4b[0m Obtaining default signing identity
+[36m2020-05-08 07:02:18.224 UTC [msp.identity] Sign -> DEBU a4c[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616101D1801 
+[36m2020-05-08 07:02:18.224 UTC [msp.identity] Sign -> DEBU a4d[0m Sign: digest: A18860225CE3180C7071CCE106EEAD26EBE73ED3F41A94A44DFA3E23DBCF0042 
+[36m2020-05-08 07:02:18.225 UTC [gossip.election] waitForInterrupt -> DEBU a4e[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:02:20.314 UTC [msp] GetDefaultSigningIdentity -> DEBU a4f[0m Obtaining default signing identity
+[36m2020-05-08 07:02:20.314 UTC [msp.identity] Sign -> DEBU a50[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616104E 
+[36m2020-05-08 07:02:20.314 UTC [msp.identity] Sign -> DEBU a51[0m Sign: digest: 819055817D68EC0B6646182F0D97BD34C8EC2B9445DBBD1DC241662489A46EC5 
+[36m2020-05-08 07:02:20.314 UTC [msp] GetDefaultSigningIdentity -> DEBU a52[0m Obtaining default signing identity
+[36m2020-05-08 07:02:20.314 UTC [msp.identity] Sign -> DEBU a53[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:20.314 UTC [msp.identity] Sign -> DEBU a54[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:22.034 UTC [msp] GetDefaultSigningIdentity -> DEBU a55[0m Obtaining default signing identity
+[36m2020-05-08 07:02:22.034 UTC [msp.identity] Sign -> DEBU a56[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616104F 
+[36m2020-05-08 07:02:22.034 UTC [msp.identity] Sign -> DEBU a57[0m Sign: digest: 6B2374D01BB33760BFBE709CB98CA19E151F5DD7BC61EA12E8ADFFD968BB51D3 
+[36m2020-05-08 07:02:22.034 UTC [msp] GetDefaultSigningIdentity -> DEBU a58[0m Obtaining default signing identity
+[36m2020-05-08 07:02:22.034 UTC [msp.identity] Sign -> DEBU a59[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:22.034 UTC [msp.identity] Sign -> DEBU a5a[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:22.035 UTC [gossip.discovery] periodicalSendAlive -> DEBU a5b[0m Sleeping 5s
+[36m2020-05-08 07:02:23.226 UTC [gossip.election] waitForInterrupt -> DEBU a5c[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:02:23.226 UTC [gossip.election] IsLeader -> DEBU a5d[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:02:23.226 UTC [msp] GetDefaultSigningIdentity -> DEBU a5e[0m Obtaining default signing identity
+[36m2020-05-08 07:02:23.226 UTC [msp.identity] Sign -> DEBU a5f[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616101E1801 
+[36m2020-05-08 07:02:23.226 UTC [msp.identity] Sign -> DEBU a60[0m Sign: digest: B4BBEA319EC255C114A4386433F6739DB3928BB530540C4DF1747CFFF9FAF6A9 
+[36m2020-05-08 07:02:23.226 UTC [gossip.election] waitForInterrupt -> DEBU a61[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:02:24.316 UTC [msp] GetDefaultSigningIdentity -> DEBU a62[0m Obtaining default signing identity
+[36m2020-05-08 07:02:24.316 UTC [msp.identity] Sign -> DEBU a63[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161050 
+[36m2020-05-08 07:02:24.316 UTC [msp.identity] Sign -> DEBU a64[0m Sign: digest: 50A87DF83B7AF5770A6CAB88E3F756DAF5C864E571B9DF09A4E4B709EFD3BCC0 
+[36m2020-05-08 07:02:24.316 UTC [msp] GetDefaultSigningIdentity -> DEBU a65[0m Obtaining default signing identity
+[36m2020-05-08 07:02:24.316 UTC [msp.identity] Sign -> DEBU a66[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:24.316 UTC [msp.identity] Sign -> DEBU a67[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:26.956 UTC [gossip.discovery] periodicalReconnectToDead -> DEBU a68[0m Sleeping 25s
+[36m2020-05-08 07:02:27.035 UTC [msp] GetDefaultSigningIdentity -> DEBU a69[0m Obtaining default signing identity
+[36m2020-05-08 07:02:27.035 UTC [msp.identity] Sign -> DEBU a6a[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161051 
+[36m2020-05-08 07:02:27.036 UTC [msp.identity] Sign -> DEBU a6b[0m Sign: digest: F1875B0092E6F970CC7452AB607BA981CEA18C8041681B164A8BE86BA88359C3 
+[36m2020-05-08 07:02:27.036 UTC [msp] GetDefaultSigningIdentity -> DEBU a6c[0m Obtaining default signing identity
+[36m2020-05-08 07:02:27.036 UTC [msp.identity] Sign -> DEBU a6d[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:27.036 UTC [msp.identity] Sign -> DEBU a6e[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:27.036 UTC [gossip.discovery] periodicalSendAlive -> DEBU a6f[0m Sleeping 5s
+[36m2020-05-08 07:02:28.227 UTC [gossip.election] waitForInterrupt -> DEBU a70[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:02:28.227 UTC [gossip.election] IsLeader -> DEBU a71[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:02:28.227 UTC [msp] GetDefaultSigningIdentity -> DEBU a72[0m Obtaining default signing identity
+[36m2020-05-08 07:02:28.227 UTC [msp.identity] Sign -> DEBU a73[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616101F1801 
+[36m2020-05-08 07:02:28.227 UTC [msp.identity] Sign -> DEBU a74[0m Sign: digest: 27AC543B8C21DA043F90E684D85B21C5757F3A86ADBD0F4C8EF3F84B6FDA2A94 
+[36m2020-05-08 07:02:28.227 UTC [gossip.election] waitForInterrupt -> DEBU a75[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:02:28.317 UTC [msp] GetDefaultSigningIdentity -> DEBU a76[0m Obtaining default signing identity
+[36m2020-05-08 07:02:28.317 UTC [msp.identity] Sign -> DEBU a77[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161052 
+[36m2020-05-08 07:02:28.317 UTC [msp.identity] Sign -> DEBU a78[0m Sign: digest: FCDCD1AA28840F766D4135325844DC16D0387370CE8A6C9C620716FE4193C1EF 
+[36m2020-05-08 07:02:28.317 UTC [msp] GetDefaultSigningIdentity -> DEBU a79[0m Obtaining default signing identity
+[36m2020-05-08 07:02:28.317 UTC [msp.identity] Sign -> DEBU a7a[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:28.317 UTC [msp.identity] Sign -> DEBU a7b[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:32.037 UTC [msp] GetDefaultSigningIdentity -> DEBU a7c[0m Obtaining default signing identity
+[36m2020-05-08 07:02:32.037 UTC [msp.identity] Sign -> DEBU a7d[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161053 
+[36m2020-05-08 07:02:32.037 UTC [msp.identity] Sign -> DEBU a7e[0m Sign: digest: ED261E7E487FF813E66A20629204F1A9CD7CEA8164A786AA30CE6AED8B44CF0A 
+[36m2020-05-08 07:02:32.037 UTC [msp] GetDefaultSigningIdentity -> DEBU a7f[0m Obtaining default signing identity
+[36m2020-05-08 07:02:32.037 UTC [msp.identity] Sign -> DEBU a80[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:32.037 UTC [msp.identity] Sign -> DEBU a81[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:32.037 UTC [gossip.discovery] periodicalSendAlive -> DEBU a82[0m Sleeping 5s
+[36m2020-05-08 07:02:32.318 UTC [msp] GetDefaultSigningIdentity -> DEBU a83[0m Obtaining default signing identity
+[36m2020-05-08 07:02:32.318 UTC [msp.identity] Sign -> DEBU a84[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161054 
+[36m2020-05-08 07:02:32.318 UTC [msp.identity] Sign -> DEBU a85[0m Sign: digest: 04FC7B82C8BAD3D0FEE44A52579E0471F52410DA3F8BD2E22F87DFA11E2230B0 
+[36m2020-05-08 07:02:32.319 UTC [msp] GetDefaultSigningIdentity -> DEBU a86[0m Obtaining default signing identity
+[36m2020-05-08 07:02:32.319 UTC [msp.identity] Sign -> DEBU a87[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:32.319 UTC [msp.identity] Sign -> DEBU a88[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:33.228 UTC [gossip.election] waitForInterrupt -> DEBU a89[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:02:33.228 UTC [gossip.election] IsLeader -> DEBU a8a[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:02:33.228 UTC [msp] GetDefaultSigningIdentity -> DEBU a8b[0m Obtaining default signing identity
+[36m2020-05-08 07:02:33.228 UTC [msp.identity] Sign -> DEBU a8c[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610201801 
+[36m2020-05-08 07:02:33.228 UTC [msp.identity] Sign -> DEBU a8d[0m Sign: digest: D979536E81DEB02C416CC0C7DCFE2BFFF32070F8B7050977073EA7022D460981 
+[36m2020-05-08 07:02:33.228 UTC [gossip.election] waitForInterrupt -> DEBU a8e[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:02:36.320 UTC [msp] GetDefaultSigningIdentity -> DEBU a8f[0m Obtaining default signing identity
+[36m2020-05-08 07:02:36.320 UTC [msp.identity] Sign -> DEBU a90[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161055 
+[36m2020-05-08 07:02:36.320 UTC [msp.identity] Sign -> DEBU a91[0m Sign: digest: 8D077E6F07EE390476DC4CF02B78CFBD95AE9B93DB58A724BEE39676FE4D7FA1 
+[36m2020-05-08 07:02:36.320 UTC [msp] GetDefaultSigningIdentity -> DEBU a92[0m Obtaining default signing identity
+[36m2020-05-08 07:02:36.320 UTC [msp.identity] Sign -> DEBU a93[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:36.320 UTC [msp.identity] Sign -> DEBU a94[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:37.038 UTC [msp] GetDefaultSigningIdentity -> DEBU a95[0m Obtaining default signing identity
+[36m2020-05-08 07:02:37.038 UTC [msp.identity] Sign -> DEBU a96[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161056 
+[36m2020-05-08 07:02:37.038 UTC [msp.identity] Sign -> DEBU a97[0m Sign: digest: D6A0D0B682B29B76F4E1A366AC5439D0E0723B0777A889030F1BF13957DFA61F 
+[36m2020-05-08 07:02:37.039 UTC [msp] GetDefaultSigningIdentity -> DEBU a98[0m Obtaining default signing identity
+[36m2020-05-08 07:02:37.039 UTC [msp.identity] Sign -> DEBU a99[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:37.039 UTC [msp.identity] Sign -> DEBU a9a[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:37.039 UTC [gossip.discovery] periodicalSendAlive -> DEBU a9b[0m Sleeping 5s
+[36m2020-05-08 07:02:38.229 UTC [gossip.election] waitForInterrupt -> DEBU a9c[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:02:38.229 UTC [gossip.election] IsLeader -> DEBU a9d[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:02:38.230 UTC [msp] GetDefaultSigningIdentity -> DEBU a9e[0m Obtaining default signing identity
+[36m2020-05-08 07:02:38.230 UTC [msp.identity] Sign -> DEBU a9f[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610211801 
+[36m2020-05-08 07:02:38.230 UTC [msp.identity] Sign -> DEBU aa0[0m Sign: digest: 33A97242E0871D2B4515A7F521554376CDAD904CDE0311F9D5190072948CCCCC 
+[36m2020-05-08 07:02:38.230 UTC [gossip.election] waitForInterrupt -> DEBU aa1[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:02:40.322 UTC [msp] GetDefaultSigningIdentity -> DEBU aa2[0m Obtaining default signing identity
+[36m2020-05-08 07:02:40.322 UTC [msp.identity] Sign -> DEBU aa3[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161057 
+[36m2020-05-08 07:02:40.322 UTC [msp.identity] Sign -> DEBU aa4[0m Sign: digest: F2878C8A9E9C210B64B858D4304B08780F14DE891AF96866A31F7043F4552102 
+[36m2020-05-08 07:02:40.322 UTC [msp] GetDefaultSigningIdentity -> DEBU aa5[0m Obtaining default signing identity
+[36m2020-05-08 07:02:40.322 UTC [msp.identity] Sign -> DEBU aa6[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:40.322 UTC [msp.identity] Sign -> DEBU aa7[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:42.040 UTC [msp] GetDefaultSigningIdentity -> DEBU aa8[0m Obtaining default signing identity
+[36m2020-05-08 07:02:42.040 UTC [msp.identity] Sign -> DEBU aa9[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161058 
+[36m2020-05-08 07:02:42.040 UTC [msp.identity] Sign -> DEBU aaa[0m Sign: digest: 16C215124CF788C114A1E6FB2177EF514FA2B646BA87478E2C2A588A2BF2B22C 
+[36m2020-05-08 07:02:42.040 UTC [msp] GetDefaultSigningIdentity -> DEBU aab[0m Obtaining default signing identity
+[36m2020-05-08 07:02:42.040 UTC [msp.identity] Sign -> DEBU aac[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:42.040 UTC [msp.identity] Sign -> DEBU aad[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:42.040 UTC [gossip.discovery] periodicalSendAlive -> DEBU aae[0m Sleeping 5s
+[36m2020-05-08 07:02:43.230 UTC [gossip.election] waitForInterrupt -> DEBU aaf[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:02:43.230 UTC [gossip.election] IsLeader -> DEBU ab0[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:02:43.230 UTC [msp] GetDefaultSigningIdentity -> DEBU ab1[0m Obtaining default signing identity
+[36m2020-05-08 07:02:43.231 UTC [msp.identity] Sign -> DEBU ab2[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610221801 
+[36m2020-05-08 07:02:43.231 UTC [msp.identity] Sign -> DEBU ab3[0m Sign: digest: BF66CADB70B2601A31576A115A98E68993A98E0D89185AD58C4A3900353D0FE4 
+[36m2020-05-08 07:02:43.231 UTC [gossip.election] waitForInterrupt -> DEBU ab4[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:02:44.323 UTC [msp] GetDefaultSigningIdentity -> DEBU ab5[0m Obtaining default signing identity
+[36m2020-05-08 07:02:44.323 UTC [msp.identity] Sign -> DEBU ab6[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161059 
+[36m2020-05-08 07:02:44.323 UTC [msp.identity] Sign -> DEBU ab7[0m Sign: digest: E1FC835E99336D841A4C8C24B91C860F740A170F7097B14FD3F71FAC847DD4F3 
+[36m2020-05-08 07:02:44.323 UTC [msp] GetDefaultSigningIdentity -> DEBU ab8[0m Obtaining default signing identity
+[36m2020-05-08 07:02:44.323 UTC [msp.identity] Sign -> DEBU ab9[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:44.323 UTC [msp.identity] Sign -> DEBU aba[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:47.041 UTC [msp] GetDefaultSigningIdentity -> DEBU abb[0m Obtaining default signing identity
+[36m2020-05-08 07:02:47.042 UTC [msp.identity] Sign -> DEBU abc[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616105A 
+[36m2020-05-08 07:02:47.042 UTC [msp.identity] Sign -> DEBU abd[0m Sign: digest: 0A2B1244FB53903E752B312821DE2A29E01DE0419C7B539976CBD97135634730 
+[36m2020-05-08 07:02:47.042 UTC [msp] GetDefaultSigningIdentity -> DEBU abe[0m Obtaining default signing identity
+[36m2020-05-08 07:02:47.042 UTC [msp.identity] Sign -> DEBU abf[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:47.042 UTC [msp.identity] Sign -> DEBU ac0[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:47.042 UTC [gossip.discovery] periodicalSendAlive -> DEBU ac1[0m Sleeping 5s
+[36m2020-05-08 07:02:48.232 UTC [gossip.election] waitForInterrupt -> DEBU ac2[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:02:48.232 UTC [gossip.election] IsLeader -> DEBU ac3[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:02:48.232 UTC [msp] GetDefaultSigningIdentity -> DEBU ac4[0m Obtaining default signing identity
+[36m2020-05-08 07:02:48.232 UTC [msp.identity] Sign -> DEBU ac5[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610231801 
+[36m2020-05-08 07:02:48.232 UTC [msp.identity] Sign -> DEBU ac6[0m Sign: digest: 93C569B97F38126CC1A363365461B7ACA7B3C3B2569E17ABB9213CFCCDAC6E70 
+[36m2020-05-08 07:02:48.232 UTC [gossip.election] waitForInterrupt -> DEBU ac7[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:02:48.324 UTC [msp] GetDefaultSigningIdentity -> DEBU ac8[0m Obtaining default signing identity
+[36m2020-05-08 07:02:48.324 UTC [msp.identity] Sign -> DEBU ac9[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616105B 
+[36m2020-05-08 07:02:48.324 UTC [msp.identity] Sign -> DEBU aca[0m Sign: digest: 6A2801BC62B4492E3ECDF1590684A046990E650D6DB4DADF7D3102D023D5EA31 
+[36m2020-05-08 07:02:48.324 UTC [msp] GetDefaultSigningIdentity -> DEBU acb[0m Obtaining default signing identity
+[36m2020-05-08 07:02:48.324 UTC [msp.identity] Sign -> DEBU acc[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:48.324 UTC [msp.identity] Sign -> DEBU acd[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:51.957 UTC [gossip.discovery] periodicalReconnectToDead -> DEBU ace[0m Sleeping 25s
+[36m2020-05-08 07:02:52.043 UTC [msp] GetDefaultSigningIdentity -> DEBU acf[0m Obtaining default signing identity
+[36m2020-05-08 07:02:52.043 UTC [msp.identity] Sign -> DEBU ad0[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616105C 
+[36m2020-05-08 07:02:52.043 UTC [msp.identity] Sign -> DEBU ad1[0m Sign: digest: 036BAB2208A618621A241A258B403967AC7391CF80883D9498739412DC4E7C27 
+[36m2020-05-08 07:02:52.043 UTC [msp] GetDefaultSigningIdentity -> DEBU ad2[0m Obtaining default signing identity
+[36m2020-05-08 07:02:52.043 UTC [msp.identity] Sign -> DEBU ad3[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:52.043 UTC [msp.identity] Sign -> DEBU ad4[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:52.043 UTC [gossip.discovery] periodicalSendAlive -> DEBU ad5[0m Sleeping 5s
+[36m2020-05-08 07:02:52.326 UTC [msp] GetDefaultSigningIdentity -> DEBU ad6[0m Obtaining default signing identity
+[36m2020-05-08 07:02:52.326 UTC [msp.identity] Sign -> DEBU ad7[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616105D 
+[36m2020-05-08 07:02:52.326 UTC [msp.identity] Sign -> DEBU ad8[0m Sign: digest: AE0B7FAD17B05B03D61B10D2FFFB2D73688C05CE2CC58A6848D33DFE15BA4F21 
+[36m2020-05-08 07:02:52.326 UTC [msp] GetDefaultSigningIdentity -> DEBU ad9[0m Obtaining default signing identity
+[36m2020-05-08 07:02:52.326 UTC [msp.identity] Sign -> DEBU ada[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:52.326 UTC [msp.identity] Sign -> DEBU adb[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:53.233 UTC [gossip.election] waitForInterrupt -> DEBU adc[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:02:53.233 UTC [gossip.election] IsLeader -> DEBU add[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:02:53.233 UTC [msp] GetDefaultSigningIdentity -> DEBU ade[0m Obtaining default signing identity
+[36m2020-05-08 07:02:53.234 UTC [msp.identity] Sign -> DEBU adf[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610241801 
+[36m2020-05-08 07:02:53.234 UTC [msp.identity] Sign -> DEBU ae0[0m Sign: digest: 7EB2BEA8A15695D4802FFF9DBB3295459288CDBF529C01E54409468FCAC59439 
+[36m2020-05-08 07:02:53.234 UTC [gossip.election] waitForInterrupt -> DEBU ae1[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:02:56.327 UTC [msp] GetDefaultSigningIdentity -> DEBU ae2[0m Obtaining default signing identity
+[36m2020-05-08 07:02:56.327 UTC [msp.identity] Sign -> DEBU ae3[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616105E 
+[36m2020-05-08 07:02:56.327 UTC [msp.identity] Sign -> DEBU ae4[0m Sign: digest: BB0A39A6B5CC53771DBA25170348E7358FD000FBE824C14721E5CEAD2E17B6F8 
+[36m2020-05-08 07:02:56.327 UTC [msp] GetDefaultSigningIdentity -> DEBU ae5[0m Obtaining default signing identity
+[36m2020-05-08 07:02:56.327 UTC [msp.identity] Sign -> DEBU ae6[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:56.327 UTC [msp.identity] Sign -> DEBU ae7[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:56.950 UTC [gossip.privdata] run -> DEBU ae8[0m Start reconcile missing private info
+[36m2020-05-08 07:02:56.950 UTC [leveldbhelper] GetIterator -> DEBU ae9[0m Getting iterator for range [[]byte{0x6d, 0x79, 0x63, 0x68, 0x61, 0x6e, 0x6e, 0x65, 0x6c, 0x0, 0x4, 0x7, 0xfc}] - [[]byte{0x6d, 0x79, 0x63, 0x68, 0x61, 0x6e, 0x6e, 0x65, 0x6c, 0x0, 0x4, 0x8}]
+[36m2020-05-08 07:02:56.950 UTC [gossip.privdata] reconcile -> DEBU aea[0m Reconciliation cycle finished successfully. no items to reconcile
+[36m2020-05-08 07:02:57.045 UTC [msp] GetDefaultSigningIdentity -> DEBU aeb[0m Obtaining default signing identity
+[36m2020-05-08 07:02:57.045 UTC [msp.identity] Sign -> DEBU aec[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616105F 
+[36m2020-05-08 07:02:57.045 UTC [msp.identity] Sign -> DEBU aed[0m Sign: digest: 4707448D246B16CA078B51407A6952FD92E00B431705AAA5385C143CFC8325CA 
+[36m2020-05-08 07:02:57.045 UTC [msp] GetDefaultSigningIdentity -> DEBU aee[0m Obtaining default signing identity
+[36m2020-05-08 07:02:57.045 UTC [msp.identity] Sign -> DEBU aef[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:02:57.045 UTC [msp.identity] Sign -> DEBU af0[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:02:57.045 UTC [gossip.discovery] periodicalSendAlive -> DEBU af1[0m Sleeping 5s
+[36m2020-05-08 07:02:58.235 UTC [gossip.election] waitForInterrupt -> DEBU af2[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:02:58.235 UTC [gossip.election] IsLeader -> DEBU af3[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:02:58.235 UTC [msp] GetDefaultSigningIdentity -> DEBU af4[0m Obtaining default signing identity
+[36m2020-05-08 07:02:58.235 UTC [msp.identity] Sign -> DEBU af5[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610251801 
+[36m2020-05-08 07:02:58.235 UTC [msp.identity] Sign -> DEBU af6[0m Sign: digest: 57591C9767BE36CEDDC4A998FD3ABA294BB9B910770590B1FF52E0180EACCED1 
+[36m2020-05-08 07:02:58.235 UTC [gossip.election] waitForInterrupt -> DEBU af7[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:03:00.328 UTC [msp] GetDefaultSigningIdentity -> DEBU af8[0m Obtaining default signing identity
+[36m2020-05-08 07:03:00.329 UTC [msp.identity] Sign -> DEBU af9[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161060 
+[36m2020-05-08 07:03:00.329 UTC [msp.identity] Sign -> DEBU afa[0m Sign: digest: C2F9E18BE6D5D82813151EFC70707753DCEA236408C9395DBCEF22989672145A 
+[36m2020-05-08 07:03:00.329 UTC [msp] GetDefaultSigningIdentity -> DEBU afb[0m Obtaining default signing identity
+[36m2020-05-08 07:03:00.329 UTC [msp.identity] Sign -> DEBU afc[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:00.329 UTC [msp.identity] Sign -> DEBU afd[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:02.046 UTC [msp] GetDefaultSigningIdentity -> DEBU afe[0m Obtaining default signing identity
+[36m2020-05-08 07:03:02.046 UTC [msp.identity] Sign -> DEBU aff[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161061 
+[36m2020-05-08 07:03:02.046 UTC [msp.identity] Sign -> DEBU b00[0m Sign: digest: D30B734A3557F634F2D64C7E5E93BB0FD6A78C30B35E4B85142235EA4E95DAD4 
+[36m2020-05-08 07:03:02.046 UTC [msp] GetDefaultSigningIdentity -> DEBU b01[0m Obtaining default signing identity
+[36m2020-05-08 07:03:02.046 UTC [msp.identity] Sign -> DEBU b02[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:02.046 UTC [msp.identity] Sign -> DEBU b03[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:02.046 UTC [gossip.discovery] periodicalSendAlive -> DEBU b04[0m Sleeping 5s
+[36m2020-05-08 07:03:03.235 UTC [gossip.election] waitForInterrupt -> DEBU b05[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:03:03.236 UTC [gossip.election] IsLeader -> DEBU b06[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:03:03.236 UTC [msp] GetDefaultSigningIdentity -> DEBU b07[0m Obtaining default signing identity
+[36m2020-05-08 07:03:03.236 UTC [msp.identity] Sign -> DEBU b08[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610261801 
+[36m2020-05-08 07:03:03.236 UTC [msp.identity] Sign -> DEBU b09[0m Sign: digest: 5AE975D4799C7C56E42A3A87E9CD3B161CA82585DB40D4013EDD0549B28FC044 
+[36m2020-05-08 07:03:03.236 UTC [gossip.election] waitForInterrupt -> DEBU b0a[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:03:04.329 UTC [msp] GetDefaultSigningIdentity -> DEBU b0b[0m Obtaining default signing identity
+[36m2020-05-08 07:03:04.329 UTC [msp.identity] Sign -> DEBU b0c[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161062 
+[36m2020-05-08 07:03:04.329 UTC [msp.identity] Sign -> DEBU b0d[0m Sign: digest: 7A06FE3C4E93745801D43ADD2D955C65F4160096FF01BFF2B7A638FF34C1F317 
+[36m2020-05-08 07:03:04.330 UTC [msp] GetDefaultSigningIdentity -> DEBU b0e[0m Obtaining default signing identity
+[36m2020-05-08 07:03:04.330 UTC [msp.identity] Sign -> DEBU b0f[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:04.330 UTC [msp.identity] Sign -> DEBU b10[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:07.048 UTC [msp] GetDefaultSigningIdentity -> DEBU b11[0m Obtaining default signing identity
+[36m2020-05-08 07:03:07.048 UTC [msp.identity] Sign -> DEBU b12[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161063 
+[36m2020-05-08 07:03:07.048 UTC [msp.identity] Sign -> DEBU b13[0m Sign: digest: 104AC8527914B90CA72A85D5C152FEC791DDFBDAFC50EDEEF3553ABCB26A6D89 
+[36m2020-05-08 07:03:07.048 UTC [msp] GetDefaultSigningIdentity -> DEBU b14[0m Obtaining default signing identity
+[36m2020-05-08 07:03:07.048 UTC [msp.identity] Sign -> DEBU b15[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:07.048 UTC [msp.identity] Sign -> DEBU b16[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:07.048 UTC [gossip.discovery] periodicalSendAlive -> DEBU b17[0m Sleeping 5s
+[36m2020-05-08 07:03:08.236 UTC [gossip.election] waitForInterrupt -> DEBU b18[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:03:08.236 UTC [gossip.election] IsLeader -> DEBU b19[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:03:08.237 UTC [msp] GetDefaultSigningIdentity -> DEBU b1a[0m Obtaining default signing identity
+[36m2020-05-08 07:03:08.237 UTC [msp.identity] Sign -> DEBU b1b[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610271801 
+[36m2020-05-08 07:03:08.237 UTC [msp.identity] Sign -> DEBU b1c[0m Sign: digest: 62D2E5E7D48AF5C83CE7FF4120F978021B76C2D81868A260D760B7F62CB944C0 
+[36m2020-05-08 07:03:08.237 UTC [gossip.election] waitForInterrupt -> DEBU b1d[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:03:08.330 UTC [msp] GetDefaultSigningIdentity -> DEBU b1e[0m Obtaining default signing identity
+[36m2020-05-08 07:03:08.330 UTC [msp.identity] Sign -> DEBU b1f[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161064 
+[36m2020-05-08 07:03:08.330 UTC [msp.identity] Sign -> DEBU b20[0m Sign: digest: 1F36696FD892D4596743AF681B64FD464E95F05D60A541BE914683220157F923 
+[36m2020-05-08 07:03:08.330 UTC [msp] GetDefaultSigningIdentity -> DEBU b21[0m Obtaining default signing identity
+[36m2020-05-08 07:03:08.330 UTC [msp.identity] Sign -> DEBU b22[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:08.330 UTC [msp.identity] Sign -> DEBU b23[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:12.050 UTC [msp] GetDefaultSigningIdentity -> DEBU b24[0m Obtaining default signing identity
+[36m2020-05-08 07:03:12.050 UTC [msp.identity] Sign -> DEBU b25[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161065 
+[36m2020-05-08 07:03:12.050 UTC [msp.identity] Sign -> DEBU b26[0m Sign: digest: 2ADEBB46B9AF97F3C4F8A44AB75BB262273B5B0FCF0132CA8407A5696B49AD61 
+[36m2020-05-08 07:03:12.050 UTC [msp] GetDefaultSigningIdentity -> DEBU b27[0m Obtaining default signing identity
+[36m2020-05-08 07:03:12.050 UTC [msp.identity] Sign -> DEBU b28[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:12.050 UTC [msp.identity] Sign -> DEBU b29[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:12.050 UTC [gossip.discovery] periodicalSendAlive -> DEBU b2a[0m Sleeping 5s
+[36m2020-05-08 07:03:12.331 UTC [msp] GetDefaultSigningIdentity -> DEBU b2b[0m Obtaining default signing identity
+[36m2020-05-08 07:03:12.331 UTC [msp.identity] Sign -> DEBU b2c[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161066 
+[36m2020-05-08 07:03:12.331 UTC [msp.identity] Sign -> DEBU b2d[0m Sign: digest: 563CD419ED61A8EFE2999479417EA1172148083FFD772DDCB3E433AF0AE5DFC1 
+[36m2020-05-08 07:03:12.332 UTC [msp] GetDefaultSigningIdentity -> DEBU b2e[0m Obtaining default signing identity
+[36m2020-05-08 07:03:12.332 UTC [msp.identity] Sign -> DEBU b2f[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:12.332 UTC [msp.identity] Sign -> DEBU b30[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:13.238 UTC [gossip.election] waitForInterrupt -> DEBU b31[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:03:13.238 UTC [gossip.election] IsLeader -> DEBU b32[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:03:13.238 UTC [msp] GetDefaultSigningIdentity -> DEBU b33[0m Obtaining default signing identity
+[36m2020-05-08 07:03:13.238 UTC [msp.identity] Sign -> DEBU b34[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610281801 
+[36m2020-05-08 07:03:13.238 UTC [msp.identity] Sign -> DEBU b35[0m Sign: digest: 6E81C071E8A1037DA9132A8EF30CF5CE5AF43A7484AA10979CCA26C95B4C25E4 
+[36m2020-05-08 07:03:13.238 UTC [gossip.election] waitForInterrupt -> DEBU b36[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:03:16.332 UTC [msp] GetDefaultSigningIdentity -> DEBU b37[0m Obtaining default signing identity
+[36m2020-05-08 07:03:16.333 UTC [msp.identity] Sign -> DEBU b38[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161067 
+[36m2020-05-08 07:03:16.333 UTC [msp.identity] Sign -> DEBU b39[0m Sign: digest: 9CD46C482B097315219A4F72AA3F40528BF89F37DD09D218750F78148A6068EB 
+[36m2020-05-08 07:03:16.333 UTC [msp] GetDefaultSigningIdentity -> DEBU b3a[0m Obtaining default signing identity
+[36m2020-05-08 07:03:16.333 UTC [msp.identity] Sign -> DEBU b3b[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:16.333 UTC [msp.identity] Sign -> DEBU b3c[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:16.958 UTC [gossip.discovery] periodicalReconnectToDead -> DEBU b3d[0m Sleeping 25s
+[36m2020-05-08 07:03:17.051 UTC [msp] GetDefaultSigningIdentity -> DEBU b3e[0m Obtaining default signing identity
+[36m2020-05-08 07:03:17.051 UTC [msp.identity] Sign -> DEBU b3f[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161068 
+[36m2020-05-08 07:03:17.051 UTC [msp.identity] Sign -> DEBU b40[0m Sign: digest: 7503B9E745039193CAC230BCB1B0682CCD45E776670D816D0ACD73496DAFA10D 
+[36m2020-05-08 07:03:17.052 UTC [msp] GetDefaultSigningIdentity -> DEBU b41[0m Obtaining default signing identity
+[36m2020-05-08 07:03:17.052 UTC [msp.identity] Sign -> DEBU b42[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:17.052 UTC [msp.identity] Sign -> DEBU b43[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:17.052 UTC [gossip.discovery] periodicalSendAlive -> DEBU b44[0m Sleeping 5s
+[36m2020-05-08 07:03:18.239 UTC [gossip.election] waitForInterrupt -> DEBU b45[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:03:18.239 UTC [gossip.election] IsLeader -> DEBU b46[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:03:18.239 UTC [msp] GetDefaultSigningIdentity -> DEBU b47[0m Obtaining default signing identity
+[36m2020-05-08 07:03:18.239 UTC [msp.identity] Sign -> DEBU b48[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610291801 
+[36m2020-05-08 07:03:18.239 UTC [msp.identity] Sign -> DEBU b49[0m Sign: digest: 61FF02485252128EB32B2B90319B81BDB6DD001516A825EC69F779E55A875FD8 
+[36m2020-05-08 07:03:18.240 UTC [gossip.election] waitForInterrupt -> DEBU b4a[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:03:20.333 UTC [msp] GetDefaultSigningIdentity -> DEBU b4b[0m Obtaining default signing identity
+[36m2020-05-08 07:03:20.334 UTC [msp.identity] Sign -> DEBU b4c[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161069 
+[36m2020-05-08 07:03:20.334 UTC [msp.identity] Sign -> DEBU b4d[0m Sign: digest: ADA8F6D3348C126B9A34C3E87EFAB26565FE00FE58EB061417908C32C45D995F 
+[36m2020-05-08 07:03:20.334 UTC [msp] GetDefaultSigningIdentity -> DEBU b4e[0m Obtaining default signing identity
+[36m2020-05-08 07:03:20.334 UTC [msp.identity] Sign -> DEBU b4f[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:20.334 UTC [msp.identity] Sign -> DEBU b50[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:22.052 UTC [msp] GetDefaultSigningIdentity -> DEBU b51[0m Obtaining default signing identity
+[36m2020-05-08 07:03:22.052 UTC [msp.identity] Sign -> DEBU b52[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616106A 
+[36m2020-05-08 07:03:22.052 UTC [msp.identity] Sign -> DEBU b53[0m Sign: digest: C042E9DFEB16912F45ECD72693247779170FCA0F728A7B930DAEF75635F907A3 
+[36m2020-05-08 07:03:22.052 UTC [msp] GetDefaultSigningIdentity -> DEBU b54[0m Obtaining default signing identity
+[36m2020-05-08 07:03:22.052 UTC [msp.identity] Sign -> DEBU b55[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:22.052 UTC [msp.identity] Sign -> DEBU b56[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:22.052 UTC [gossip.discovery] periodicalSendAlive -> DEBU b57[0m Sleeping 5s
+[36m2020-05-08 07:03:23.241 UTC [gossip.election] waitForInterrupt -> DEBU b58[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:03:23.241 UTC [gossip.election] IsLeader -> DEBU b59[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:03:23.241 UTC [msp] GetDefaultSigningIdentity -> DEBU b5a[0m Obtaining default signing identity
+[36m2020-05-08 07:03:23.241 UTC [msp.identity] Sign -> DEBU b5b[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616102A1801 
+[36m2020-05-08 07:03:23.241 UTC [msp.identity] Sign -> DEBU b5c[0m Sign: digest: 60947072810C3449EC2237D11C79E6B91F75C26D24CD805AEB0C8E9ADF190064 
+[36m2020-05-08 07:03:23.241 UTC [gossip.election] waitForInterrupt -> DEBU b5d[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:03:24.336 UTC [msp] GetDefaultSigningIdentity -> DEBU b5e[0m Obtaining default signing identity
+[36m2020-05-08 07:03:24.336 UTC [msp.identity] Sign -> DEBU b5f[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616106B 
+[36m2020-05-08 07:03:24.336 UTC [msp.identity] Sign -> DEBU b60[0m Sign: digest: 1249B61EF3C309C5F0081B5F9938FD16CA3D8432E44AD2A4849FFF950298D79F 
+[36m2020-05-08 07:03:24.336 UTC [msp] GetDefaultSigningIdentity -> DEBU b61[0m Obtaining default signing identity
+[36m2020-05-08 07:03:24.336 UTC [msp.identity] Sign -> DEBU b62[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:24.336 UTC [msp.identity] Sign -> DEBU b63[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:27.053 UTC [msp] GetDefaultSigningIdentity -> DEBU b64[0m Obtaining default signing identity
+[36m2020-05-08 07:03:27.053 UTC [msp.identity] Sign -> DEBU b65[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616106C 
+[36m2020-05-08 07:03:27.053 UTC [msp.identity] Sign -> DEBU b66[0m Sign: digest: E3AC27D72156D2E3BB350627C7AF0A84B212097740ED305BFF1FA2B04A4E80B5 
+[36m2020-05-08 07:03:27.053 UTC [msp] GetDefaultSigningIdentity -> DEBU b67[0m Obtaining default signing identity
+[36m2020-05-08 07:03:27.054 UTC [msp.identity] Sign -> DEBU b68[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:27.054 UTC [msp.identity] Sign -> DEBU b69[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:27.054 UTC [gossip.discovery] periodicalSendAlive -> DEBU b6a[0m Sleeping 5s
+[36m2020-05-08 07:03:28.242 UTC [gossip.election] waitForInterrupt -> DEBU b6b[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:03:28.242 UTC [gossip.election] IsLeader -> DEBU b6c[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:03:28.242 UTC [msp] GetDefaultSigningIdentity -> DEBU b6d[0m Obtaining default signing identity
+[36m2020-05-08 07:03:28.242 UTC [msp.identity] Sign -> DEBU b6e[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616102B1801 
+[36m2020-05-08 07:03:28.242 UTC [msp.identity] Sign -> DEBU b6f[0m Sign: digest: 4D4ED1FD54D5B75726A2FA01C56CBA54B1490197D9409DB3D5BE11C5756C575C 
+[36m2020-05-08 07:03:28.242 UTC [gossip.election] waitForInterrupt -> DEBU b70[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:03:28.337 UTC [msp] GetDefaultSigningIdentity -> DEBU b71[0m Obtaining default signing identity
+[36m2020-05-08 07:03:28.337 UTC [msp.identity] Sign -> DEBU b72[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616106D 
+[36m2020-05-08 07:03:28.337 UTC [msp.identity] Sign -> DEBU b73[0m Sign: digest: 11569DDA97B75695ACBBAB353C336F1350DA3DC28640FD949D08DCA7EFB62E3C 
+[36m2020-05-08 07:03:28.338 UTC [msp] GetDefaultSigningIdentity -> DEBU b74[0m Obtaining default signing identity
+[36m2020-05-08 07:03:28.338 UTC [msp.identity] Sign -> DEBU b75[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:28.338 UTC [msp.identity] Sign -> DEBU b76[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:32.055 UTC [msp] GetDefaultSigningIdentity -> DEBU b77[0m Obtaining default signing identity
+[36m2020-05-08 07:03:32.055 UTC [msp.identity] Sign -> DEBU b78[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616106E 
+[36m2020-05-08 07:03:32.055 UTC [msp.identity] Sign -> DEBU b79[0m Sign: digest: 77672108FBA096938A1A58E458C9B49C73DBCF504B121B76A9124F9797820B0E 
+[36m2020-05-08 07:03:32.055 UTC [msp] GetDefaultSigningIdentity -> DEBU b7a[0m Obtaining default signing identity
+[36m2020-05-08 07:03:32.055 UTC [msp.identity] Sign -> DEBU b7b[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:32.055 UTC [msp.identity] Sign -> DEBU b7c[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:32.055 UTC [gossip.discovery] periodicalSendAlive -> DEBU b7d[0m Sleeping 5s
+[36m2020-05-08 07:03:32.339 UTC [msp] GetDefaultSigningIdentity -> DEBU b7e[0m Obtaining default signing identity
+[36m2020-05-08 07:03:32.339 UTC [msp.identity] Sign -> DEBU b7f[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616106F 
+[36m2020-05-08 07:03:32.339 UTC [msp.identity] Sign -> DEBU b80[0m Sign: digest: 2F6ED1030917A605B009E41ADF5AC1F151CD0CA3D009C5DC0CCC7A8FD7AC9677 
+[36m2020-05-08 07:03:32.339 UTC [msp] GetDefaultSigningIdentity -> DEBU b81[0m Obtaining default signing identity
+[36m2020-05-08 07:03:32.339 UTC [msp.identity] Sign -> DEBU b82[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:32.339 UTC [msp.identity] Sign -> DEBU b83[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:33.243 UTC [gossip.election] waitForInterrupt -> DEBU b84[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:03:33.243 UTC [gossip.election] IsLeader -> DEBU b85[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:03:33.244 UTC [msp] GetDefaultSigningIdentity -> DEBU b86[0m Obtaining default signing identity
+[36m2020-05-08 07:03:33.244 UTC [msp.identity] Sign -> DEBU b87[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616102C1801 
+[36m2020-05-08 07:03:33.244 UTC [msp.identity] Sign -> DEBU b88[0m Sign: digest: A790848717F9C508AAA2B6A24A387CF4C802A5600B24FADB8483B12AD9686FA5 
+[36m2020-05-08 07:03:33.244 UTC [gossip.election] waitForInterrupt -> DEBU b89[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:03:36.341 UTC [msp] GetDefaultSigningIdentity -> DEBU b8a[0m Obtaining default signing identity
+[36m2020-05-08 07:03:36.341 UTC [msp.identity] Sign -> DEBU b8b[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161070 
+[36m2020-05-08 07:03:36.341 UTC [msp.identity] Sign -> DEBU b8c[0m Sign: digest: CB76994A57AD7CDF9DD826FCD15D653C7AE9BFCB85E0F34338B7B0BB8AF893A6 
+[36m2020-05-08 07:03:36.341 UTC [msp] GetDefaultSigningIdentity -> DEBU b8d[0m Obtaining default signing identity
+[36m2020-05-08 07:03:36.341 UTC [msp.identity] Sign -> DEBU b8e[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:36.341 UTC [msp.identity] Sign -> DEBU b8f[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:37.056 UTC [msp] GetDefaultSigningIdentity -> DEBU b90[0m Obtaining default signing identity
+[36m2020-05-08 07:03:37.056 UTC [msp.identity] Sign -> DEBU b91[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161071 
+[36m2020-05-08 07:03:37.056 UTC [msp.identity] Sign -> DEBU b92[0m Sign: digest: D9C0ED981B400A92E06FFDBFBB1932EBBA0AA42AC177B9D9E7148A0484C4E233 
+[36m2020-05-08 07:03:37.056 UTC [msp] GetDefaultSigningIdentity -> DEBU b93[0m Obtaining default signing identity
+[36m2020-05-08 07:03:37.056 UTC [msp.identity] Sign -> DEBU b94[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:37.056 UTC [msp.identity] Sign -> DEBU b95[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:37.057 UTC [gossip.discovery] periodicalSendAlive -> DEBU b96[0m Sleeping 5s
+[36m2020-05-08 07:03:38.245 UTC [gossip.election] waitForInterrupt -> DEBU b97[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:03:38.246 UTC [gossip.election] IsLeader -> DEBU b98[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:03:38.246 UTC [msp] GetDefaultSigningIdentity -> DEBU b99[0m Obtaining default signing identity
+[36m2020-05-08 07:03:38.246 UTC [msp.identity] Sign -> DEBU b9a[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616102D1801 
+[36m2020-05-08 07:03:38.246 UTC [msp.identity] Sign -> DEBU b9b[0m Sign: digest: 36F0B84B950810BA2D9B8ABC9BC09A7465753C7CD74F46D95E76457CD1F1CEE8 
+[36m2020-05-08 07:03:38.246 UTC [gossip.election] waitForInterrupt -> DEBU b9c[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:03:40.342 UTC [msp] GetDefaultSigningIdentity -> DEBU b9d[0m Obtaining default signing identity
+[36m2020-05-08 07:03:40.342 UTC [msp.identity] Sign -> DEBU b9e[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161072 
+[36m2020-05-08 07:03:40.342 UTC [msp.identity] Sign -> DEBU b9f[0m Sign: digest: 8540E209DEEF3E59D28AAA10D95B4AA9EBE31586A53F3303D99CE5C082E091FC 
+[36m2020-05-08 07:03:40.342 UTC [msp] GetDefaultSigningIdentity -> DEBU ba0[0m Obtaining default signing identity
+[36m2020-05-08 07:03:40.342 UTC [msp.identity] Sign -> DEBU ba1[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:40.342 UTC [msp.identity] Sign -> DEBU ba2[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:41.959 UTC [gossip.discovery] periodicalReconnectToDead -> DEBU ba3[0m Sleeping 25s
+[36m2020-05-08 07:03:42.058 UTC [msp] GetDefaultSigningIdentity -> DEBU ba4[0m Obtaining default signing identity
+[36m2020-05-08 07:03:42.058 UTC [msp.identity] Sign -> DEBU ba5[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161073 
+[36m2020-05-08 07:03:42.058 UTC [msp.identity] Sign -> DEBU ba6[0m Sign: digest: BB87E2991F3E12BDF0D7AA61F2AB57783F990CF3C2316CE0B4CEEF98EA3B7CE0 
+[36m2020-05-08 07:03:42.058 UTC [msp] GetDefaultSigningIdentity -> DEBU ba7[0m Obtaining default signing identity
+[36m2020-05-08 07:03:42.058 UTC [msp.identity] Sign -> DEBU ba8[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:42.058 UTC [msp.identity] Sign -> DEBU ba9[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:42.058 UTC [gossip.discovery] periodicalSendAlive -> DEBU baa[0m Sleeping 5s
+[36m2020-05-08 07:03:43.247 UTC [gossip.election] waitForInterrupt -> DEBU bab[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:03:43.247 UTC [gossip.election] IsLeader -> DEBU bac[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:03:43.247 UTC [msp] GetDefaultSigningIdentity -> DEBU bad[0m Obtaining default signing identity
+[36m2020-05-08 07:03:43.247 UTC [msp.identity] Sign -> DEBU bae[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616102E1801 
+[36m2020-05-08 07:03:43.248 UTC [msp.identity] Sign -> DEBU baf[0m Sign: digest: F8B9AE7C5AECF791EB8923F74C888B420ED7640155C4C81A2A0CFB57D14DA496 
+[36m2020-05-08 07:03:43.248 UTC [gossip.election] waitForInterrupt -> DEBU bb0[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:03:44.343 UTC [msp] GetDefaultSigningIdentity -> DEBU bb1[0m Obtaining default signing identity
+[36m2020-05-08 07:03:44.343 UTC [msp.identity] Sign -> DEBU bb2[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161074 
+[36m2020-05-08 07:03:44.343 UTC [msp.identity] Sign -> DEBU bb3[0m Sign: digest: 84D585EFDDAF7EB557B1B994844EAF85E042E6BCE6076ED5A3968E528881A7E0 
+[36m2020-05-08 07:03:44.343 UTC [msp] GetDefaultSigningIdentity -> DEBU bb4[0m Obtaining default signing identity
+[36m2020-05-08 07:03:44.343 UTC [msp.identity] Sign -> DEBU bb5[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:44.343 UTC [msp.identity] Sign -> DEBU bb6[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:47.058 UTC [msp] GetDefaultSigningIdentity -> DEBU bb7[0m Obtaining default signing identity
+[36m2020-05-08 07:03:47.059 UTC [msp.identity] Sign -> DEBU bb8[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161075 
+[36m2020-05-08 07:03:47.059 UTC [msp.identity] Sign -> DEBU bb9[0m Sign: digest: 30419A40305332E4DC13FA3D3A001D4EA4E08247BC4914D8E8BF34DD9727A1A1 
+[36m2020-05-08 07:03:47.059 UTC [msp] GetDefaultSigningIdentity -> DEBU bba[0m Obtaining default signing identity
+[36m2020-05-08 07:03:47.059 UTC [msp.identity] Sign -> DEBU bbb[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:47.059 UTC [msp.identity] Sign -> DEBU bbc[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:47.059 UTC [gossip.discovery] periodicalSendAlive -> DEBU bbd[0m Sleeping 5s
+[36m2020-05-08 07:03:48.249 UTC [gossip.election] waitForInterrupt -> DEBU bbe[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:03:48.249 UTC [gossip.election] IsLeader -> DEBU bbf[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:03:48.249 UTC [msp] GetDefaultSigningIdentity -> DEBU bc0[0m Obtaining default signing identity
+[36m2020-05-08 07:03:48.249 UTC [msp.identity] Sign -> DEBU bc1[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616102F1801 
+[36m2020-05-08 07:03:48.249 UTC [msp.identity] Sign -> DEBU bc2[0m Sign: digest: C665B118EF705ED6616CF529EA77D8C3792A505B50510F7DAC212A25E9B478C0 
+[36m2020-05-08 07:03:48.249 UTC [gossip.election] waitForInterrupt -> DEBU bc3[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:03:48.344 UTC [msp] GetDefaultSigningIdentity -> DEBU bc4[0m Obtaining default signing identity
+[36m2020-05-08 07:03:48.345 UTC [msp.identity] Sign -> DEBU bc5[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161076 
+[36m2020-05-08 07:03:48.345 UTC [msp.identity] Sign -> DEBU bc6[0m Sign: digest: 5BB75EDC5AEE4BC5FA459A79554F815CB48464542B78A3F2C17083C1B793FCB6 
+[36m2020-05-08 07:03:48.345 UTC [msp] GetDefaultSigningIdentity -> DEBU bc7[0m Obtaining default signing identity
+[36m2020-05-08 07:03:48.345 UTC [msp.identity] Sign -> DEBU bc8[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:48.345 UTC [msp.identity] Sign -> DEBU bc9[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:52.060 UTC [msp] GetDefaultSigningIdentity -> DEBU bca[0m Obtaining default signing identity
+[36m2020-05-08 07:03:52.060 UTC [msp.identity] Sign -> DEBU bcb[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161077 
+[36m2020-05-08 07:03:52.060 UTC [msp.identity] Sign -> DEBU bcc[0m Sign: digest: E01F114720B7CEB6C413F475CB07503AAA1DE8EE96F379CD205CBD4021FA2D48 
+[36m2020-05-08 07:03:52.060 UTC [msp] GetDefaultSigningIdentity -> DEBU bcd[0m Obtaining default signing identity
+[36m2020-05-08 07:03:52.060 UTC [msp.identity] Sign -> DEBU bce[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:52.060 UTC [msp.identity] Sign -> DEBU bcf[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:52.060 UTC [gossip.discovery] periodicalSendAlive -> DEBU bd0[0m Sleeping 5s
+[36m2020-05-08 07:03:52.346 UTC [msp] GetDefaultSigningIdentity -> DEBU bd1[0m Obtaining default signing identity
+[36m2020-05-08 07:03:52.346 UTC [msp.identity] Sign -> DEBU bd2[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161078 
+[36m2020-05-08 07:03:52.346 UTC [msp.identity] Sign -> DEBU bd3[0m Sign: digest: 993610D66845AC38449560687B47078FB3FD7DF45998166E3E63F020CD77CACA 
+[36m2020-05-08 07:03:52.346 UTC [msp] GetDefaultSigningIdentity -> DEBU bd4[0m Obtaining default signing identity
+[36m2020-05-08 07:03:52.346 UTC [msp.identity] Sign -> DEBU bd5[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:52.346 UTC [msp.identity] Sign -> DEBU bd6[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:53.250 UTC [gossip.election] waitForInterrupt -> DEBU bd7[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:03:53.250 UTC [gossip.election] IsLeader -> DEBU bd8[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:03:53.250 UTC [msp] GetDefaultSigningIdentity -> DEBU bd9[0m Obtaining default signing identity
+[36m2020-05-08 07:03:53.250 UTC [msp.identity] Sign -> DEBU bda[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610301801 
+[36m2020-05-08 07:03:53.250 UTC [msp.identity] Sign -> DEBU bdb[0m Sign: digest: FC276CF0FD1245E33115FA8902EC74705B7FB8A2E394BBE1B9BF848012948723 
+[36m2020-05-08 07:03:53.250 UTC [gossip.election] waitForInterrupt -> DEBU bdc[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:03:56.359 UTC [msp] GetDefaultSigningIdentity -> DEBU bdd[0m Obtaining default signing identity
+[36m2020-05-08 07:03:56.359 UTC [msp.identity] Sign -> DEBU bde[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE86161079 
+[36m2020-05-08 07:03:56.359 UTC [msp.identity] Sign -> DEBU bdf[0m Sign: digest: F41A7343A28EB4A9894240102F4A64C5A9E6E1A429AAA9FB90F41CDC6AAFE6E7 
+[36m2020-05-08 07:03:56.360 UTC [msp] GetDefaultSigningIdentity -> DEBU be0[0m Obtaining default signing identity
+[36m2020-05-08 07:03:56.360 UTC [msp.identity] Sign -> DEBU be1[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:56.360 UTC [msp.identity] Sign -> DEBU be2[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:56.951 UTC [gossip.privdata] run -> DEBU be3[0m Start reconcile missing private info
+[36m2020-05-08 07:03:56.951 UTC [leveldbhelper] GetIterator -> DEBU be4[0m Getting iterator for range [[]byte{0x6d, 0x79, 0x63, 0x68, 0x61, 0x6e, 0x6e, 0x65, 0x6c, 0x0, 0x4, 0x7, 0xfc}] - [[]byte{0x6d, 0x79, 0x63, 0x68, 0x61, 0x6e, 0x6e, 0x65, 0x6c, 0x0, 0x4, 0x8}]
+[36m2020-05-08 07:03:56.951 UTC [gossip.privdata] reconcile -> DEBU be5[0m Reconciliation cycle finished successfully. no items to reconcile
+[36m2020-05-08 07:03:57.061 UTC [msp] GetDefaultSigningIdentity -> DEBU be6[0m Obtaining default signing identity
+[36m2020-05-08 07:03:57.061 UTC [msp.identity] Sign -> DEBU be7[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616107A 
+[36m2020-05-08 07:03:57.061 UTC [msp.identity] Sign -> DEBU be8[0m Sign: digest: 57AD0B813E6D1809BCF22EBF3BDC44B7B09055F019B97986DDD87C3E8F7BBF8C 
+[36m2020-05-08 07:03:57.061 UTC [msp] GetDefaultSigningIdentity -> DEBU be9[0m Obtaining default signing identity
+[36m2020-05-08 07:03:57.061 UTC [msp.identity] Sign -> DEBU bea[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:03:57.061 UTC [msp.identity] Sign -> DEBU beb[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:03:57.061 UTC [gossip.discovery] periodicalSendAlive -> DEBU bec[0m Sleeping 5s
+[36m2020-05-08 07:03:58.251 UTC [gossip.election] waitForInterrupt -> DEBU bed[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:03:58.252 UTC [gossip.election] IsLeader -> DEBU bee[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:03:58.252 UTC [msp] GetDefaultSigningIdentity -> DEBU bef[0m Obtaining default signing identity
+[36m2020-05-08 07:03:58.252 UTC [msp.identity] Sign -> DEBU bf0[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610311801 
+[36m2020-05-08 07:03:58.252 UTC [msp.identity] Sign -> DEBU bf1[0m Sign: digest: 71F9C0939E6AA63773FDF9DC4B9215C36E6FF4C9A164FA1CC8E9FBB47218865F 
+[36m2020-05-08 07:03:58.252 UTC [gossip.election] waitForInterrupt -> DEBU bf2[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:04:00.360 UTC [msp] GetDefaultSigningIdentity -> DEBU bf3[0m Obtaining default signing identity
+[36m2020-05-08 07:04:00.360 UTC [msp.identity] Sign -> DEBU bf4[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616107B 
+[36m2020-05-08 07:04:00.360 UTC [msp.identity] Sign -> DEBU bf5[0m Sign: digest: 4BFB863CECA163BD74983F0C5F04A6359C87B3D3B0735FE10B36789FD78E7EC4 
+[36m2020-05-08 07:04:00.360 UTC [msp] GetDefaultSigningIdentity -> DEBU bf6[0m Obtaining default signing identity
+[36m2020-05-08 07:04:00.360 UTC [msp.identity] Sign -> DEBU bf7[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:00.360 UTC [msp.identity] Sign -> DEBU bf8[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:02.063 UTC [msp] GetDefaultSigningIdentity -> DEBU bf9[0m Obtaining default signing identity
+[36m2020-05-08 07:04:02.063 UTC [msp.identity] Sign -> DEBU bfa[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616107C 
+[36m2020-05-08 07:04:02.063 UTC [msp.identity] Sign -> DEBU bfb[0m Sign: digest: 6022C1452CD71C6FF8CCBD932256BDE1297925A4CC6B1EBCECF25877DEBC7FC3 
+[36m2020-05-08 07:04:02.063 UTC [msp] GetDefaultSigningIdentity -> DEBU bfc[0m Obtaining default signing identity
+[36m2020-05-08 07:04:02.063 UTC [msp.identity] Sign -> DEBU bfd[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:02.063 UTC [msp.identity] Sign -> DEBU bfe[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:02.063 UTC [gossip.discovery] periodicalSendAlive -> DEBU bff[0m Sleeping 5s
+[36m2020-05-08 07:04:03.253 UTC [gossip.election] waitForInterrupt -> DEBU c00[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:04:03.253 UTC [gossip.election] IsLeader -> DEBU c01[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:04:03.253 UTC [msp] GetDefaultSigningIdentity -> DEBU c02[0m Obtaining default signing identity
+[36m2020-05-08 07:04:03.254 UTC [msp.identity] Sign -> DEBU c03[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610321801 
+[36m2020-05-08 07:04:03.254 UTC [msp.identity] Sign -> DEBU c04[0m Sign: digest: EFF64B9147F5329F6CDB6D9A34DBDBAA1F478BA48136D6568711715D2C3E25AA 
+[36m2020-05-08 07:04:03.254 UTC [gossip.election] waitForInterrupt -> DEBU c05[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:04:04.361 UTC [msp] GetDefaultSigningIdentity -> DEBU c06[0m Obtaining default signing identity
+[36m2020-05-08 07:04:04.361 UTC [msp.identity] Sign -> DEBU c07[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616107D 
+[36m2020-05-08 07:04:04.361 UTC [msp.identity] Sign -> DEBU c08[0m Sign: digest: 588721D8B84825703EB9557CFDCF064AE88271AE4D9D8497496153464A83A6D6 
+[36m2020-05-08 07:04:04.362 UTC [msp] GetDefaultSigningIdentity -> DEBU c09[0m Obtaining default signing identity
+[36m2020-05-08 07:04:04.362 UTC [msp.identity] Sign -> DEBU c0a[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:04.362 UTC [msp.identity] Sign -> DEBU c0b[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:06.960 UTC [gossip.discovery] periodicalReconnectToDead -> DEBU c0c[0m Sleeping 25s
+[36m2020-05-08 07:04:07.064 UTC [msp] GetDefaultSigningIdentity -> DEBU c0d[0m Obtaining default signing identity
+[36m2020-05-08 07:04:07.064 UTC [msp.identity] Sign -> DEBU c0e[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616107E 
+[36m2020-05-08 07:04:07.064 UTC [msp.identity] Sign -> DEBU c0f[0m Sign: digest: F948DC0A3A4C1D44380FFC4B4B9D51BE0703BD2131E0C1496AA089A856CF3E97 
+[36m2020-05-08 07:04:07.064 UTC [msp] GetDefaultSigningIdentity -> DEBU c10[0m Obtaining default signing identity
+[36m2020-05-08 07:04:07.064 UTC [msp.identity] Sign -> DEBU c11[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:07.064 UTC [msp.identity] Sign -> DEBU c12[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:07.065 UTC [gossip.discovery] periodicalSendAlive -> DEBU c13[0m Sleeping 5s
+[36m2020-05-08 07:04:08.254 UTC [gossip.election] waitForInterrupt -> DEBU c14[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:04:08.254 UTC [gossip.election] IsLeader -> DEBU c15[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:04:08.254 UTC [msp] GetDefaultSigningIdentity -> DEBU c16[0m Obtaining default signing identity
+[36m2020-05-08 07:04:08.254 UTC [msp.identity] Sign -> DEBU c17[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610331801 
+[36m2020-05-08 07:04:08.254 UTC [msp.identity] Sign -> DEBU c18[0m Sign: digest: ABD3DABF9BA8E845A0B5B915A96BC26B21BA12F52D0356B52F86835FA4746CB5 
+[36m2020-05-08 07:04:08.255 UTC [gossip.election] waitForInterrupt -> DEBU c19[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:04:08.362 UTC [msp] GetDefaultSigningIdentity -> DEBU c1a[0m Obtaining default signing identity
+[36m2020-05-08 07:04:08.363 UTC [msp.identity] Sign -> DEBU c1b[0m Sign: plaintext: 18012A470A370A1370656572302E6F72...A378120C08D4B2FAD4B2ECBE8616107F 
+[36m2020-05-08 07:04:08.363 UTC [msp.identity] Sign -> DEBU c1c[0m Sign: digest: D83831AE989EA315B82308E1E0502E6F045C464C7FD6E1DD78062444F4A7D0FA 
+[36m2020-05-08 07:04:08.363 UTC [msp] GetDefaultSigningIdentity -> DEBU c1d[0m Obtaining default signing identity
+[36m2020-05-08 07:04:08.363 UTC [msp.identity] Sign -> DEBU c1e[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:08.363 UTC [msp.identity] Sign -> DEBU c1f[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:12.066 UTC [msp] GetDefaultSigningIdentity -> DEBU c20[0m Obtaining default signing identity
+[36m2020-05-08 07:04:12.066 UTC [msp.identity] Sign -> DEBU c21[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108001 
+[36m2020-05-08 07:04:12.066 UTC [msp.identity] Sign -> DEBU c22[0m Sign: digest: 0EBAE10F1E7915F83C8196610EFBBAF2A49D14FAD79D771B9A1E62B8894CF836 
+[36m2020-05-08 07:04:12.066 UTC [msp] GetDefaultSigningIdentity -> DEBU c23[0m Obtaining default signing identity
+[36m2020-05-08 07:04:12.066 UTC [msp.identity] Sign -> DEBU c24[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:12.066 UTC [msp.identity] Sign -> DEBU c25[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:12.066 UTC [gossip.discovery] periodicalSendAlive -> DEBU c26[0m Sleeping 5s
+[36m2020-05-08 07:04:12.364 UTC [msp] GetDefaultSigningIdentity -> DEBU c27[0m Obtaining default signing identity
+[36m2020-05-08 07:04:12.364 UTC [msp.identity] Sign -> DEBU c28[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108101 
+[36m2020-05-08 07:04:12.364 UTC [msp.identity] Sign -> DEBU c29[0m Sign: digest: 9E33F6B4E4BFAEA33D943A0EE11D26D99E0CCF18BFBB27F54353158DFDB8B822 
+[36m2020-05-08 07:04:12.364 UTC [msp] GetDefaultSigningIdentity -> DEBU c2a[0m Obtaining default signing identity
+[36m2020-05-08 07:04:12.364 UTC [msp.identity] Sign -> DEBU c2b[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:12.364 UTC [msp.identity] Sign -> DEBU c2c[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:13.256 UTC [gossip.election] waitForInterrupt -> DEBU c2d[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:04:13.256 UTC [gossip.election] IsLeader -> DEBU c2e[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:04:13.256 UTC [msp] GetDefaultSigningIdentity -> DEBU c2f[0m Obtaining default signing identity
+[36m2020-05-08 07:04:13.256 UTC [msp.identity] Sign -> DEBU c30[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610341801 
+[36m2020-05-08 07:04:13.256 UTC [msp.identity] Sign -> DEBU c31[0m Sign: digest: 756857C0C01F5DC5BB850A68CEB633951C4E63E8DD7583937A6E8958E356A943 
+[36m2020-05-08 07:04:13.256 UTC [gossip.election] waitForInterrupt -> DEBU c32[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:04:16.365 UTC [msp] GetDefaultSigningIdentity -> DEBU c33[0m Obtaining default signing identity
+[36m2020-05-08 07:04:16.365 UTC [msp.identity] Sign -> DEBU c34[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108201 
+[36m2020-05-08 07:04:16.365 UTC [msp.identity] Sign -> DEBU c35[0m Sign: digest: 7F884B0EF9E60029FF03831F9AA081E3AFB7DFADAD3021E08476A03157C496A4 
+[36m2020-05-08 07:04:16.365 UTC [msp] GetDefaultSigningIdentity -> DEBU c36[0m Obtaining default signing identity
+[36m2020-05-08 07:04:16.365 UTC [msp.identity] Sign -> DEBU c37[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:16.365 UTC [msp.identity] Sign -> DEBU c38[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:17.068 UTC [msp] GetDefaultSigningIdentity -> DEBU c39[0m Obtaining default signing identity
+[36m2020-05-08 07:04:17.068 UTC [msp.identity] Sign -> DEBU c3a[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108301 
+[36m2020-05-08 07:04:17.068 UTC [msp.identity] Sign -> DEBU c3b[0m Sign: digest: 67EBAEB1486FA965F498E6984B644F834B093CC223FCB356A5ADC3B096FE2FA0 
+[36m2020-05-08 07:04:17.068 UTC [msp] GetDefaultSigningIdentity -> DEBU c3c[0m Obtaining default signing identity
+[36m2020-05-08 07:04:17.068 UTC [msp.identity] Sign -> DEBU c3d[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:17.068 UTC [msp.identity] Sign -> DEBU c3e[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:17.068 UTC [gossip.discovery] periodicalSendAlive -> DEBU c3f[0m Sleeping 5s
+[36m2020-05-08 07:04:18.257 UTC [gossip.election] waitForInterrupt -> DEBU c40[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:04:18.257 UTC [gossip.election] IsLeader -> DEBU c41[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:04:18.258 UTC [msp] GetDefaultSigningIdentity -> DEBU c42[0m Obtaining default signing identity
+[36m2020-05-08 07:04:18.258 UTC [msp.identity] Sign -> DEBU c43[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610351801 
+[36m2020-05-08 07:04:18.258 UTC [msp.identity] Sign -> DEBU c44[0m Sign: digest: 066ED0D322E415D6A3A96342E95EB77246A5FDB3AD421C009EFBAD43D63D4623 
+[36m2020-05-08 07:04:18.258 UTC [gossip.election] waitForInterrupt -> DEBU c45[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:04:20.366 UTC [msp] GetDefaultSigningIdentity -> DEBU c46[0m Obtaining default signing identity
+[36m2020-05-08 07:04:20.366 UTC [msp.identity] Sign -> DEBU c47[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108401 
+[36m2020-05-08 07:04:20.366 UTC [msp.identity] Sign -> DEBU c48[0m Sign: digest: 1C143EC77E8AD44F4B094A1EDC4F7EB69611594830CC6689C4EBBA586BCF1D73 
+[36m2020-05-08 07:04:20.366 UTC [msp] GetDefaultSigningIdentity -> DEBU c49[0m Obtaining default signing identity
+[36m2020-05-08 07:04:20.366 UTC [msp.identity] Sign -> DEBU c4a[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:20.366 UTC [msp.identity] Sign -> DEBU c4b[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:22.069 UTC [msp] GetDefaultSigningIdentity -> DEBU c4c[0m Obtaining default signing identity
+[36m2020-05-08 07:04:22.069 UTC [msp.identity] Sign -> DEBU c4d[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108501 
+[36m2020-05-08 07:04:22.069 UTC [msp.identity] Sign -> DEBU c4e[0m Sign: digest: F4D30BB04ADB61EE326F6CF084FAA818D776AE27731FB2E8C7F1DDA24E9B5D5D 
+[36m2020-05-08 07:04:22.069 UTC [msp] GetDefaultSigningIdentity -> DEBU c4f[0m Obtaining default signing identity
+[36m2020-05-08 07:04:22.069 UTC [msp.identity] Sign -> DEBU c50[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:22.069 UTC [msp.identity] Sign -> DEBU c51[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:22.069 UTC [gossip.discovery] periodicalSendAlive -> DEBU c52[0m Sleeping 5s
+[36m2020-05-08 07:04:23.259 UTC [gossip.election] waitForInterrupt -> DEBU c53[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:04:23.260 UTC [gossip.election] IsLeader -> DEBU c54[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:04:23.260 UTC [msp] GetDefaultSigningIdentity -> DEBU c55[0m Obtaining default signing identity
+[36m2020-05-08 07:04:23.260 UTC [msp.identity] Sign -> DEBU c56[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610361801 
+[36m2020-05-08 07:04:23.260 UTC [msp.identity] Sign -> DEBU c57[0m Sign: digest: 4DA71F5F10356D8108068265533298B167211B837E71D517AD4E49DB2C93D5D5 
+[36m2020-05-08 07:04:23.260 UTC [gossip.election] waitForInterrupt -> DEBU c58[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:04:24.367 UTC [msp] GetDefaultSigningIdentity -> DEBU c59[0m Obtaining default signing identity
+[36m2020-05-08 07:04:24.367 UTC [msp.identity] Sign -> DEBU c5a[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108601 
+[36m2020-05-08 07:04:24.367 UTC [msp.identity] Sign -> DEBU c5b[0m Sign: digest: 68D210148097A64011EE6E60480CB5A2127C3AF48F82DE4AA87537E998EE2F39 
+[36m2020-05-08 07:04:24.367 UTC [msp] GetDefaultSigningIdentity -> DEBU c5c[0m Obtaining default signing identity
+[36m2020-05-08 07:04:24.367 UTC [msp.identity] Sign -> DEBU c5d[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:24.367 UTC [msp.identity] Sign -> DEBU c5e[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:27.071 UTC [msp] GetDefaultSigningIdentity -> DEBU c5f[0m Obtaining default signing identity
+[36m2020-05-08 07:04:27.071 UTC [msp.identity] Sign -> DEBU c60[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108701 
+[36m2020-05-08 07:04:27.071 UTC [msp.identity] Sign -> DEBU c61[0m Sign: digest: A73A296E0B7477101CC410A198BEB190024780551D9BE3D113304272D9B61774 
+[36m2020-05-08 07:04:27.071 UTC [msp] GetDefaultSigningIdentity -> DEBU c62[0m Obtaining default signing identity
+[36m2020-05-08 07:04:27.071 UTC [msp.identity] Sign -> DEBU c63[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:27.071 UTC [msp.identity] Sign -> DEBU c64[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:27.072 UTC [gossip.discovery] periodicalSendAlive -> DEBU c65[0m Sleeping 5s
+[36m2020-05-08 07:04:28.261 UTC [gossip.election] waitForInterrupt -> DEBU c66[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:04:28.261 UTC [gossip.election] IsLeader -> DEBU c67[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:04:28.261 UTC [msp] GetDefaultSigningIdentity -> DEBU c68[0m Obtaining default signing identity
+[36m2020-05-08 07:04:28.261 UTC [msp.identity] Sign -> DEBU c69[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610371801 
+[36m2020-05-08 07:04:28.261 UTC [msp.identity] Sign -> DEBU c6a[0m Sign: digest: 937C85B4EB2347A06F80FC2DD75603300A7D8EDBECF36B993FACC6EF76B71F7D 
+[36m2020-05-08 07:04:28.261 UTC [gossip.election] waitForInterrupt -> DEBU c6b[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:04:28.369 UTC [msp] GetDefaultSigningIdentity -> DEBU c6c[0m Obtaining default signing identity
+[36m2020-05-08 07:04:28.369 UTC [msp.identity] Sign -> DEBU c6d[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108801 
+[36m2020-05-08 07:04:28.369 UTC [msp.identity] Sign -> DEBU c6e[0m Sign: digest: 0523556052054CA14981012FC7A130C315FBA72C86727730FBBAC2D58D5F75DB 
+[36m2020-05-08 07:04:28.369 UTC [msp] GetDefaultSigningIdentity -> DEBU c6f[0m Obtaining default signing identity
+[36m2020-05-08 07:04:28.369 UTC [msp.identity] Sign -> DEBU c70[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:28.369 UTC [msp.identity] Sign -> DEBU c71[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:31.961 UTC [gossip.discovery] periodicalReconnectToDead -> DEBU c72[0m Sleeping 25s
+[36m2020-05-08 07:04:32.072 UTC [msp] GetDefaultSigningIdentity -> DEBU c73[0m Obtaining default signing identity
+[36m2020-05-08 07:04:32.072 UTC [msp.identity] Sign -> DEBU c74[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108901 
+[36m2020-05-08 07:04:32.072 UTC [msp.identity] Sign -> DEBU c75[0m Sign: digest: 9815BDB8236D3EFC45AC21F67F1331FE109C5C393EB6B5157EB4DA10318EB79F 
+[36m2020-05-08 07:04:32.073 UTC [msp] GetDefaultSigningIdentity -> DEBU c76[0m Obtaining default signing identity
+[36m2020-05-08 07:04:32.073 UTC [msp.identity] Sign -> DEBU c77[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:32.073 UTC [msp.identity] Sign -> DEBU c78[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:32.073 UTC [gossip.discovery] periodicalSendAlive -> DEBU c79[0m Sleeping 5s
+[36m2020-05-08 07:04:32.370 UTC [msp] GetDefaultSigningIdentity -> DEBU c7a[0m Obtaining default signing identity
+[36m2020-05-08 07:04:32.370 UTC [msp.identity] Sign -> DEBU c7b[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108A01 
+[36m2020-05-08 07:04:32.370 UTC [msp.identity] Sign -> DEBU c7c[0m Sign: digest: 24A0ED654101A6DC9F2E1B37D3E7B8F0274E627DE4AEFF4655D051887FF0CAD9 
+[36m2020-05-08 07:04:32.370 UTC [msp] GetDefaultSigningIdentity -> DEBU c7d[0m Obtaining default signing identity
+[36m2020-05-08 07:04:32.370 UTC [msp.identity] Sign -> DEBU c7e[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:32.370 UTC [msp.identity] Sign -> DEBU c7f[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:33.263 UTC [gossip.election] waitForInterrupt -> DEBU c80[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:04:33.263 UTC [gossip.election] IsLeader -> DEBU c81[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:04:33.263 UTC [msp] GetDefaultSigningIdentity -> DEBU c82[0m Obtaining default signing identity
+[36m2020-05-08 07:04:33.263 UTC [msp.identity] Sign -> DEBU c83[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610381801 
+[36m2020-05-08 07:04:33.263 UTC [msp.identity] Sign -> DEBU c84[0m Sign: digest: CB8C5449B4E6D1D42994A7CEE197662CF9941A9374E47EBA913A468DF485F092 
+[36m2020-05-08 07:04:33.263 UTC [gossip.election] waitForInterrupt -> DEBU c85[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:04:36.371 UTC [msp] GetDefaultSigningIdentity -> DEBU c86[0m Obtaining default signing identity
+[36m2020-05-08 07:04:36.371 UTC [msp.identity] Sign -> DEBU c87[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108B01 
+[36m2020-05-08 07:04:36.371 UTC [msp.identity] Sign -> DEBU c88[0m Sign: digest: 728772479EBCE0D5DAB951103495B417B20AB43655AA13A5BF7624C8504DA8A5 
+[36m2020-05-08 07:04:36.371 UTC [msp] GetDefaultSigningIdentity -> DEBU c89[0m Obtaining default signing identity
+[36m2020-05-08 07:04:36.371 UTC [msp.identity] Sign -> DEBU c8a[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:36.371 UTC [msp.identity] Sign -> DEBU c8b[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:37.073 UTC [msp] GetDefaultSigningIdentity -> DEBU c8c[0m Obtaining default signing identity
+[36m2020-05-08 07:04:37.074 UTC [msp.identity] Sign -> DEBU c8d[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108C01 
+[36m2020-05-08 07:04:37.074 UTC [msp.identity] Sign -> DEBU c8e[0m Sign: digest: 0E3A61B338536C06E7420B15C6DFCC79AB1DC8B83B3836DACAA7796C3F3F74EE 
+[36m2020-05-08 07:04:37.074 UTC [msp] GetDefaultSigningIdentity -> DEBU c8f[0m Obtaining default signing identity
+[36m2020-05-08 07:04:37.074 UTC [msp.identity] Sign -> DEBU c90[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:37.074 UTC [msp.identity] Sign -> DEBU c91[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:37.074 UTC [gossip.discovery] periodicalSendAlive -> DEBU c92[0m Sleeping 5s
+[36m2020-05-08 07:04:38.264 UTC [gossip.election] waitForInterrupt -> DEBU c93[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:04:38.264 UTC [gossip.election] IsLeader -> DEBU c94[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:04:38.264 UTC [msp] GetDefaultSigningIdentity -> DEBU c95[0m Obtaining default signing identity
+[36m2020-05-08 07:04:38.264 UTC [msp.identity] Sign -> DEBU c96[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610391801 
+[36m2020-05-08 07:04:38.264 UTC [msp.identity] Sign -> DEBU c97[0m Sign: digest: 08B94C2959598547A5E42C5F7735E8F671BA84D79867EF6B5380F36C61DE6D95 
+[36m2020-05-08 07:04:38.265 UTC [gossip.election] waitForInterrupt -> DEBU c98[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:04:40.372 UTC [msp] GetDefaultSigningIdentity -> DEBU c99[0m Obtaining default signing identity
+[36m2020-05-08 07:04:40.372 UTC [msp.identity] Sign -> DEBU c9a[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108D01 
+[36m2020-05-08 07:04:40.372 UTC [msp.identity] Sign -> DEBU c9b[0m Sign: digest: 10FFB878E58E31D55D4B2100D6B999793BFE71CEF1BDB3C128943370A6D1CE4C 
+[36m2020-05-08 07:04:40.372 UTC [msp] GetDefaultSigningIdentity -> DEBU c9c[0m Obtaining default signing identity
+[36m2020-05-08 07:04:40.372 UTC [msp.identity] Sign -> DEBU c9d[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:40.372 UTC [msp.identity] Sign -> DEBU c9e[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:42.075 UTC [msp] GetDefaultSigningIdentity -> DEBU c9f[0m Obtaining default signing identity
+[36m2020-05-08 07:04:42.075 UTC [msp.identity] Sign -> DEBU ca0[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108E01 
+[36m2020-05-08 07:04:42.075 UTC [msp.identity] Sign -> DEBU ca1[0m Sign: digest: AB6BE01A8B5683151BE25B44E2A045704B4378999357DBDF2CD1E1A2CA41D26B 
+[36m2020-05-08 07:04:42.075 UTC [msp] GetDefaultSigningIdentity -> DEBU ca2[0m Obtaining default signing identity
+[36m2020-05-08 07:04:42.075 UTC [msp.identity] Sign -> DEBU ca3[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:42.075 UTC [msp.identity] Sign -> DEBU ca4[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:42.075 UTC [gossip.discovery] periodicalSendAlive -> DEBU ca5[0m Sleeping 5s
+[36m2020-05-08 07:04:43.266 UTC [gossip.election] waitForInterrupt -> DEBU ca6[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:04:43.266 UTC [gossip.election] IsLeader -> DEBU ca7[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:04:43.266 UTC [msp] GetDefaultSigningIdentity -> DEBU ca8[0m Obtaining default signing identity
+[36m2020-05-08 07:04:43.266 UTC [msp.identity] Sign -> DEBU ca9[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616103A1801 
+[36m2020-05-08 07:04:43.266 UTC [msp.identity] Sign -> DEBU caa[0m Sign: digest: F138083E3BB71B64A43D024E0E81B681CD450314BC2DCDF02766C3997F80DAA3 
+[36m2020-05-08 07:04:43.266 UTC [gossip.election] waitForInterrupt -> DEBU cab[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:04:44.373 UTC [msp] GetDefaultSigningIdentity -> DEBU cac[0m Obtaining default signing identity
+[36m2020-05-08 07:04:44.373 UTC [msp.identity] Sign -> DEBU cad[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616108F01 
+[36m2020-05-08 07:04:44.373 UTC [msp.identity] Sign -> DEBU cae[0m Sign: digest: 028C0D69F1ED66A922E77896B634D2AB37C55E1A5C0D5261D1424ED7A32DA6EF 
+[36m2020-05-08 07:04:44.374 UTC [msp] GetDefaultSigningIdentity -> DEBU caf[0m Obtaining default signing identity
+[36m2020-05-08 07:04:44.374 UTC [msp.identity] Sign -> DEBU cb0[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:44.374 UTC [msp.identity] Sign -> DEBU cb1[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:47.076 UTC [msp] GetDefaultSigningIdentity -> DEBU cb2[0m Obtaining default signing identity
+[36m2020-05-08 07:04:47.076 UTC [msp.identity] Sign -> DEBU cb3[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109001 
+[36m2020-05-08 07:04:47.076 UTC [msp.identity] Sign -> DEBU cb4[0m Sign: digest: 5F5EFD0B2D0126B3642A0AD82A5C62AF2E987552751CCE0003061020C6D8F87A 
+[36m2020-05-08 07:04:47.076 UTC [msp] GetDefaultSigningIdentity -> DEBU cb5[0m Obtaining default signing identity
+[36m2020-05-08 07:04:47.076 UTC [msp.identity] Sign -> DEBU cb6[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:47.076 UTC [msp.identity] Sign -> DEBU cb7[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:47.076 UTC [gossip.discovery] periodicalSendAlive -> DEBU cb8[0m Sleeping 5s
+[36m2020-05-08 07:04:48.267 UTC [gossip.election] waitForInterrupt -> DEBU cb9[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:04:48.267 UTC [gossip.election] IsLeader -> DEBU cba[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:04:48.267 UTC [msp] GetDefaultSigningIdentity -> DEBU cbb[0m Obtaining default signing identity
+[36m2020-05-08 07:04:48.267 UTC [msp.identity] Sign -> DEBU cbc[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616103B1801 
+[36m2020-05-08 07:04:48.267 UTC [msp.identity] Sign -> DEBU cbd[0m Sign: digest: 4521230871EC956F207CBCEE5244C5B21AB4D84B4218FDF659419A4FA8815386 
+[36m2020-05-08 07:04:48.267 UTC [gossip.election] waitForInterrupt -> DEBU cbe[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:04:48.374 UTC [msp] GetDefaultSigningIdentity -> DEBU cbf[0m Obtaining default signing identity
+[36m2020-05-08 07:04:48.374 UTC [msp.identity] Sign -> DEBU cc0[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109101 
+[36m2020-05-08 07:04:48.374 UTC [msp.identity] Sign -> DEBU cc1[0m Sign: digest: 98E63DFB1FD38214DDD06171C04CE5058534FE1A9FB3567B0BEE660B638000AC 
+[36m2020-05-08 07:04:48.375 UTC [msp] GetDefaultSigningIdentity -> DEBU cc2[0m Obtaining default signing identity
+[36m2020-05-08 07:04:48.375 UTC [msp.identity] Sign -> DEBU cc3[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:48.375 UTC [msp.identity] Sign -> DEBU cc4[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:52.078 UTC [msp] GetDefaultSigningIdentity -> DEBU cc5[0m Obtaining default signing identity
+[36m2020-05-08 07:04:52.078 UTC [msp.identity] Sign -> DEBU cc6[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109201 
+[36m2020-05-08 07:04:52.078 UTC [msp.identity] Sign -> DEBU cc7[0m Sign: digest: B242C2E5608669CB366590FCFB6065DC6045726A09A5E1D3B0A1A5A11326AD4F 
+[36m2020-05-08 07:04:52.078 UTC [msp] GetDefaultSigningIdentity -> DEBU cc8[0m Obtaining default signing identity
+[36m2020-05-08 07:04:52.078 UTC [msp.identity] Sign -> DEBU cc9[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:52.078 UTC [msp.identity] Sign -> DEBU cca[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:52.078 UTC [gossip.discovery] periodicalSendAlive -> DEBU ccb[0m Sleeping 5s
+[36m2020-05-08 07:04:52.376 UTC [msp] GetDefaultSigningIdentity -> DEBU ccc[0m Obtaining default signing identity
+[36m2020-05-08 07:04:52.376 UTC [msp.identity] Sign -> DEBU ccd[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109301 
+[36m2020-05-08 07:04:52.376 UTC [msp.identity] Sign -> DEBU cce[0m Sign: digest: D23A01ECF9996156E2D637EFD554F731B5A8A5F32EC73F186471EB502A8E0254 
+[36m2020-05-08 07:04:52.377 UTC [msp] GetDefaultSigningIdentity -> DEBU ccf[0m Obtaining default signing identity
+[36m2020-05-08 07:04:52.377 UTC [msp.identity] Sign -> DEBU cd0[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:52.377 UTC [msp.identity] Sign -> DEBU cd1[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:53.268 UTC [gossip.election] waitForInterrupt -> DEBU cd2[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:04:53.268 UTC [gossip.election] IsLeader -> DEBU cd3[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:04:53.268 UTC [msp] GetDefaultSigningIdentity -> DEBU cd4[0m Obtaining default signing identity
+[36m2020-05-08 07:04:53.268 UTC [msp.identity] Sign -> DEBU cd5[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616103C1801 
+[36m2020-05-08 07:04:53.268 UTC [msp.identity] Sign -> DEBU cd6[0m Sign: digest: 3EE481B9476531724A02169231C705F4D22D2B2C911D0A6E6CCBD8FC3616B87D 
+[36m2020-05-08 07:04:53.268 UTC [gossip.election] waitForInterrupt -> DEBU cd7[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:04:56.377 UTC [msp] GetDefaultSigningIdentity -> DEBU cd8[0m Obtaining default signing identity
+[36m2020-05-08 07:04:56.377 UTC [msp.identity] Sign -> DEBU cd9[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109401 
+[36m2020-05-08 07:04:56.377 UTC [msp.identity] Sign -> DEBU cda[0m Sign: digest: 76845BE08E1445077F3B9A87CA5599DA078071DE74CF37C97B6397DFEDC8D629 
+[36m2020-05-08 07:04:56.378 UTC [msp] GetDefaultSigningIdentity -> DEBU cdb[0m Obtaining default signing identity
+[36m2020-05-08 07:04:56.378 UTC [msp.identity] Sign -> DEBU cdc[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:56.378 UTC [msp.identity] Sign -> DEBU cdd[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:56.951 UTC [gossip.privdata] run -> DEBU cde[0m Start reconcile missing private info
+[36m2020-05-08 07:04:56.951 UTC [leveldbhelper] GetIterator -> DEBU cdf[0m Getting iterator for range [[]byte{0x6d, 0x79, 0x63, 0x68, 0x61, 0x6e, 0x6e, 0x65, 0x6c, 0x0, 0x4, 0x7, 0xfc}] - [[]byte{0x6d, 0x79, 0x63, 0x68, 0x61, 0x6e, 0x6e, 0x65, 0x6c, 0x0, 0x4, 0x8}]
+[36m2020-05-08 07:04:56.951 UTC [gossip.privdata] reconcile -> DEBU ce0[0m Reconciliation cycle finished successfully. no items to reconcile
+[36m2020-05-08 07:04:56.961 UTC [gossip.discovery] periodicalReconnectToDead -> DEBU ce1[0m Sleeping 25s
+[36m2020-05-08 07:04:57.079 UTC [msp] GetDefaultSigningIdentity -> DEBU ce2[0m Obtaining default signing identity
+[36m2020-05-08 07:04:57.080 UTC [msp.identity] Sign -> DEBU ce3[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109501 
+[36m2020-05-08 07:04:57.080 UTC [msp.identity] Sign -> DEBU ce4[0m Sign: digest: D99BD70C88ECB719F0B3FB3BBCA81D00B54C32AE9135CBE7835143C7BBD99C33 
+[36m2020-05-08 07:04:57.080 UTC [msp] GetDefaultSigningIdentity -> DEBU ce5[0m Obtaining default signing identity
+[36m2020-05-08 07:04:57.080 UTC [msp.identity] Sign -> DEBU ce6[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:04:57.080 UTC [msp.identity] Sign -> DEBU ce7[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:04:57.080 UTC [gossip.discovery] periodicalSendAlive -> DEBU ce8[0m Sleeping 5s
+[36m2020-05-08 07:04:58.269 UTC [gossip.election] waitForInterrupt -> DEBU ce9[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:04:58.270 UTC [gossip.election] IsLeader -> DEBU cea[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:04:58.270 UTC [msp] GetDefaultSigningIdentity -> DEBU ceb[0m Obtaining default signing identity
+[36m2020-05-08 07:04:58.270 UTC [msp.identity] Sign -> DEBU cec[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616103D1801 
+[36m2020-05-08 07:04:58.270 UTC [msp.identity] Sign -> DEBU ced[0m Sign: digest: 2B05FB90B26116475558A020A46711B7915284AFA0AAE383D089B0F0B7B6FF60 
+[36m2020-05-08 07:04:58.270 UTC [gossip.election] waitForInterrupt -> DEBU cee[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:05:00.378 UTC [msp] GetDefaultSigningIdentity -> DEBU cef[0m Obtaining default signing identity
+[36m2020-05-08 07:05:00.378 UTC [msp.identity] Sign -> DEBU cf0[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109601 
+[36m2020-05-08 07:05:00.378 UTC [msp.identity] Sign -> DEBU cf1[0m Sign: digest: 94BE54B5DDBF6660E59F9F07C3A7EB111544FD68495C865341692ED255A1CA2B 
+[36m2020-05-08 07:05:00.378 UTC [msp] GetDefaultSigningIdentity -> DEBU cf2[0m Obtaining default signing identity
+[36m2020-05-08 07:05:00.378 UTC [msp.identity] Sign -> DEBU cf3[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:00.379 UTC [msp.identity] Sign -> DEBU cf4[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:02.080 UTC [msp] GetDefaultSigningIdentity -> DEBU cf5[0m Obtaining default signing identity
+[36m2020-05-08 07:05:02.080 UTC [msp.identity] Sign -> DEBU cf6[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109701 
+[36m2020-05-08 07:05:02.080 UTC [msp.identity] Sign -> DEBU cf7[0m Sign: digest: 909911803314502B09D692CC04C4264434A68F57A95D5794E4E68B93B142F904 
+[36m2020-05-08 07:05:02.081 UTC [msp] GetDefaultSigningIdentity -> DEBU cf8[0m Obtaining default signing identity
+[36m2020-05-08 07:05:02.104 UTC [msp.identity] Sign -> DEBU cf9[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:02.105 UTC [msp.identity] Sign -> DEBU cfa[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:02.105 UTC [gossip.discovery] periodicalSendAlive -> DEBU cfb[0m Sleeping 5s
+[36m2020-05-08 07:05:03.271 UTC [gossip.election] waitForInterrupt -> DEBU cfc[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:05:03.271 UTC [gossip.election] IsLeader -> DEBU cfd[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:05:03.271 UTC [msp] GetDefaultSigningIdentity -> DEBU cfe[0m Obtaining default signing identity
+[36m2020-05-08 07:05:03.271 UTC [msp.identity] Sign -> DEBU cff[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616103E1801 
+[36m2020-05-08 07:05:03.271 UTC [msp.identity] Sign -> DEBU d00[0m Sign: digest: 6C95FC3E80F34B539703059FF27BAF4BF282E7C89136FD3124859DB5F6A09DF0 
+[36m2020-05-08 07:05:03.271 UTC [gossip.election] waitForInterrupt -> DEBU d01[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:05:04.379 UTC [msp] GetDefaultSigningIdentity -> DEBU d02[0m Obtaining default signing identity
+[36m2020-05-08 07:05:04.379 UTC [msp.identity] Sign -> DEBU d03[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109801 
+[36m2020-05-08 07:05:04.380 UTC [msp.identity] Sign -> DEBU d04[0m Sign: digest: 10D2A1E77E43E4AB60072F1FB0E1239B5A6B5C6258A0306986EC3D73C557B8B4 
+[36m2020-05-08 07:05:04.380 UTC [msp] GetDefaultSigningIdentity -> DEBU d05[0m Obtaining default signing identity
+[36m2020-05-08 07:05:04.380 UTC [msp.identity] Sign -> DEBU d06[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:04.380 UTC [msp.identity] Sign -> DEBU d07[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:07.106 UTC [msp] GetDefaultSigningIdentity -> DEBU d08[0m Obtaining default signing identity
+[36m2020-05-08 07:05:07.106 UTC [msp.identity] Sign -> DEBU d09[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109901 
+[36m2020-05-08 07:05:07.106 UTC [msp.identity] Sign -> DEBU d0a[0m Sign: digest: B2D4BC2823E20C1DB68C132A20D534A489F55D056A0F06DA6D21451B6A77FBFF 
+[36m2020-05-08 07:05:07.106 UTC [msp] GetDefaultSigningIdentity -> DEBU d0b[0m Obtaining default signing identity
+[36m2020-05-08 07:05:07.106 UTC [msp.identity] Sign -> DEBU d0c[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:07.106 UTC [msp.identity] Sign -> DEBU d0d[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:07.106 UTC [gossip.discovery] periodicalSendAlive -> DEBU d0e[0m Sleeping 5s
+[36m2020-05-08 07:05:08.271 UTC [gossip.election] waitForInterrupt -> DEBU d0f[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:05:08.271 UTC [gossip.election] IsLeader -> DEBU d10[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:05:08.271 UTC [msp] GetDefaultSigningIdentity -> DEBU d11[0m Obtaining default signing identity
+[36m2020-05-08 07:05:08.271 UTC [msp.identity] Sign -> DEBU d12[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE8616103F1801 
+[36m2020-05-08 07:05:08.271 UTC [msp.identity] Sign -> DEBU d13[0m Sign: digest: 5CE33493719333F4A7F04B400681BB26385B409B7CB6A95596859BA32F277099 
+[36m2020-05-08 07:05:08.272 UTC [gossip.election] waitForInterrupt -> DEBU d14[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:05:08.381 UTC [msp] GetDefaultSigningIdentity -> DEBU d15[0m Obtaining default signing identity
+[36m2020-05-08 07:05:08.381 UTC [msp.identity] Sign -> DEBU d16[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109A01 
+[36m2020-05-08 07:05:08.381 UTC [msp.identity] Sign -> DEBU d17[0m Sign: digest: 17BE1D7893F33D6E5DB2C7BACB9A037468729367CF97E582684AC0C5E30C51D4 
+[36m2020-05-08 07:05:08.381 UTC [msp] GetDefaultSigningIdentity -> DEBU d18[0m Obtaining default signing identity
+[36m2020-05-08 07:05:08.381 UTC [msp.identity] Sign -> DEBU d19[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:08.382 UTC [msp.identity] Sign -> DEBU d1a[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:12.107 UTC [msp] GetDefaultSigningIdentity -> DEBU d1b[0m Obtaining default signing identity
+[36m2020-05-08 07:05:12.107 UTC [msp.identity] Sign -> DEBU d1c[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109B01 
+[36m2020-05-08 07:05:12.107 UTC [msp.identity] Sign -> DEBU d1d[0m Sign: digest: 427CE2218230B0855BE0D81D529A1118E8440196F9F6F00371E462D7E91B2E78 
+[36m2020-05-08 07:05:12.107 UTC [msp] GetDefaultSigningIdentity -> DEBU d1e[0m Obtaining default signing identity
+[36m2020-05-08 07:05:12.107 UTC [msp.identity] Sign -> DEBU d1f[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:12.107 UTC [msp.identity] Sign -> DEBU d20[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:12.107 UTC [gossip.discovery] periodicalSendAlive -> DEBU d21[0m Sleeping 5s
+[36m2020-05-08 07:05:12.383 UTC [msp] GetDefaultSigningIdentity -> DEBU d22[0m Obtaining default signing identity
+[36m2020-05-08 07:05:12.383 UTC [msp.identity] Sign -> DEBU d23[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109C01 
+[36m2020-05-08 07:05:12.383 UTC [msp.identity] Sign -> DEBU d24[0m Sign: digest: 68C75A8A556AF80B7DB261AE5EC74129CB37D6DAF6FCB2AA648CF515D2D01D8E 
+[36m2020-05-08 07:05:12.383 UTC [msp] GetDefaultSigningIdentity -> DEBU d25[0m Obtaining default signing identity
+[36m2020-05-08 07:05:12.383 UTC [msp.identity] Sign -> DEBU d26[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:12.383 UTC [msp.identity] Sign -> DEBU d27[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:13.273 UTC [gossip.election] waitForInterrupt -> DEBU d28[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:05:13.273 UTC [gossip.election] IsLeader -> DEBU d29[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:05:13.273 UTC [msp] GetDefaultSigningIdentity -> DEBU d2a[0m Obtaining default signing identity
+[36m2020-05-08 07:05:13.273 UTC [msp.identity] Sign -> DEBU d2b[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610401801 
+[36m2020-05-08 07:05:13.273 UTC [msp.identity] Sign -> DEBU d2c[0m Sign: digest: 9A8EE5E213E1EA4F5AC8E1B231315035E703607E90DF620FD6A4992BB98BD5C1 
+[36m2020-05-08 07:05:13.273 UTC [gossip.election] waitForInterrupt -> DEBU d2d[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:05:16.384 UTC [msp] GetDefaultSigningIdentity -> DEBU d2e[0m Obtaining default signing identity
+[36m2020-05-08 07:05:16.384 UTC [msp.identity] Sign -> DEBU d2f[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109D01 
+[36m2020-05-08 07:05:16.384 UTC [msp.identity] Sign -> DEBU d30[0m Sign: digest: AAD4C33FDB6DFB03437443C4124FC59DD5673A1F9741BB7E64A54CCA244491AC 
+[36m2020-05-08 07:05:16.384 UTC [msp] GetDefaultSigningIdentity -> DEBU d31[0m Obtaining default signing identity
+[36m2020-05-08 07:05:16.384 UTC [msp.identity] Sign -> DEBU d32[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:16.384 UTC [msp.identity] Sign -> DEBU d33[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:17.108 UTC [msp] GetDefaultSigningIdentity -> DEBU d34[0m Obtaining default signing identity
+[36m2020-05-08 07:05:17.108 UTC [msp.identity] Sign -> DEBU d35[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109E01 
+[36m2020-05-08 07:05:17.108 UTC [msp.identity] Sign -> DEBU d36[0m Sign: digest: D7D8E823B4A32B5C8D7030DE0A18B689D7F690321F1973C01BC52BFCA4009C8C 
+[36m2020-05-08 07:05:17.108 UTC [msp] GetDefaultSigningIdentity -> DEBU d37[0m Obtaining default signing identity
+[36m2020-05-08 07:05:17.108 UTC [msp.identity] Sign -> DEBU d38[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:17.108 UTC [msp.identity] Sign -> DEBU d39[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:17.108 UTC [gossip.discovery] periodicalSendAlive -> DEBU d3a[0m Sleeping 5s
+[36m2020-05-08 07:05:18.274 UTC [gossip.election] waitForInterrupt -> DEBU d3b[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:05:18.274 UTC [gossip.election] IsLeader -> DEBU d3c[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:05:18.274 UTC [msp] GetDefaultSigningIdentity -> DEBU d3d[0m Obtaining default signing identity
+[36m2020-05-08 07:05:18.274 UTC [msp.identity] Sign -> DEBU d3e[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610411801 
+[36m2020-05-08 07:05:18.274 UTC [msp.identity] Sign -> DEBU d3f[0m Sign: digest: 4DCDA8101C9F801578F3E66F3CB350195126CD6F255722E7850C1549392C2853 
+[36m2020-05-08 07:05:18.274 UTC [gossip.election] waitForInterrupt -> DEBU d40[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:05:20.385 UTC [msp] GetDefaultSigningIdentity -> DEBU d41[0m Obtaining default signing identity
+[36m2020-05-08 07:05:20.385 UTC [msp.identity] Sign -> DEBU d42[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE8616109F01 
+[36m2020-05-08 07:05:20.385 UTC [msp.identity] Sign -> DEBU d43[0m Sign: digest: 3B18E097ADB41AA370C5B9EF76B5D8ACAB540EED993044B754BBCE9E6012509B 
+[36m2020-05-08 07:05:20.385 UTC [msp] GetDefaultSigningIdentity -> DEBU d44[0m Obtaining default signing identity
+[36m2020-05-08 07:05:20.385 UTC [msp.identity] Sign -> DEBU d45[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:20.385 UTC [msp.identity] Sign -> DEBU d46[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:21.962 UTC [gossip.discovery] periodicalReconnectToDead -> DEBU d47[0m Sleeping 25s
+[36m2020-05-08 07:05:22.109 UTC [msp] GetDefaultSigningIdentity -> DEBU d48[0m Obtaining default signing identity
+[36m2020-05-08 07:05:22.109 UTC [msp.identity] Sign -> DEBU d49[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610A001 
+[36m2020-05-08 07:05:22.109 UTC [msp.identity] Sign -> DEBU d4a[0m Sign: digest: 2B2E8F7BCEBB95E41FCB2DAB64A7105A08779DEF364C7F6B540B34BB9E7479FF 
+[36m2020-05-08 07:05:22.109 UTC [msp] GetDefaultSigningIdentity -> DEBU d4b[0m Obtaining default signing identity
+[36m2020-05-08 07:05:22.109 UTC [msp.identity] Sign -> DEBU d4c[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:22.109 UTC [msp.identity] Sign -> DEBU d4d[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:22.109 UTC [gossip.discovery] periodicalSendAlive -> DEBU d4e[0m Sleeping 5s
+[36m2020-05-08 07:05:23.275 UTC [gossip.election] waitForInterrupt -> DEBU d4f[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:05:23.275 UTC [gossip.election] IsLeader -> DEBU d50[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:05:23.275 UTC [msp] GetDefaultSigningIdentity -> DEBU d51[0m Obtaining default signing identity
+[36m2020-05-08 07:05:23.275 UTC [msp.identity] Sign -> DEBU d52[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610421801 
+[36m2020-05-08 07:05:23.275 UTC [msp.identity] Sign -> DEBU d53[0m Sign: digest: 46CBBCF5232AA3958B6F55336FD43B3CCC505F9B273328809A3E2EAF26151CFA 
+[36m2020-05-08 07:05:23.275 UTC [gossip.election] waitForInterrupt -> DEBU d54[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:05:24.386 UTC [msp] GetDefaultSigningIdentity -> DEBU d55[0m Obtaining default signing identity
+[36m2020-05-08 07:05:24.386 UTC [msp.identity] Sign -> DEBU d56[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610A101 
+[36m2020-05-08 07:05:24.386 UTC [msp.identity] Sign -> DEBU d57[0m Sign: digest: 18989CCB9E70DA70372AA0ABBA3B0D1520E9FCDBE8E9BF16111695CC235875B3 
+[36m2020-05-08 07:05:24.386 UTC [msp] GetDefaultSigningIdentity -> DEBU d58[0m Obtaining default signing identity
+[36m2020-05-08 07:05:24.386 UTC [msp.identity] Sign -> DEBU d59[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:24.386 UTC [msp.identity] Sign -> DEBU d5a[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:27.110 UTC [msp] GetDefaultSigningIdentity -> DEBU d5b[0m Obtaining default signing identity
+[36m2020-05-08 07:05:27.111 UTC [msp.identity] Sign -> DEBU d5c[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610A201 
+[36m2020-05-08 07:05:27.111 UTC [msp.identity] Sign -> DEBU d5d[0m Sign: digest: 114B805DFF1AEC6FEE5F72EB582B04B9646A0E9E9A4DD2979EFD618604BB8C1D 
+[36m2020-05-08 07:05:27.111 UTC [msp] GetDefaultSigningIdentity -> DEBU d5e[0m Obtaining default signing identity
+[36m2020-05-08 07:05:27.111 UTC [msp.identity] Sign -> DEBU d5f[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:27.111 UTC [msp.identity] Sign -> DEBU d60[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:27.111 UTC [gossip.discovery] periodicalSendAlive -> DEBU d61[0m Sleeping 5s
+[36m2020-05-08 07:05:28.275 UTC [gossip.election] waitForInterrupt -> DEBU d62[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:05:28.276 UTC [gossip.election] IsLeader -> DEBU d63[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:05:28.276 UTC [msp] GetDefaultSigningIdentity -> DEBU d64[0m Obtaining default signing identity
+[36m2020-05-08 07:05:28.276 UTC [msp.identity] Sign -> DEBU d65[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610431801 
+[36m2020-05-08 07:05:28.276 UTC [msp.identity] Sign -> DEBU d66[0m Sign: digest: C7A0980E102C93AC0C65B07FED010BBEC1884F4E048AC28CF4A8A0CA9577ADA0 
+[36m2020-05-08 07:05:28.276 UTC [gossip.election] waitForInterrupt -> DEBU d67[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:05:28.388 UTC [msp] GetDefaultSigningIdentity -> DEBU d68[0m Obtaining default signing identity
+[36m2020-05-08 07:05:28.388 UTC [msp.identity] Sign -> DEBU d69[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610A301 
+[36m2020-05-08 07:05:28.388 UTC [msp.identity] Sign -> DEBU d6a[0m Sign: digest: 288421713E9E6205D15D7DF5B7AF2600DD8DADD21DDB9CF0949356F0F0228F16 
+[36m2020-05-08 07:05:28.389 UTC [msp] GetDefaultSigningIdentity -> DEBU d6b[0m Obtaining default signing identity
+[36m2020-05-08 07:05:28.389 UTC [msp.identity] Sign -> DEBU d6c[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:28.389 UTC [msp.identity] Sign -> DEBU d6d[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:32.112 UTC [msp] GetDefaultSigningIdentity -> DEBU d6e[0m Obtaining default signing identity
+[36m2020-05-08 07:05:32.112 UTC [msp.identity] Sign -> DEBU d6f[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610A401 
+[36m2020-05-08 07:05:32.112 UTC [msp.identity] Sign -> DEBU d70[0m Sign: digest: F27503E4F9B5A56FEA0A16FB9EE021726259F3BA3A64D1F2D88AC0E09332DC58 
+[36m2020-05-08 07:05:32.112 UTC [msp] GetDefaultSigningIdentity -> DEBU d71[0m Obtaining default signing identity
+[36m2020-05-08 07:05:32.112 UTC [msp.identity] Sign -> DEBU d72[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:32.112 UTC [msp.identity] Sign -> DEBU d73[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:32.112 UTC [gossip.discovery] periodicalSendAlive -> DEBU d74[0m Sleeping 5s
+[36m2020-05-08 07:05:32.389 UTC [msp] GetDefaultSigningIdentity -> DEBU d75[0m Obtaining default signing identity
+[36m2020-05-08 07:05:32.389 UTC [msp.identity] Sign -> DEBU d76[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610A501 
+[36m2020-05-08 07:05:32.389 UTC [msp.identity] Sign -> DEBU d77[0m Sign: digest: 8274771EE15CF7297148888CEFBCEB42E4CF7C6D7A27D18CBB055A24C39C5F3F 
+[36m2020-05-08 07:05:32.389 UTC [msp] GetDefaultSigningIdentity -> DEBU d78[0m Obtaining default signing identity
+[36m2020-05-08 07:05:32.389 UTC [msp.identity] Sign -> DEBU d79[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:32.389 UTC [msp.identity] Sign -> DEBU d7a[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:33.277 UTC [gossip.election] waitForInterrupt -> DEBU d7b[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:05:33.277 UTC [gossip.election] IsLeader -> DEBU d7c[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:05:33.277 UTC [msp] GetDefaultSigningIdentity -> DEBU d7d[0m Obtaining default signing identity
+[36m2020-05-08 07:05:33.277 UTC [msp.identity] Sign -> DEBU d7e[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610441801 
+[36m2020-05-08 07:05:33.277 UTC [msp.identity] Sign -> DEBU d7f[0m Sign: digest: C384AC7B1A58CFAE841595F4FCAD8A3B60426F923F4761DB7369E9612BAE6F78 
+[36m2020-05-08 07:05:33.277 UTC [gossip.election] waitForInterrupt -> DEBU d80[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:05:36.390 UTC [msp] GetDefaultSigningIdentity -> DEBU d81[0m Obtaining default signing identity
+[36m2020-05-08 07:05:36.390 UTC [msp.identity] Sign -> DEBU d82[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610A601 
+[36m2020-05-08 07:05:36.390 UTC [msp.identity] Sign -> DEBU d83[0m Sign: digest: B93CA870AF70438743DA02F9E1AE62D435617E15D2ABC25F4C200EF5A7BB335A 
+[36m2020-05-08 07:05:36.391 UTC [msp] GetDefaultSigningIdentity -> DEBU d84[0m Obtaining default signing identity
+[36m2020-05-08 07:05:36.391 UTC [msp.identity] Sign -> DEBU d85[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:36.391 UTC [msp.identity] Sign -> DEBU d86[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:37.124 UTC [msp] GetDefaultSigningIdentity -> DEBU d87[0m Obtaining default signing identity
+[36m2020-05-08 07:05:37.124 UTC [msp.identity] Sign -> DEBU d88[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610A701 
+[36m2020-05-08 07:05:37.124 UTC [msp.identity] Sign -> DEBU d89[0m Sign: digest: 72BAD6C5EEA0EA46496D0A00F98CE95A5ED83A89DB938CF6923821BB8FA483AD 
+[36m2020-05-08 07:05:37.124 UTC [msp] GetDefaultSigningIdentity -> DEBU d8a[0m Obtaining default signing identity
+[36m2020-05-08 07:05:37.124 UTC [msp.identity] Sign -> DEBU d8b[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:37.124 UTC [msp.identity] Sign -> DEBU d8c[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:37.124 UTC [gossip.discovery] periodicalSendAlive -> DEBU d8d[0m Sleeping 5s
+[36m2020-05-08 07:05:38.277 UTC [gossip.election] waitForInterrupt -> DEBU d8e[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:05:38.278 UTC [gossip.election] IsLeader -> DEBU d8f[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:05:38.278 UTC [msp] GetDefaultSigningIdentity -> DEBU d90[0m Obtaining default signing identity
+[36m2020-05-08 07:05:38.278 UTC [msp.identity] Sign -> DEBU d91[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610451801 
+[36m2020-05-08 07:05:38.278 UTC [msp.identity] Sign -> DEBU d92[0m Sign: digest: C5D71560B9D0C898490675500D4A79FEE7236659A7E4719CBF34A577CEE9F55F 
+[36m2020-05-08 07:05:38.278 UTC [gossip.election] waitForInterrupt -> DEBU d93[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:05:40.392 UTC [msp] GetDefaultSigningIdentity -> DEBU d94[0m Obtaining default signing identity
+[36m2020-05-08 07:05:40.392 UTC [msp.identity] Sign -> DEBU d95[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610A801 
+[36m2020-05-08 07:05:40.392 UTC [msp.identity] Sign -> DEBU d96[0m Sign: digest: 9DE232962C506E8B638B0E35A6B8EFE6B6BB0456C69C6DA02AE3DD83FF32C327 
+[36m2020-05-08 07:05:40.392 UTC [msp] GetDefaultSigningIdentity -> DEBU d97[0m Obtaining default signing identity
+[36m2020-05-08 07:05:40.392 UTC [msp.identity] Sign -> DEBU d98[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:40.392 UTC [msp.identity] Sign -> DEBU d99[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:42.125 UTC [msp] GetDefaultSigningIdentity -> DEBU d9a[0m Obtaining default signing identity
+[36m2020-05-08 07:05:42.126 UTC [msp.identity] Sign -> DEBU d9b[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610A901 
+[36m2020-05-08 07:05:42.126 UTC [msp.identity] Sign -> DEBU d9c[0m Sign: digest: AB819B2EDDDA7AFD388986665F60256B32D40F4E6ADA22F938594695E4CE3E90 
+[36m2020-05-08 07:05:42.126 UTC [msp] GetDefaultSigningIdentity -> DEBU d9d[0m Obtaining default signing identity
+[36m2020-05-08 07:05:42.126 UTC [msp.identity] Sign -> DEBU d9e[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:42.127 UTC [msp.identity] Sign -> DEBU d9f[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:42.127 UTC [gossip.discovery] periodicalSendAlive -> DEBU da0[0m Sleeping 5s
+[36m2020-05-08 07:05:43.278 UTC [gossip.election] waitForInterrupt -> DEBU da1[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:05:43.278 UTC [gossip.election] IsLeader -> DEBU da2[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:05:43.278 UTC [msp] GetDefaultSigningIdentity -> DEBU da3[0m Obtaining default signing identity
+[36m2020-05-08 07:05:43.278 UTC [msp.identity] Sign -> DEBU da4[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610461801 
+[36m2020-05-08 07:05:43.278 UTC [msp.identity] Sign -> DEBU da5[0m Sign: digest: B98C56A250D2C91B69F7300B6CD7231BFB66E8BAED831185D4F40228764A28B9 
+[36m2020-05-08 07:05:43.279 UTC [gossip.election] waitForInterrupt -> DEBU da6[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:05:44.393 UTC [msp] GetDefaultSigningIdentity -> DEBU da7[0m Obtaining default signing identity
+[36m2020-05-08 07:05:44.393 UTC [msp.identity] Sign -> DEBU da8[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610AA01 
+[36m2020-05-08 07:05:44.393 UTC [msp.identity] Sign -> DEBU da9[0m Sign: digest: CD025A0E1E7E154CB535BE418354D930D6ED54CDF35F56C738F4552CBBA16748 
+[36m2020-05-08 07:05:44.394 UTC [msp] GetDefaultSigningIdentity -> DEBU daa[0m Obtaining default signing identity
+[36m2020-05-08 07:05:44.394 UTC [msp.identity] Sign -> DEBU dab[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:44.394 UTC [msp.identity] Sign -> DEBU dac[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:46.963 UTC [gossip.discovery] periodicalReconnectToDead -> DEBU dad[0m Sleeping 25s
+[36m2020-05-08 07:05:47.128 UTC [msp] GetDefaultSigningIdentity -> DEBU dae[0m Obtaining default signing identity
+[36m2020-05-08 07:05:47.128 UTC [msp.identity] Sign -> DEBU daf[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610AB01 
+[36m2020-05-08 07:05:47.128 UTC [msp.identity] Sign -> DEBU db0[0m Sign: digest: 7370DAEE8896C0BB6346AD5DC426B6E61CCBED027A11AE754C491DA07167E816 
+[36m2020-05-08 07:05:47.128 UTC [msp] GetDefaultSigningIdentity -> DEBU db1[0m Obtaining default signing identity
+[36m2020-05-08 07:05:47.128 UTC [msp.identity] Sign -> DEBU db2[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:47.128 UTC [msp.identity] Sign -> DEBU db3[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:47.128 UTC [gossip.discovery] periodicalSendAlive -> DEBU db4[0m Sleeping 5s
+[36m2020-05-08 07:05:48.280 UTC [gossip.election] waitForInterrupt -> DEBU db5[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:05:48.280 UTC [gossip.election] IsLeader -> DEBU db6[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:05:48.280 UTC [msp] GetDefaultSigningIdentity -> DEBU db7[0m Obtaining default signing identity
+[36m2020-05-08 07:05:48.280 UTC [msp.identity] Sign -> DEBU db8[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610471801 
+[36m2020-05-08 07:05:48.280 UTC [msp.identity] Sign -> DEBU db9[0m Sign: digest: B9C34A72DB62E16BAADE0C12AA999B09109FD960373890C6C75690CBDFDC55E0 
+[36m2020-05-08 07:05:48.280 UTC [gossip.election] waitForInterrupt -> DEBU dba[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:05:48.395 UTC [msp] GetDefaultSigningIdentity -> DEBU dbb[0m Obtaining default signing identity
+[36m2020-05-08 07:05:48.395 UTC [msp.identity] Sign -> DEBU dbc[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610AC01 
+[36m2020-05-08 07:05:48.395 UTC [msp.identity] Sign -> DEBU dbd[0m Sign: digest: 9F103B523E9F297F8A8F00FD88C7C497FE87F7530147FF52F1AC619098021656 
+[36m2020-05-08 07:05:48.395 UTC [msp] GetDefaultSigningIdentity -> DEBU dbe[0m Obtaining default signing identity
+[36m2020-05-08 07:05:48.395 UTC [msp.identity] Sign -> DEBU dbf[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:48.395 UTC [msp.identity] Sign -> DEBU dc0[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:52.129 UTC [msp] GetDefaultSigningIdentity -> DEBU dc1[0m Obtaining default signing identity
+[36m2020-05-08 07:05:52.129 UTC [msp.identity] Sign -> DEBU dc2[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610AD01 
+[36m2020-05-08 07:05:52.129 UTC [msp.identity] Sign -> DEBU dc3[0m Sign: digest: DCC1C634DEEC9EF083573D85163826F825CDDF7C59988805EA484E4FB6263063 
+[36m2020-05-08 07:05:52.129 UTC [msp] GetDefaultSigningIdentity -> DEBU dc4[0m Obtaining default signing identity
+[36m2020-05-08 07:05:52.129 UTC [msp.identity] Sign -> DEBU dc5[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:52.129 UTC [msp.identity] Sign -> DEBU dc6[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:52.129 UTC [gossip.discovery] periodicalSendAlive -> DEBU dc7[0m Sleeping 5s
+[36m2020-05-08 07:05:52.396 UTC [msp] GetDefaultSigningIdentity -> DEBU dc8[0m Obtaining default signing identity
+[36m2020-05-08 07:05:52.397 UTC [msp.identity] Sign -> DEBU dc9[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610AE01 
+[36m2020-05-08 07:05:52.397 UTC [msp.identity] Sign -> DEBU dca[0m Sign: digest: 5718AD28671C8E89A85AD0E217DF8B5376347C84C7B76196017CCABC2E6AD83F 
+[36m2020-05-08 07:05:52.397 UTC [msp] GetDefaultSigningIdentity -> DEBU dcb[0m Obtaining default signing identity
+[36m2020-05-08 07:05:52.397 UTC [msp.identity] Sign -> DEBU dcc[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
+[36m2020-05-08 07:05:52.397 UTC [msp.identity] Sign -> DEBU dcd[0m Sign: digest: 86BE282CDC9DEDD0987CB964CC28A299E0B83E83A6B1D51BBDFBCC53A2FE2D8A 
+[36m2020-05-08 07:05:53.282 UTC [gossip.election] waitForInterrupt -> DEBU dce[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Exiting
+[36m2020-05-08 07:05:53.282 UTC [gossip.election] IsLeader -> DEBU dcf[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Returning true
+[36m2020-05-08 07:05:53.282 UTC [msp] GetDefaultSigningIdentity -> DEBU dd0[0m Obtaining default signing identity
+[36m2020-05-08 07:05:53.282 UTC [msp.identity] Sign -> DEBU dd1[0m Sign: plaintext: 12096D796368616E6E656C1804A20132...120C08D6EDE08190EDBE861610481801 
+[36m2020-05-08 07:05:53.282 UTC [msp.identity] Sign -> DEBU dd2[0m Sign: digest: 27FE5D837C498108B9E48FC6FEF25C3A5D65123386D85D1D770EED60A33706EF 
+[36m2020-05-08 07:05:53.282 UTC [gossip.election] waitForInterrupt -> DEBU dd3[0m d6f86292f54b361d55732d3c2dbf83c87c0d5cf884341f2ecc82e62e7a5ca378 : Entering
+[36m2020-05-08 07:05:56.397 UTC [msp] GetDefaultSigningIdentity -> DEBU dd4[0m Obtaining default signing identity
+[36m2020-05-08 07:05:56.397 UTC [msp.identity] Sign -> DEBU dd5[0m Sign: plaintext: 18012A480A370A1370656572302E6F72...78120D08D4B2FAD4B2ECBE861610AF01 
+[36m2020-05-08 07:05:56.397 UTC [msp.identity] Sign -> DEBU dd6[0m Sign: digest: 93A5300AF9219C0DE0729957D75574069292FE0B8F6D86F4EC621BF22B210DAB 
+[36m2020-05-08 07:05:56.397 UTC [msp] GetDefaultSigningIdentity -> DEBU dd7[0m Obtaining default signing identity
+[36m2020-05-08 07:05:56.398 UTC [msp.identity] Sign -> DEBU dd8[0m Sign: plaintext: 0A1370656572302E6F7267612E636F6D3A37303531 
