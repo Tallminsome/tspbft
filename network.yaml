@@ -1,0 +1,134 @@
+name: Fabric
+version: "1.0"
+
+mutual-tls: false
+
+caliper:
+  blockchain: fabric
+  command:
+    start: scripts/gen.sh;scripts/utils.sh up
+    end: scripts/utils.sh
+
+info:
+  Version: 1.4.4
+  Size: 1 Orgs with 1 Peer
+  Orderer: TsPbft
+  Distribution: Single Host
+  StateDB: GoLevelDB
+
+clients:
+  peer0.orga.com:
+    client:
+      organization: OrgA
+      credentialStore:
+        path: /tmp/crypto/orga
+        cryptoStore:
+          path: /tmp/crypto/orga
+      clientPrivateKey:
+        path: crypto-config/peerOrganizations/orga.com/users/User1@orga.com/msp/keystore/key.pem
+      clientSignedCert:
+        path: crypto-config/peerOrganizations/orga.com/users/User1@orga.com/msp/signcerts/User1@orga.com-cert.pem
+
+channels:
+  mychannel:
+    configBinary: ./channel-artifacts/channel.tx
+    created: true
+    orderers:
+      - orderer0.trj.com
+      - orderer1.trj.com
+      - orderer2.trj.com
+      - orderer3.trj.com
+      - orderer4.trj.com
+      - orderer5.trj.com
+      - orderer6.trj.com
+      - orderer7.trj.com     
+      - orderer8.trj.com
+      - orderer9.trj.com
+      - orderer10.trj.com
+      - orderer11.trj.com
+      - orderer12.trj.com
+    peers:
+      peer0.orga.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+    chaincodes:
+    - id: money_demo
+      version: "1.0"
+      contractID: money_demo
+      language: golang
+      path: ../chaincode/demo
+      targetPeers:
+      - peer0.orga.com
+
+organizations:
+  OrgA:
+    mspid: OrgAMSP
+    peers:
+    - peer0.orga.com
+    adminPrivateKey:
+      path: crypto-config/peerOrganizations/orga.com/users/Admin@orga.com/msp/keystore/key.pem
+    signedCert:
+      path: crypto-config/peerOrganizations/orga.com/users/Admin@orga.com/msp/signcerts/Admin@orga.com-cert.pem
+
+orderers:
+  orderer0.trj.com:
+    url: grpc://localhost:6050
+    grpcOptions:
+      grpc.keepalive_time_ms: 600000
+  orderer1.trj.com:
+    url: grpc://localhost:6060
+    grpcOptions:
+      grpc.keepalive_time_ms: 600000
+  orderer2.trj.com:
+    url: grpc://localhost:6070
+    grpcOptions:
+      grpc.keepalive_time_ms: 600000
+  orderer3.trj.com:
+    url: grpc://localhost:6080
+    grpcOptions:
+      grpc.keepalive_time_ms: 600000
+  orderer4.trj.com:
+    url: grpc://localhost:6061
+    grpcOptions:
+      grpc.keepalive_time_ms: 600000
+  orderer5.trj.com:
+    url: grpc://localhost:6062
+    grpcOptions:
+      grpc.keepalive_time_ms: 600000
+  orderer6.trj.com:
+    url: grpc://localhost:6063
+    grpcOptions:
+      grpc.keepalive_time_ms: 600000
+  orderer7.trj.com:
+    url: grpc://localhost:6071
+    grpcOptions:
+      grpc.keepalive_time_ms: 600000
+  orderer8.trj.com:
+    url: grpc://localhost:6072
+    grpcOptions:
+      grpc.keepalive_time_ms: 600000
+  orderer9.trj.com:
+    url: grpc://localhost:6073
+    grpcOptions:
+      grpc.keepalive_time_ms: 600000
+  orderer10.trj.com:
+    url: grpc://localhost:6081
+    grpcOptions:
+      grpc.keepalive_time_ms: 600000
+  orderer11.trj.com:
+    url: grpc://localhost:6082
+    grpcOptions:
+      grpc.keepalive_time_ms: 600000
+  orderer12.trj.com:
+    url: grpc://localhost:6083
+    grpcOptions:
+      grpc.keepalive_time_ms: 600000
+
+peers:
+  peer0.orga.com:
+    url: grpc://localhost:7051
+    grpcOptions:
+      grpc.keepalive_time_ms: 600000

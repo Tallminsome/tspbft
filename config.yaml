@@ -1,0 +1,64 @@
+test:
+  name: tspbft-network
+  description: tspbft-network
+  workers:
+    type: local
+    number: 1
+
+  rounds:
+  - label: open
+    description: open
+    txNumber: 2000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 500
+    callback: ../chaincode/demo/callback/open.js
+
+  - label: transfer
+    description: transfer
+    txNumber: 1000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 500
+    callback: ../chaincode/demo/callback/transfer.js
+
+  - label: query
+    description: query
+    txNumber: 1000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 500
+    callback: ../chaincode/demo/callback/query.js
+
+  - label: delete
+    description: delete
+    txNumber: 1000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 500
+    callback: ../chaincode/demo/callback/delete.js
+
+monitor:
+  interval: 1
+  type: 
+    - docker
+  docker:
+    containers:
+    - peer0.orga.com
+    - orderer0.trj.com
+    - orderer1.trj.com
+    - orderer2.trj.com
+    - orderer3.trj.com
+    - orderer4.trj.com
+    - orderer5.trj.com
+    - orderer6.trj.com
+    - orderer7.trj.com     
+    - orderer8.trj.com
+    - orderer9.trj.com
+    - orderer10.trj.com
+    - orderer11.trj.com
+    - orderer12.trj.com
