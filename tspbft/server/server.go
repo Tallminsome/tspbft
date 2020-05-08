@@ -9,6 +9,7 @@ import (
 )
 
 const (
+	BufferReqEntry   = "/bufferrequest"
 	RequestEntry     = "/request"
 	PrePrepareEntry  = "/preprepare"
 	PrepareEntry     = "/prepare"
@@ -23,6 +24,7 @@ type HttpServer struct {
 	port    int
 	server  *http.Server
 
+	bufferreqRecv  chan *message.BufferReq
 	requestRecv    chan *message.Request
 	preprepareRecv chan *message.PrePrepare
 	prepareRecv    chan *message.Prepare
@@ -41,9 +43,10 @@ func NewServer(conf *cmf.ShareConfig) *HttpServer {
 }
 
 //config server: register the handle channel
-func (ser *HttpServer) RegisterChan (r chan *message.Request, pre chan *message.PrePrepare, p chan *message.Prepare,
+func (ser *HttpServer) RegisterChan (br chan *message.BufferReq,r chan *message.Request, pre chan *message.PrePrepare, p chan *message.Prepare,
 	c chan *message.Commit, v chan *message.Verify, vd chan *message.Verified, ck chan *message.CheckPoint)  {
 	log.Printf("Registering the chan for listen func")
+	ser.bufferreqRecv   = br
 	ser.requestRecv     = r
 	ser.preprepareRecv  = pre
 	ser.prepareRecv     = p
@@ -63,6 +66,7 @@ func (ser *HttpServer) RegisterServer() {
 	log.Printf("[Server] set listen port:%d\n", ser.port)
 
 	httpRegister := map[string]func(http.ResponseWriter, *http.Request){
+		BufferReqEntry:  ser.HttpBufferReq,
 		RequestEntry:    ser.HttpRequest,
 		PrePrepareEntry: ser.HttpPreprepare,
 		PrepareEntry:    ser.HttpPrepare,

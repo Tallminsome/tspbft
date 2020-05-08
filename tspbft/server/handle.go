@@ -7,6 +7,16 @@ import (
 	"net/http"
 )
 
+func (ser *HttpServer) HttpBufferReq (w http.ResponseWriter, r *http.Request){
+	var msg message.BufferReq
+	log.Printf("who send request: %s",r.RemoteAddr)
+	if err := json.NewDecoder(r.Body).Decode(&msg); err != nil {
+		log.Printf("[Http Error]: %s", err)
+		return
+	}
+	ser.bufferreqRecv <- &msg
+}
+
 func (ser *HttpServer) HttpRequest (w http.ResponseWriter, r *http.Request){
 	var msg message.Request
 	log.Printf("who send request: %s",r.RemoteAddr)

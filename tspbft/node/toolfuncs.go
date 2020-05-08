@@ -8,12 +8,9 @@ import (
 )
 
 func (n *Node) GetPrimary () string {
-	if !n.WhetherSubPrimary() {
-		log.Printf("Error,this is not sub-primary node")
-		return ""
-	} else {
-		return n.table["A"][0]
-	}
+	RawTable := os.Getenv("TSPBFT_NODE_TABLE_A")
+	Tables  := strings.Split(RawTable,";")
+	return Tables[0]
 }
 
 func (n *Node) GetSubPrimary () string {

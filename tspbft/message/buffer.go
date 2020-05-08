@@ -7,7 +7,7 @@ import (
 )
 
 type Buffer struct {
-	RequestQueue  []*BufferReq
+	RequestQueue  []*Request
 	RequestLocker *sync.RWMutex
 
 	PrePrepareBuffer map[string]*PrePrepare
@@ -36,7 +36,7 @@ type Buffer struct {
 
 func NewBuffer() *Buffer {
 	return &Buffer{
-		RequestQueue:      make([]*BufferReq, 0),
+		RequestQueue:      make([]*Request, 0),
 		RequestLocker:     new(sync.RWMutex),
 
 		PrePrepareBuffer: make(map[string]*PrePrepare),
@@ -64,20 +64,20 @@ func NewBuffer() *Buffer {
 	}
 }
 //add request to the end of the queue
-func (b *Buffer) AppendToRequestQueue(req *BufferReq) {
+func (b *Buffer) AppendToRequestQueue(req *Request) {
 	b.RequestLocker.Lock()
 	log.Printf("Enter the Request Queue")
 	b.RequestQueue = append(b.RequestQueue, req)
 	b.RequestLocker.Unlock()
 }
 //batch to clean the queue
-func (b *Buffer) BatchRequest() (batch []*BufferReq) {
-	batch = make([]*BufferReq, 0)
+func (b *Buffer) BatchRequest() (batch []*Request) {
+	batch = make([]*Request, 0)
 	b.RequestLocker.Lock()
 	for _,req := range b.RequestQueue {
 		batch = append(batch,req)
 	}
-	b.RequestQueue = make([]*BufferReq,0)
+	b.RequestQueue = make([]*Request,0)
 	b.RequestLocker.Unlock()
 	return batch
 }

@@ -89,9 +89,11 @@ func (n *Node) RegisterChain (support consensus.ConsenterSupport)  {
 
 func (n *Node) Run() {
 	//first register chan for server
-	n.server.RegisterChan(n.RequestRecv, n.PrePrepareRecv, n.PrepareRecv, n.CommitRecv, n.VerifyRecv, n.VerifiedRecv, n.CheckPointRecv)
+	n.server.RegisterChan(n.BufferReqRecv,n.RequestRecv, n.PrePrepareRecv, n.PrepareRecv, n.CommitRecv, n.VerifyRecv, n.VerifiedRecv, n.CheckPointRecv)
 	go n.server.Run()
-	go n.ClientThread()
+	if n.WhetherPrimary() {
+		go n.ClientThread()
+	}
 	go n.RequestRecvThread()
 	go n.PrePrepareSendThread()
 	go n.PrePrepareRecvAndSendPrepareThread()

@@ -9,13 +9,24 @@ import (
 	"net/http"
 )
 
-func (n *Node) SendComtoPrimary (content []byte, handle string) { // send de bushi msg ershi toupiaojieguo
-	go SendPost(content, n.GetPrimary() + handle)
+func (n *Node) SendRequesttoPrimary (req *message.BufferReq) { // send de bushi msg ershi toupiaojieguo
+	content, err := json.Marshal(req)
+	if err != nil {
+		log.Printf("error to marshal json")
+		return
+	}
+	go SendPost(content, n.GetPrimary() + server.BufferReqEntry)
 }
 
 func (n *Node) SendPrepreparetoPrimary (content []byte, handle string) { // send de bushi msg ershi toupiaojieguo
 	go SendPost(content, n.GetPrimary() + handle)
 }
+
+func (n *Node) SendComtoPrimary (content []byte, handle string) { // send de bushi msg ershi toupiaojieguo
+	go SendPost(content, n.GetPrimary() + handle)
+}
+
+
 
 func (n *Node) BroadtoSubPrimary (msg *message.Verify, handle string) { // send de bushi msg ershi toupiaojieguo
 	content, err := json.Marshal(msg)

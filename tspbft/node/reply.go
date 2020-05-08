@@ -33,8 +33,12 @@ func (n *Node) ExecuteAndReplyThread() {
 			//}
 			// map the digest to request
 			requestBatchs := make([]*message.BufferReq, 0)
-			for _, b := range batchs {
-				requestBatchs = append(requestBatchs, b.M...)
+			for i:=0; i<len(batchs); i++ {
+				for j:=0; j<len(batchs[i].M); j++ {
+					for k:=0; k<len(batchs[i].M[j].Requests); k++ {
+						requestBatchs = append(requestBatchs, batchs[i].M[j].Requests[k])
+					}
+				}
 			}
 			test_reqeust_num = test_reqeust_num + uint64(len(requestBatchs))
 			log.Printf("[Reply] set last sequence(%d) already execute request(%d)", lastSeq, test_reqeust_num)

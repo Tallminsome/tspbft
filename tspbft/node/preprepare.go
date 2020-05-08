@@ -13,7 +13,6 @@ func (n *Node) PrePrepareSendThread() {
 	if !n.WhetherSubPrimary() {
 		return
 	}
-	log.Printf("Start sending preprepare message")
 	duration := time.Second
 	timer := time.After(duration)
 	for {
@@ -41,9 +40,6 @@ func (n *Node) PrePrepareSendHandle() {
 	}
 	//batch request to discard network traffic
 	batch := n.buffer.BatchRequest()
-	//for _,v := range batch{
-	//	log.Printf("This is req:%d from client:%d,tiemstamp:%s",v.N,v.C,v.T)
-	//}
 	if len(batch) < 1 {
 		return
 	}

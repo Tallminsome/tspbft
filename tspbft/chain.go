@@ -74,9 +74,11 @@ func (chain *Chain) Order (env *cb.Envelope, configseq uint64) error {
 		ConfigSeq:  configseq,
 		Type:       message.TYPENORMAL,
 	}
+	log.Printf("[Req]Gnerate normal")
 	_, msg := message.NewBufferMsg(O, message.TimeStamp(time.Now().UnixNano()), chain.tspbftNode.GetId(),reqnum)
 	log.Printf("[Chain]Normal Type,[Req]id:%d, client:%d",reqnum,msg.C)
-	chain.tspbftNode.BufferReqRecv <- msg
+
+	chain.tspbftNode.SendRequesttoPrimary(msg)
 	return nil
 }
 
@@ -96,8 +98,9 @@ func (chain *Chain) Configure (config *cb.Envelope, configseq uint64) error {
 		ConfigSeq:  configseq,
 		Type:       message.TYPECONFIG,
 	}
+	log.Printf("[Req]Gnerate config")
 	_, msg := message.NewBufferMsg(O, message.TimeStamp(time.Now().UnixNano()), chain.tspbftNode.GetId(),reqnum)
 	log.Printf("[Chain]Config Type,[Req]id:%d, client:%d",reqnum,msg.C)
-	chain.tspbftNode.BufferReqRecv <- msg
+	chain.tspbftNode.SendRequesttoPrimary(msg)
 	return nil
 }

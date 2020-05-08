@@ -56,7 +56,7 @@ type Reply struct {
 type PrePrepare struct {
 	N Sequence     `json:"sequence"`
 	D string       `json:"digest"`
-	M []*BufferReq `json:"message"`
+	M []*Request `json:"message"`
 }
 
 type Prepare struct {
@@ -103,7 +103,7 @@ func NewBufferMsg(op Operation, t TimeStamp, id Identify, reqnum int) ([]byte, *
 	return content, msg
 }
 
-func NewPreprepareMsg(seq Sequence, batch []*BufferReq) ([]byte, *PrePrepare, string, error) {
+func NewPreprepareMsg(seq Sequence, batch []*Request) ([]byte, *PrePrepare, string, error) {
 	d, err := Digest(batch)
 	if err != nil {
 		return []byte{}, nil, "", nil
