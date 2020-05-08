@@ -1,0 +1,334 @@
+before start
+after trackexpiration
+v36.0
+map[pbft:0x21929d0 solo:0x21929d0 tspbft:0x21929d0]
+2020-05-07 13:49:37.352364 I | [Node] the node id:4, group:B, fault number:1
+2020-05-07 13:49:37.352401 I | [Node] Register the chain(sys-channel)
+2020-05-07 13:49:37.352409 I | Registering the chan for listen func
+2020-05-07 13:49:37.353306 I | [Node] start the listen server
+2020-05-07 13:49:37.353507 I | [Server] set listen port:7061
+2020-05-07 13:49:37.353536 I | [Server] register the func for /request
+2020-05-07 13:49:37.353544 I | [Server] register the func for /preprepare
+2020-05-07 13:49:37.353548 I | [Server] register the func for /prepare
+2020-05-07 13:49:37.353551 I | [Server] register the func for /commit
+2020-05-07 13:49:37.353554 I | [Server] register the func for /verify
+2020-05-07 13:49:37.353557 I | [Server] register the func for /verified
+2020-05-07 13:49:37.353560 I | [Server] register the func for /checkpoint
+2020-05-07 13:49:37.353760 I | Start buffering the request
+2020-05-07 13:49:37.353997 I | Start receiving the request
+2020-05-07 13:49:52.465501 I | [Chain]Config Type,[Req]id:1, client:4
+2020-05-07 13:49:52.465680 I | [BufReq]This is req:1 from client:4,time:%!s(message.TimeStamp=1588859392465395473)
+2020-05-07 13:49:52.465799 I | [Client] send request(1) due to config
+2020-05-07 13:49:52.465807 I | len in over time:0
+2020-05-07 13:49:52.491842 I | who send pre-prepare: 192.168.0.101:53196
+2020-05-07 13:49:52.493489 I | Don't Exist pre-prepare
+2020-05-07 13:49:52.494347 I | [Pre-Prepare] recv pre-prepare(1) and send the prepare
+2020-05-07 13:49:52.494426 I | Exist pre-prepare
+2020-05-07 13:49:52.670395 I | who send verified: 192.168.0.101:53196
+2020-05-07 13:49:52.671126 I | Exist pre-prepare
+2020-05-07 13:49:52.671149 I | ToExecute
+2020-05-07 13:49:52.671158 I | ReadyToExecute
+2020-05-07 13:49:52.671165 I | [Reply] set last sequence(1) already execute request(1)
+2020-05-07 13:49:52.671171 I | [Execute]This req is:1 from client:4,timestamp is:%!s(message.TimeStamp=1588859392465395473)
+2020-05-07 13:49:52.847724 I | [Node] Register the chain(mychannel)
+2020-05-07 13:49:53.474710 I | Enter the timer:4
+2020-05-07 13:49:53.482618 I | [Chain]Config Type,[Req]id:2, client:4
+2020-05-07 13:49:53.482864 I | [BufReq]This is req:2 from client:4,time:%!s(message.TimeStamp=1588859393482531321)
+2020-05-07 13:49:53.493129 I | [Client] send request(1) due to config
+2020-05-07 13:49:53.493145 I | len in over time:0
+2020-05-07 13:49:53.536473 I | who send pre-prepare: 192.168.0.101:53196
+2020-05-07 13:49:53.537830 I | Don't Exist pre-prepare
+2020-05-07 13:49:53.538085 I | [Pre-Prepare] recv pre-prepare(2) and send the prepare
+2020-05-07 13:49:53.538108 I | Exist pre-prepare
+2020-05-07 13:49:53.570788 I | who send verified: 192.168.0.101:53196
+2020-05-07 13:49:53.575816 I | Exist pre-prepare
+2020-05-07 13:49:53.575834 I | ToExecute
+2020-05-07 13:49:53.575843 I | ReadyToExecute
+2020-05-07 13:49:53.575851 I | [Reply] set last sequence(2) already execute request(2)
+2020-05-07 13:49:53.575858 I | [Execute]This req is:2 from client:4,timestamp is:%!s(message.TimeStamp=1588859393482531321)
+2020-05-07 13:49:54.493420 I | Enter the timer:4
+2020-05-07 13:49:55.494100 I | Enter the timer:4
+2020-05-07 13:49:56.494467 I | Enter the timer:4
+2020-05-07 13:49:57.494970 I | Enter the timer:4
+2020-05-07 13:49:58.495136 I | Enter the timer:4
+2020-05-07 13:49:59.495758 I | Enter the timer:4
+2020-05-07 13:50:00.496144 I | Enter the timer:4
+2020-05-07 13:50:01.496712 I | Enter the timer:4
+2020-05-07 13:50:02.497180 I | Enter the timer:4
+2020-05-07 13:50:03.497524 I | Enter the timer:4
+2020-05-07 13:50:04.497848 I | Enter the timer:4
+2020-05-07 13:50:05.498318 I | Enter the timer:4
+2020-05-07 13:50:06.498470 I | Enter the timer:4
+2020-05-07 13:50:07.499015 I | Enter the timer:4
+2020-05-07 13:50:08.499598 I | Enter the timer:4
+2020-05-07 13:50:09.499906 I | Enter the timer:4
+2020-05-07 13:50:10.500761 I | Enter the timer:4
+2020-05-07 13:50:11.501261 I | Enter the timer:4
+2020-05-07 13:50:12.501902 I | Enter the timer:4
+2020-05-07 13:50:13.554508 I | Enter the timer:4
+2020-05-07 13:50:14.554793 I | Enter the timer:4
+2020-05-07 13:50:15.556078 I | Enter the timer:4
+2020-05-07 13:50:16.561478 I | Enter the timer:4
+2020-05-07 13:50:17.561710 I | Enter the timer:4
+2020-05-07 13:50:18.561956 I | Enter the timer:4
+2020-05-07 13:50:19.566859 I | Enter the timer:4
+2020-05-07 13:50:20.567612 I | Enter the timer:4
+2020-05-07 13:50:21.568484 I | Enter the timer:4
+2020-05-07 13:50:22.568673 I | Enter the timer:4
+2020-05-07 13:50:23.570213 I | Enter the timer:4
+2020-05-07 13:50:24.571158 I | Enter the timer:4
+2020-05-07 13:50:25.571540 I | Enter the timer:4
+2020-05-07 13:50:26.572456 I | Enter the timer:4
+2020-05-07 13:50:27.572749 I | Enter the timer:4
+2020-05-07 13:50:28.573734 I | Enter the timer:4
+2020-05-07 13:50:29.574913 I | Enter the timer:4
+2020-05-07 13:50:30.575576 I | Enter the timer:4
+2020-05-07 13:50:31.576130 I | Enter the timer:4
+2020-05-07 13:50:32.458039 I | [Chain]Normal Type,[Req]id:3, client:4
+2020-05-07 13:50:32.458277 I | [BufReq]This is req:3 from client:4,time:%!s(message.TimeStamp=1588859432457574694)
+2020-05-07 13:50:32.458304 I | len in over time:1
+2020-05-07 13:50:33.458684 I | Enter the timer:4
+2020-05-07 13:50:33.458994 I | [Client] send request(1) due to over time
+2020-05-07 13:50:33.466767 I | who send pre-prepare: 192.168.0.101:53196
+2020-05-07 13:50:33.467203 I | Don't Exist pre-prepare
+2020-05-07 13:50:33.467298 I | [Pre-Prepare] recv pre-prepare(3) and send the prepare
+2020-05-07 13:50:33.467316 I | Exist pre-prepare
+2020-05-07 13:50:33.530028 I | who send verified: 192.168.0.101:53196
+2020-05-07 13:50:33.530435 I | Exist pre-prepare
+2020-05-07 13:50:33.530501 I | ToExecute
+2020-05-07 13:50:33.530532 I | ReadyToExecute
+2020-05-07 13:50:33.530581 I | [Reply] set last sequence(3) already execute request(3)
+2020-05-07 13:50:33.530614 I | [Execute]This req is:3 from client:4,timestamp is:%!s(message.TimeStamp=1588859432457574694)
+2020-05-07 13:50:34.460317 I | Enter the timer:4
+2020-05-07 13:50:35.460914 I | Enter the timer:4
+2020-05-07 13:50:36.462214 I | Enter the timer:4
+2020-05-07 13:50:37.463235 I | Enter the timer:4
+2020-05-07 13:50:38.463959 I | Enter the timer:4
+2020-05-07 13:50:39.464381 I | Enter the timer:4
+2020-05-07 13:50:40.465210 I | Enter the timer:4
+2020-05-07 13:50:41.465866 I | Enter the timer:4
+2020-05-07 13:50:42.466345 I | Enter the timer:4
+2020-05-07 13:50:42.585071 I | [Chain]Normal Type,[Req]id:4, client:4
+2020-05-07 13:50:42.585164 I | [BufReq]This is req:4 from client:4,time:%!s(message.TimeStamp=1588859442585044159)
+2020-05-07 13:50:42.585173 I | len in over time:1
+2020-05-07 13:50:42.671087 I | [Chain]Normal Type,[Req]id:5, client:4
+2020-05-07 13:50:42.671179 I | [BufReq]This is req:5 from client:4,time:%!s(message.TimeStamp=1588859442671068204)
+2020-05-07 13:50:42.671188 I | len in over time:2
+2020-05-07 13:50:43.005152 I | [Chain]Normal Type,[Req]id:6, client:4
+2020-05-07 13:50:43.005274 I | [BufReq]This is req:6 from client:4,time:%!s(message.TimeStamp=1588859443005135028)
+2020-05-07 13:50:43.005292 I | len in over time:3
+2020-05-07 13:50:44.006309 I | Enter the timer:4
+2020-05-07 13:50:44.006467 I | [Client] send request(3) due to over time
+2020-05-07 13:50:44.012334 I | who send pre-prepare: 192.168.0.101:53196
+2020-05-07 13:50:44.013002 I | Don't Exist pre-prepare
+2020-05-07 13:50:44.013224 I | [Pre-Prepare] recv pre-prepare(4) and send the prepare
+2020-05-07 13:50:44.013237 I | Exist pre-prepare
+2020-05-07 13:50:44.021955 I | who send verified: 192.168.0.101:53196
+2020-05-07 13:50:44.024325 I | Exist pre-prepare
+2020-05-07 13:50:44.024382 I | ToExecute
+2020-05-07 13:50:44.024392 I | ReadyToExecute
+2020-05-07 13:50:44.024414 I | [Reply] set last sequence(4) already execute request(6)
+2020-05-07 13:50:44.024420 I | [Execute]This req is:4 from client:4,timestamp is:%!s(message.TimeStamp=1588859442585044159)
+2020-05-07 13:50:44.024428 I | [Execute]This req is:5 from client:4,timestamp is:%!s(message.TimeStamp=1588859442671068204)
+2020-05-07 13:50:44.024432 I | [Execute]This req is:6 from client:4,timestamp is:%!s(message.TimeStamp=1588859443005135028)
+2020-05-07 13:50:45.006880 I | Enter the timer:4
+2020-05-07 13:50:46.007664 I | Enter the timer:4
+2020-05-07 13:50:47.008341 I | Enter the timer:4
+2020-05-07 13:50:48.008899 I | Enter the timer:4
+2020-05-07 13:50:49.009491 I | Enter the timer:4
+2020-05-07 13:50:50.010385 I | Enter the timer:4
+2020-05-07 13:50:51.010910 I | Enter the timer:4
+2020-05-07 13:50:52.011757 I | Enter the timer:4
+2020-05-07 13:50:53.012343 I | Enter the timer:4
+2020-05-07 13:50:54.013413 I | Enter the timer:4
+2020-05-07 13:50:55.014290 I | Enter the timer:4
+2020-05-07 13:50:56.015179 I | Enter the timer:4
+2020-05-07 13:50:57.016138 I | Enter the timer:4
+2020-05-07 13:50:58.016682 I | Enter the timer:4
+2020-05-07 13:50:59.017105 I | Enter the timer:4
+2020-05-07 13:51:00.018031 I | Enter the timer:4
+2020-05-07 13:51:01.019136 I | Enter the timer:4
+2020-05-07 13:51:02.020051 I | Enter the timer:4
+2020-05-07 13:51:03.020675 I | Enter the timer:4
+2020-05-07 13:51:04.021533 I | Enter the timer:4
+2020-05-07 13:51:05.022246 I | Enter the timer:4
+2020-05-07 13:51:06.023176 I | Enter the timer:4
+2020-05-07 13:51:07.023795 I | Enter the timer:4
+2020-05-07 13:51:08.024216 I | Enter the timer:4
+2020-05-07 13:51:09.025167 I | Enter the timer:4
+2020-05-07 13:51:10.025715 I | Enter the timer:4
+2020-05-07 13:51:11.027190 I | Enter the timer:4
+2020-05-07 13:51:12.028006 I | Enter the timer:4
+2020-05-07 13:51:13.029247 I | Enter the timer:4
+2020-05-07 13:51:14.029578 I | Enter the timer:4
+2020-05-07 13:51:15.030209 I | Enter the timer:4
+2020-05-07 13:51:16.031702 I | Enter the timer:4
+2020-05-07 13:51:17.032833 I | Enter the timer:4
+2020-05-07 13:51:18.033190 I | Enter the timer:4
+2020-05-07 13:51:19.034656 I | Enter the timer:4
+2020-05-07 13:51:20.035064 I | Enter the timer:4
+2020-05-07 13:51:21.035576 I | Enter the timer:4
+2020-05-07 13:51:22.035878 I | Enter the timer:4
+2020-05-07 13:51:23.036514 I | Enter the timer:4
+2020-05-07 13:51:24.038202 I | Enter the timer:4
+2020-05-07 13:51:25.038727 I | Enter the timer:4
+2020-05-07 13:51:26.039630 I | Enter the timer:4
+2020-05-07 13:51:27.039885 I | Enter the timer:4
+2020-05-07 13:51:28.040251 I | Enter the timer:4
+2020-05-07 13:51:29.040827 I | Enter the timer:4
+2020-05-07 13:51:30.041559 I | Enter the timer:4
+2020-05-07 13:51:31.041956 I | Enter the timer:4
+2020-05-07 13:51:32.042312 I | Enter the timer:4
+2020-05-07 13:51:33.043059 I | Enter the timer:4
+2020-05-07 13:51:34.044257 I | Enter the timer:4
+2020-05-07 13:51:35.044741 I | Enter the timer:4
+2020-05-07 13:51:36.045309 I | Enter the timer:4
+2020-05-07 13:51:37.045897 I | Enter the timer:4
+2020-05-07 13:51:38.047148 I | Enter the timer:4
+2020-05-07 13:51:39.047754 I | Enter the timer:4
+2020-05-07 13:51:40.048594 I | Enter the timer:4
+2020-05-07 13:51:41.048887 I | Enter the timer:4
+2020-05-07 13:51:42.050053 I | Enter the timer:4
+2020-05-07 13:51:43.051072 I | Enter the timer:4
+2020-05-07 13:51:44.051557 I | Enter the timer:4
+2020-05-07 13:51:45.052019 I | Enter the timer:4
+2020-05-07 13:51:46.052531 I | Enter the timer:4
+2020-05-07 13:51:47.053064 I | Enter the timer:4
+2020-05-07 13:51:48.053716 I | Enter the timer:4
+2020-05-07 13:51:49.054806 I | Enter the timer:4
+2020-05-07 13:51:50.056259 I | Enter the timer:4
+2020-05-07 13:51:51.057271 I | Enter the timer:4
+2020-05-07 13:51:52.058492 I | Enter the timer:4
+2020-05-07 13:51:53.058863 I | Enter the timer:4
+2020-05-07 13:51:54.060513 I | Enter the timer:4
+2020-05-07 13:51:55.061927 I | Enter the timer:4
+2020-05-07 13:51:56.063379 I | Enter the timer:4
+2020-05-07 13:51:57.064106 I | Enter the timer:4
+2020-05-07 13:51:58.064662 I | Enter the timer:4
+2020-05-07 13:51:59.065349 I | Enter the timer:4
+2020-05-07 13:52:00.066433 I | Enter the timer:4
+2020-05-07 13:52:01.067324 I | Enter the timer:4
+2020-05-07 13:52:02.068177 I | Enter the timer:4
+2020-05-07 13:52:03.068666 I | Enter the timer:4
+2020-05-07 13:52:04.069185 I | Enter the timer:4
+2020-05-07 13:52:05.069695 I | Enter the timer:4
+2020-05-07 13:52:06.070611 I | Enter the timer:4
+2020-05-07 13:52:07.071558 I | Enter the timer:4
+2020-05-07 13:52:08.071851 I | Enter the timer:4
+2020-05-07 13:52:09.073056 I | Enter the timer:4
+2020-05-07 13:52:10.074206 I | Enter the timer:4
+2020-05-07 13:52:11.075289 I | Enter the timer:4
+2020-05-07 13:52:12.075934 I | Enter the timer:4
+2020-05-07 13:52:13.076301 I | Enter the timer:4
+2020-05-07 13:52:14.077386 I | Enter the timer:4
+2020-05-07 13:52:15.078737 I | Enter the timer:4
+2020-05-07 13:52:16.079940 I | Enter the timer:4
+2020-05-07 13:52:17.080815 I | Enter the timer:4
+2020-05-07 13:52:18.081328 I | Enter the timer:4
+2020-05-07 13:52:19.082259 I | Enter the timer:4
+2020-05-07 13:52:20.083222 I | Enter the timer:4
+2020-05-07 13:52:21.087223 I | Enter the timer:4
+2020-05-07 13:52:22.088221 I | Enter the timer:4
+2020-05-07 13:52:23.088659 I | Enter the timer:4
+2020-05-07 13:52:24.089890 I | Enter the timer:4
+2020-05-07 13:52:25.091134 I | Enter the timer:4
+2020-05-07 13:52:26.092325 I | Enter the timer:4
+2020-05-07 13:52:27.092858 I | Enter the timer:4
+2020-05-07 13:52:28.093379 I | Enter the timer:4
+2020-05-07 13:52:29.093974 I | Enter the timer:4
+2020-05-07 13:52:30.094598 I | Enter the timer:4
+2020-05-07 13:52:31.095541 I | Enter the timer:4
+2020-05-07 13:52:32.096377 I | Enter the timer:4
+2020-05-07 13:52:33.097636 I | Enter the timer:4
+2020-05-07 13:52:34.098691 I | Enter the timer:4
+2020-05-07 13:52:35.099038 I | Enter the timer:4
+2020-05-07 13:52:36.100229 I | Enter the timer:4
+2020-05-07 13:52:37.101251 I | Enter the timer:4
+2020-05-07 13:52:38.102442 I | Enter the timer:4
+2020-05-07 13:52:39.103932 I | Enter the timer:4
+2020-05-07 13:52:40.105338 I | Enter the timer:4
+2020-05-07 13:52:41.105972 I | Enter the timer:4
+2020-05-07 13:52:42.107278 I | Enter the timer:4
+2020-05-07 13:52:43.107834 I | Enter the timer:4
+2020-05-07 13:52:44.109710 I | Enter the timer:4
+2020-05-07 13:52:45.110794 I | Enter the timer:4
+2020-05-07 13:52:46.112461 I | Enter the timer:4
+2020-05-07 13:52:47.114314 I | Enter the timer:4
+2020-05-07 13:52:48.115272 I | Enter the timer:4
+2020-05-07 13:52:49.116245 I | Enter the timer:4
+2020-05-07 13:52:50.116782 I | Enter the timer:4
+2020-05-07 13:52:51.117938 I | Enter the timer:4
+2020-05-07 13:52:52.119043 I | Enter the timer:4
+2020-05-07 13:52:53.119609 I | Enter the timer:4
+2020-05-07 13:52:54.120290 I | Enter the timer:4
+2020-05-07 13:52:55.121174 I | Enter the timer:4
+2020-05-07 13:52:56.121510 I | Enter the timer:4
+2020-05-07 13:52:57.122564 I | Enter the timer:4
+2020-05-07 13:52:58.123901 I | Enter the timer:4
+2020-05-07 13:52:59.124578 I | Enter the timer:4
+2020-05-07 13:53:00.124967 I | Enter the timer:4
+2020-05-07 13:53:01.125361 I | Enter the timer:4
+2020-05-07 13:53:02.126402 I | Enter the timer:4
+2020-05-07 13:53:03.127255 I | Enter the timer:4
+2020-05-07 13:53:04.128067 I | Enter the timer:4
+2020-05-07 13:53:05.129200 I | Enter the timer:4
+2020-05-07 13:53:06.129792 I | Enter the timer:4
+2020-05-07 13:53:07.130277 I | Enter the timer:4
+2020-05-07 13:53:08.131092 I | Enter the timer:4
+2020-05-07 13:53:09.131699 I | Enter the timer:4
+2020-05-07 13:53:10.132602 I | Enter the timer:4
+2020-05-07 13:53:11.133218 I | Enter the timer:4
+2020-05-07 13:53:12.133477 I | Enter the timer:4
+2020-05-07 13:53:13.134319 I | Enter the timer:4
+2020-05-07 13:53:14.135337 I | Enter the timer:4
+2020-05-07 13:53:15.135772 I | Enter the timer:4
+2020-05-07 13:53:16.136499 I | Enter the timer:4
+2020-05-07 13:53:17.137227 I | Enter the timer:4
+2020-05-07 13:53:18.138422 I | Enter the timer:4
+2020-05-07 13:53:19.139259 I | Enter the timer:4
+2020-05-07 13:53:20.140071 I | Enter the timer:4
+2020-05-07 13:53:21.141072 I | Enter the timer:4
+2020-05-07 13:53:22.142099 I | Enter the timer:4
+2020-05-07 13:53:23.142484 I | Enter the timer:4
+2020-05-07 13:53:24.143766 I | Enter the timer:4
+2020-05-07 13:53:25.144254 I | Enter the timer:4
+2020-05-07 13:53:26.144401 I | Enter the timer:4
+2020-05-07 13:53:27.145874 I | Enter the timer:4
+2020-05-07 13:53:28.147260 I | Enter the timer:4
+2020-05-07 13:53:29.148512 I | Enter the timer:4
+2020-05-07 13:53:30.149356 I | Enter the timer:4
+2020-05-07 13:53:31.150422 I | Enter the timer:4
+2020-05-07 13:53:32.150919 I | Enter the timer:4
+2020-05-07 13:53:33.151885 I | Enter the timer:4
+2020-05-07 13:53:34.152594 I | Enter the timer:4
+2020-05-07 13:53:35.153130 I | Enter the timer:4
+2020-05-07 13:53:36.153716 I | Enter the timer:4
+2020-05-07 13:53:37.154613 I | Enter the timer:4
+2020-05-07 13:53:38.155538 I | Enter the timer:4
+2020-05-07 13:53:39.156732 I | Enter the timer:4
+2020-05-07 13:53:40.158001 I | Enter the timer:4
+2020-05-07 13:53:41.158471 I | Enter the timer:4
+2020-05-07 13:53:42.159107 I | Enter the timer:4
+2020-05-07 13:53:43.159846 I | Enter the timer:4
+2020-05-07 13:53:44.160246 I | Enter the timer:4
+2020-05-07 13:53:45.161329 I | Enter the timer:4
+2020-05-07 13:53:46.161745 I | Enter the timer:4
+2020-05-07 13:53:47.162494 I | Enter the timer:4
+2020-05-07 13:53:48.163703 I | Enter the timer:4
+2020-05-07 13:53:49.165176 I | Enter the timer:4
+2020-05-07 13:53:50.165670 I | Enter the timer:4
+2020-05-07 13:53:51.166439 I | Enter the timer:4
+2020-05-07 13:53:52.167959 I | Enter the timer:4
+2020-05-07 13:53:53.168964 I | Enter the timer:4
+2020-05-07 13:53:54.169852 I | Enter the timer:4
+2020-05-07 13:53:55.170597 I | Enter the timer:4
+2020-05-07 13:53:56.171236 I | Enter the timer:4
+2020-05-07 13:53:57.172400 I | Enter the timer:4
+2020-05-07 13:53:58.174022 I | Enter the timer:4
+2020-05-07 13:53:59.174715 I | Enter the timer:4
+2020-05-07 13:54:00.176118 I | Enter the timer:4
+2020-05-07 13:54:01.176842 I | Enter the timer:4
+2020-05-07 13:54:02.177420 I | Enter the timer:4
+2020-05-07 13:54:03.178339 I | Enter the timer:4
+2020-05-07 13:54:04.179814 I | Enter the timer:4
+2020-05-07 13:54:05.181282 I | Enter the timer:4

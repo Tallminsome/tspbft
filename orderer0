@@ -1,0 +1,137 @@
+before start
+after trackexpiration
+v36.0
+map[pbft:0x21929d0 solo:0x21929d0 tspbft:0x21929d0]
+2020-05-07 13:49:37.290853 I | [Node] the node id:0, group:A, fault number:1
+2020-05-07 13:49:37.290871 I | [Node] Register the chain(sys-channel)
+2020-05-07 13:49:37.290876 I | Registering the chan for listen func
+2020-05-07 13:49:37.291062 I | Start receiving the request
+2020-05-07 13:49:37.291072 I | [Node] start the listen server
+2020-05-07 13:49:37.291089 I | [Server] set listen port:7050
+2020-05-07 13:49:37.291119 I | [Server] register the func for /request
+2020-05-07 13:49:37.291126 I | [Server] register the func for /preprepare
+2020-05-07 13:49:37.291130 I | [Server] register the func for /prepare
+2020-05-07 13:49:37.291132 I | [Server] register the func for /commit
+2020-05-07 13:49:37.291135 I | [Server] register the func for /verify
+2020-05-07 13:49:37.291138 I | [Server] register the func for /verified
+2020-05-07 13:49:37.291141 I | [Server] register the func for /checkpoint
+2020-05-07 13:49:37.291198 I | Start buffering the request
+2020-05-07 13:49:52.490460 I | who send pre-prepare: 192.168.0.101:43512
+2020-05-07 13:49:52.491496 I | Don't Exist pre-prepare
+2020-05-07 13:49:52.491739 I | Exist pre-prepare
+2020-05-07 13:49:52.505770 I | who send commit: 192.168.0.101:43512
+2020-05-07 13:49:52.506344 I | [Before Set]who:1,len:0
+2020-05-07 13:49:52.506365 I | [After Set]who:1,len:1
+2020-05-07 13:49:52.506373 I | [Commit] node(1) vote to the msg(1)
+2020-05-07 13:49:52.506387 I | commit_num:1 who is check:map[%!s(message.Identify=1):%!s(bool=true)],commitstate:%!d(bool=false)
+2020-05-07 13:49:52.517584 I | who send pre-prepare: 192.168.0.102:57210
+2020-05-07 13:49:52.520090 I | Exist pre-prepare
+2020-05-07 13:49:52.530338 I | who send pre-prepare: 192.168.0.103:45430
+2020-05-07 13:49:52.531344 I | Exist pre-prepare
+2020-05-07 13:49:52.562391 I | who send commit: 192.168.0.102:57210
+2020-05-07 13:49:52.563352 I | [Before Set]who:2,len:1
+2020-05-07 13:49:52.563384 I | [After Set]who:2,len:2
+2020-05-07 13:49:52.563392 I | [Commit] node(2) vote to the msg(1)
+2020-05-07 13:49:52.563423 I | commit_num:2 who is check:map[%!s(message.Identify=1):%!s(bool=true) %!s(message.Identify=2):%!s(bool=true)],commitstate:%!d(bool=false)
+2020-05-07 13:49:52.598011 I | who send commit: 192.168.0.103:45430
+2020-05-07 13:49:52.602380 I | [Before Set]who:3,len:2
+2020-05-07 13:49:52.602572 I | [After Set]who:3,len:3
+2020-05-07 13:49:52.602603 I | [Commit] node(3) vote to the msg(1)
+2020-05-07 13:49:52.602724 I | commit_num:3 who is check:map[%!s(message.Identify=1):%!s(bool=true) %!s(message.Identify=2):%!s(bool=true) %!s(message.Identify=3):%!s(bool=true)],commitstate:%!d(bool=false)
+2020-05-07 13:49:52.602766 I | commit_num:3 who is check:map[%!s(message.Identify=1):%!s(bool=true) %!s(message.Identify=2):%!s(bool=true) %!s(message.Identify=3):%!s(bool=true)],commitstate:%!d(bool=true)
+2020-05-07 13:49:52.603007 I | Exist pre-prepare
+2020-05-07 13:49:52.603082 I | Primary is Ready To Execute
+2020-05-07 13:49:52.603094 I | ReadyToExecute
+2020-05-07 13:49:52.603240 I | vertify 2f+1 success
+2020-05-07 13:49:52.604173 I | [Reply] set last sequence(1) already execute request(1)
+2020-05-07 13:49:52.604265 I | [Execute]This req is:1 from client:4,timestamp is:%!s(message.TimeStamp=1588859392465395473)
+2020-05-07 13:49:52.790111 I | [Node] Register the chain(mychannel)
+2020-05-07 13:49:53.534925 I | who send pre-prepare: 192.168.0.103:45430
+2020-05-07 13:49:53.535697 I | Don't Exist pre-prepare
+2020-05-07 13:49:53.535913 I | Exist pre-prepare
+2020-05-07 13:49:53.535970 I | who send pre-prepare: 192.168.0.102:57210
+2020-05-07 13:49:53.536777 I | Exist pre-prepare
+2020-05-07 13:49:53.536842 I | who send pre-prepare: 192.168.0.101:43512
+2020-05-07 13:49:53.537704 I | Exist pre-prepare
+2020-05-07 13:49:53.540032 I | who send commit: 192.168.0.103:45430
+2020-05-07 13:49:53.541291 I | [Before Set]who:3,len:0
+2020-05-07 13:49:53.543224 I | [After Set]who:3,len:1
+2020-05-07 13:49:53.543359 I | [Commit] node(3) vote to the msg(2)
+2020-05-07 13:49:53.543386 I | commit_num:1 who is check:map[%!s(message.Identify=3):%!s(bool=true)],commitstate:%!d(bool=false)
+2020-05-07 13:49:53.543391 I | who send commit: 192.168.0.102:57210
+2020-05-07 13:49:53.543563 I | who send commit: 192.168.0.101:43512
+2020-05-07 13:49:53.544184 I | [Before Set]who:2,len:1
+2020-05-07 13:49:53.544201 I | [After Set]who:2,len:2
+2020-05-07 13:49:53.544205 I | [Commit] node(2) vote to the msg(2)
+2020-05-07 13:49:53.544238 I | commit_num:2 who is check:map[%!s(message.Identify=2):%!s(bool=true) %!s(message.Identify=3):%!s(bool=true)],commitstate:%!d(bool=false)
+2020-05-07 13:49:53.544246 I | [Before Set]who:1,len:2
+2020-05-07 13:49:53.544253 I | [After Set]who:1,len:3
+2020-05-07 13:49:53.544257 I | [Commit] node(1) vote to the msg(2)
+2020-05-07 13:49:53.544266 I | commit_num:3 who is check:map[%!s(message.Identify=1):%!s(bool=true) %!s(message.Identify=2):%!s(bool=true) %!s(message.Identify=3):%!s(bool=true)],commitstate:%!d(bool=false)
+2020-05-07 13:49:53.544275 I | commit_num:3 who is check:map[%!s(message.Identify=1):%!s(bool=true) %!s(message.Identify=2):%!s(bool=true) %!s(message.Identify=3):%!s(bool=true)],commitstate:%!d(bool=true)
+2020-05-07 13:49:53.544458 I | Exist pre-prepare
+2020-05-07 13:49:53.544495 I | Primary is Ready To Execute
+2020-05-07 13:49:53.544506 I | ReadyToExecute
+2020-05-07 13:49:53.544601 I | vertify 2f+1 success
+2020-05-07 13:49:53.544733 I | [Reply] set last sequence(2) already execute request(2)
+2020-05-07 13:49:53.544778 I | [Execute]This req is:2 from client:4,timestamp is:%!s(message.TimeStamp=1588859393482531321)
+2020-05-07 13:50:33.475244 I | who send pre-prepare: 192.168.0.101:43512
+2020-05-07 13:50:33.475474 I | who send pre-prepare: 192.168.0.102:57210
+2020-05-07 13:50:33.475604 I | who send pre-prepare: 192.168.0.103:45430
+2020-05-07 13:50:33.475767 I | Don't Exist pre-prepare
+2020-05-07 13:50:33.475907 I | Exist pre-prepare
+2020-05-07 13:50:33.475991 I | Exist pre-prepare
+2020-05-07 13:50:33.476019 I | Exist pre-prepare
+2020-05-07 13:50:33.509191 I | who send commit: 192.168.0.102:57210
+2020-05-07 13:50:33.509610 I | [Before Set]who:2,len:0
+2020-05-07 13:50:33.509638 I | [After Set]who:2,len:1
+2020-05-07 13:50:33.509645 I | [Commit] node(2) vote to the msg(3)
+2020-05-07 13:50:33.509662 I | commit_num:1 who is check:map[%!s(message.Identify=2):%!s(bool=true)],commitstate:%!d(bool=false)
+2020-05-07 13:50:33.519969 I | who send commit: 192.168.0.101:43512
+2020-05-07 13:50:33.520306 I | [Before Set]who:1,len:1
+2020-05-07 13:50:33.520319 I | [After Set]who:1,len:2
+2020-05-07 13:50:33.520324 I | [Commit] node(1) vote to the msg(3)
+2020-05-07 13:50:33.520339 I | commit_num:2 who is check:map[%!s(message.Identify=1):%!s(bool=true) %!s(message.Identify=2):%!s(bool=true)],commitstate:%!d(bool=false)
+2020-05-07 13:50:33.528318 I | who send commit: 192.168.0.103:45430
+2020-05-07 13:50:33.528646 I | [Before Set]who:3,len:2
+2020-05-07 13:50:33.528715 I | [After Set]who:3,len:3
+2020-05-07 13:50:33.528743 I | [Commit] node(3) vote to the msg(3)
+2020-05-07 13:50:33.528761 I | commit_num:3 who is check:map[%!s(message.Identify=1):%!s(bool=true) %!s(message.Identify=2):%!s(bool=true) %!s(message.Identify=3):%!s(bool=true)],commitstate:%!d(bool=false)
+2020-05-07 13:50:33.528768 I | commit_num:3 who is check:map[%!s(message.Identify=1):%!s(bool=true) %!s(message.Identify=2):%!s(bool=true) %!s(message.Identify=3):%!s(bool=true)],commitstate:%!d(bool=true)
+2020-05-07 13:50:33.528810 I | Exist pre-prepare
+2020-05-07 13:50:33.528814 I | Primary is Ready To Execute
+2020-05-07 13:50:33.528839 I | ReadyToExecute
+2020-05-07 13:50:33.528891 I | vertify 2f+1 success
+2020-05-07 13:50:33.529209 I | [Reply] set last sequence(3) already execute request(3)
+2020-05-07 13:50:33.529330 I | [Execute]This req is:3 from client:4,timestamp is:%!s(message.TimeStamp=1588859432457574694)
+2020-05-07 13:50:44.007886 I | who send pre-prepare: 192.168.0.101:43512
+2020-05-07 13:50:44.008432 I | Don't Exist pre-prepare
+2020-05-07 13:50:44.008565 I | Exist pre-prepare
+2020-05-07 13:50:44.008624 I | who send pre-prepare: 192.168.0.102:57210
+2020-05-07 13:50:44.009327 I | Exist pre-prepare
+2020-05-07 13:50:44.009372 I | who send pre-prepare: 192.168.0.103:45430
+2020-05-07 13:50:44.013490 I | Exist pre-prepare
+2020-05-07 13:50:44.013546 I | who send commit: 192.168.0.102:57210
+2020-05-07 13:50:44.013930 I | [Before Set]who:2,len:0
+2020-05-07 13:50:44.013939 I | [After Set]who:2,len:1
+2020-05-07 13:50:44.013944 I | [Commit] node(2) vote to the msg(4)
+2020-05-07 13:50:44.013955 I | commit_num:1 who is check:map[%!s(message.Identify=2):%!s(bool=true)],commitstate:%!d(bool=false)
+2020-05-07 13:50:44.014188 I | who send commit: 192.168.0.103:45430
+2020-05-07 13:50:44.014605 I | [Before Set]who:3,len:1
+2020-05-07 13:50:44.014615 I | [After Set]who:3,len:2
+2020-05-07 13:50:44.014619 I | [Commit] node(3) vote to the msg(4)
+2020-05-07 13:50:44.014630 I | commit_num:2 who is check:map[%!s(message.Identify=2):%!s(bool=true) %!s(message.Identify=3):%!s(bool=true)],commitstate:%!d(bool=false)
+2020-05-07 13:50:44.017257 I | who send commit: 192.168.0.101:43512
+2020-05-07 13:50:44.017789 I | [Before Set]who:1,len:2
+2020-05-07 13:50:44.017836 I | [After Set]who:1,len:3
+2020-05-07 13:50:44.017842 I | [Commit] node(1) vote to the msg(4)
+2020-05-07 13:50:44.017856 I | commit_num:3 who is check:map[%!s(message.Identify=1):%!s(bool=true) %!s(message.Identify=2):%!s(bool=true) %!s(message.Identify=3):%!s(bool=true)],commitstate:%!d(bool=false)
+2020-05-07 13:50:44.017865 I | commit_num:3 who is check:map[%!s(message.Identify=1):%!s(bool=true) %!s(message.Identify=2):%!s(bool=true) %!s(message.Identify=3):%!s(bool=true)],commitstate:%!d(bool=true)
+2020-05-07 13:50:44.017978 I | Exist pre-prepare
+2020-05-07 13:50:44.017982 I | Primary is Ready To Execute
+2020-05-07 13:50:44.017990 I | ReadyToExecute
+2020-05-07 13:50:44.018029 I | vertify 2f+1 success
+2020-05-07 13:50:44.018213 I | [Reply] set last sequence(4) already execute request(6)
+2020-05-07 13:50:44.018230 I | [Execute]This req is:4 from client:4,timestamp is:%!s(message.TimeStamp=1588859442585044159)
+2020-05-07 13:50:44.018241 I | [Execute]This req is:5 from client:4,timestamp is:%!s(message.TimeStamp=1588859442671068204)
+2020-05-07 13:50:44.018245 I | [Execute]This req is:6 from client:4,timestamp is:%!s(message.TimeStamp=1588859443005135028)

@@ -1,0 +1,61 @@
+before start
+after trackexpiration
+v36.0
+map[pbft:0x21929d0 solo:0x21929d0 tspbft:0x21929d0]
+2020-05-07 13:49:27.831789 I | [Node] the node id:10, group:D, fault number:1
+2020-05-07 13:49:27.831825 I | [Node] Register the chain(sys-channel)
+2020-05-07 13:49:27.831832 I | Registering the chan for listen func
+2020-05-07 13:49:27.831885 I | [Node] start the listen server
+2020-05-07 13:49:27.831930 I | [Server] set listen port:7081
+2020-05-07 13:49:27.831939 I | [Server] register the func for /preprepare
+2020-05-07 13:49:27.831961 I | [Server] register the func for /prepare
+2020-05-07 13:49:27.831964 I | [Server] register the func for /commit
+2020-05-07 13:49:27.831967 I | [Server] register the func for /verify
+2020-05-07 13:49:27.831970 I | [Server] register the func for /verified
+2020-05-07 13:49:27.831973 I | [Server] register the func for /checkpoint
+2020-05-07 13:49:27.831976 I | [Server] register the func for /request
+2020-05-07 13:49:27.832018 I | Start receiving the request
+2020-05-07 13:49:27.832052 I | Start buffering the request
+2020-05-07 13:49:52.558292 I | who send pre-prepare: 192.168.0.103:44782
+2020-05-07 13:49:52.559907 I | Don't Exist pre-prepare
+2020-05-07 13:49:52.567064 I | [Pre-Prepare] recv pre-prepare(1) and send the prepare
+2020-05-07 13:49:52.567142 I | Exist pre-prepare
+2020-05-07 13:49:52.705346 I | who send verified: 192.168.0.103:44782
+2020-05-07 13:49:52.706022 I | Exist pre-prepare
+2020-05-07 13:49:52.706048 I | ToExecute
+2020-05-07 13:49:52.706057 I | ReadyToExecute
+2020-05-07 13:49:52.706066 I | [Reply] set last sequence(1) already execute request(1)
+2020-05-07 13:49:52.706073 I | [Execute]This req is:1 from client:4,timestamp is:%!s(message.TimeStamp=1588859392465395473)
+2020-05-07 13:49:52.857880 I | [Node] Register the chain(mychannel)
+2020-05-07 13:49:53.527276 I | who send pre-prepare: 192.168.0.103:44782
+2020-05-07 13:49:53.535367 I | Don't Exist pre-prepare
+2020-05-07 13:49:53.535634 I | [Pre-Prepare] recv pre-prepare(2) and send the prepare
+2020-05-07 13:49:53.535691 I | Exist pre-prepare
+2020-05-07 13:49:53.553965 I | who send verified: 192.168.0.103:44782
+2020-05-07 13:49:53.554859 I | Exist pre-prepare
+2020-05-07 13:49:53.554920 I | ToExecute
+2020-05-07 13:49:53.554949 I | ReadyToExecute
+2020-05-07 13:49:53.555078 I | [Reply] set last sequence(2) already execute request(2)
+2020-05-07 13:49:53.555179 I | [Execute]This req is:2 from client:4,timestamp is:%!s(message.TimeStamp=1588859393482531321)
+2020-05-07 13:50:33.460992 I | who send pre-prepare: 192.168.0.103:44782
+2020-05-07 13:50:33.461388 I | Don't Exist pre-prepare
+2020-05-07 13:50:33.461493 I | [Pre-Prepare] recv pre-prepare(3) and send the prepare
+2020-05-07 13:50:33.461513 I | Exist pre-prepare
+2020-05-07 13:50:33.533393 I | who send verified: 192.168.0.103:44782
+2020-05-07 13:50:33.533607 I | Exist pre-prepare
+2020-05-07 13:50:33.533664 I | ToExecute
+2020-05-07 13:50:33.533680 I | ReadyToExecute
+2020-05-07 13:50:33.533688 I | [Reply] set last sequence(3) already execute request(3)
+2020-05-07 13:50:33.533695 I | [Execute]This req is:3 from client:4,timestamp is:%!s(message.TimeStamp=1588859432457574694)
+2020-05-07 13:50:44.010337 I | who send pre-prepare: 192.168.0.103:44782
+2020-05-07 13:50:44.011019 I | Don't Exist pre-prepare
+2020-05-07 13:50:44.011297 I | [Pre-Prepare] recv pre-prepare(4) and send the prepare
+2020-05-07 13:50:44.011319 I | Exist pre-prepare
+2020-05-07 13:50:44.021157 I | who send verified: 192.168.0.103:44782
+2020-05-07 13:50:44.022229 I | Exist pre-prepare
+2020-05-07 13:50:44.022386 I | ToExecute
+2020-05-07 13:50:44.022721 I | ReadyToExecute
+2020-05-07 13:50:44.022921 I | [Reply] set last sequence(4) already execute request(6)
+2020-05-07 13:50:44.023011 I | [Execute]This req is:4 from client:4,timestamp is:%!s(message.TimeStamp=1588859442585044159)
+2020-05-07 13:50:44.023021 I | [Execute]This req is:5 from client:4,timestamp is:%!s(message.TimeStamp=1588859442671068204)
+2020-05-07 13:50:44.023026 I | [Execute]This req is:6 from client:4,timestamp is:%!s(message.TimeStamp=1588859443005135028)

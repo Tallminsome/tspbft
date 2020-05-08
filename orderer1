@@ -1,0 +1,110 @@
+before start
+after trackexpiration
+v36.0
+map[pbft:0x21929d0 solo:0x21929d0 tspbft:0x21929d0]
+2020-05-07 13:49:41.830526 I | [Node] the node id:1, group:AB, fault number:1
+2020-05-07 13:49:41.830561 I | [Node] Register the chain(sys-channel)
+2020-05-07 13:49:41.830567 I | Registering the chan for listen func
+2020-05-07 13:49:41.830717 I | [Node] start the listen server
+2020-05-07 13:49:41.831012 I | [Server] set listen port:7060
+2020-05-07 13:49:41.831036 I | [Server] register the func for /preprepare
+2020-05-07 13:49:41.831063 I | [Server] register the func for /prepare
+2020-05-07 13:49:41.831066 I | [Server] register the func for /commit
+2020-05-07 13:49:41.831083 I | [Server] register the func for /verify
+2020-05-07 13:49:41.831086 I | [Server] register the func for /verified
+2020-05-07 13:49:41.831089 I | [Server] register the func for /checkpoint
+2020-05-07 13:49:41.831092 I | [Server] register the func for /request
+2020-05-07 13:49:41.831123 I | Start receiving the request
+2020-05-07 13:49:41.831135 I | Start buffering the request
+2020-05-07 13:49:41.831192 I | Start sending preprepare message
+2020-05-07 13:49:52.486516 I | who send request: 192.168.0.104:49912
+2020-05-07 13:49:52.487084 I | [Req]This is req:1 from client:4%!(EXTRA message.TimeStamp=1588859392465395473)
+2020-05-07 13:49:52.487110 I | Enter the Request Queue
+2020-05-07 13:49:52.487117 I | success recv req
+2020-05-07 13:49:52.488190 I | Generate sequence(1) for message(5b7b226f7) with request batch size(1)
+2020-05-07 13:49:52.494966 I | who send prepare: 192.168.0.104:49912
+2020-05-07 13:49:52.495657 I | Do not exist Prepare State
+2020-05-07 13:49:52.495847 I | who send prepare: 192.168.0.106:57408
+2020-05-07 13:49:52.496818 I | Do not exist Prepare State
+2020-05-07 13:49:52.504429 I | who send prepare: 192.168.0.105:50326
+2020-05-07 13:49:52.505291 I | Do not exist Prepare State
+2020-05-07 13:49:52.505323 I | [Prepare] prepare msg(1) vote success and to send commit
+2020-05-07 13:49:52.505422 I | [Before Set]who:1,len:0
+2020-05-07 13:49:52.505473 I | [After Set]who:1,len:1
+2020-05-07 13:49:52.637357 I | who send verify: 192.168.0.100:37940
+2020-05-07 13:49:52.637930 I | [Verify] node(AB) received verify to the msg(1) from primary
+2020-05-07 13:49:52.637947 I | Exist pre-prepare
+2020-05-07 13:49:52.637951 I | Sub-Primary is Ready To Execute
+2020-05-07 13:49:52.637961 I | ReadyToExecute
+2020-05-07 13:49:52.638269 I | [Reply] set last sequence(1) already execute request(1)
+2020-05-07 13:49:52.638280 I | [Execute]This req is:1 from client:4,timestamp is:%!s(message.TimeStamp=1588859392465395473)
+2020-05-07 13:49:52.847429 I | [Node] Register the chain(mychannel)
+2020-05-07 13:49:53.493395 I | who send request: 192.168.0.104:49912
+2020-05-07 13:49:53.534217 I | [Req]This is req:2 from client:4%!(EXTRA message.TimeStamp=1588859393482531321)
+2020-05-07 13:49:53.534232 I | Enter the Request Queue
+2020-05-07 13:49:53.534239 I | success recv req
+2020-05-07 13:49:53.534632 I | Generate sequence(2) for message(5b7b226f7) with request batch size(1)
+2020-05-07 13:49:53.540775 I | who send prepare: 192.168.0.104:49912
+2020-05-07 13:49:53.541459 I | Do not exist Prepare State
+2020-05-07 13:49:53.541582 I | who send prepare: 192.168.0.106:57408
+2020-05-07 13:49:53.542186 I | Do not exist Prepare State
+2020-05-07 13:49:53.542477 I | who send prepare: 192.168.0.105:50326
+2020-05-07 13:49:53.543116 I | Do not exist Prepare State
+2020-05-07 13:49:53.543131 I | [Prepare] prepare msg(2) vote success and to send commit
+2020-05-07 13:49:53.543225 I | [Before Set]who:1,len:0
+2020-05-07 13:49:53.543232 I | [After Set]who:1,len:1
+2020-05-07 13:49:53.548215 I | who send verify: 192.168.0.100:37940
+2020-05-07 13:49:53.565036 I | [Verify] node(AB) received verify to the msg(2) from primary
+2020-05-07 13:49:53.565588 I | Exist pre-prepare
+2020-05-07 13:49:53.565602 I | Sub-Primary is Ready To Execute
+2020-05-07 13:49:53.565615 I | ReadyToExecute
+2020-05-07 13:49:53.566905 I | [Reply] set last sequence(2) already execute request(2)
+2020-05-07 13:49:53.566919 I | [Execute]This req is:2 from client:4,timestamp is:%!s(message.TimeStamp=1588859393482531321)
+2020-05-07 13:50:33.460192 I | who send request: 192.168.0.104:49912
+2020-05-07 13:50:33.465405 I | [Req]This is req:3 from client:4%!(EXTRA message.TimeStamp=1588859432457574694)
+2020-05-07 13:50:33.465452 I | Enter the Request Queue
+2020-05-07 13:50:33.465460 I | success recv req
+2020-05-07 13:50:33.466211 I | Generate sequence(3) for message(5b7b226f7) with request batch size(1)
+2020-05-07 13:50:33.467488 I | who send prepare: 192.168.0.104:49912
+2020-05-07 13:50:33.467818 I | Do not exist Prepare State
+2020-05-07 13:50:33.468499 I | who send prepare: 192.168.0.106:57408
+2020-05-07 13:50:33.468778 I | Do not exist Prepare State
+2020-05-07 13:50:33.519209 I | who send prepare: 192.168.0.105:50326
+2020-05-07 13:50:33.519558 I | Do not exist Prepare State
+2020-05-07 13:50:33.519609 I | [Prepare] prepare msg(3) vote success and to send commit
+2020-05-07 13:50:33.519652 I | [Before Set]who:1,len:0
+2020-05-07 13:50:33.519658 I | [After Set]who:1,len:1
+2020-05-07 13:50:33.529198 I | who send verify: 192.168.0.100:37940
+2020-05-07 13:50:33.529582 I | [Verify] node(AB) received verify to the msg(3) from primary
+2020-05-07 13:50:33.529599 I | Exist pre-prepare
+2020-05-07 13:50:33.529604 I | Sub-Primary is Ready To Execute
+2020-05-07 13:50:33.529610 I | ReadyToExecute
+2020-05-07 13:50:33.529774 I | [Reply] set last sequence(3) already execute request(3)
+2020-05-07 13:50:33.529785 I | [Execute]This req is:3 from client:4,timestamp is:%!s(message.TimeStamp=1588859432457574694)
+2020-05-07 13:50:44.006787 I | who send request: 192.168.0.104:49912
+2020-05-07 13:50:44.007250 I | [Req]This is req:4 from client:4%!(EXTRA message.TimeStamp=1588859442585044159)
+2020-05-07 13:50:44.007259 I | Enter the Request Queue
+2020-05-07 13:50:44.007264 I | [Req]This is req:5 from client:4%!(EXTRA message.TimeStamp=1588859442671068204)
+2020-05-07 13:50:44.007267 I | Enter the Request Queue
+2020-05-07 13:50:44.007271 I | [Req]This is req:6 from client:4%!(EXTRA message.TimeStamp=1588859443005135028)
+2020-05-07 13:50:44.007273 I | Enter the Request Queue
+2020-05-07 13:50:44.007279 I | success recv req
+2020-05-07 13:50:44.007464 I | Generate sequence(4) for message(5b7b226f7) with request batch size(3)
+2020-05-07 13:50:44.012562 I | who send prepare: 192.168.0.105:50326
+2020-05-07 13:50:44.012995 I | Do not exist Prepare State
+2020-05-07 13:50:44.013808 I | who send prepare: 192.168.0.104:49912
+2020-05-07 13:50:44.014192 I | Do not exist Prepare State
+2020-05-07 13:50:44.016279 I | who send prepare: 192.168.0.106:57408
+2020-05-07 13:50:44.016770 I | Do not exist Prepare State
+2020-05-07 13:50:44.016873 I | [Prepare] prepare msg(4) vote success and to send commit
+2020-05-07 13:50:44.016951 I | [Before Set]who:1,len:0
+2020-05-07 13:50:44.016958 I | [After Set]who:1,len:1
+2020-05-07 13:50:44.018602 I | who send verify: 192.168.0.100:37940
+2020-05-07 13:50:44.019043 I | [Verify] node(AB) received verify to the msg(4) from primary
+2020-05-07 13:50:44.019145 I | Exist pre-prepare
+2020-05-07 13:50:44.019172 I | Sub-Primary is Ready To Execute
+2020-05-07 13:50:44.019190 I | ReadyToExecute
+2020-05-07 13:50:44.019481 I | [Reply] set last sequence(4) already execute request(6)
+2020-05-07 13:50:44.020843 I | [Execute]This req is:4 from client:4,timestamp is:%!s(message.TimeStamp=1588859442585044159)
+2020-05-07 13:50:44.020884 I | [Execute]This req is:5 from client:4,timestamp is:%!s(message.TimeStamp=1588859442671068204)
+2020-05-07 13:50:44.020900 I | [Execute]This req is:6 from client:4,timestamp is:%!s(message.TimeStamp=1588859443005135028)
