@@ -13,6 +13,8 @@ const (
 	PrePrepareEntry  = "/preprepare"
 	PrepareEntry     = "/prepare"
 	CommitEntry      = "/commit"
+	VerifyEntry      = "/verify"
+	VerifiedEntry    = "/verified"
 	CheckPointEntry  = "/checkpoint"
 )
 
@@ -25,6 +27,8 @@ type HttpServer struct {
 	preprepareRecv chan *message.PrePrepare
 	prepareRecv    chan *message.Prepare
 	commitRecv     chan *message.Commit
+	verifyRecv     chan *message.Verify
+	verifiedRecv     chan *message.Verified
 	checkpointRecv chan *message.CheckPoint
 }
 
@@ -38,12 +42,14 @@ func NewServer(conf *cmf.ShareConfig) *HttpServer {
 
 //config server: register the handle channel
 func (ser *HttpServer) RegisterChan (r chan *message.Request, pre chan *message.PrePrepare, p chan *message.Prepare,
-	c chan *message.Commit, ck chan *message.CheckPoint)  {
+	c chan *message.Commit, v chan *message.Verify, vd chan *message.Verified, ck chan *message.CheckPoint)  {
 	log.Printf("Registering the chan for listen func")
 	ser.requestRecv     = r
 	ser.preprepareRecv  = pre
 	ser.prepareRecv     = p
 	ser.commitRecv      = c
+	ser.verifyRecv      = v
+	ser.verifiedRecv    = vd
 	ser.checkpointRecv  = ck
 }
 
@@ -61,6 +67,8 @@ func (ser *HttpServer) RegisterServer() {
 		PrePrepareEntry: ser.HttpPreprepare,
 		PrepareEntry:    ser.HttpPrepare,
 		CommitEntry:     ser.HttpCommit,
+		VerifyEntry:     ser.HttpVerify,
+		VerifiedEntry:   ser.HttpVerified,
 		CheckPointEntry: ser.HttpCheckpoint,
 	}
 

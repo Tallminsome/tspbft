@@ -24,12 +24,23 @@ type Operation struct {
 	Type      string
 
 }
-
-type Request struct {
+// Request
+type BufferReq struct {
 	O Operation `json:"operation"`
 	T TimeStamp `json:"timestamp"`
 	C Identify  `json:"clientID"`
+	N int       `json:"reqnum"`
 }
+// Message (Buffered requests)
+type Request struct {
+	Requests []*BufferReq `json:"requests"`
+	T           TimeStamp `json:"timestamp"`
+}
+//type Request struct {
+//	O Operation `json:"operation"`
+//	T TimeStamp `json:"timestamp"`
+//	C Identify  `json:"clientID"`
+//}
 
 type Result struct {
 	
@@ -42,15 +53,10 @@ type Reply struct {
 	R Result      `json:"result"`
 }
 
-// Message
-type Message struct {
-	Requests []*Request `json:"requests"`
-}
-
 type PrePrepare struct {
-	N Sequence    `json:"sequence"`
-	D string      `json:"digest"`
-	M Message     `json:"message"`
+	N Sequence     `json:"sequence"`
+	D string       `json:"digest"`
+	M []*BufferReq `json:"message"`
 }
 
 type Prepare struct {
@@ -65,22 +71,47 @@ type Commit struct {
 	I Identify `json:"replicaID"`
 }
 
+type Verify struct {
+	N Sequence `json:"sequence"`
+	D string   `json:"digest"`
+	I Identify `json:"replicaID"`
+}
+
+type Verified struct {
+	N Sequence `json:"sequence"`
+	D string   `json:"digest"`
+	I Identify `json:"replicaID"`
+}
+
 type CheckPoint struct {
 	N Sequence `json:"sequence"`
 	D string	`json:"digest"`
 	I Identify `json:"replicaID"`
 }
 
-func NewPreprepareMsg(seq Sequence, batch []*Request) ([]byte, *PrePrepare, string, error) {
-	message := Message{Requests: batch}
-	d, err := Digest(message)
+func NewBufferMsg(op Operation, t TimeStamp, id Identify, reqnum int) ([]byte, *BufferReq) {
+	msg := &BufferReq{
+		O: op,
+		T: t,
+		C: id,
+		N: reqnum,
+	}
+	content, err := json.Marshal(msg)
+	if err != nil {
+		return nil, nil
+	}
+	return content, msg
+}
+
+func NewPreprepareMsg(seq Sequence, batch []*BufferReq) ([]byte, *PrePrepare, string, error) {
+	d, err := Digest(batch)
 	if err != nil {
 		return []byte{}, nil, "", nil
 	}
 	prePrepare := &PrePrepare{
 		N: seq,
 		D: d,
-		M: message,
+		M: batch,
 	}
 	ret, err := json.Marshal(prePrepare)
 	if err != nil {
@@ -115,6 +146,32 @@ func NewCommitMsg(id Identify, msg *Prepare) ([]byte, *Commit, error) {
 		return []byte{}, nil, err
 	}
 	return content, commit, nil
+}
+
+func NewVerifyMsg(id Identify, msg *Commit) ([]byte, *Verify, error) {
+	verify := &Verify{
+		N: msg.N,
+		D: msg.D,
+		I: id,
+	}
+	content, err := json.Marshal(verify)
+	if err != nil {
+		return []byte{}, nil, err
+	}
+	return content, verify, nil
+}
+
+func NewVerifiedMsg(id Identify, msg *Verify) ([]byte, *Verified, error) {
+	verified := &Verified{
+		N: msg.N,
+		D: msg.D,
+		I: id,
+	}
+	content, err := json.Marshal(verified)
+	if err != nil {
+		return []byte{}, nil, err
+	}
+	return content, verified, nil
 }
 
 func GroupSequenceString(grp string, seq Sequence) string {

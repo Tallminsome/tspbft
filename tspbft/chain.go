@@ -7,9 +7,10 @@ import (
 	"github.com/hyperledger/fabric/orderer/consensus/tspbft/message"
 	"github.com/hyperledger/fabric/orderer/consensus/tspbft/node"
 	cb "github.com/hyperledger/fabric/protos/common"
+	"log"
 	"time"
 )
-
+var reqnum = 0
 type Chain struct {
 	outchain chan struct{}
 	support consensus.ConsenterSupport
@@ -60,29 +61,28 @@ func (chain *Chain) WaitReady() error {
 // receive order
 func (chain *Chain) Order (env *cb.Envelope, configseq uint64) error {
 	logger.Info("Noraml Type")
+	reqnum = reqnum + 1
 	select {
 	case <- chain.outchain:
 		logger.Info("error exit chain")
 		fmt.Errorf("Exiting...")
 	default:
-
 	}
-	req := &message.Request{
-		O:        message.Operation{
-			Envelope:   env,
-			ChannelID:  chain.support.ChainID(),
-			ConfigSeq:  configseq,
-			Type:       message.TYPENORMAL,
-		},
-		T: message.TimeStamp(time.Now().UnixNano()),
-		C:        0,
+	O := message.Operation{
+		Envelope:   env,
+		ChannelID:  chain.support.ChainID(),
+		ConfigSeq:  configseq,
+		Type:       message.TYPENORMAL,
 	}
-	chain.tspbftNode.SendReqtoSubPrimary(req)
+	_, msg := message.NewBufferMsg(O, message.TimeStamp(time.Now().UnixNano()), chain.tspbftNode.GetId(),reqnum)
+	log.Printf("[Chain]Normal Type,[Req]id:%d, client:%d",reqnum,msg.C)
+	chain.tspbftNode.BufferReqRecv <- msg
 	return nil
 }
 
 func (chain *Chain) Configure (config *cb.Envelope, configseq uint64) error {
 	logger.Info("Config Type")
+	reqnum = reqnum + 1
 	select {
 	case <- chain.outchain:
 		logger.Info("error exit config")
@@ -90,16 +90,14 @@ func (chain *Chain) Configure (config *cb.Envelope, configseq uint64) error {
 	default:
 
 	}
-	req := &message.Request{
-		O:        message.Operation{
-			Envelope:   config,
-			ChannelID:  chain.support.ChainID(),
-			ConfigSeq:  configseq,
-			Type:       message.TYPECONFIG,
-		},
-		T: message.TimeStamp(time.Now().UnixNano()),
-		C:        0,
+	O := message.Operation{
+		Envelope:   config,
+		ChannelID:  chain.support.ChainID(),
+		ConfigSeq:  configseq,
+		Type:       message.TYPECONFIG,
 	}
-	chain.tspbftNode.SendReqtoSubPrimary(req)
+	_, msg := message.NewBufferMsg(O, message.TimeStamp(time.Now().UnixNano()), chain.tspbftNode.GetId(),reqnum)
+	log.Printf("[Chain]Config Type,[Req]id:%d, client:%d",reqnum,msg.C)
+	chain.tspbftNode.BufferReqRecv <- msg
 	return nil
 }

@@ -22,14 +22,17 @@ type Node struct {
 
 	lastreply   *message.LastReply
 	sequence    *Sequence
-	executenum  *ExecuteOpNum
+	executeNum  *ExecuteOpNum
 
 	buffer      *message.Buffer
 
+	BufferReqRecv    chan *message.BufferReq
 	RequestRecv      chan *message.Request
 	PrePrepareRecv   chan *message.PrePrepare
 	PrepareRecv      chan *message.Prepare
 	CommitRecv       chan *message.Commit
+	VerifyRecv       chan *message.Verify
+	VerifiedRecv     chan *message.Verified
 	CheckPointRecv   chan *message.CheckPoint
 
 	PrePrepareSendNotify  chan bool
@@ -41,7 +44,7 @@ type Node struct {
 }
 
 func NewNode(conf *cmf.ShareConfig, support consensus.ConsenterSupport) *Node {
-	node := &Node{
+	node := &Node {
 		comcfg:                conf,
 		server:                server.NewServer(conf),
 
@@ -54,18 +57,21 @@ func NewNode(conf *cmf.ShareConfig, support consensus.ConsenterSupport) *Node {
 
 		lastreply:             message.NewLastReply(),
 		sequence:              NewSequence(conf),
-		executenum:            NewExecuteOpNum(),
+		executeNum:            NewExecuteOpNum(),
 
 		buffer:                message.NewBuffer(),
 
+		BufferReqRecv:         make(chan *message.BufferReq,1000),
 		RequestRecv:           make(chan *message.Request),
 		PrePrepareRecv:        make(chan *message.PrePrepare),
 		PrepareRecv:           make(chan *message.Prepare),
 		CommitRecv:            make(chan *message.Commit),
+		VerifyRecv:            make(chan *message.Verify),
+		VerifiedRecv:          make(chan *message.Verified),
 		CheckPointRecv:        make(chan *message.CheckPoint),
 
 		PrePrepareSendNotify:  make(chan bool), //hou mian mei 100 jiushi yao zuse le shoudaole cai jinxiayige
-		ExecuteNotify:         make(chan bool, 100),
+		ExecuteNotify:         make(chan bool, 400),
 		Supports:              make(map[string]consensus.ConsenterSupport),
 	}
 	log.Printf("[Node] the node id:%d, group:%s, fault number:%d\n", node.id, node.group, node.faultnum)
@@ -83,14 +89,20 @@ func (n *Node) RegisterChain (support consensus.ConsenterSupport)  {
 
 func (n *Node) Run() {
 	//first register chan for server
-	n.server.RegisterChan(n.RequestRecv, n.PrePrepareRecv, n.PrepareRecv, n.CommitRecv, n.CheckPointRecv)
+	n.server.RegisterChan(n.RequestRecv, n.PrePrepareRecv, n.PrepareRecv, n.CommitRecv, n.VerifyRecv, n.VerifiedRecv, n.CheckPointRecv)
 	go n.server.Run()
+	go n.ClientThread()
 	go n.RequestRecvThread()
 	go n.PrePrepareSendThread()
 	go n.PrePrepareRecvAndSendPrepareThread()
 	go n.PrepareRecvAndSendCommitThread()
 	go n.CommitRecvAndVertifyThread()
-	go n.CommitRecvAndBroadThread()
+	go n.VerifyRecvAndBroadThread()
+	go n.ReplicaRecvVerifyThread()
 	go n.ExecuteAndReplyThread()
 	go n.CheckPointRecvThread()
+}
+
+func (n *Node) GetId() message.Identify {
+	return n.id
 }

@@ -1,26 +1,15 @@
 package node
 
 import (
-	"fmt"
 	"github.com/hyperledger/fabric/orderer/consensus/tspbft/message"
-	"github.com/hyperledger/fabric/orderer/consensus/tspbft/server"
 	cb "github.com/hyperledger/fabric/protos/common"
 	"log"
 )
 
 var test_reqeust_num uint64 = 0
 func (n *Node) ExecuteAndReplyThread() {
-	if n.WhetherPrimary() || n.WhetherSubPrimary() {
-		return
-	}
 	for {
 		select {
-		case msg := <-n.CommitRecv:
-			n.buffer.CommitState[msg.D] = true
-			if n.buffer.WhetherToExecute(msg.D, string(n.group), msg.N) {
-				log.Printf("ToExecute")
-				n.ReadyToExecute(msg.D)
-			}
 		case <-n.ExecuteNotify:
 			// execute batch
 			batchs, lastSeq := n.buffer.BatchExecute(n.sequence.GetLastSequence())
@@ -30,25 +19,29 @@ func (n *Node) ExecuteAndReplyThread() {
 			}
 			n.sequence.SetLastSequence(lastSeq)
 			//check point
-			if n.sequence.ReadyToCheckPoint() {
-				fmt.Println("Ready to Checkpoint")
-				CheckSeq := n.sequence.GetCheckpoint()
-				content, checkpoint := n.buffer.NewCheckPoint(CheckSeq, n.id)
-
-				n.buffer.BufferCheckPointMsg(checkpoint, n.id)
-				log.Printf("[Reply] ready to create check point to sequence(%d) msg(%s)", CheckSeq, checkpoint.D[0:9])
-				n.Broadcast(content, server.CheckPointEntry)
-			}
+			//if n.sequence.ReadyToCheckPoint() {
+			//	log.Printf("[CheckPoint]Ready to Checkpoint")
+			//	CheckSeq := n.sequence.GetCheckpoint()
+			//	content, checkpoint := n.buffer.NewCheckPoint(CheckSeq, n.id)
+			//
+			//	n.buffer.BufferCheckPointMsg(checkpoint, n.id)
+			//	log.Printf("[Reply] ready to create check point to sequence(%d) msg(%s)", CheckSeq, checkpoint.D[0:9])
+			//	if n.WhetherPrimary(){
+			//		continue
+			//	}
+			//	n.BroadcastCheckpointMsg(content, server.CheckPointEntry)
+			//}
 			// map the digest to request
-			requestBatchs := make([]*message.Request, 0)
+			requestBatchs := make([]*message.BufferReq, 0)
 			for _, b := range batchs {
-				requestBatchs = append(requestBatchs, b.M.Requests...)
+				requestBatchs = append(requestBatchs, b.M...)
 			}
 			test_reqeust_num = test_reqeust_num + uint64(len(requestBatchs))
 			log.Printf("[Reply] set last sequence(%d) already execute request(%d)", lastSeq, test_reqeust_num)
 			//pending state
 			pending := make(map[string]bool)
 			for _, r := range requestBatchs {
+				log.Printf("[Execute]This req is:%d from client:%d,timestamp is:%s",r.N,r.C,r.T)
 				Msg        := r.O.Envelope
 				Channel    := r.O.ChannelID
 				ConfigSeq  := r.O.ConfigSeq

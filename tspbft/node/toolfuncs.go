@@ -1,11 +1,10 @@
 package node
 
 import (
-	"fmt"
 	"log"
+	"os"
 	"strings"
 	"sync"
-	"os"
 )
 
 func (n *Node) GetPrimary () string {
@@ -41,7 +40,6 @@ func (n *Node) GetAllSubPrimary () []string {
 		}
 		AllSubPrimary[k-1] = v
 	}
-	fmt.Println(AllSubPrimary)
 	return AllSubPrimary
 }
 
@@ -83,7 +81,15 @@ func (n *ExecuteOpNum) Inc() {
 }
 
 func (n *ExecuteOpNum) Dec() {
-	n.locker.Lock()
+	n.Lock()
 	n.num = n.num - 1
+	n.UnLock()
+}
+
+func (n *ExecuteOpNum) Lock() {
+	n.locker.Lock()
+}
+
+func (n *ExecuteOpNum) UnLock() {
 	n.locker.Unlock()
 }

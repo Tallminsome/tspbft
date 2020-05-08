@@ -1,6 +1,7 @@
 package node
 
 import (
+	"log"
 	"sync"
 	"github.com/hyperledger/fabric/orderer/consensus/tspbft/message"
 	"github.com/hyperledger/fabric/orderer/consensus/tspbft/cmf"
@@ -43,6 +44,7 @@ func (seq *Sequence) CheckValid(mseq message.Sequence) bool {
 	seq.locker.RLock()  //read only
 	defer seq.locker.RUnlock()
 	if mseq < seq.lastSequence {
+		log.Printf("[Sequence]msg seq:(%d) < lastseq:(%d)",mseq,seq.lastSequence)
 		return false
 	}
 	if mseq < seq.waterL || mseq > seq.waterH {

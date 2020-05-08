@@ -20,12 +20,17 @@ func (n *Node) CommitRecvAndVertifyThread() {
 			n.buffer.BufferCommitMsg(msg)
 			log.Printf("[Commit] node(%d) vote to the msg(%d)", msg.I, msg.N)
             if n.buffer.TrueOfCommitMsg(msg.D,n.comcfg.FaultNum) {
-				n.BroadtoSubPrimary(msg, server.CommitEntry)
+				_, msg, err := message.NewVerifyMsg(n.id,msg)
+				if err != nil {
+					continue
+				}
+				if n.buffer.WhetherPrimaryToExecute(msg.D, string(n.group), msg.N) {
+					log.Printf("Primary is Ready To Execute")
+					n.ReadyToExecute(msg.D)
+				}
+				n.BroadtoSubPrimary(msg, server.VerifyEntry)
 				log.Printf("vertify 2f+1 success")
 			}
-			//if n.buffer.WhetherToExecute(msg.D, n.comcfg.FaultNum, msg.V, msg.N) {
-			//	n.ReadyToExecute(msg.D)
-			//}
 		}
 	}
 }

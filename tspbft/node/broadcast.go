@@ -13,7 +13,11 @@ func (n *Node) SendComtoPrimary (content []byte, handle string) { // send de bus
 	go SendPost(content, n.GetPrimary() + handle)
 }
 
-func (n *Node) BroadtoSubPrimary (msg *message.Commit, handle string) { // send de bushi msg ershi toupiaojieguo
+func (n *Node) SendPrepreparetoPrimary (content []byte, handle string) { // send de bushi msg ershi toupiaojieguo
+	go SendPost(content, n.GetPrimary() + handle)
+}
+
+func (n *Node) BroadtoSubPrimary (msg *message.Verify, handle string) { // send de bushi msg ershi toupiaojieguo
 	content, err := json.Marshal(msg)
 	if err != nil {
 		log.Printf("error to marshal json")
@@ -47,13 +51,21 @@ func (n *Node) SendPreparetoSubPrimary (content []byte, handle string) {
 func (n *Node) Broadcast(content []byte, handle string) {
 	for k, v := range n.table {
 		//do not send to primary
-		if k == "A"  {
+		if k == "A" {
 			continue
 		}
 		//do not send to my self
 		for i := 1; i < len(v); i++ {
 			go SendPost(content, v[i] + handle)  //v[0] shi zi ji
 		}
+	}
+}
+
+func (n *Node) BroadcastCheckpointMsg(content []byte, handle string) {
+	if n.WhetherSubPrimary(){
+		go SendPost(content, n.GetPrimary() + handle)
+	}else {
+		go SendPost(content, n.GetSubPrimary() + handle)
 	}
 }
 

@@ -7,7 +7,7 @@ import (
 )
 
 type Buffer struct {
-	RequestQueue  []*Request
+	RequestQueue  []*BufferReq
 	RequestLocker *sync.RWMutex
 
 	PrePrepareBuffer map[string]*PrePrepare
@@ -22,6 +22,10 @@ type Buffer struct {
 	CommitState      map[string]bool
 	CommitLocker     *sync.RWMutex
 
+	VerifySet        map[string]map[Identify]bool
+	VerifyState      map[string]bool
+	VerifyLocker     *sync.RWMutex
+
 	ExecuteQueue     []*PrePrepare
 	ExecuteLocker    *sync.RWMutex
 
@@ -32,7 +36,7 @@ type Buffer struct {
 
 func NewBuffer() *Buffer {
 	return &Buffer{
-		RequestQueue:      make([]*Request, 0),
+		RequestQueue:      make([]*BufferReq, 0),
 		RequestLocker:     new(sync.RWMutex),
 
 		PrePrepareBuffer: make(map[string]*PrePrepare),
@@ -47,6 +51,10 @@ func NewBuffer() *Buffer {
 		CommitState:      make(map[string]bool),
 		CommitLocker:     new(sync.RWMutex),
 
+		VerifySet:        make(map[string]map[Identify]bool),
+		VerifyState:      make(map[string]bool),
+		VerifyLocker:     new(sync.RWMutex),
+
 		ExecuteQueue:     make([]*PrePrepare, 0),
 		ExecuteLocker:    new(sync.RWMutex),
 
@@ -56,19 +64,20 @@ func NewBuffer() *Buffer {
 	}
 }
 //add request to the end of the queue
-func (b *Buffer) AppendToRequestQueue(req *Request) {
+func (b *Buffer) AppendToRequestQueue(req *BufferReq) {
 	b.RequestLocker.Lock()
+	log.Printf("Enter the Request Queue")
 	b.RequestQueue = append(b.RequestQueue, req)
 	b.RequestLocker.Unlock()
 }
 //batch to clean the queue
-func (b *Buffer) BatchRequest() (batch []*Request) {
-	batch = make([]*Request, 0)
+func (b *Buffer) BatchRequest() (batch []*BufferReq) {
+	batch = make([]*BufferReq, 0)
 	b.RequestLocker.Lock()
 	for _,req := range b.RequestQueue {
 		batch = append(batch,req)
 	}
-	b.RequestQueue = make([]*Request,0)
+	b.RequestQueue = make([]*BufferReq,0)
 	b.RequestLocker.Unlock()
 	return batch
 }
@@ -102,7 +111,6 @@ func (b *Buffer) BufferPrePrepareMsg(grp string,msg *PrePrepare) {
 func (b *Buffer) CleanPrePrepareMsg(grp string,digest string) {
 	b.PrePrepareLocker.Lock()
 	msg := b.PrePrepareBuffer[digest]
-
 	delete(b.PrePrepareSet, GroupSequenceString(grp, msg.N))
 	delete(b.PrePrepareBuffer, digest)
 	b.PrePrepareLocker.Unlock()
@@ -112,12 +120,12 @@ func (b *Buffer) WhetherExistPrePrepareMsg(grp string, seq Sequence) bool {
 	key := GroupSequenceString(grp, seq)
 	b.PrePrepareLocker.RLock()
 	if _, ok := b.PrePrepareSet[key]; ok {
+		log.Println("Exist pre-prepare")
 		b.PrePrepareLocker.RUnlock()
-		log.Printf("Exist PrePrepareMsg")
 		return true
 	}
+	log.Println("Don't Exist pre-prepare")
 	b.PrePrepareLocker.RUnlock()
-	log.Printf("Do not Exist PrePrepareMsg")
 	return false
 }
 
@@ -153,30 +161,29 @@ func (b *Buffer) CleanPrepareMsg(digest string) {
 func (b *Buffer) TrueOfPrepareMsg(digest string, faultnum uint) bool {
 	b.PrepareLocker.Lock()
 	num := uint(len(b.PrepareSet[digest]))
-	log.Printf("length:%d",num)
 	_, ok := b.PrepareState[digest]
 	if ok {
-		log.Printf("Exist Commit State")
+		log.Printf("Exist Prepare State")
 	} else {
-		log.Printf("Do not exist Commit State")
+		log.Printf("Do not exist Prepare State")
 	}
-	if num < 2*faultnum || ok {
-		log.Printf("< 2f")
+	if num < 2*faultnum +1 || ok {
 		b.PrepareLocker.Unlock()
 		return false
 	}
 	b.PrepareState[digest] = true
-	log.Printf("set preparestate == true")
 	b.PrepareLocker.Unlock()
 	return true
 }
 // commit
 func (b *Buffer) BufferCommitMsg(msg *Commit) {
 	b.CommitLocker.Lock()
+	log.Printf("[Before Set]who:%d,len:%d",msg.I,len(b.CommitSet[msg.D]))
 	if _, ok := b.CommitSet[msg.D]; !ok {
 		b.CommitSet[msg.D] = make(map[Identify]bool)
 	}
 	b.CommitSet[msg.D][msg.I] = true
+	log.Printf("[After Set]who:%d,len:%d",msg.I,len(b.CommitSet[msg.D]))
 	b.CommitLocker.Unlock()
 }
 
@@ -190,35 +197,67 @@ func (b *Buffer) CleanCommitMsg(digest string) {
 func (b *Buffer) TrueOfCommitMsg(digest string, fault uint) bool {
 	b.CommitLocker.Lock()
 	num := uint(len(b.CommitSet[digest]))
-	log.Printf("Commit num : %d",num)
+    log.Printf("commit_num:%d who is check:%s,commitstate:%d",num,b.CommitSet[digest],b.CommitState[digest])
 	_, ok := b.CommitState[digest]
-	if ok {
-		log.Printf("Exist Commit State")
-	} else {
-		log.Printf("Do not exist Commit State")
-	}
+
 	if num < 2*fault+1 || ok {
 		b.CommitLocker.Unlock()
-		log.Printf("There is not enough nodes to commit")
 		return false
 	}
 	b.CommitState[digest] = true
+	log.Printf("commit_num:%d who is check:%s,commitstate:%d",num,b.CommitSet[digest],b.CommitState[digest])
 	b.CommitLocker.Unlock()
 	return true
+}
+
+// verify
+func (b *Buffer) BufferVerifyMsg(msg *Verify) {
+	b.VerifyLocker.Lock()
+	if _, ok := b.VerifySet[msg.D]; !ok {
+		b.VerifySet[msg.D] = make(map[Identify]bool)
+	}
+	b.VerifySet[msg.D][msg.I] = true
+	b.VerifyLocker.Unlock()
+}
+
+func (b *Buffer) CleanVerifyMsg(digest string) {
+	b.VerifyLocker.Lock()
+	delete(b.VerifySet, digest)
+	delete(b.VerifyState, digest)
+	b.VerifyLocker.Unlock()
 }
 
 func (b *Buffer) WhetherToExecute(digest string, grp string, seq Sequence) bool {
 	b.PrepareLocker.RLock()
 	defer b.PrepareLocker.RUnlock()
+	var grps  = ""
+	switch grp {
+	case "AB":
+		grps = "B"
+	case "AC":
+		grps = "C"
+	case "AD":
+		grps = "D"
+	default:
+		grps = grp
+	}
 
 	_, isPrepare := b.PrepareState[digest]
-	_, isCommit  := b.CommitState[digest]
-	if isPrepare {
-		log.Printf("Exist Prepare")
-	}else {
-		log.Printf("Do not Exist Prepare")
+	_, isVerify  := b.VerifyState[digest]
+
+	if b.WhetherExistPrePrepareMsg(grps, seq) && isPrepare && isVerify {
+		return true
 	}
-	if b.WhetherExistPrePrepareMsg(grp, seq) && isPrepare && isCommit {
+	return false
+}
+
+func (b *Buffer) WhetherPrimaryToExecute(digest string, grp string, seq Sequence) bool {
+	b.PrepareLocker.RLock()
+	defer b.PrepareLocker.RUnlock()
+
+	_, isCommit := b.CommitState[digest]
+
+	if b.WhetherExistPrePrepareMsg(grp, seq) && isCommit {
 		return true
 	}
 	return false
@@ -245,7 +284,7 @@ func (b *Buffer) AppendToExecuteQueue(msg *PrePrepare) {
 	b.ExecuteQueue[fir] = msg
 	b.ExecuteLocker.Unlock()
 }
-
+// hai shi bu tai dong
 func (b *Buffer) BatchExecute(lastseq Sequence) ([]*PrePrepare, Sequence) {
 	b.ExecuteLocker.Lock()
 	batchs := make([]*PrePrepare, 0)
@@ -258,7 +297,7 @@ func (b *Buffer) BatchExecute(lastseq Sequence) ([]*PrePrepare, Sequence) {
 			b.ExecuteLocker.Unlock()
 			return batchs, index
 		}
-		if b.ExecuteQueue[loop].N != index+1 {
+		if b.ExecuteQueue[loop].N != index + 1 {
 			b.ExecuteQueue = b.ExecuteQueue[loop:]
 			b.ExecuteLocker.Unlock()
 			return batchs, index
@@ -323,6 +362,7 @@ func (b *Buffer) CleanBuffer(grp string,msg *CheckPoint) {
 		b.CleanPrePrepareMsg(grp,temp[minSeq])
 		b.CleanPrepareMsg(temp[minSeq])
 		b.CleanCommitMsg(temp[minSeq])
+		b.CleanVerifyMsg(temp[minSeq])
 		minSeq = minSeq + 1
 	}
 }
@@ -352,6 +392,6 @@ func (b *Buffer) TrueOfCheckPointMsg(digest string, fault uint) bool {
 }
 
 func (b *Buffer) Show() {
-	log.Printf("[Buffer] node buffer size: pre-prepare(%d) prepare(%d) commit(%d)", len(b.PrePrepareBuffer), len(b.PrepareSet), len(b.CommitSet))
+	log.Printf("[Buffer] node buffer size: pre-prepare(%d) prepare(%d) commit(%d) verify(%d)", len(b.PrePrepareBuffer), len(b.PrepareSet), len(b.CommitSet), len(b.VerifySet))
 
 }
