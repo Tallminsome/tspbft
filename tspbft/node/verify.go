@@ -8,7 +8,7 @@ import (
 )
 
 func (n *Node) VerifyRecvAndBroadThread() {
-	// if its not sub-Primary
+	//判断是否为下层通道主节点，不是则退出该进程
 	if !n.WhetherSubPrimary() {
 		return
 	}
@@ -16,7 +16,6 @@ func (n *Node) VerifyRecvAndBroadThread() {
 		select {
 		case msg := <-n.VerifyRecv:
 			if !n.CheckVerifyMsg(msg) {
-				log.Printf("Wrong in check verify")
 				continue
 			}
 			n.buffer.BufferVerifyMsg(msg)
@@ -29,7 +28,7 @@ func (n *Node) VerifyRecvAndBroadThread() {
 				n.executeNum.Dec()
 			    n.ReadyToExecute(msg.D)
 		    }
-			//broad cast the commit msg to replica
+			//生成verified消息并向通道内的副本节点广播verified消息
 			_, verifiedmsg, err := message.NewVerifiedMsg(n.id,msg)
 			content, err := json.Marshal(verifiedmsg)
 			if err != nil {
@@ -39,11 +38,10 @@ func (n *Node) VerifyRecvAndBroadThread() {
 			n.Broadcast(content, server.VerifiedEntry)
 		}
 	}
-
 }
 
 func (n *Node) ReplicaRecvVerifyThread() {
-	// if its not sub-Primary
+	//如果节点不是副本节点,则退出进程
 	if n.WhetherPrimary() || n.WhetherSubPrimary() {
 		return
 	}
@@ -59,7 +57,6 @@ func (n *Node) ReplicaRecvVerifyThread() {
 			}
 		}
 	}
-
 }
 
 func (n *Node) CheckVerifyMsg(msg *message.Verify) bool {

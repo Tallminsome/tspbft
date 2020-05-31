@@ -7,7 +7,7 @@ import (
 )
 
 func (n *Node) PrepareRecvAndSendCommitThread() {
-	// if its not sub-primary
+	//判断是否为下层通道主节点，不是则退出该进程
 	if !n.WhetherSubPrimary() {
 		return
 	}
@@ -18,18 +18,18 @@ func (n *Node) PrepareRecvAndSendCommitThread() {
 				log.Printf("[wrong checkprepare]")
 				continue
 			}
-			//buffer
+			//缓存prepare消息
 			n.buffer.BufferPrepareMsg(msg)
-			//vertify 2f
+			//验证是否收到门限t个prepare消息
 			if n.buffer.TrueOfPrepareMsg(msg.D, n.comcfg.FaultNum) {
 				log.Printf("[Prepare] prepare msg(%d) vote success and to send commit", msg.N)
 				content, msg, err := message.NewCommitMsg(n.id, msg)
 				if err != nil {
 					continue
 				}
-				// buffer commit msg
+				//缓存commit消息
 				n.buffer.BufferCommitMsg(msg)
-				//send vote result to PrimaryNode
+				//发送commit消息到根节点
 				n.SendComtoPrimary(content, server.CommitEntry)
 			}
 		}

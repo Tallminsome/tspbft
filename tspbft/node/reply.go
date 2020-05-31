@@ -18,19 +18,6 @@ func (n *Node) ExecuteAndReplyThread() {
 				continue
 			}
 			n.sequence.SetLastSequence(lastSeq)
-			//check point
-			//if n.sequence.ReadyToCheckPoint() {
-			//	log.Printf("[CheckPoint]Ready to Checkpoint")
-			//	CheckSeq := n.sequence.GetCheckpoint()
-			//	content, checkpoint := n.buffer.NewCheckPoint(CheckSeq, n.id)
-			//
-			//	n.buffer.BufferCheckPointMsg(checkpoint, n.id)
-			//	log.Printf("[Reply] ready to create check point to sequence(%d) msg(%s)", CheckSeq, checkpoint.D[0:9])
-			//	if n.WhetherPrimary(){
-			//		continue
-			//	}
-			//	n.BroadcastCheckpointMsg(content, server.CheckPointEntry)
-			//}
 			// map the digest to request
 			requestBatchs := make([]*message.BufferReq, 0)
 			for i:=0; i<len(batchs); i++ {

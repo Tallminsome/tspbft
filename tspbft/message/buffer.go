@@ -66,7 +66,7 @@ func NewBuffer() *Buffer {
 //add request to the end of the queue
 func (b *Buffer) AppendToRequestQueue(req *Request) {
 	b.RequestLocker.Lock()
-	log.Printf("Enter the Request Queue")
+	//log.Printf("Enter the Request Queue")
 	b.RequestQueue = append(b.RequestQueue, req)
 	b.RequestLocker.Unlock()
 }
@@ -120,11 +120,11 @@ func (b *Buffer) WhetherExistPrePrepareMsg(grp string, seq Sequence) bool {
 	key := GroupSequenceString(grp, seq)
 	b.PrePrepareLocker.RLock()
 	if _, ok := b.PrePrepareSet[key]; ok {
-		log.Println("Exist pre-prepare")
+		//log.Println("Exist pre-prepare")
 		b.PrePrepareLocker.RUnlock()
 		return true
 	}
-	log.Println("Don't Exist pre-prepare")
+	//log.Println("Don't Exist pre-prepare")
 	b.PrePrepareLocker.RUnlock()
 	return false
 }
@@ -162,11 +162,6 @@ func (b *Buffer) TrueOfPrepareMsg(digest string, faultnum uint) bool {
 	b.PrepareLocker.Lock()
 	num := uint(len(b.PrepareSet[digest]))
 	_, ok := b.PrepareState[digest]
-	if ok {
-		log.Printf("Exist Prepare State")
-	} else {
-		log.Printf("Do not exist Prepare State")
-	}
 	if num < 2*faultnum +1 || ok {
 		b.PrepareLocker.Unlock()
 		return false
@@ -178,12 +173,12 @@ func (b *Buffer) TrueOfPrepareMsg(digest string, faultnum uint) bool {
 // commit
 func (b *Buffer) BufferCommitMsg(msg *Commit) {
 	b.CommitLocker.Lock()
-	log.Printf("[Before Set]who:%d,len:%d",msg.I,len(b.CommitSet[msg.D]))
+	//log.Printf("[Before Set]who:%d,len:%d",msg.I,len(b.CommitSet[msg.D]))
 	if _, ok := b.CommitSet[msg.D]; !ok {
 		b.CommitSet[msg.D] = make(map[Identify]bool)
 	}
 	b.CommitSet[msg.D][msg.I] = true
-	log.Printf("[After Set]who:%d,len:%d",msg.I,len(b.CommitSet[msg.D]))
+	//log.Printf("[After Set]who:%d,len:%d",msg.I,len(b.CommitSet[msg.D]))
 	b.CommitLocker.Unlock()
 }
 
@@ -197,7 +192,7 @@ func (b *Buffer) CleanCommitMsg(digest string) {
 func (b *Buffer) TrueOfCommitMsg(digest string, fault uint) bool {
 	b.CommitLocker.Lock()
 	num := uint(len(b.CommitSet[digest]))
-    log.Printf("commit_num:%d who is check:%s,commitstate:%d",num,b.CommitSet[digest],b.CommitState[digest])
+    log.Printf("[Commit]commit_num:%d who is check:%s",num,b.CommitSet[digest])
 	_, ok := b.CommitState[digest]
 
 	if num < 2*fault+1 || ok {
@@ -205,7 +200,7 @@ func (b *Buffer) TrueOfCommitMsg(digest string, fault uint) bool {
 		return false
 	}
 	b.CommitState[digest] = true
-	log.Printf("commit_num:%d who is check:%s,commitstate:%d",num,b.CommitSet[digest],b.CommitState[digest])
+	log.Printf("[Commit]commitstate:%d",b.CommitState[digest])
 	b.CommitLocker.Unlock()
 	return true
 }

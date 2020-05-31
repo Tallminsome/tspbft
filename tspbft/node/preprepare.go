@@ -31,38 +31,39 @@ func (n *Node) PrePrepareSendThread() {
 func (n *Node) PrePrepareSendHandle() {
 	n.executeNum.Lock()
 	defer n.executeNum.UnLock()
+	//处理的打包消息最多不超过一条
 	if n.executeNum.Get() >= n.comcfg.ExecuteMaxNum {
 		return
 	}
-
+	//把队列中的打包消息放在batch里减少网络拥堵
 	if n.buffer.SizeofRequestQueue() < 1 {
 		return
 	}
-	//batch request to discard network traffic
 	batch := n.buffer.BatchRequest()
 	if len(batch) < 1 {
 		return
 	}
-
+	//序列号以及执行数+1
 	seq := n.sequence.Add()
 	n.executeNum.Inc()
+	////生成pre-prepare消息
 	content, msg, digest, err := message.NewPreprepareMsg(seq, batch)
 	if err != nil {
 		log.Printf("Generate pre-prepare message error : %s",err)
 		return
 	}
 	log.Printf("Generate sequence(%d) for message(%s) with request batch size(%d)",seq,digest[0:9],len(batch))
-	// buffer the pre-prepare msg
+	//缓存pre-prepare消息
 	n.buffer.BufferPrePrepareMsg(string(n.group),msg)
-	//sent pre-prepare to primary in order to execute
+	//将pre-prepare消息发送给根节点缓存以便执行
 	n.SendPrepreparetoPrimary(content,server.PrePrepareEntry)
-	//broadcast
+	//把pre-prepare消息在通道内进行广播
 	n.Broadcast(content,server.PrePrepareEntry)
 }
 
-//receive pre-prepare and send prepare thread
+//接收pre-prepare并且发送prepare消息
 func (n *Node) PrePrepareRecvAndSendPrepareThread() {
-	// if its sub-primary or primary
+	//如果节点为主节点,则退出该进程
 	if n.WhetherSubPrimary() {
 		return
 	}
@@ -72,28 +73,29 @@ func (n *Node) PrePrepareRecvAndSendPrepareThread() {
 			if !n.CheckPrePrepareMsg(string(n.group),msg){
 				continue
 			}
-		    //buffer pre-prepare message
+			//缓存pre-prepare消息
 			n.buffer.BufferPrePrepareMsg(string(n.group),msg)
 			if n.WhetherPrimary() {
+				//如果是根节点,判断是否能够执行,以防出现commit消息验证通过而pre-prepare消息还没收到的情况
 				if n.buffer.WhetherPrimaryToExecute(msg.D, string(n.group), msg.N) {
 					log.Printf("Primary is Ready To Execute")
 					n.ReadyToExecute(msg.D)
 				}
 				continue
 			}
-			//generate prepare message
+			//生成prepare消息
 			content, prepare, err := message.NewPrepareMsg(n.id, msg)
 			log.Printf("[Pre-Prepare] recv pre-prepare(%d) and send the prepare", msg.N)
 			if err != nil {
 				log.Printf("Wrong in generating NewPrepareMsg")
 				continue
 			}
-			// buffer the prepare msg, vertify 2f backup
+			//缓存prepare消息
 			n.buffer.BufferPrepareMsg(prepare)
 			n.buffer.PrepareLocker.Lock()
-			n.buffer.PrepareState[msg.D] = true  //fa song wan zhi hou she zhi
+			n.buffer.PrepareState[msg.D] = true
 			n.buffer.PrepareLocker.Unlock()
-			// broadcast prepare message
+			//向主节点发送prepare消息
 			n.SendPreparetoSubPrimary(content,server.PrepareEntry)
 			if n.buffer.WhetherToExecute(msg.D, string(n.group), msg.N) {
 				log.Printf("ToExecute")

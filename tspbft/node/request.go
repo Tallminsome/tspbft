@@ -8,16 +8,10 @@ func (n *Node) RequestRecvThread() {
 	for {
 		msg := <-n.RequestRecv
 		num = num + 1
-		// check if it's subprimary
-		if !n.WhetherSubPrimary() {
-			// if it's lastreply just send it to client directely
-			log.Printf("This is %d", n.id)
-			if n.lastreply.Equal(msg) {
-				// TODO just Reply
-			}
-		}
 		log.Printf("[Req]This is req:%d,time stamp:%s",num,msg.T)
+		//添加进请求队列中
 		n.buffer.AppendToRequestQueue(msg)
+		//进入pre-prepare消息生成及发送线程
 		n.PrePrepareSendNotify <- true
 	}
 }
